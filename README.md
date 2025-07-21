@@ -1,4 +1,4 @@
-# SCModRepository
+# MeridianModRepository
 
 <p align="center">
     <img src="https://github.com/StarCoreSE/SCModRepository/assets/51190031/c413613b-08e1-48de-a763-2adfe7fa871f" width="480">
