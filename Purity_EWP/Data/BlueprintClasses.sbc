@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClassEntries>
+
+ 
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="MCRN40mm_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="MCRN40mm_Blueprint" />
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="UNN40mm_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="UNN40mm_Blueprint" />
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="OPAFlak_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="OPAFlak_Blueprint" />
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="UNNRailgunSabotAmmo_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="UNNRailgunSabotAmmo_Blueprint" />
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="BelterRailgunSabotAmmo_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="BelterRailgunSabotAmmo_Blueprint" />
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="MCRNRailgunSabotAmmo_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="MCRNRailgunSabotAmmo_Blueprint" />
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="MCRNHeavyRailgunSabotAmmo_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="MCRNHeavyRailgunSabotAmmo_Blueprint" />
+
+
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="UNNInterceptorMissile_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="UNNInterceptorMissile_Blueprint" />
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="OPADecoy_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="OPADecoy_Blueprint" />
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="OPAArtilleryAP_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="OPAArtilleryAP_Blueprint" />
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="OPAArtilleryHE_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="OPAArtilleryHE_Blueprint" />
+
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="OPAArtilleryEMP_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="OPAArtilleryEMP_Blueprint" />
+
+  <Entry Class="BasicConsumables" BlueprintSubtypeId="OPAAutocannonPDC_Blueprint" />
+  <Entry Class="Consumables" BlueprintSubtypeId="OPAAutocannonPDC_Blueprint" />
+  <Entry Class="EliteConsumables" BlueprintSubtypeId="OPAAutocannonPDC_Blueprint" />
+  <Entry Class="Ammo" BlueprintSubtypeId="OPAAutocannonPDC_Blueprint" />
+
+
+
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/KopeshLightRailgun_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNLightRailgunFixed_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNLightRailgunTurret_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNMountedPDC_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNQuickfireTorpedoLauncher_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNRadarSystem_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNRetractablePDC_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNRetractablePDCMIRRORED_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNRetractablePDCSlope_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNRetractablePDCSlopeMIRRORED_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNTorpedoLauncherFlat_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNTorpedoLauncherSlope_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/OPAFlakCannonPDC_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/OPAAutocannonPDC_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/OPATorpedoLauncher_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/PTGNMountedPDC_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/PTGNMountedPDCSlope_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/PTGNRetractablePDC_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/UNNInterceptorMissileLauncher_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/UNNTorpedoLauncher_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/UNNLightRailgunTurret_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNHeavyRailgunTurret_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/OPAPrototypeRailgun_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/OPADecoyDispenser_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/OPAArtillery_Block" />
+
+
+  <Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/MCRNMountedPDCSG_Block" />
+  <Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/OPAFlakCannonPDCSG_Block" />
+  <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/OPAAutocannonPDCSG_Block" />
+
+  </BlueprintClassEntries>
+</Definitions>

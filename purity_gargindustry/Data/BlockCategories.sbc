@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CategoryClasses>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+        <Id>
+          <TypeId>GuiBlockCategoryDefinition</TypeId>
+          <SubtypeId/>
+        </Id>
+        <DisplayName>Horizon Logistics</DisplayName>
+        <Name>HTG_Tech</Name>
+        <ItemIds>
+      		<string>OxygenTank/SOFL_Gas_Stacked_Tank_AT</string>
+      		<string>OxygenTank/SOFL_Gas_Stacked_Tank</string>
+      		<string>OxygenTank/SOFL_Gas_Huge_Tank</string>
+      		<string>OxygenTank/SOFL_Gas_Tank_AT</string>
+      		<string>OxygenTank/SOFL_Gas_Tank</string>
+      		<string>CargoContainer/SOFL_Large_Cargo</string>
+      		<string>CargoContainer/SOFL_Huge_Cargo</string>
+        </ItemIds>
+      </Category>
+  </CategoryClasses>
+
+
+</Definitions>

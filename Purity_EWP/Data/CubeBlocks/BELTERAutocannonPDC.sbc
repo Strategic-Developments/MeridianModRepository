@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+            <Id>
+                <TypeId>ConveyorSorter</TypeId>
+                <SubtypeId>OPAAutocannonPDC_Block</SubtypeId>
+            </Id>
+            <DisplayName>Belter Kess-Hashari Autocannon PDC [BELTER]</DisplayName>
+            <Description>Kess-Hashari PDC is known for its low rate of fire, poor accuracy and terrible damage output as well as heating problems and small magazine capacity. The peak of belter engineering to be short. This cannon was made to be dirt cheap and mass produced with very little technological requirements. As a result It can be seen on basically any ship from civilian haulers to pirate gunboats and even OPA NAVY ships. Unlike other ammos which require advanced assembler, its ammo can be manufactured in low tier production blocks such as survival kit or basic assembler. Consumes OPA Autocannon Ammo.</Description>
+	    <GuiVisible>true</GuiVisible>
+	    <Icon>Textures\GUI\Icons\Cubes\OPAAutocannonPDC.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+	    <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\large\OPAAutocannonPDC.mwm</Model>
+            <Components>
+			<Component Subtype="SteelPlate" Count="10" />
+			<Component Subtype="Construction" Count="10" />
+			<Component Subtype="SmallTube" Count="2" />
+			<Component Subtype="Motor" Count="4" />
+			<Component Subtype="Computer" Count="10" />
+			<Component Subtype="SteelPlate" Count="25" />
+	    </Components>
+            <CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.11" StartY="0.11" EndX="0.89" EndY="0.89" Default="true"/>
+			</MountPoints>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BlockPairName>OPAAutocannonPDC_Block</BlockPairName>
+
+            <SimpleUpdateVisualOnSkinChange>true</SimpleUpdateVisualOnSkinChange>
+
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MirroringY>Z</MirroringY>
+	    <MirroringZ>Y</MirroringZ>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<RequiredPowerInput>0.00002</RequiredPowerInput>
+            <PCU>150</PCU>
+	    <IsAirTight>false</IsAirTight>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\OPAAutocannonPDC_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\OPAAutocannonPDC_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\OPAAutocannonPDC_BS3.mwm"/>
+			</BuildProgressModels>
+        </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+            <Id>
+                <TypeId>ConveyorSorter</TypeId>
+                <SubtypeId>OPAAutocannonPDCSG_Block</SubtypeId>
+            </Id>
+            <DisplayName>Belter Kess-Hashari Autocannon PDC [OPA]</DisplayName>
+            <Description>Kess-Hashari PDC is known for its low rate of fire, poor accuracy and terrible damage output as well as heating problems and small magazine capacity. The peak of belter engineering to be short. This cannon was made to be dirt cheap and mass produced with very little technological requirements. As a result It can be seen on basically any ship from civilian haulers to pirate gunboats and even OPA NAVY ships. Unlike other ammos which require advanced assembler, its ammo can be manufactured in low tier production blocks such as survival kit or basic assembler. Consumes OPA Autocannon Ammo.</Description>
+	    <GuiVisible>true</GuiVisible>
+	    <Icon>Textures\GUI\Icons\Cubes\OPAAutocannonPDC.dds</Icon>
+            <CubeSize>Small</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="5" y="5" z="5"/>
+	    <ModelOffset x="0" y="0" z="0" />
+  	    <Model>Models\Cubes\large\OPAAutocannonPDC.mwm</Model>
+            <Components>
+			<Component Subtype="SteelPlate" Count="10" />
+			<Component Subtype="Construction" Count="10" />
+			<Component Subtype="SmallTube" Count="2" />
+			<Component Subtype="Motor" Count="4" />
+			<Component Subtype="Computer" Count="10" />
+			<Component Subtype="SteelPlate" Count="25" />
+	    </Components>
+            <CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.53" StartY="0.53" EndX="4.47" EndY="4.47" Default="true"/>
+			</MountPoints>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BlockPairName>OPAAutocannonPDC_Block</BlockPairName>
+
+            <SimpleUpdateVisualOnSkinChange>true</SimpleUpdateVisualOnSkinChange>
+
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MirroringY>Z</MirroringY>
+	    <MirroringZ>Y</MirroringZ>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<RequiredPowerInput>0.00002</RequiredPowerInput>
+            <PCU>150</PCU>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\OPAAutocannonPDC_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\OPAAutocannonPDC_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\OPAAutocannonPDC_BS3.mwm"/>
+			</BuildProgressModels>
+        </Definition>
+
+	</CubeBlocks>
+</Definitions>

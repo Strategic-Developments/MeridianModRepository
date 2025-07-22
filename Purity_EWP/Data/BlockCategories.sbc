@@ -1,0 +1,105 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+  
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+	  <Id>
+		<TypeId>GuiBlockCategoryDefinition</TypeId>
+		<SubtypeId/>
+	  </Id>
+			  <DisplayName>Expanse Weapons Pack</DisplayName>
+			  <Name>HumanoidExpanseWeaponsPack</Name>
+				<SearchBlocks>true</SearchBlocks>
+				<IsShipCategory>false</IsShipCategory>
+				<IsBlockCategory>true</IsBlockCategory>
+				<IsToolCategory>false</IsToolCategory>
+			<ItemIds>
+			
+				<string>ConveyorSorter/KopeshLightRailgun_Block</string>
+				<string>ConveyorSorter/MCRNLightRailgunFixed_Block</string>
+				<string>ConveyorSorter/MCRNLightRailgunTurret_Block</string>
+				<string>ConveyorSorter/MCRNMountedPDC_Block</string>
+				<string>ConveyorSorter/MCRNQuickfireTorpedoLauncher_Block</string>
+				<string>ConveyorSorter/MCRNRadarSystem_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDC_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDCMIRRORED_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDCSlope_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDCSlopeMIRRORED_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDCSlopeAlt_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDCSlopeAltMIRRORED_Block</string>
+				<string>ConveyorSorter/MCRNTorpedoLauncherFlat_Block</string>
+				<string>ConveyorSorter/MCRNTorpedoLauncherSlope_Block</string>
+				<string>ConveyorSorter/OPAFlakCannonPDC_Block</string>
+				<string>ConveyorSorter/OPAAutocannonPDC_Block</string>
+				<string>ConveyorSorter/OPATorpedoLauncher_Block</string>
+				<string>ConveyorSorter/PTGNMountedPDC_Block</string>
+				<string>ConveyorSorter/PTGNMountedPDCSlope_Block</string>
+				<string>ConveyorSorter/PTGNRetractablePDC_Block</string>
+				<string>ConveyorSorter/UNNInterceptorMissileLauncher_Block</string>
+				<string>ConveyorSorter/UNNTorpedoLauncher_Block</string>
+				<string>ConveyorSorter/UNNLightRailgunTurret_Block</string>
+				<string>ConveyorSorter/MCRNHeavyRailgunTurret_Block</string>
+				<string>ConveyorSorter/OPAPrototypeRailgun_Block</string>
+				<string>ConveyorSorter/OPADecoyDispenser_Block</string>
+				<string>ConveyorSorter/OPAArtillery_Block</string>
+
+				<string>ConveyorSorter/MCRNMountedPDCSG_Block</string>
+				<string>ConveyorSorter/OPAFlakCannonPDCSG_Block</string>
+				<string>ConveyorSorter/OPAAutocannonPDCSG_Block</string>
+
+			</ItemIds>
+		</Category>
+
+
+		<Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+			<Id>
+				<TypeId>GuiBlockCategoryDefinition</TypeId>
+				<SubtypeId/>
+			</Id>
+					<DisplayName>DisplayName_Category_ShipWeapons</DisplayName>
+					<Name>Weapons</Name>
+				<ItemIds>
+
+				<string>ConveyorSorter/KopeshLightRailgun_Block</string>
+				<string>ConveyorSorter/MCRNLightRailgunFixed_Block</string>
+				<string>ConveyorSorter/MCRNLightRailgunTurret_Block</string>
+				<string>ConveyorSorter/MCRNMountedPDC_Block</string>
+				<string>ConveyorSorter/MCRNQuickfireTorpedoLauncher_Block</string>
+				<string>ConveyorSorter/MCRNRadarSystem_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDC_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDCMIRRORED_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDCSlope_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDCSlopeMIRRORED_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDCSlopeAlt_Block</string>
+				<string>ConveyorSorter/MCRNRetractablePDCSlopeAltMIRRORED_Block</string>
+				<string>ConveyorSorter/MCRNTorpedoLauncherFlat_Block</string>
+				<string>ConveyorSorter/MCRNTorpedoLauncherSlope_Block</string>
+				<string>ConveyorSorter/OPAFlakCannonPDC_Block</string>
+				<string>ConveyorSorter/OPAAutocannonPDC_Block</string>
+				<string>ConveyorSorter/OPATorpedoLauncher_Block</string>
+				<string>ConveyorSorter/PTGNMountedPDC_Block</string>
+				<string>ConveyorSorter/PTGNMountedPDCSlope_Block</string>
+				<string>ConveyorSorter/PTGNRetractablePDC_Block</string>
+				<string>ConveyorSorter/UNNInterceptorMissileLauncher_Block</string>
+				<string>ConveyorSorter/UNNTorpedoLauncher_Block</string>
+				<string>ConveyorSorter/UNNLightRailgunTurret_Block</string>
+				<string>ConveyorSorter/MCRNHeavyRailgunTurret_Block</string>
+				<string>ConveyorSorter/OPAPrototypeRailgun_Block</string>
+				<string>ConveyorSorter/OPADecoyDispenser_Block</string>
+				<string>ConveyorSorter/OPAArtillery_Block</string>
+
+				<string>ConveyorSorter/MCRNMountedPDCSG_Block</string>
+				<string>ConveyorSorter/OPAFlakCannonPDCSG_Block</string>
+				<string>ConveyorSorter/OPAAutocannonPDCSG_Block</string>
+
+				<string>ConveyorSorter/Aryx_AES_6M40_PDC</string>
+				<string>ConveyorSorter/Aryx_AES_6M40_PDC_SG</string>
+
+				</ItemIds>  
+		</Category>
+
+	
+  </CategoryClasses>
+  
+
+</Definitions>

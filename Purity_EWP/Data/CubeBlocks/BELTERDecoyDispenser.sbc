@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+            <Id>
+                <TypeId>ConveyorSorter</TypeId>
+                <SubtypeId>OPADecoyDispenser_Block</SubtypeId>
+            </Id>
+            <DisplayName>Belter Decoy System [BELTER]</DisplayName>
+            <Description>Belter pirates usually use some kind of flare decoy systems to distract inner missiles and PDCs which are known for using thermal signatures of ship drives and reactors for guidance. This dispenser is activated manually and sometimes even works</Description>
+	    <GuiVisible>true</GuiVisible>
+	    <Icon>Textures\GUI\Icons\Cubes\DecoyDispenser.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+	    <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\large\DecoyDispenser.mwm</Model>
+            <Components>
+			<Component Subtype="SteelPlate" Count="20" />
+			<Component Subtype="Construction" Count="10" />
+			<Component Subtype="SmallTube" Count="32" />
+			<Component Subtype="Motor" Count="4" />
+			<Component Subtype="Computer" Count="10" />
+			<Component Subtype="SteelPlate" Count="50" />
+	    </Components>
+            <CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" PressurizedWhenOpen="true"/>
+			</MountPoints>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+            <BlockPairName>DecoyDispenser_Block</BlockPairName>
+
+            <SimpleUpdateVisualOnSkinChange>true</SimpleUpdateVisualOnSkinChange>
+
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MirroringY>Z</MirroringY>
+	    <MirroringZ>Y</MirroringZ>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<RequiredPowerInput>0.00002</RequiredPowerInput>
+            <PCU>250</PCU>
+            <IsAirTight>true</IsAirTight>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\DecoyDispenser_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\DecoyDispenser_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\DecoyDispenser_BS3.mwm"/>
+			</BuildProgressModels>
+        </Definition>
+
+	</CubeBlocks>
+</Definitions>

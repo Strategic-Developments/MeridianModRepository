@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Sounds>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>AES_PDC_ND6M40_FireClose</SubtypeId>
+			</Id>
+			<Category>SHOT</Category>
+			<MaxDistance>1000</MaxDistance>
+			<PreventSynchronization>0</PreventSynchronization>
+			<DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+			<DynamicMusicAmount>3</DynamicMusicAmount>
+			<Volume>1</Volume>
+			<DistantSounds>
+				<DistantSound DistanceCrossFade="50" Distance="500" Sound = "AES_PDC_ND6M40_FireFar" />
+			</DistantSounds>				
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Aryx\PDC\Aryx_6M40_Fire_Close_01.wav</Start>
+				</Wave>
+				<Wave Type="D3">
+					<Start>Audio\Aryx\PDC\Aryx_6M40_Fire_Close_02.wav</Start>
+				</Wave>
+				<Wave Type="D3">
+					<Start>Audio\Aryx\PDC\Aryx_6M40_Fire_Close_03.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>AES_PDC_ND6M40_FireFar</SubtypeId>
+			</Id>
+			<Category>SHOT</Category>
+			<MaxDistance>1000</MaxDistance>
+			<PreventSynchronization>0</PreventSynchronization>
+			<DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+			<DynamicMusicAmount>3</DynamicMusicAmount>
+			<Volume>1</Volume>				
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Aryx\PDC\Aryx_6M40_Fire_Far_01.wav</Start>
+				</Wave>
+				<Wave Type="D3">
+					<Start>Audio\Aryx\PDC\Aryx_6M40_Fire_Far_02.wav</Start>
+				</Wave>
+				<Wave Type="D3">
+					<Start>Audio\Aryx\PDC\Aryx_6M40_Fire_Far_03.wav</Start>
+				</Wave>
+			</Waves>
+		</Sound>		
+ 
+ 
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>AES_PDC_ND6M40_DeployOpen</SubtypeId>
+			</Id>
+			<Category>SHOT</Category>
+			<MaxDistance>80</MaxDistance>
+			<PreventSynchronization>0</PreventSynchronization>
+			<Volume>1</Volume>			
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Aryx\PDC\Aryx_6M40_Deploy_01.wav</Start>
+				</Wave>
+			</Waves>		
+		</Sound>
+		<Sound>
+			<Id>
+				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+				<SubtypeId>AES_PDC_ND6M40_DeployClose</SubtypeId>
+			</Id>
+			<Category>SHOT</Category>
+			<MaxDistance>80</MaxDistance>
+			<PreventSynchronization>0</PreventSynchronization>
+			<Volume>1</Volume>			
+			<Waves>
+				<Wave Type="D3">
+					<Start>Audio\Aryx\PDC\Aryx_6M40_Close_01.wav</Start>
+				</Wave>
+			</Waves>		
+		</Sound>		
+	</Sounds> 
+</Definitions>

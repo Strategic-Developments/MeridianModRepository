@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Ammos>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>MCRNTorpedoLauncher_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>UNNTorpedoLauncher_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>MCRN40mm_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>OPAAutocannonPDC_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>OPAFlak_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>UNNAmmoPDC_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>UNNRailgunSabotAmmo_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>BelterRailgunSabotAmmo_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>MCRNRailgunSabotAmmo_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>MCRNHeavyRailgunSabotAmmo_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>OPATorpedo_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+        <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>UNNInterceptorMissile_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+       <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>Decoy_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+       <Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+            <Id>
+                <TypeId>AmmoDefinition</TypeId>
+                <SubtypeId>OPAArtilleryHE_Ammo</SubtypeId>
+            </Id>
+            <BasicProperties>
+                <DesiredSpeed>800</DesiredSpeed>
+                <SpeedVariance>0</SpeedVariance>
+                <MaxTrajectory>1600</MaxTrajectory>
+                <BackkickForce>300</BackkickForce>
+                <PhysicalMaterial>GunBullet</PhysicalMaterial>
+            </BasicProperties>
+            <ProjectileProperties>
+                <ProjectileTrailScale>0.2</ProjectileTrailScale>
+                <ProjectileHitImpulse>2</ProjectileHitImpulse>
+                <ProjectileMassDamage>120</ProjectileMassDamage>
+                <ProjectileHealthDamage>60</ProjectileHealthDamage>
+                <HeadShot>true</HeadShot>
+            </ProjectileProperties>
+        </Ammo>
+
+    </Ammos>
+</Definitions>

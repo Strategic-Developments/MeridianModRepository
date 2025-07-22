@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>MCRNHeavyRailgunTurret_Block</SubtypeId>
+			</Id>
+			<DisplayName>VX-12 Foehammer Heavy railgun turret [MCRN]</DisplayName>
+			<Description>One of the biggest ship grade railgun turrets ever built. Deals massive damage and has increased max range.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\MCRNHeavyRailgunTurret.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="3" z="17"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\MCRNHeavyRailgunTurret.mwm</Model>
+			<Components>
+							<Component Subtype="OpLicense" Count="4" />
+                          <Component Subtype="SteelPlate" Count="1000" />
+                          <Component Subtype="MetalGrid" Count="200" />
+                          <Component Subtype="Construction" Count="300" />
+						  	
+                          <Component Subtype="Superconductor" Count="500" />
+                          <Component Subtype="Thrust" Count="200" />
+                          <Component Subtype="PowerCell" Count="500"/>
+                          <Component Subtype="Computer" Count="1000" />
+                          <Component Subtype="MetalGrid" Count="80" />
+                          <Component Subtype="SteelPlate" Count="500" />
+						  
+			</Components>
+			<CriticalComponent Index="0" Subtype="Computer"/>
+			<Center x="2" y="0" z="13" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.33" StartY="10.95" EndX="4.67" EndY="16.05" Default="true" PressurizedWhenOpen="true"/>
+			</MountPoints>
+			<BuildTimeSeconds>90</BuildTimeSeconds>
+			<BlockPairName>MCRNHeavyRailgunTurret_Block</BlockPairName>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<RequiredPowerInput>0.00002</RequiredPowerInput>
+			<PCU>1200</PCU>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\MCRNHeavyRailgunTurret_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\MCRNHeavyRailgunTurret_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\MCRNHeavyRailgunTurret_BS3.mwm"/>
+			</BuildProgressModels>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>

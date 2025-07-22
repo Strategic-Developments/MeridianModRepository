@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AES_NARIMAN_40MM_AMMOMAGAZINE_BP</SubtypeId>
+			</Id>
+            <DisplayName>MCRN 600x 77x40mm AP Ammo Box</DisplayName>
+			<Icon>Textures\GUI\Icons\Aryx\AES6M40AMMO.dds</Icon>
+			<Prerequisites>
+				<Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+				<Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
+				<Item Amount="5" TypeId="Ingot" SubtypeId="Magnesium" />
+				<Item Amount="1" TypeId="Ingot" SubtypeId="Cobalt" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AES_NARIMAN_40MM_AMMOMAGAZINE" />
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+		</Blueprint> 
+	</Blueprints>
+</Definitions>

@@ -1,0 +1,718 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>TorpIFF</SubtypeId>
+			</Id>
+			<DisplayName>Payload IFF Reflector</DisplayName>
+			<Description>This is an IFF reflector for use aboard torpedoes so you can tell which are yours and which aren't. </Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpIFF.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpIFF.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="SmallTube" Count="1" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="Computer" Count="1" />
+                <Component Subtype="RadioCommunication" Count="4" />
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="RadioCommunication" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpIFF</BlockPairName>
+		</Definition>
+
+
+
+		<Definition xsi:type="MyObjectBuilder_RadioAntennaDefinition">
+			<Id>
+				<TypeId>RadioAntenna</TypeId>
+				<SubtypeId>TorpAntenna</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Payload Antenna</DisplayName>
+			<Description>A payload-module-mounted antenna, this unit is built for high-speed communication across the void. </Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpAntenna.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpAntenna.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="SmallTube" Count="1" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="Computer" Count="1" />
+                <Component Subtype="RadioCommunication" Count="4" />
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="RadioCommunication" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpAntenna</BlockPairName>
+			 <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <BuildTimeSeconds>16</BuildTimeSeconds>
+			<MaxBroadcastRadius>100000</MaxBroadcastRadius>
+
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>	
+            <PCU>1</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WarheadDefinition">
+			<Id>
+				<TypeId>Warhead</TypeId>
+				<SubtypeId>TorpAuxWarhead</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Payload Warhead</DisplayName>
+			<Description>A payload warhead designed to add more lethality at the consumer's request, this module fits aboard all payload modules.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpAuxWarhead.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpAuxWarhead.mwm</Model>
+			 <Components>
+                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="Computer" Count="1" />
+                <Component Subtype="Superconductor" Count="1" />
+                <Component Subtype="Explosives" Count="5" />
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+			<CriticalComponent Subtype="Explosives" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpAuxWarhead</BlockPairName>
+			  <ExplosionRadius>1</ExplosionRadius>
+            <WarheadExplosionDamage>1</WarheadExplosionDamage>
+            <EmissiveColorPreset>Timer</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <ActionSound>WepLrgWarheadExpl</ActionSound>			
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>1</PCU>
+            <IsAirTight>false</IsAirTight>
+            <TargetingGroups>
+                <string>Weapons</string>
+            </TargetingGroups>	
+		</Definition>
+
+
+		<Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+			<Id>
+				<TypeId>BatteryBlock</TypeId>
+				<SubtypeId>TorpedoBattery</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Battery</DisplayName>
+			<Description>This is a power unit for the CENTURYMAN line of torpedoes - a functional battery. </Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpedoBattery.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpedoBattery.mwm</Model>
+			 <Components>
+                <Component Subtype="SteelPlate" Count="2" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="PowerCell" Count="2">
+                    <DeconstructId>
+                        <TypeId>Ore</TypeId>
+                        <SubtypeId>Scrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Computer" Count="2" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="SteelPlate" Count="2" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpedoBattery</BlockPairName>
+		
+            <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <MaxPowerOutput>50</MaxPowerOutput>
+
+            <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
+            <RequiredPowerInput>0.2</RequiredPowerInput>
+            <MaxStoredPower>1.25</MaxStoredPower>
+            <InitialStoredPowerRatio>1</InitialStoredPowerRatio>
+            <RechargeMultiplier>12</RechargeMultiplier>
+
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <Public>true</Public>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <IsAirTight>true</IsAirTight>
+            <PCU>1</PCU>
+            <TargetingGroups>
+                <string>PowerSystems</string>
+            </TargetingGroups>			
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+			<Id>
+				<TypeId>Thrust</TypeId>
+				<SubtypeId>TorpedoThruster</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Main Thruster</DisplayName>
+			<Description>This thruster is specially-built for the CENTURYMAN torpedo, featuring a highly-efficient yet lightweight drive unit.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpedoThruster.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpedoThruster.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="LargeTube" Count="4" />
+                <Component Subtype="Motor" Count="3" />
+                <Component Subtype="Display" Count="1" />
+                <Component Subtype="Computer" Count="4" />
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpedoThruster</BlockPairName>
+			<BuildTimeSeconds>8</BuildTimeSeconds>
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>400000</ForceMagnitude>
+            <MaxPowerConsumption>18</MaxPowerConsumption>
+            <MinPowerConsumption>0.000001</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+            <FlameDamageLengthScale>0</FlameDamageLengthScale>
+            <FlameLengthScale>2</FlameLengthScale>
+            <IsStandAlone>false</IsStandAlone>
+            <HasPhysics>false</HasPhysics>	
+			<FlameDamage>0</FlameDamage>		
+            <FlameIdleColor>
+                <X>0</X>
+                <Y>0</Y>
+                <Z>0</Z>
+                <W>0</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>0.95</Z>
+                <W>1</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+            <FlameGlareMaterial>GlareLsThrustSmall</FlameGlareMaterial>
+            <FlameVisibilityDistance>250</FlameVisibilityDistance>
+            <FlameGlareSize>.5</FlameGlareSize>
+            <FlameGlareQuerySize>.5</FlameGlareQuerySize>
+            <PrimarySound>LrgShipSmJet</PrimarySound>			
+		</Definition>		
+		
+
+		<Definition xsi:type="MyObjectBuilder_GyroDefinition">
+			<Id>
+				<TypeId>Gyro</TypeId>
+				<SubtypeId>TorpGyroscope</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Gyroscope</DisplayName>
+			<Description>Designed for use aboard CENTURYMAN torpedo frames, this is an otherwise unchanged gyroscope.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpGyroscope.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpGyroscope.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="10" />
+                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="LargeTube" Count="2" />
+                <Component Subtype="Motor" Count="3" />
+                <Component Subtype="Display" Count="1" />
+                <Component Subtype="Computer" Count="2" />
+                <Component Subtype="SteelPlate" Count="5" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpGyroscope</BlockPairName>
+		<PrimarySound>BlockGyroscope</PrimarySound>
+
+            <ResourceSinkGroup>Gyro</ResourceSinkGroup>
+            <ForceMagnitude>200000</ForceMagnitude>
+            <RequiredPowerInput>0.0002</RequiredPowerInput>
+
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>1</PCU>
+            <IsAirTight>false</IsAirTight>
+            <TargetingGroups>
+                <string>Propulsion</string>
+            </TargetingGroups>			
+		</Definition>
+
+		<Definition>
+			<Id>
+				<TypeId>CubeBlock</TypeId>
+				<SubtypeId>TorpPayload</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Payload Module</DisplayName>
+			<Description>Machined for the CENTURYMAN line of torpedoes, this payload module offers endless customization options for missile packages.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpPayload.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpPayload.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="15" />
+                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="LargeTube" Count="2" />
+                <Component Subtype="Motor" Count="3" />
+                <Component Subtype="Display" Count="1" />
+               
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="SteelPlate" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpPayload</BlockPairName>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_ProgrammableBlockDefinition">
+			<Id>
+				<TypeId>MyProgrammableBlock</TypeId>
+				<SubtypeId>TorpProgBlock</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Programmable Block</DisplayName>
+			<Description>Custom-tooled for use aboard torpedo frames, this is an otherwise unchanged programmable block. </Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpProgBlock.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpProgBlock.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="LargeTube" Count="2" />
+                <Component Subtype="Motor" Count="1" />
+                <Component Subtype="Display" Count="1" />
+                <Component Subtype="Computer" Count="2" />
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpProgBlock</BlockPairName>
+		</Definition>
+
+
+
+		<Definition  xsi:type="MyObjectBuilder_TimerBlockDefinition">
+			<Id>
+				<TypeId>TimerBlock</TypeId>
+				<SubtypeId>TorpTimer</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Timer Block</DisplayName>
+			<Description>Custom-tooled for use aboard torpedo frames, this is an otherwise unchanged timer block. </Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpProgBlock.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpProgBlock.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="LargeTube" Count="2" />
+                <Component Subtype="Motor" Count="1" />
+                <Component Subtype="Display" Count="1" />
+                <Component Subtype="Computer" Count="2" />
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpTimer</BlockPairName>
+		<ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <BuildTimeSeconds>10</BuildTimeSeconds>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <PrimarySound>BlockTimer</PrimarySound>
+            <TimerSoundStart>BlockTimerSignalA</TimerSoundStart>
+            <TimerSoundMid>BlockTimerSignalB</TimerSoundMid>
+            <TimerSoundEnd>BlockTimerSignalC</TimerSoundEnd>
+           
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <PCU>25</PCU>
+            <IsAirTight>true</IsAirTight>
+        </Definition>
+		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+			<Id>
+				<TypeId>Thrust</TypeId>
+				<SubtypeId>TorpRCS</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo RCS Thruster</DisplayName>
+			<Description>Designed for reaction-control aboard torpedo frames, this highly-efficient thruster is perfect for spaceborne engagements.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpRCS.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpRCS.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="15" />
+                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="LargeTube" Count="1" />
+                <Component Subtype="Motor" Count="1" />
+                <Component Subtype="Display" Count="1" />
+                <Component Subtype="Computer" Count="2" />
+                <Component Subtype="SteelPlate" Count="15" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpRCS</BlockPairName>
+			<BuildTimeSeconds>8</BuildTimeSeconds>
+            <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+            <ForceMagnitude>325000</ForceMagnitude>
+            <MaxPowerConsumption>13</MaxPowerConsumption>
+            <MinPowerConsumption>0.000001</MinPowerConsumption>
+            <SlowdownFactor>1</SlowdownFactor>
+            <FlameDamage>0</FlameDamage>
+            <IsStandAlone>false</IsStandAlone>
+            <HasPhysics>false</HasPhysics>			
+            <FlameIdleColor>
+                <X>0</X>
+                <Y>0</Y>
+                <Z>0</Z>
+                <W>0</W>
+            </FlameIdleColor>
+            <FlameFullColor>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>0.95</Z>
+                <W>1</W>
+            </FlameFullColor>
+            <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+            <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+            <FlameGlareMaterial>GlareLsThrustSmall</FlameGlareMaterial>
+            <FlameVisibilityDistance>250</FlameVisibilityDistance>
+            <FlameGlareSize>.5</FlameGlareSize>
+            <FlameGlareQuerySize>.5</FlameGlareQuerySize>
+            <PrimarySound>LrgShipSmJet</PrimarySound>	
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_RemoteControlDefinition">
+			<Id>
+				<TypeId>RemoteControl</TypeId>
+				<SubtypeId>TorpRemoteControl</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Payload Remote Control</DisplayName>
+			<Description>This remote control is designed to fit snugly aboard torpedo frames.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpRemoteControl.dds</Icon>
+			
+            <YesNoToolbarBackground>true</YesNoToolbarBackground>
+            <YesNoToolbarYesTooltip>YesNoToolbarTooltip_Cockpit_Yes</YesNoToolbarYesTooltip>
+            <YesNoToolbarNoTooltip>YesNoToolbarTooltip_Cockpit_No</YesNoToolbarNoTooltip>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpRemoteControl.mwm</Model>
+			 <Components>
+                <Component Subtype="InteriorPlate" Count="1" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="Motor" Count="1" />
+                <Component Subtype="Computer" Count="1" />
+                <Component Subtype="InteriorPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpRemoteControl</BlockPairName>
+			 <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.01</RequiredPowerInput>
+            <EnableFirstPerson>false</EnableFirstPerson>
+            <EnableShipControl>true</EnableShipControl>
+            <EnableBuilderCockpit>false</EnableBuilderCockpit>
+            <Public>true</Public>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>25</PCU>
+            
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_WarheadDefinition">
+			<Id>
+				<TypeId>Warhead</TypeId>
+				<SubtypeId>TorpWarheadExplosive</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Conventional Warhead</DisplayName>
+			<Description>Designed for the CENTURYMAN frame of torpedo, this warhead packs a conventional high-explosive punch.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpWarheadExplosive.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpWarheadExplosive.mwm</Model>
+			 <Components>
+                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="Computer" Count="1" />
+                <Component Subtype="Superconductor" Count="1" />
+                <Component Subtype="Explosives" Count="5" />
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+			<CriticalComponent Subtype="Explosives" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpWarheadExplosive</BlockPairName>
+			 <ExplosionRadius>1</ExplosionRadius>
+            <WarheadExplosionDamage>1</WarheadExplosionDamage>
+            <EmissiveColorPreset>Timer</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <ActionSound>WepLrgWarheadExpl</ActionSound>			
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>1</PCU>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_MergeBlockDefinition">
+			<Id>
+				<TypeId>MergeBlock</TypeId>
+				<SubtypeId>TorpMerge</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Merge Block</DisplayName>
+			<Description>Custom-tooled for CENTURYMAN torpedo frames, this merge block blends nicely into custom-manufacture missile hulls.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpMerge.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpMerge.mwm</Model>
+			 <Components>
+                <Component Subtype="InteriorPlate" Count="1" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="Motor" Count="1" />
+                <Component Subtype="Computer" Count="1" />
+                <Component Subtype="InteriorPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="1.02" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.02"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpMerge</BlockPairName>
+		</Definition>
+
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>TorpImpulseGunForwards</SubtypeId>
+			</Id>
+			<DisplayName>Payload Compressed Gas Unit Forwards</DisplayName>
+			<Description>This payload module fires out compressed gas when fired to propel torpedoes out of the launching vessel. Handle with care.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpImpulseGunForwards.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpImpulseGunForwards.mwm</Model>
+			 <Components>
+                <Component Subtype="InteriorPlate" Count="1" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="Motor" Count="1" />
+                <Component Subtype="Computer" Count="1" />
+                <Component Subtype="InteriorPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpImpulseGunForwards</BlockPairName>
+		</Definition>
+
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>TorpImpulseGunUp</SubtypeId>
+			</Id>
+			<DisplayName>Payload Compressed Gas Unit Up</DisplayName>
+			<Description>This payload module fires out compressed gas when fired to propel torpedoes out of the launching vessel. Handle with care.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpImpulseGun.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpImpulseGunUp.mwm</Model>
+			 <Components>
+                <Component Subtype="InteriorPlate" Count="1" />
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="Motor" Count="1" />
+                <Component Subtype="Computer" Count="1" />
+                <Component Subtype="InteriorPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpImpulseGunUp</BlockPairName>
+		</Definition>
+
+
+
+
+			<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>TorpIRSensor</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Infrared Sensor</DisplayName>
+			<Description>Infrared sensor designed for torpedo frames. Tracks heat signatures of targets, rather than their RCS.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpIRSensor.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpIRSensor.mwm</Model>
+			 <Components>
+                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="Computer" Count="3" />
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpIRSensor</BlockPairName>
+			 <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.00003</RequiredPowerInput>
+			
+            <OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <Public>true</Public>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyed_Small</DestroyEffect>
+            <DestroySound>PoofExplosionCat1</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+		</Definition>
+
+
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>TorpSensor</SubtypeId>
+			</Id>
+			<DisplayName>Torpedo Radar Sensor</DisplayName>
+			<Description>Rudimentary radar sensor built for torpedo frames to assist their terminal guidance.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\TorpWarheadExplosive.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\small\TorpSensor.mwm</Model>
+			 <Components>
+                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="Computer" Count="3" />
+                <Component Subtype="SteelPlate" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>TorpSensor</BlockPairName>
+		 <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.00003</RequiredPowerInput>
+            <OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <Public>true</Public>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyed_Small</DestroyEffect>
+            <DestroySound>PoofExplosionCat1</DestroySound>
+            <PCU>25</PCU>
+            <IsAirTight>false</IsAirTight>
+        </Definition>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</CubeBlocks>
+</Definitions>

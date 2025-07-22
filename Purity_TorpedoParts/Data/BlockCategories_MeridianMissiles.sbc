@@ -1,0 +1,54 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId>PurityMissileParts</SubtypeId>
+      </Id>
+      <DisplayName>Meridian Missile Parts</DisplayName>
+      <Name>PurityMissileParts</Name>
+      <ItemIds>
+       
+		
+        <string>RadioAntenna/TorpAntenna</string>		
+
+        <string>Warhead/TorpAuxWarhead</string>		
+
+        <string>BatteryBlock/TorpedoBattery</string>		
+
+        <string>Thrust/TorpedoThruster</string>		
+
+        <string>Gyro/TorpGyroscope</string>		
+
+        <string>CubeBlock/TorpPayload</string>		
+
+        <string>MyProgrammableBlock/TorpProgBlock</string>		
+
+        <string>Thrust/TorpRCS</string>		
+
+        <string>RemoteControl/TorpRemoteControl</string>		
+
+        <string>Warhead/TorpWarheadExplosive</string>		
+
+        <string>MergeBlock/TorpMerge</string>		
+
+        <string>CameraBlock/TorpSensor</string>		
+        <string>CameraBlock/TorpIRSensor</string>		
+
+        <string>ConveyorSorter/TorpImpulseGunUp</string>		
+        <string>ConveyorSorter/TorpImpulseGunForwards</string>		
+        <string>ConveyorSorter/TorpIFF</string>	 
+
+
+
+
+
+
+
+      </ItemIds>
+    </Category>
+
+  </CategoryClasses>
+</Definitions>	

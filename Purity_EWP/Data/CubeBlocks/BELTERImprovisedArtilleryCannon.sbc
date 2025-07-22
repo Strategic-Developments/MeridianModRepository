@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>OPAArtillery_Block</SubtypeId>
+			</Id>
+			<DisplayName>Belter Improvised Artillery Cannon [BELTER]</DisplayName>
+			<Description>Old anti-meteorite 180mm cannon repurposed by belter pirates to deliver explosive payloads to enemy ships instead. Has greater range than PDCs and 3 alternative ammo types - Explosive, Armor-piercing and EMP.</Description>
+			<Icon>Textures\GUI\Icons\Cubes\BelterImprovisedArtilleryCannon.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\BelterImprovisedArtilleryCannon.mwm</Model>
+			<Components>
+			  <Component Subtype="SteelPlate" Count="150" />
+			  <Component Subtype="Construction" Count="150" />
+			  <Component Subtype="MetalGrid" Count="30" />				
+			  <Component Subtype="LargeTube" Count="200" />
+			  <Component Subtype="Motor" Count="100" />
+			  <Component Subtype="Detector" Count="50" />
+			  <Component Subtype="Computer" Count="400" />
+			  <Component Subtype="SteelPlate" Count="160" />
+			</Components>
+			<CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="1.89" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.11" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.11"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="1.89" EndX="1.00" EndY="3.00"/>
+			</MountPoints>
+			<BuildTimeSeconds>90</BuildTimeSeconds>
+			<BlockPairName>OPAArtillery_Block</BlockPairName>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<RequiredPowerInput>0.00002</RequiredPowerInput>
+			<PCU>600</PCU>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\BelterImprovisedArtilleryCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\BelterImprovisedArtilleryCannon_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\BelterImprovisedArtilleryCannon_BS3.mwm"/>
+			</BuildProgressModels>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>

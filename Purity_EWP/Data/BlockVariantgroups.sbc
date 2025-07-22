@@ -1,0 +1,43 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<BlockVariantGroups>
+
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MCRNPointDefenceCannonShapes" />
+			<Icon>Textures\GUI\Icons\Cubes\MCRNRetractablePDC.dds</Icon>
+			<DisplayName>40mm Nariman Retractable PDC [MCRN]</DisplayName>
+			<Description>40mm Nariman Retractable PDC [MCRN]</Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNRetractablePDC_Block" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNRetractablePDCMIRRORED_Block" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNRetractablePDCSlope_Block" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNRetractablePDCSlopeMIRRORED_Block" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNRetractablePDCSlopeAlt_Block" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNRetractablePDCSlopeAltMIRRORED_Block" />
+			</Blocks>
+		</BlockVariantGroup>
+
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="MCRNTorpedoLauncherShapes" />
+			<Icon>Textures\GUI\Icons\Cubes\MCRNTorpedoLauncherFlat.dds</Icon>
+			<DisplayName>Torpedo Launcher [MCRN]</DisplayName>
+			<Description>Torpedo Launcher [MCRN]</Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNTorpedoLauncherFlat_Block" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="MCRNTorpedoLauncherSlope_Block" />
+			</Blocks>
+		</BlockVariantGroup>
+
+		<BlockVariantGroup>
+			<Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="PTGNMountedPDCShapes" />
+			<Icon>Textures\GUI\Icons\Cubes\PTGNMountedPDC.dds</Icon>
+			<DisplayName>Bush Shipyards Hypercooled PDC [UNN]</DisplayName>
+			<Description>Bush Shipyards Hypercooled PDC [UNN]</Description>
+			<Blocks>
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="PTGNMountedPDC_Block" />
+				<Block Type="MyObjectBuilder_ConveyorSorter" Subtype="PTGNMountedPDCSlope_Block" />
+			</Blocks>
+		</BlockVariantGroup>
+
+	</BlockVariantGroups>
+</Definitions>

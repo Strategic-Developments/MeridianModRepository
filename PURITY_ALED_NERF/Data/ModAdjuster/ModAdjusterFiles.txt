@@ -1,0 +1,28 @@
+Atmos/AtmosphericThruster_Forced.xml
+Atmos/AtmosphericThrusters_SciFi.xml
+Atmos/AtmosphericThrusters.xml
+Atmos/HydrogenTank.xml
+Atmos/BlockVariantGroups.xml
+Large/Fusion Drive.xml
+Large/2x2ThrusterZAC.xml
+Large/Large5x5RocketThruster.xml
+Large/LargeTripleThruster HEAT.xml
+Large/LargeTripleThrusterHeatNoShroud.xml
+Large\RCS2Bare.xml
+Large\RCS2Cube.xml
+Large\RCS2Half.xml
+Large\RCS2Slope.xml
+Large\RCS21x2Slope1.xml
+Large\RCS21x2Slope2.xml
+Large\retractable thruster.xml
+Large\RetractableThrusterAlt.xml
+Small\RcsSmallBare.xml
+Small\RcsSmallCube.xml
+Small\RcsSmallHalf.xml
+Small\RcsSmallSlope.xml
+Small\RcsSmallSlope1x2BaseVar1.xml
+Small\RcsSmallSlope1x2BaseVar2.xml
+Small\RetractableThrusterAltSG.xml
+Small\RetractableThrusterSG.xml
+Small\Small3x3Thruster.xml
+Small\Small3x3ThrusterNoShroud.xml

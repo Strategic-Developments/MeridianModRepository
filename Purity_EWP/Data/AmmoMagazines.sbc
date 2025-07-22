@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <AmmoMagazines>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>MCRNTorpedoLauncher_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>MCRN Torpedo</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\MCRNTorpedo.dds</Icon>
+            <Size>
+                <X>5</X>
+                <Y>5</Y>
+                <Z>5</Z>
+            </Size>
+            <Mass>1800</Mass>
+            <Volume>3000</Volume>
+            <Model>Models\Cubes\large\MCRNTorpedo.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="MCRNTorpedoLauncher_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>UNNTorpedoLauncher_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>UNN Torpedo</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\UNNTorpedo.dds</Icon>
+            <Size>
+                <X>5</X>
+                <Y>5</Y>
+                <Z>5</Z>
+            </Size>
+            <Mass>1800</Mass>
+            <Volume>3000</Volume>
+            <Model>Models\Cubes\large\UNNTorpedo.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="UNNTorpedoLauncher_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>MCRN40mm_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>MCRN 40mm Ammo Box</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\MCRNAmmoPDC.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>50</Mass>
+            <Volume>50</Volume>
+            <Model>Models\Ammo\MCRNAmmoPDC.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>300</Capacity>
+            <AmmoDefinitionId Subtype="MCRN40mm_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>OPAAutocannonPDC_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>OPA Autocannon Ammo</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\OPAAutocannonMagazine.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>7</Mass>
+            <Volume>10</Volume>
+            <Model>Models\Ammo\OPAAutocannonMagazine.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>20</Capacity>
+            <AmmoDefinitionId Subtype="OPAAutocannonPDC_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>UNN40mm_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>UNN 40mm Ammo Box</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\UNNAmmoPDC.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>50</Mass>
+            <Volume>50</Volume>
+            <Model>Models\Ammo\UNNAmmoPDC.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>450</Capacity>
+            <AmmoDefinitionId Subtype="UNNAmmoPDC_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>OPAFlak_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>OPA Flak Cannon Ammo Box</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\OPAFlakAmmoBox.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>50</Mass>
+            <Volume>50</Volume>
+            <Model>Models\Ammo\OPAFlakAmmoBox.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>35</Capacity>
+            <AmmoDefinitionId Subtype="OPAFlak_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>UNNRailgunSabotAmmo_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>UNN Light Railgun Sabot</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\UNNRailgunSabotAmmo.dds</Icon>
+            <Size>
+                 <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>50</Mass>
+            <Volume>50</Volume>
+            <Model>Models\Ammo\UNNRailgunSabotAmmo.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="UNNRailgunSabotAmmo_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>BelterRailgunSabotAmmo_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>Belter Railgun Sabot</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\BelterRailgunSabotAmmo.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>50</Mass>
+            <Volume>50</Volume>
+            <Model>Models\Ammo\BelterRailgunSabotAmmo.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="BelterRailgunSabotAmmo_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>MCRNRailgunSabotAmmo_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>MCRN Light Railgun Sabot</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\MCRNRailgunSabotAmmo.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>50</Mass>
+            <Volume>50</Volume>
+            <Model>Models\Ammo\MCRNRailgunSabotAmmo.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="MCRNRailgunSabotAmmo_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>MCRNHeavyRailgunSabotAmmo_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>MCRN Heavy Railgun Sabot</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\MCRNHeavyRailgunSabotAmmo.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>75</Mass>
+            <Volume>75</Volume>
+            <Model>Models\Ammo\MCRNHeavyRailgunSabotAmmo.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="MCRNHeavyRailgunSabotAmmo_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>OPATorpedo_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>OPA torpedo</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\OPATorpedo.dds</Icon>
+            <Size>
+                <X>5</X>
+                <Y>5</Y>
+                <Z>5</Z>
+            </Size>
+            <Mass>750</Mass>
+            <Volume>1000</Volume>
+            <Model>Models\Cubes\large\OPATorpedo.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="OPATorpedo_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>UNNInterceptorMissile_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>UNN Interceptor Missile</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\UNNInterceptorMissileAmmo.dds</Icon>
+            <Size>
+                <X>5</X>
+                <Y>5</Y>
+                <Z>5</Z>
+            </Size>
+            <Mass>750</Mass>
+            <Volume>1000</Volume>
+            <Model>Models\Cubes\large\UNNInterceptorMissileAmmo.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="UNNInterceptorMissile_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>OPADecoy_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>OPA Decoy</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\DecoyAmmo.dds</Icon>
+            <Size>
+                <X>0.2</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>10</Mass>
+            <Volume>10</Volume>
+            <Model>Models\Ammo\DecoyAmmo.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="Decoy_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>OPAArtilleryHE_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>Belter Artillery 180mm HE Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\BelterArtilleryAmmoHE.dds</Icon>
+            <Icon>Textures\GUI\Icons\Extra\ExplosiveIcon.dds</Icon>
+            <Size>
+                <X>0.2</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>75</Mass>
+            <Volume>75</Volume>
+            <Model>Models\Ammo\BelterArtilleryAmmoHE.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="OPAArtilleryHE_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>OPAArtilleryAP_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>Belter Artillery 180mm AP Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\BelterArtilleryAmmoAP.dds</Icon>
+            <Icon>Textures\GUI\Icons\Extra\AntiArmorIcon.dds</Icon>
+            <Size>
+                <X>0.2</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>75</Mass>
+            <Volume>75</Volume>
+            <Model>Models\Ammo\BelterArtilleryAmmoAP.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="OPAArtilleryHE_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>OPAArtilleryEMP_Magazine</SubtypeId>
+            </Id>
+            <DisplayName>Belter Artillery 180mm EMP Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\BelterArtilleryAmmoEMP.dds</Icon>
+            <Icon>Textures\GUI\Icons\Extra\EMPIcon.dds</Icon>
+            <Size>
+                <X>0.2</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size>
+            <Mass>75</Mass>
+            <Volume>75</Volume>
+            <Model>Models\Ammo\BelterArtilleryAmmoEMP.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="OPAArtilleryHE_Ammo" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+
+    </AmmoMagazines>
+</Definitions>

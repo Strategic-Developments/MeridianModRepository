@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <PhysicalItems>
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ore</TypeId>
+                <SubtypeId>Hexa_Ore</SubtypeId>
+            </Id>
+            <DisplayName>Hexadrine</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemicalBarrel.dds</Icon>
+            <Size>
+                <X>0.07</X>
+                <Y>0.07</Y>
+                <Z>0.07</Z>
+            </Size>
+            <Mass>0.98</Mass>
+            <Volume>0.37</Volume>
+            <Model>Models\Ingots\ChemicalBarrel.mwm</Model>
+            <PhysicalMaterial>Stone</PhysicalMaterial>
+            <IconSymbol>Hexa</IconSymbol>
+            <MinimalPricePerUnit>150</MinimalPricePerUnit>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>500</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ore</TypeId>
+                <SubtypeId>Cyclo_Ore</SubtypeId>
+            </Id>
+            <DisplayName>Cyclocerin</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemicalBarrel.dds</Icon>
+            <Size>
+                <X>0.07</X>
+                <Y>0.07</Y>
+                <Z>0.07</Z>
+            </Size>
+            <Mass>0.98</Mass>
+            <Volume>0.37</Volume>
+            <Model>Models\Ingots\ChemicalBarrel.mwm</Model>
+            <PhysicalMaterial>Stone</PhysicalMaterial>
+            <IconSymbol>Cyclo</IconSymbol>
+            <MinimalPricePerUnit>150</MinimalPricePerUnit>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>500</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+
+
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ore</TypeId>
+                <SubtypeId>Thala_Ore</SubtypeId>
+            </Id>
+            <DisplayName>Thaladrine</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemicalBarrel.dds</Icon>
+            <Size>
+                <X>0.07</X>
+                <Y>0.07</Y>
+                <Z>0.07</Z>
+            </Size>
+            <Mass>0.98</Mass>
+            <Volume>0.37</Volume>
+            <Model>Models\Ingots\ChemicalBarrel.mwm</Model>
+            <PhysicalMaterial>Stone</PhysicalMaterial>
+            <IconSymbol>Thala</IconSymbol>
+            <MinimalPricePerUnit>150</MinimalPricePerUnit>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>500</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ore</TypeId>
+                <SubtypeId>Methyl_Ore</SubtypeId>
+            </Id>
+            <DisplayName>Methylaurate</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemicalBarrel.dds</Icon>
+            <Size>
+                <X>0.07</X>
+                <Y>0.07</Y>
+                <Z>0.07</Z>
+            </Size>
+            <Mass>0.98</Mass>
+            <Volume>0.37</Volume>
+            <Model>Models\Ingots\ChemicalBarrel.mwm</Model>
+            <PhysicalMaterial>Stone</PhysicalMaterial>
+            <IconSymbol>Methyl</IconSymbol>
+            <MinimalPricePerUnit>150</MinimalPricePerUnit>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>500</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+
+
+		<PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Hexon_Ingot</SubtypeId>
+            </Id>
+            <DisplayName>Hexon Sample</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemBox.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>0.127</Volume>
+            <Model>Models\Ingots\DMSO_Ore.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Hexon</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Pyrmid_Ingot</SubtypeId>
+            </Id>
+            <DisplayName>Pyrmidine Sample</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp1.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>1</Volume>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Pyr</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+
+
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Oxycarbide_Ingot</SubtypeId>
+            </Id>
+            <DisplayName>Oxycarbide Sample</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp1.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>1</Volume>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Oxy</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Cycline_Ingot</SubtypeId>
+            </Id>
+            <DisplayName>Cycline Sample</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp1.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>1</Volume>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Cyc</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Auriculene_Ingot</SubtypeId>
+            </Id>
+            <DisplayName>Auriculene Sample</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp1.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>1</Volume>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Auri</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Thalon_Ingot</SubtypeId>
+            </Id>
+            <DisplayName>Thalon Sample</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp1.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>1</Volume>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Thalon</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Thalanine_Ingot</SubtypeId>
+            </Id>
+            <DisplayName>Thalanine Sample</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp1.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>1</Volume>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Thala</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Methylamine_Ingot</SubtypeId>
+            </Id>
+            <DisplayName>Methlyamine Sample</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp1.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>1</Volume>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Meth</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Morphazine_Ingot</SubtypeId>
+            </Id>
+            <DisplayName>Morphazine Sample</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp1.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>1</Volume>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Morph</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Trihexon</SubtypeId>
+            </Id>
+            <DisplayName>Trihexon</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>5</Volume>
+            <Model>Models\Ingots\ChemComp2.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Tri</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Dicycline</SubtypeId>
+            </Id>
+            <DisplayName>Dicycline</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>5</Volume>
+            <Model>Models\Ingots\ChemComp2.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Dicyc</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Auron</SubtypeId>
+            </Id>
+            <DisplayName>Auron</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>5</Volume>
+            <Model>Models\Ingots\ChemComp2.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Auron</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Neurocline</SubtypeId>
+            </Id>
+            <DisplayName>Neurocline</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>5</Volume>
+            <Model>Models\Ingots\ChemComp2.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Neur</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Myothene</SubtypeId>
+            </Id>
+            <DisplayName>Myothene</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>5</Volume>
+            <Model>Models\Ingots\ChemComp2.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Myo</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Mirazine</SubtypeId>
+            </Id>
+            <DisplayName>Mirazine</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>5</Volume>
+            <Model>Models\Ingots\ChemComp2.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Mir</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+        <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>DMSO</SubtypeId>
+            </Id>
+            <DisplayName>DMSO</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\DMSO_Ore.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>15</Volume>
+            <Model>Models\Ingots\DMSO_Ore.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>DMSO</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Hexox</SubtypeId>
+            </Id>
+            <DisplayName>Hexox</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemVial.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>15</Volume>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Hexox</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Neurofluon</SubtypeId>
+            </Id>
+            <DisplayName>Neurofluon</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp3.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>15</Volume>
+            <Model>Models\Ingots\ChemComp3.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Neuro</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Crystane</SubtypeId>
+            </Id>
+            <DisplayName>Crystane</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemComp3.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>15</Volume>
+            <Model>Models\Ingots\ChemComp3.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Crys</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+         <PhysicalItem>
+            <Id>
+                <TypeId>Ingot</TypeId>
+                <SubtypeId>Myothyrate</SubtypeId>
+            </Id>
+            <DisplayName>Myothyrate</DisplayName>
+            <Icon>Textures\GUI\Icons\ingot\ChemVial.dds</Icon>
+            <Size>
+                <X>0.05</X>
+                <Y>0.05</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1</Mass>
+            <Volume>15</Volume>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <IconSymbol>Myoth</IconSymbol>
+            <MinimumOfferAmount>1000</MinimumOfferAmount>
+            <MaximumOfferAmount>10000</MaximumOfferAmount>
+            <MinimumOrderAmount>1000</MinimumOrderAmount>
+            <MaximumOrderAmount>20000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
+        </PhysicalItem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </PhysicalItems>
+</Definitions>

@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Weapons>
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>MCRNTorpedoLauncher_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="MCRNTorpedoLauncher_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon>  
+
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>UNNTorpedoLauncher_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="UNNTorpedoLauncher_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon>  
+
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>EWP_GenericPDC_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="MCRN40mm_Magazine" />
+			<AmmoMagazine Subtype="UNN40mm_Magazine" />
+			<AmmoMagazine Subtype="OPAFlak_Magazine" />
+			<AmmoMagazine Subtype="OPAAutocannonPDC_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon>  
+
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>UNNRailgun_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="UNNRailgunSabotAmmo_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon> 
+
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>BelterRailgun_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="BelterRailgunSabotAmmo_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon> 
+
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>MCRNRailgun_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="MCRNRailgunSabotAmmo_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon> 
+
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>MCRNHeavyRailgun_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="MCRNHeavyRailgunSabotAmmo_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon> 
+
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>OPATorpedo_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="OPATorpedo_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon> 
+
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>UNNInterceptorMissileLauncher_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="UNNInterceptorMissile_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon> 
+
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>DecoyDispenser_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="OPADecoy_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon> 
+
+	<Weapon>
+		<Id>
+			<TypeId>WeaponDefinition</TypeId>
+			<SubtypeId>OPAArtillery_Weapon</SubtypeId>
+		</Id>
+		<ProjectileAmmoData RateOfFire="30" ShootSoundName="" ShotsInBurst="1" />
+		<ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+		<DeviateShotAngle>10</DeviateShotAngle>
+		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
+		<AmmoMagazines>
+			<AmmoMagazine Subtype="OPAArtilleryHE_Magazine" />
+			<AmmoMagazine Subtype="OPAArtilleryAP_Magazine" />
+			<AmmoMagazine Subtype="OPAArtilleryEMP_Magazine" />
+		</AmmoMagazines>
+		<ReloadTime>1500</ReloadTime>
+	</Weapon> 
+
+  </Weapons>
+</Definitions>

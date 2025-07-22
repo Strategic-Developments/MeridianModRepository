@@ -1,0 +1,128 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>Aryx_AES_6M40_PDC</SubtypeId>
+			</Id>
+			<DisplayName>Nariman Dynamics 6M40 Rotary PDC</DisplayName>
+			<Icon>Textures\GUI\Icons\Aryx\AES6M40PDC.dds</Icon>	  
+			<Description>A fully-retractable rotary PDC designed for MCRN warships by Nariman Dynamics.
+			[Stats - -
+			Range: 4000m
+			Rate of Fire: 1200RPM
+			Damage Per Shot: 120
+			SG Mult: 2x
+			Tracking Speed: Excellent
+			Round Velocity: 1500m/s
+			]
+			Warning - Will have strange behaviours if retracted in Manual or Painter control mode.
+			</Description>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_Base.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="50" />	
+				<Component Subtype="Construction" Count="25" />				
+				<Component Subtype="Girder" Count="25" />
+				<Component Subtype="Motor" Count="25" />					
+				<Component Subtype="Detector" Count="5" />				
+				<Component Subtype="Computer" Count="100" />
+				<Component Subtype="SteelPlate" Count="50"/>		
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_Base_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_Base_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_Base_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>AES_6M40_PDC</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>25</BuildTimeSeconds>
+			<EdgeType>Light</EdgeType>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<InventoryMaxVolume>0.5</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>250</PCU>      
+			<TargetingGroups>
+				<string>Weapons</string>
+			</TargetingGroups>	
+		</Definition>	
+	
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>Aryx_AES_6M40_PDC_SG</SubtypeId>
+			</Id>
+			<DisplayName>Nariman Dynamics 6M40 Rotary PDC</DisplayName>
+			<Icon>Textures\GUI\Icons\Aryx\AES6M40PDC.dds</Icon>	  
+			<Description>A fully-retractable rotary PDC designed for MCRN warships by Nariman Dynamics.
+			[Stats - -
+			Range: 4000m
+			Rate of Fire: 1200RPM
+			Damage Per Shot: 120
+			SG Mult: 2x
+			Tracking Speed: Excellent
+			Round Velocity: 1500m/s
+			]
+			Warning - Will have strange behaviours if retracted in Manual or Painter control mode.
+			</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="5" z="10"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_Base.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="50" />	
+				<Component Subtype="Construction" Count="25" />				
+				<Component Subtype="Girder" Count="25" />
+				<Component Subtype="Motor" Count="25" />					
+				<Component Subtype="Detector" Count="5" />				
+				<Component Subtype="Computer" Count="100" />
+				<Component Subtype="SteelPlate" Count="50"/>		
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="10.00" EndY="5.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="10.00" EndY="5.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="10.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_Base_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_Base_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_Base_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>AES_6M40_PDC</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>25</BuildTimeSeconds>
+			<EdgeType>Light</EdgeType>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<InventoryMaxVolume>0.5</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>250</PCU>      
+			<TargetingGroups>
+				<string>Weapons</string>
+			</TargetingGroups>	
+		</Definition>		
+	</CubeBlocks>
+</Definitions>

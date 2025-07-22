@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+            <Id>
+                <TypeId>ConveyorSorter</TypeId>
+                <SubtypeId>MCRNRadarSystem_Block</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Battery Radar System</DisplayName>
+            <Description>This Radar System can spot targets at ranges up to 30KM. Currently, its only purpose is the extension of Weaponcore target lock range</Description>
+	    <GuiVisible>true</GuiVisible>
+	    <Icon>Textures\GUI\Icons\Cubes\MCRNRadarSystem.dds</Icon>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1"/>
+	    <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\large\MCRNRadarSystem.mwm</Model>
+            <Components>
+				<Component Subtype="SteelPlate" Count="30" />
+				<Component Subtype="Construction" Count="90" />
+				<Component Subtype="Superconductor" Count="200" />
+				<Component Subtype="LargeTube" Count="18" />
+				<Component Subtype="Motor" Count="45" />
+   		                <Component Subtype="Detector" Count="50" />
+				<Component Subtype="Computer" Count="500" />
+				<Component Subtype="Construction" Count="60" />
+				<Component Subtype="SteelPlate" Count="30" />
+	    </Components>
+            <CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.23" StartY="0.23" EndX="0.77" EndY="0.77"/>
+			</MountPoints>
+            <BuildTimeSeconds>50</BuildTimeSeconds>
+            <BlockPairName>MCRNRadarSystem_Block</BlockPairName>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <MirroringY>Z</MirroringY>
+	    <MirroringZ>Y</MirroringZ>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<RequiredPowerInput>0.00002</RequiredPowerInput>
+            <PCU>150</PCU>
+	    <IsAirTight>false</IsAirTight>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\MCRNRadarSystem_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\MCRNRadarSystem_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\MCRNRadarSystem_BS3.mwm"/>
+			</BuildProgressModels>
+        </Definition>
+	</CubeBlocks>
+</Definitions>

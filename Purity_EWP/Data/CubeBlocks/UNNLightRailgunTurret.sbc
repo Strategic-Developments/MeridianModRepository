@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>UNNLightRailgunTurret_Block</SubtypeId>
+			</Id>
+			<DisplayName>Dawson-Pattern Medium Railgun Turret [UNN]</DisplayName>
+			<Description> UNN medium railgun. Has limited angle of articulation and relatively slow turn speed, but it's compensated with high damage per shot and 2 alternative ammo types: Armor-piercing (pierces through blocks dealing limited damage to each) and Anti-Hull (deals full damage to block it hits and penetrates if its destroyed). Consumes "UNN light railgun ammo" </Description>
+			<Icon>Textures\GUI\Icons\Cubes\UNNLightRailgunTurret.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="3" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\large\UNNLightRailgunTurret.mwm</Model>
+			<Components>
+						 <Component Subtype="TacLicense" Count="1" />	
+                          <Component Subtype="SteelPlate" Count="150" />
+                          <Component Subtype="MetalGrid" Count="90" />
+                          <Component Subtype="Construction" Count="200" />
+                          <Component Subtype="Superconductor" Count="300" />
+                          <Component Subtype="LargeTube" Count="90" />
+                          <Component Subtype="SmallTube" Count="200" />
+                          <Component Subtype="PowerCell" Count="240"/>
+                          <Component Subtype="Computer" Count="500" />
+                          <Component Subtype="MetalGrid" Count="40" />
+                          <Component Subtype="SteelPlate" Count="250" />
+			</Components>
+			<CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.99" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.99" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.99" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.99" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" PressurizedWhenOpen="true"/>
+			</MountPoints>
+			<BuildTimeSeconds>90</BuildTimeSeconds>
+			<BlockPairName>UNNLightRailgunTurret_Block</BlockPairName>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<RequiredPowerInput>0.00002</RequiredPowerInput>
+			<PCU>800</PCU>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\large\UNNLightRailgunTurret_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\large\UNNLightRailgunTurret_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\UNNLightRailgunTurret_BS3.mwm"/>
+			</BuildProgressModels>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>
