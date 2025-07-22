@@ -17,6 +17,7 @@
 		<ModelOffset x="0" y="0" z="0"/>
 		<Model>Models\EpsteinDrive\SG_ARYLNX_RZ_Esptein_Drive.mwm</Model>
 		<Components>
+		<Component Subtype="TacLicense" Count="1" />
         <Component Subtype="SteelPlate" Count="100" />
         <Component Subtype="Construction" Count="25" />
         <Component Subtype="MetalGrid" Count="50" />
@@ -198,7 +199,7 @@
 		  <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 		  <Components>
 			<Component Subtype="SteelPlate" Count="5" />
-			<Component Subtype="AryxLynxon_FusionComponent" Count="2" />
+			<Component Subtype="Thrust" Count="15" />
 			<Component Subtype="Construction" Count="5" />
 			<Component Subtype="MetalGrid" Count="1" />
 			<Component Subtype="LargeTube" Count="2" />
@@ -302,7 +303,7 @@
 		  <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 		  <Components>
 			<Component Subtype="SteelPlate" Count="5" />
-			<Component Subtype="AryxLynxon_FusionComponent" Count="2" />
+			<Component Subtype="Thrust" Count="15" />
 			<Component Subtype="Construction" Count="5" />
 			<Component Subtype="MetalGrid" Count="1" />
 			<Component Subtype="LargeTube" Count="2" />
@@ -407,7 +408,7 @@
 		  <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 		  <Components>
 			<Component Subtype="SteelPlate" Count="5" />
-			<Component Subtype="AryxLynxon_FusionComponent" Count="2" />
+			<Component Subtype="Thrust" Count="15" />
 			<Component Subtype="Construction" Count="5" />
 			<Component Subtype="MetalGrid" Count="1" />
 			<Component Subtype="LargeTube" Count="2" />
@@ -511,7 +512,7 @@
 		  <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 		  <Components>
 			<Component Subtype="SteelPlate" Count="5" />
-			<Component Subtype="AryxLynxon_FusionComponent" Count="2" />
+			<Component Subtype="Thrust" Count="15" />
 			<Component Subtype="Construction" Count="5" />
 			<Component Subtype="MetalGrid" Count="1" />
 			<Component Subtype="LargeTube" Count="2" />
@@ -613,7 +614,7 @@
 		  <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
 		  <Components>
 			<Component Subtype="SteelPlate" Count="5" />
-			<Component Subtype="AryxLynxon_FusionComponent" Count="2" />
+			<Component Subtype="Thrust" Count="15" />
 			<Component Subtype="Construction" Count="5" />
 			<Component Subtype="MetalGrid" Count="1" />
 			<Component Subtype="LargeTube" Count="2" />

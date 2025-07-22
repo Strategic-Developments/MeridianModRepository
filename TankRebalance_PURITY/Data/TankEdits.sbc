@@ -95,7 +95,7 @@
             <DamagedSound>ParticleElectrical</DamagedSound>
             <PrimarySound>BlockAssembler</PrimarySound>
             <ActionSound>BlockAssemblerProcess</ActionSound>
-            <IgnoreEfficiencyMultiplier>true</IgnoreEfficiencyMultiplier>
+            <IgnoreEfficiencyMultiplier>false</IgnoreEfficiencyMultiplier>
             <DestroyEffect>Explosion_Missile</DestroyEffect>
             <DestroySound>WepSmallMissileExpl</DestroySound>
             <PCU>40</PCU>

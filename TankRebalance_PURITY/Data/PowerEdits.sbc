@@ -48,7 +48,7 @@
             <BuildTimeSeconds>60</BuildTimeSeconds>
             <ResourceSinkGroup>Generators</ResourceSinkGroup>
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-            <MaxPowerOutput>5</MaxPowerOutput>
+            <MaxPowerOutput>10</MaxPowerOutput>
             <FuelCapacity>7500</FuelCapacity>
             <EmissiveColorPreset>Extended</EmissiveColorPreset>
             <IsAirTight>false</IsAirTight>
@@ -65,7 +65,7 @@
                     </Id>
                 </FuelInfo>
             </FuelInfos>
-            <FuelProductionToCapacityMultiplier>0.01</FuelProductionToCapacityMultiplier>
+            <FuelProductionToCapacityMultiplier>0.02</FuelProductionToCapacityMultiplier>
             <PrimarySound>ArcBlockHydrogenEngine</PrimarySound>
 
             <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -237,7 +237,7 @@
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>40</BuildTimeSeconds>
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-            <MaxPowerOutput>11</MaxPowerOutput>
+            <MaxPowerOutput>15</MaxPowerOutput>
             <InventorySize>
                 <X>1</X>
                 <Y>1</Y>
@@ -356,6 +356,7 @@
                     <Id>
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>Uranium</SubtypeId>
+                        <Ratio>0.5</Ratio>
                     </Id>
                 </FuelInfo>
             </FuelInfos>
@@ -1030,7 +1031,7 @@
             <BuildTimeSeconds>40</BuildTimeSeconds>
 
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-            <MaxPowerOutput>11</MaxPowerOutput>
+            <MaxPowerOutput>15</MaxPowerOutput>
 
             <InventorySize>
                 <X>1</X>
@@ -1154,6 +1155,7 @@
                         <TypeId>Ingot</TypeId>
                         <SubtypeId>Uranium</SubtypeId>
                     </Id>
+                    <Ratio>0.5</Ratio>
                 </FuelInfo>
             </FuelInfos>
             <PrimarySound>ShipLrgNuclearLrg</PrimarySound>
@@ -1221,7 +1223,7 @@
             <DamagedSound>ParticleElectrical</DamagedSound>
 
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
-            <MaxPowerOutput>1.2</MaxPowerOutput>
+            <MaxPowerOutput>2.5</MaxPowerOutput>
             <EmissiveColorPreset>Default</EmissiveColorPreset>
             <IsAirTight>false</IsAirTight>
 
@@ -1293,7 +1295,7 @@
             <BuildTimeSeconds>30</BuildTimeSeconds>
 
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
-            <MaxPowerOutput>0.5</MaxPowerOutput>
+            <MaxPowerOutput>2.0</MaxPowerOutput>
 
             <PanelOrientation>
                 <X>0</X>

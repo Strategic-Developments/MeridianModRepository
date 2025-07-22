@@ -269,7 +269,7 @@
 			<Component Subtype="SteelPlate" Count="210" />
 			<Component Subtype="Construction" Count="100" />
 			<Component Subtype="LargeTube" Count="60" />
-			<Component Subtype="PrototechPropulsionUnit" Count="15" />	
+			<Component Subtype="PrototechPropulsionUnit" Count="1" />	
 			<Component Subtype="AryxLynxon_FusionComponent" Count="24" />			
 			<Component Subtype="Construction" Count="25" />
 			<Component Subtype="SteelPlate" Count="70" />
@@ -348,7 +348,7 @@
 			<Component Subtype="SteelPlate" Count="300" />
 			<Component Subtype="Construction" Count="150" />
 			<Component Subtype="LargeTube" Count="180" />
-			<Component Subtype="AryxLynxon_FusionComponent" Count="32" />		
+			<Component Subtype="AryxLynxon_FusionComponent" Count="64" />		
 			<Component Subtype="Girder" Count="120" />		
 			<Component Subtype="Construction" Count="25" />
 			<Component Subtype="SteelPlate" Count="100" />
@@ -516,7 +516,7 @@
 			
 			<Component Subtype="AryxLynxon_FusionComponent" Count="72" />			
 			<Component Subtype="PowerCell" Count="180" />			
-			<Component Subtype="PrototechPropulsionUnit" Count="450" />		
+			<Component Subtype="PrototechPropulsionUnit" Count="45" />		
 			<Component Subtype="Construction" Count="80" />
 			<Component Subtype="SteelPlate" Count="600" />
 		  </Components>
