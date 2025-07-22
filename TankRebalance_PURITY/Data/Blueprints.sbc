@@ -8,6 +8,10 @@
 
 
 
+
+
+
+
    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -591,6 +595,186 @@ Licenses -->
       <BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
 	  
     </Blueprint>
+
+
+
+
+
+  <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>IronShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Iron Ingot Shipment</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Iron" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="IronShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+     <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>NickelShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Nickel Ingot Shipment</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Nickel" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="NickelShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+
+     <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>SiliconShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Silicon Ingot Shipment</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Silicon" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="SiliconShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+     <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>MagnesiumShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Magnesium Ingot Shipment</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="30000" TypeId="Ingot" SubtypeId="Magnesium" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="MagnesiumShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+     <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>CobaltShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Cobalt Ingot Shipment</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Cobalt" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="CobaltShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+     <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>SilverShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Silver Ingot Shipment</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Silver" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="SilverShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+     <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>GoldShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Gold Ingot Shipment</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="12000" TypeId="Ingot" SubtypeId="Gold" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="GoldShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+     <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>PlatinumShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Platinum Ingot Shipment</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="9000" TypeId="Ingot" SubtypeId="Platinum" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="PlatinumShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+     <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>UraniumShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Uranium Ingot Shipment</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="5000" TypeId="Ingot" SubtypeId="Uranium" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="UraniumShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     

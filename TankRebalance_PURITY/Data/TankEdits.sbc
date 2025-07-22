@@ -167,6 +167,7 @@
 				<Class>EliteWeapons</Class>
 				<Class>EliteConsumables</Class>				
                 <Class>BuildPlanner</Class>
+                <Class>ShipmentComponents</Class>
             </BlueprintClasses>
             <IgnoredBlueprintClassesIcons>
                 <IgnoredClassIcon>BuildPlanner</IgnoredClassIcon>

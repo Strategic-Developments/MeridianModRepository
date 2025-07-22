@@ -287,7 +287,270 @@
 
 
 
+<!-- BULK INGOT COMPONENTS -->
+     <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>IronShipment</SubtypeId>
+            </Id>
+            <DisplayName>Iron Ingot Shipment</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Pallet.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>2000</Mass>
+            <Volume>4001</Volume>
+            <Model>Models\Components\Pallet.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
 
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>NickelShipment</SubtypeId>
+            </Id>
+            <DisplayName>Nickel Ingot Shipment</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Pallet.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>2000</Mass>
+            <Volume>4001</Volume>
+            <Model>Models\Components\Pallet.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>SiliconShipment</SubtypeId>
+            </Id>
+            <DisplayName>Silicon Wafer Shipment</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Pallet.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>2000</Mass>
+            <Volume>4001</Volume>
+            <Model>Models\Components\Pallet.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>MagnesiumShipment</SubtypeId>
+            </Id>
+            <DisplayName>Magnesium Powder Shipment</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Pallet.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>2000</Mass>
+            <Volume>4001</Volume>
+            <Model>Models\Components\Pallet.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>CobaltShipment</SubtypeId>
+            </Id>
+            <DisplayName>Cobalt Ingot Shipment</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Pallet.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>2000</Mass>
+            <Volume>4001</Volume>
+            <Model>Models\Components\Pallet.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>SilverShipment</SubtypeId>
+            </Id>
+            <DisplayName>Silver Ingot Shipment</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Pallet.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>2000</Mass>
+            <Volume>4001</Volume>
+            <Model>Models\Components\Pallet.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>GoldShipment</SubtypeId>
+            </Id>
+            <DisplayName>Gold Ingot Shipment</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Pallet.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>2000</Mass>
+            <Volume>4001</Volume>
+            <Model>Models\Components\Pallet.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>PlatinumShipment</SubtypeId>
+            </Id>
+            <DisplayName>Platinum Ingot Shipment</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Pallet.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>2000</Mass>
+            <Volume>4001</Volume>
+            <Model>Models\Components\Pallet.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>UraniumShipment</SubtypeId>
+            </Id>
+            <DisplayName>Uranium Ingot Shipment</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Pallet.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>2000</Mass>
+            <Volume>4001</Volume>
+            <Model>Models\Components\Pallet.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
 
 
 

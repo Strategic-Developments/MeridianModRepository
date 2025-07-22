@@ -2,13 +2,26 @@
  <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
   <BlueprintClasses>
 
-   <Class>
+        <Class>
             <Id>
                 <TypeId>BlueprintClassDefinition</TypeId>
                 <SubtypeId>NUKE_COMPONENTS</SubtypeId>
             </Id>
             <DisplayName>DisplayName_BlueprintClass_SurvivalKitIngots</DisplayName>
             <Description>Description_BlueprintClass_SurvivalKitIngots</Description>
+            <Icon>Textures\GUI\Icons\buttons\Ingots.dds</Icon>
+            <HighlightIcon>Textures\GUI\Icons\buttons\Ingots.dds</HighlightIcon>
+            <FocusIcon>Textures\GUI\Icons\buttons\IngotsFocus.dds</FocusIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+        </Class>
+
+          <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>ShipmentComponents</SubtypeId>
+            </Id>
+            <DisplayName>Shipment Components</DisplayName>
+            <Description>Shipment Components</Description>
             <Icon>Textures\GUI\Icons\buttons\Ingots.dds</Icon>
             <HighlightIcon>Textures\GUI\Icons\buttons\Ingots.dds</HighlightIcon>
             <FocusIcon>Textures\GUI\Icons\buttons\IngotsFocus.dds</FocusIcon>
@@ -90,6 +103,16 @@
       <Entry Class="ChemicalOres" BlueprintSubtypeId="CyclocerinRefine" />
       <Entry Class="ChemicalOres" BlueprintSubtypeId="ThaladrineRefine" />
       <Entry Class="ChemicalOres" BlueprintSubtypeId="MethylaurateRefine" />
+
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="UraniumShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="PlatinumShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="GoldShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="SilverShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="CobaltShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="MagnesiumShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="SiliconShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="NickelShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="IronShipmentBP" />
 
       <Entry Class="ChemicalComponents" BlueprintSubtypeId="TrihexonReaction" />
       <Entry Class="ChemicalComponents" BlueprintSubtypeId="DicyclineReaction" />
