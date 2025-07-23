@@ -323,7 +323,7 @@
       <Prerequisites>
         <Item Amount="15" TypeId="Ingot" SubtypeId="Myothyrate" />
         <Item Amount="15" TypeId="Ingot" SubtypeId="Crystane" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluoron" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluon" />
         <Item Amount="15" TypeId="Ingot" SubtypeId="Hexox" />
         <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
       </Prerequisites>
@@ -341,7 +341,7 @@
       <DisplayName>Sleipnir SC-9</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\DrugComp3.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluoron" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluon" />
         <Item Amount="15" TypeId="Ingot" SubtypeId="Crystane" />
         <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
       </Prerequisites>
@@ -360,7 +360,7 @@
       <Icon>Textures\GUI\Icons\ingot\DrugComp4.dds</Icon>
       <Prerequisites>
         <Item Amount="15" TypeId="Ingot" SubtypeId="Hexox" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluoron" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluon" />
         <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
       </Prerequisites>
       <Result Amount="1" TypeId="Component" SubtypeId="Oxihex" />
