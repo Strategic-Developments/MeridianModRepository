@@ -26,33 +26,7 @@
 
             </Blocks>
         </BlockVariantGroup> 
-	 -->
-	 
-        <BlockVariantGroup>
-            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AWEAvalancheMG" />
-			<Icon>Textures\GUI\Icons\AryxCodexPDC.dds</Icon>
-            <DisplayName>Avalanche Machine Gun</DisplayName>
-            <Description>Variants of the MG25 Avalanche.</Description>
-            <Blocks>
-				<Block Type="LargeGatlingTurret" Subtype="ARYXCodexPDC" />
-				<Block Type="ConveyorSorter" Subtype="ARYXSlantedCodexPDC" />
-				<Block Type="ConveyorSorter" Subtype="ARYXSlantedInvCodexPDC" />				
-				<Block Type="LargeGatlingTurret" Subtype="ARYXCodexPDC_SG" />				
-				
-            </Blocks>
-        </BlockVariantGroup>
-        <BlockVariantGroup>
-            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AWEBurstCannons" />
-			<Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>
-            <DisplayName>Burst Cannon</DisplayName>
-            <Description>Variants of the Punisher Burst Cannon.</Description>
-            <Blocks>
-				<Block Type="LargeMissileTurret" Subtype="ARYXBurstTurretSlanted" />
-				<Block Type="ConveyorSorter" Subtype="ARYXBurstTurretSlanted" />				
-			
-				
-            </Blocks>
-        </BlockVariantGroup>		
+	 -->	
 		
 		
         <BlockVariantGroup>
@@ -64,17 +38,6 @@
 				<Block Type="ConveyorSorter" Subtype="ARYXLargeRadar" />
 				<Block Type="ConveyorSorter" Subtype="ARYXSmallRadar" />							
 				
-            </Blocks>
-        </BlockVariantGroup>
-		
-        <BlockVariantGroup>
-            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AWEAtlasPDC" />
-			<Icon>Textures\GUI\Icons\AryxSlantedAtlasPDC.dds</Icon>	
-            <DisplayName>Atlas PDC</DisplayName>
-            <Description>Variants of the MG50 Atlas.</Description>
-            <Blocks>
-				<Block Type="LargeGatlingTurret" Subtype="ARYXAtlasPDC" />
-				<Block Type="ConveyorSorter" Subtype="ARYXSlantedAtlasPDC" />	
             </Blocks>
         </BlockVariantGroup>
 		
