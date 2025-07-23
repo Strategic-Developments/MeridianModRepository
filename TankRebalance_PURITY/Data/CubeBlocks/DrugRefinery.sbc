@@ -18,6 +18,7 @@
                 <Component Subtype="PrototechFrame" Count="1"/>
                 <Component Subtype="PrototechPanel" Count="20" />
                 <Component Subtype="PrototechCoolingUnit" Count="5" />
+                <Component Subtype="CsillanHeirloom" Count="1" />
                 <Component Subtype="Construction" Count="40" />
                 <Component Subtype="LargeTube" Count="20" />
                 <Component Subtype="MetalGrid" Count="40" />
@@ -103,10 +104,12 @@
 			  <Components>
                 <Component Subtype="PrototechFrame" Count="1"/>
                 <Component Subtype="PrototechPanel" Count="20" />
-                <Component Subtype="Construction" Count="40" />
-                <Component Subtype="LargeTube" Count="20" />
-                <Component Subtype="MetalGrid" Count="20" />
-                <Component Subtype="Computer" Count="20" />
+                <Component Subtype="PrototechCoolingUnit" Count="2" />
+                <Component Subtype="CsillanHeirloom" Count="1" />
+                <Component Subtype="Construction" Count="80" />
+                <Component Subtype="LargeTube" Count="30" />
+                <Component Subtype="MetalGrid" Count="60" />
+                <Component Subtype="Computer" Count="40" />
                 <Component Subtype="PrototechPanel" Count="10" />
             </Components>
             <CriticalComponent Subtype="Computer" Index="0" />
