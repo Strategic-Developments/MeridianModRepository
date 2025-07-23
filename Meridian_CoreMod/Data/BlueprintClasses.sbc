@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+ <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+  <BlueprintClasses>
+
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>NUKE_COMPONENTS</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_BlueprintClass_SurvivalKitIngots</DisplayName>
+            <Description>Description_BlueprintClass_SurvivalKitIngots</Description>
+            <Icon>Textures\GUI\Icons\buttons\Ingots.dds</Icon>
+            <HighlightIcon>Textures\GUI\Icons\buttons\Ingots.dds</HighlightIcon>
+            <FocusIcon>Textures\GUI\Icons\buttons\IngotsFocus.dds</FocusIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+        </Class>
+
+          <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>ShipmentComponents</SubtypeId>
+            </Id>
+            <DisplayName>Shipment Components</DisplayName>
+            <Description>Shipment Components</Description>
+            <Icon>Textures\GUI\Icons\buttons\Ingots.dds</Icon>
+            <HighlightIcon>Textures\GUI\Icons\buttons\Ingots.dds</HighlightIcon>
+            <FocusIcon>Textures\GUI\Icons\buttons\IngotsFocus.dds</FocusIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+        </Class>
+
+
+
+      <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>ChemicalComponents</SubtypeId>
+            </Id>
+            <DisplayName>Basic Reactions</DisplayName>
+            <Description>Basic Reactions</Description>
+            <Icon>Textures\GUI\Icons\buttons\large_block.dds</Icon>
+            <HighlightIcon>Textures\GUI\Icons\buttons\large_block.dds</HighlightIcon>
+            <FocusIcon>Textures\GUI\Icons\buttons\large_block_focus.dds</FocusIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+            <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+        </Class>
+
+
+
+         <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>ChemicalOres</SubtypeId>
+            </Id>
+            <DisplayName>Chemical Reprocessing</DisplayName>
+            <Description>Chemical Reprocessing</Description>
+            <Icon>Textures\GUI\Icons\buttons\large_block.dds</Icon>
+            <HighlightIcon>Textures\GUI\Icons\buttons\large_block.dds</HighlightIcon>
+            <FocusIcon>Textures\GUI\Icons\buttons\large_block_focus.dds</FocusIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+            <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+        </Class>
+
+
+        
+         <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>ChemicalDrugs</SubtypeId>
+            </Id>
+            <DisplayName>Pharmaceuticals</DisplayName>
+            <Description>Pharmaceuticals</Description>
+            <Icon>Textures\GUI\Icons\buttons\large_block.dds</Icon>
+            <HighlightIcon>Textures\GUI\Icons\buttons\large_block.dds</HighlightIcon>
+            <FocusIcon>Textures\GUI\Icons\buttons\large_block_focus.dds</FocusIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+            <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+        </Class>
+
+
+        <Class>
+            <Id>
+                <TypeId>BlueprintClassDefinition</TypeId>
+                <SubtypeId>ChemicalT3Comps</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Reactions</DisplayName>
+            <Description>Advanced Reactions</Description>
+            <Icon>Textures\GUI\Icons\buttons\large_block.dds</Icon>
+            <HighlightIcon>Textures\GUI\Icons\buttons\large_block.dds</HighlightIcon>
+            <FocusIcon>Textures\GUI\Icons\buttons\large_block_focus.dds</FocusIcon>
+            <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
+            <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
+        </Class>
+
+
+   </BlueprintClasses>
+
+
+ 
+
+
+   <BlueprintClassEntries>
+	  <Entry Class="ChemicalOres" BlueprintSubtypeId="HexadrineRefine" />
+      <Entry Class="ChemicalOres" BlueprintSubtypeId="CyclocerinRefine" />
+      <Entry Class="ChemicalOres" BlueprintSubtypeId="ThaladrineRefine" />
+      <Entry Class="ChemicalOres" BlueprintSubtypeId="MethylaurateRefine" />
+
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="UraniumShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="PlatinumShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="GoldShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="SilverShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="CobaltShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="MagnesiumShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="SiliconShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="NickelShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="IronShipmentBP" />
+
+      <Entry Class="ChemicalComponents" BlueprintSubtypeId="TrihexonReaction" />
+      <Entry Class="ChemicalComponents" BlueprintSubtypeId="DicyclineReaction" />
+      <Entry Class="ChemicalComponents" BlueprintSubtypeId="AuronReaction" />
+      <Entry Class="ChemicalComponents" BlueprintSubtypeId="NeuroclineReaction" />
+      <Entry Class="ChemicalComponents" BlueprintSubtypeId="MyotheneReaction" />
+      <Entry Class="ChemicalComponents" BlueprintSubtypeId="MirazineReaction" />
+
+      <Entry Class="ChemicalT3Comps" BlueprintSubtypeId="DMSOReaction" />
+      <Entry Class="ChemicalT3Comps" BlueprintSubtypeId="HexoxReaction" />
+      <Entry Class="ChemicalT3Comps" BlueprintSubtypeId="NeurofluonReaction" />
+      <Entry Class="ChemicalT3Comps" BlueprintSubtypeId="CrystaneReaction" />
+      <Entry Class="ChemicalT3Comps" BlueprintSubtypeId="MyothyrateReaction" />
+
+      <Entry Class="ChemicalDrugs" BlueprintSubtypeId="BlissfireBP" />
+      <Entry Class="ChemicalDrugs" BlueprintSubtypeId="OxihexBP" />
+      <Entry Class="ChemicalDrugs" BlueprintSubtypeId="SleipnirBP" />
+      <Entry Class="ChemicalDrugs" BlueprintSubtypeId="ColdRedBP" />
+
+      <Entry Class="Ammo" BlueprintSubtypeId="SAIDSGreenBP" />
+   
+	   <Entry Class="EliteConsumables" BlueprintSubtypeId="SAIDSGreenBP" />
+
+      <Entry Class="EliteEquipment" BlueprintSubtypeId="IssuedIngotShipmentBP" />
+      <Entry Class="EliteEquipment" BlueprintSubtypeId="TechIngotShipmentBP" />
+      <Entry Class="EliteEquipment" BlueprintSubtypeId="AdvancedIngotShipmentBP" />
+      <Entry Class="EliteEquipment" BlueprintSubtypeId="StarterOreShipmentBP" />
+
+
+      <Entry Class="NUKE_COMPONENTS" BlueprintSubtypeId="FusionCoreBP" />
+
+      
+   </BlueprintClassEntries>
+</Definitions>

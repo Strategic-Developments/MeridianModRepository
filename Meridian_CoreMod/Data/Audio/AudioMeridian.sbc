@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Sounds>
+
+	
+	  
+	  <Sound>
+	    <Id>
+	      <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+	      <SubtypeId>CannonBurst</SubtypeId>
+	    </Id>
+	    <Category>WEP_EXPL</Category>
+	    <MaxDistance>1000</MaxDistance>
+	    <Volume>2.0</Volume>
+	    <PitchVariation>100</PitchVariation>
+	    <PreventSynchronization>10</PreventSynchronization>
+	    <SoundLimit>3</SoundLimit>
+	    <Waves>
+	      <Wave Type="D3">
+	        <Start>Audio\sfx\CannonBurst.wav</Start>
+	      </Wave>
+	      <Wave Type="D3">
+	        <Start>Audio\sfx\CannonBurst.wav</Start>
+	      </Wave>
+	      <Wave Type="D3">
+	        <Start>Audio\sfx\CannonBurst.wav</Start>
+	      </Wave>
+	    </Waves>
+	  </Sound>
+
+	  <Sound>
+	    <Id>
+	      <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+	      <SubtypeId>cannonburst2</SubtypeId>
+	    </Id>
+	    <Category>WEP_EXPL</Category>
+	    <MaxDistance>1000</MaxDistance>
+	    <Volume>16.0</Volume>
+	    <PitchVariation>100</PitchVariation>
+	    <PreventSynchronization>10</PreventSynchronization>
+	    <SoundLimit>6</SoundLimit>
+	    <Waves>
+	      <Wave Type="D3">
+	        <Start>Audio\sfx\CannonBurst2.wav</Start>
+	      </Wave>
+	      <Wave Type="D3">
+	        <Start>Audio\sfx\CannonBurst2.wav</Start>
+	      </Wave>
+	      <Wave Type="D3">
+	        <Start>Audio\sfx\CannonBurst2.wav</Start>
+	      </Wave>
+	    </Waves>
+	  </Sound>
+
+	  
+		
+    </Sounds>
+</Definitions>

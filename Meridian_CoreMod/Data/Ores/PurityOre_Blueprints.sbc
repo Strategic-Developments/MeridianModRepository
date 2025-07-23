@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+   
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>DMSOreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>DMSO Sample</DisplayName>
+      <Icon>Textures\GUI\Icons\ingot\DMSO_Ore.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Ore" SubtypeId="DMSO_Ore" />
+      </Prerequisites>
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="DMSO_Ingot" />
+      <BaseProductionTimeInSeconds>0.35</BaseProductionTimeInSeconds>
+      <IsPrimary>true</IsPrimary>
+    </Blueprint>
+
+
+  
+  </Blueprints>
+</Definitions>
