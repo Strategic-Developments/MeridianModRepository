@@ -42,6 +42,7 @@
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
 			</MountPoints>
 			<BlockPairName>TorpIFF</BlockPairName>
+			<HasPhysics>false</HasPhysics>
 		</Definition>
 
 
@@ -213,11 +214,11 @@
 			<BuildTimeSeconds>8</BuildTimeSeconds>
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>400000</ForceMagnitude>
-            <MaxPowerConsumption>1800000</MaxPowerConsumption>
+            <MaxPowerConsumption>18000</MaxPowerConsumption>
             <MinPowerConsumption>0.000001</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
             <FlameDamageLengthScale>0</FlameDamageLengthScale>
-            <FlameLengthScale>2</FlameLengthScale>
+            <FlameLengthScale>35</FlameLengthScale>
             <IsStandAlone>false</IsStandAlone>
             <HasPhysics>false</HasPhysics>	
 			<FlameDamage>0</FlameDamage>		
@@ -228,17 +229,17 @@
                 <W>0</W>
             </FlameIdleColor>
             <FlameFullColor>
-                <X>1</X>
-                <Y>1</Y>
-                <Z>0.95</Z>
+                <X>2</X>
+                <Y>7</Y>
+                <Z>15</Z>
                 <W>1</W>
             </FlameFullColor>
             <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
             <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
             <FlameGlareMaterial>GlareLsThrustSmall</FlameGlareMaterial>
-            <FlameVisibilityDistance>250</FlameVisibilityDistance>
-            <FlameGlareSize>.5</FlameGlareSize>
-            <FlameGlareQuerySize>.5</FlameGlareQuerySize>
+            <FlameVisibilityDistance>150000</FlameVisibilityDistance>
+            <FlameGlareSize>7</FlameGlareSize>
+            <FlameGlareQuerySize>7</FlameGlareQuerySize>
             <PrimarySound>LrgShipSmJet</PrimarySound>			
 		</Definition>		
 		
