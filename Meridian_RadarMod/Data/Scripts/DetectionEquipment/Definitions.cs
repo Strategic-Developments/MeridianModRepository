@@ -12,14 +12,14 @@ namespace DetectionEquipment
         //Common
         private static double Bandwidth_General = 1670000;
         private static double Freq_General = 2800000000;
-        private static double PowerEfficiency_General = 1;
+        private static double PowerEfficiency_General = 2.50E-16;
 
         //Tier SG
         private static int PowerDraw_SG = 5000000;
 
-        private static double DetThreshold_SG_S = 15.20844967;
-        private static double DetThreshold_SG_P = 12.04119983;
-        private static double DetThreshold_SG_T = 4.997549464;
+        private static double DetThreshold_SG_S = 8.873949985;
+        private static double DetThreshold_SG_P = 8.873949985;
+        private static double DetThreshold_SG_T = 7.043650362;
 
         private static double BearingError_Search_SG = 0.4;
         private static double RangeError_Search_SG = 0.4;
@@ -38,16 +38,16 @@ namespace DetectionEquipment
         private static double ApMax_P_SG = 75;
         private static double ApMax_T_SG = 2;
 
-        private static double PowerEffMod_SG_S = 5.6922506E+03;
-        private static double PowerEffMod_SG_P = 1.6473009E+07;
-        private static double PowerEffMod_SG_T = 9.4955319E-05;
+        private static double PowerEffMod_SG_S = 4.3921686E+04;
+        private static double PowerEffMod_SG_P = 6.4347690E+08;
+        private static double PowerEffMod_SG_T = 1.1736116E-03;
 
         //Tier I
         private static int PowerDraw_I = 15000000;
 
-        private static double DetThreshold_I_S = 20.20599913;
-        private static double DetThreshold_I_P = 15.20844967;
-        private static double DetThreshold_I_T = 3.87640052;
+        private static double DetThreshold_I_S = 14.5271161;
+        private static double DetThreshold_I_P = 7.483465734;
+        private static double DetThreshold_I_T = 4.997549464;
 
         private static double BearingError_Search_I = 0.4;
         private static double RangeError_Search_I = 0.4;
@@ -66,16 +66,16 @@ namespace DetectionEquipment
         private static double ApMax_P_I = 65;
         private static double ApMax_T_I = 2;
 
-        private static double PowerEffMod_I_S = 5.9967742E+03;
-        private static double PowerEffMod_I_P = 7.8467277E+06;
-        private static double PowerEffMod_I_T = 7.7274836E-05;
+        private static double PowerEffMod_I_S = 7.4117846E+04;
+        private static double PowerEffMod_I_P = 6.0545738E+07;
+        private static double PowerEffMod_I_T = 1.2363974E-03;
 
         //Tier II
         private static int PowerDraw_II = 30000000;
 
-        private static double DetThreshold_II_S = 19.79400087;
-        private static double DetThreshold_II_P = 15.91760035;
-        private static double DetThreshold_II_T = 3.167249842;
+        private static double DetThreshold_II_S = 18.23727823;
+        private static double DetThreshold_II_P = 13.23972876;
+        private static double DetThreshold_II_T = 3.87640052;
 
         private static double BearingError_Search_II = 0.2;
         private static double RangeError_Search_II = 0.2;
@@ -94,16 +94,16 @@ namespace DetectionEquipment
         private static double ApMax_P_II = 70;
         private static double ApMax_T_II = 2;
 
-        private static double PowerEffMod_II_S = 1.6831866E+05;
-        private static double PowerEffMod_II_P = 2.3627922E+07;
-        private static double PowerEffMod_II_T = 8.0118550E-05;
+        private static double PowerEffMod_II_S = 2.6930985E+06;
+        private static double PowerEffMod_II_P = 2.9203212E+08;
+        private static double PowerEffMod_II_T = 1.5092741E-03;
 
         //Tier III
         private static int PowerDraw_III = 60000000;
 
-        private static double DetThreshold_III_S = 19.08485019;
-        private static double DetThreshold_III_P = 15.91760035;
-        private static double DetThreshold_III_T = 2.677871585;
+        private static double DetThreshold_III_S = 18.74084332;
+        private static double DetThreshold_III_P = 14.8644428;
+        private static double DetThreshold_III_T = 3.167249842;
 
         private static double BearingError_Search_III = 0.1;
         private static double RangeError_Search_III = 0.1;
@@ -122,17 +122,17 @@ namespace DetectionEquipment
         private static double ApMax_P_III = 75;
         private static double ApMax_T_III = 2;
 
-        private static double PowerEffMod_III_S = 1.4647708E+06;
-        private static double PowerEffMod_III_P = 5.3623075E+07;
-        private static double PowerEffMod_III_T = 7.4214753E-05;
+        private static double PowerEffMod_III_S = 2.7593369E+07;
+        private static double PowerEffMod_III_P = 8.5796920E+08;
+        private static double PowerEffMod_III_T = 1.5648154E-03;
 
         //Tier IV
         private static int PowerDraw_IV = 120000000;
         private static int PowerDraw_IV_Track = 85000000;
 
-        private static double DetThreshold_IV_S = 19.08485019;
+        private static double DetThreshold_IV_S = 21.76272177;
         private static double DetThreshold_IV_P = 19.08485019;
-        private static double DetThreshold_IV_T = 4.997549464;
+        private static double DetThreshold_IV_T = 2.677871585;
 
         private static double BearingError_Search_IV = 0.05;
         private static double RangeError_Search_IV = 0.05;
@@ -151,9 +151,9 @@ namespace DetectionEquipment
         private static double ApMax_P_IV = 90;
         private static double ApMax_T_IV = 2;
 
-        private static double PowerEffMod_IV_S = 1.3573341E+08;
-        private static double PowerEffMod_IV_P = 1.2444123E+11;
-        private static double PowerEffMod_IV_T = 2.1818777E-04;
+        private static double PowerEffMod_IV_S = 4.0234064E+09;
+        private static double PowerEffMod_IV_P = 1.9910596E+12;
+        private static double PowerEffMod_IV_T = 2.0463627E-03;
 
         // Hover over field names or look at the base definition for more information.
         private static SensorDefinition MXM_012_FCR_Def => new SensorDefinition
