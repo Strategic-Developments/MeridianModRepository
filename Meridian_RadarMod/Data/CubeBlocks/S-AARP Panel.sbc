@@ -1,0 +1,490 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_SAARP_Flat</SubtypeId>
+			</Id>
+			<DisplayName>S-AARP Flat</DisplayName>
+			<Description>Smart Advanced Active Radar Panel
+			Tier 3 Radar (1 Search Radar, 2 Track Radars)</Description>
+			<Icon>Textures\Icons\S-AARP\SOFL_SAARP_Flat.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="2" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\S-AARP Panels\Flat\SOFL_SAARP_Flat.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="20"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+ 			    <Component Subtype="LargeTube" Count="15"/>
+ 				<Component Subtype="Girder" Count="15"/>
+ 				<Component Subtype="PowerCell" Count="25"/>
+ 				<Component Subtype="MetalGrid" Count="125"/>
+ 				<Component Subtype="Superconductor" Count="100"/>
+  				<Component Subtype="Detector" Count="275"/>
+  				<Component Subtype="SOFL_AESA_TR_Comp" Count="15"/>
+				<Component Subtype="RadioCommunication" Count="275"/>
+  				<Component Subtype="Computer" Count="575"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="Construction" Count="50"/>
+  				<Component Subtype="MetalGrid" Count="150"/>
+  				<Component Subtype="SteelPlate" Count="140"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<BlockPairName>SOFL_SAARP_Flat</BlockPairName>
+			<IsAirTight>true</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<BlockVariants>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_SAARP_Flat</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_SAARP_1x1</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_SAARP_1x1_Corner</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_SAARP_1x2</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_SAARP_1x2_Corner</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_SAARP_1x1_Offset</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_SAARP_1x2_Corner_Offset</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_SAARP_1x2_Offset</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_SAARP_Half_Flat</SubtypeId>
+				</BlockVariant>
+			</BlockVariants>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<MirroringY>X</MirroringY>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_SAARP_1x1</SubtypeId>
+			</Id>
+			<DisplayName>S-AARP 1x1</DisplayName>
+			<Description>Smart Advanced Active Radar Panel
+			Sensors: 
+			-1 high FoV fixed radar
+			-1 gimbaled track radar</Description>
+			<Icon>Textures\Icons\S-AARP\SOFL_SAARP_1x1.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="2" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\S-AARP Panels\1x1\SOFL_SAARP_1x1.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="20"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+ 			    <Component Subtype="LargeTube" Count="15"/>
+ 				<Component Subtype="Girder" Count="15"/>
+ 				<Component Subtype="PowerCell" Count="25"/>
+ 				<Component Subtype="MetalGrid" Count="125"/>
+ 				<Component Subtype="Superconductor" Count="100"/>
+  				<Component Subtype="Detector" Count="275"/>
+  				<Component Subtype="SOFL_AESA_TR_Comp" Count="15"/>
+				<Component Subtype="RadioCommunication" Count="275"/>
+  				<Component Subtype="Computer" Count="575"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="Construction" Count="50"/>
+  				<Component Subtype="MetalGrid" Count="150"/>
+  				<Component Subtype="SteelPlate" Count="140"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_SAARP_1x1</BlockPairName>
+			<IsAirTight>true</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<MirroringY>MinusHalfX</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_SAARP_1x1_Corner</SubtypeId>
+			</Id>
+			<DisplayName>S-AARP 1x1 Corner</DisplayName>
+			<Description>Smart Advanced Active Radar Panel
+			Sensors: 
+			-1 high FoV fixed radar
+			-1 gimbaled track radar</Description>
+			<Icon>Textures\Icons\S-AARP\SOFL_SAARP_1x1_Corner.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="2" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\S-AARP Panels\1x1 corner\SOFL_SAARP_1x1_Corner.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="20"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+ 			    <Component Subtype="LargeTube" Count="15"/>
+ 				<Component Subtype="Girder" Count="15"/>
+ 				<Component Subtype="PowerCell" Count="25"/>
+ 				<Component Subtype="MetalGrid" Count="125"/>
+ 				<Component Subtype="Superconductor" Count="100"/>
+  				<Component Subtype="Detector" Count="275"/>
+  				<Component Subtype="SOFL_AESA_TR_Comp" Count="15"/>
+				<Component Subtype="RadioCommunication" Count="275"/>
+  				<Component Subtype="Computer" Count="575"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="Construction" Count="50"/>
+  				<Component Subtype="MetalGrid" Count="150"/>
+  				<Component Subtype="SteelPlate" Count="140"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_SAARP_1x1_Corner</BlockPairName>
+			<IsAirTight>true</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<MirroringX>HalfY</MirroringX>
+			<MirroringY>XHalfY</MirroringY>
+			<MirroringZ>MinusHalfY</MirroringZ>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_SAARP_1x2</SubtypeId>
+			</Id>
+			<DisplayName>S-AARP 1x2</DisplayName>
+			<Description>Smart Advanced Active Radar Panel
+			Sensors: 
+			-1 high FoV fixed radar
+			-1 gimbaled track radar</Description>
+			<Icon>Textures\Icons\S-AARP\SOFL_SAARP_1x2.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="1" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\S-AARP Panels\1x2\SOFL_SAARP_1x2.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="20"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+ 			    <Component Subtype="LargeTube" Count="15"/>
+ 				<Component Subtype="Girder" Count="15"/>
+ 				<Component Subtype="PowerCell" Count="25"/>
+ 				<Component Subtype="MetalGrid" Count="125"/>
+ 				<Component Subtype="Superconductor" Count="100"/>
+  				<Component Subtype="Detector" Count="275"/>
+  				<Component Subtype="SOFL_AESA_TR_Comp" Count="15"/>
+				<Component Subtype="RadioCommunication" Count="275"/>
+  				<Component Subtype="Computer" Count="575"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="Construction" Count="50"/>
+  				<Component Subtype="MetalGrid" Count="150"/>
+  				<Component Subtype="SteelPlate" Count="140"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_SAARP_1x2</BlockPairName>
+			<IsAirTight>true</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_SAARP_1x2_Corner</SubtypeId>
+			</Id>
+			<DisplayName>S-AARP 1x2 Corner</DisplayName>
+			<Description>Smart Advanced Active Radar Panel
+			Sensors: 
+			-1 high FoV fixed radar
+			-1 gimbaled track radar</Description>
+			<Icon>Textures\Icons\S-AARP\SOFL_SAARP_1x2_Corner.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="2" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\S-AARP Panels\1x2 corner base\SOFL_SAARP_1x2_Corner.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="20"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+ 			    <Component Subtype="LargeTube" Count="15"/>
+ 				<Component Subtype="Girder" Count="15"/>
+ 				<Component Subtype="PowerCell" Count="25"/>
+ 				<Component Subtype="MetalGrid" Count="125"/>
+ 				<Component Subtype="Superconductor" Count="100"/>
+  				<Component Subtype="Detector" Count="275"/>
+  				<Component Subtype="SOFL_AESA_TR_Comp" Count="15"/>
+				<Component Subtype="RadioCommunication" Count="275"/>
+  				<Component Subtype="Computer" Count="575"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="Construction" Count="50"/>
+  				<Component Subtype="MetalGrid" Count="150"/>
+  				<Component Subtype="SteelPlate" Count="140"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_SAARP_1x2_Corner</BlockPairName>
+			<IsAirTight>true</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<MirroringX>MinusHalfZ</MirroringX>
+			<MirroringY>HalfZ</MirroringY>
+			<MirroringZ>XHalfZ</MirroringZ>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_SAARP_1x1_Offset</SubtypeId>
+			</Id>
+			<DisplayName>S-AARP 1x1 slope offset</DisplayName>
+			<Description>Smart Advanced Active Radar Panel
+			Sensors: 
+			-1 high FoV fixed radar
+			-1 gimbaled track radar</Description>
+			<Icon>Textures\Icons\S-AARP\SOFL_SAARP_1x1_Offset.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="2" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="20"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+ 			    <Component Subtype="LargeTube" Count="15"/>
+ 				<Component Subtype="Girder" Count="15"/>
+ 				<Component Subtype="PowerCell" Count="25"/>
+ 				<Component Subtype="MetalGrid" Count="125"/>
+ 				<Component Subtype="Superconductor" Count="100"/>
+  				<Component Subtype="Detector" Count="275"/>
+  				<Component Subtype="SOFL_AESA_TR_Comp" Count="15"/>
+				<Component Subtype="RadioCommunication" Count="275"/>
+  				<Component Subtype="Computer" Count="575"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="Construction" Count="50"/>
+  				<Component Subtype="MetalGrid" Count="150"/>
+  				<Component Subtype="SteelPlate" Count="140"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_SAARP_1x1_Offset</BlockPairName>
+			<IsAirTight>true</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<MirroringY>X</MirroringY>
+			<MirroringX>Y</MirroringX>
+			<MirroringY>X</MirroringY>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_SAARP_1x2_Corner_Offset</SubtypeId>
+			</Id>
+			<DisplayName>S-AARP 1x2 corner offset</DisplayName>
+			<Description>Smart Advanced Active Radar Panel
+			Sensors: 
+			-1 high FoV fixed radar
+			-1 gimbaled track radar</Description>
+			<Icon>Textures\Icons\S-AARP\SOFL_SAARP_1x2_Corner_Offset.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="2" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\S-AARP Panels\1x2 corner offset\SOFL_SAARP_1x2_Corner_Offset.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="20"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+ 			    <Component Subtype="LargeTube" Count="15"/>
+ 				<Component Subtype="Girder" Count="15"/>
+ 				<Component Subtype="PowerCell" Count="25"/>
+ 				<Component Subtype="MetalGrid" Count="125"/>
+ 				<Component Subtype="Superconductor" Count="100"/>
+  				<Component Subtype="Detector" Count="275"/>
+  				<Component Subtype="SOFL_AESA_TR_Comp" Count="15"/>
+				<Component Subtype="RadioCommunication" Count="275"/>
+  				<Component Subtype="Computer" Count="575"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="Construction" Count="50"/>
+  				<Component Subtype="MetalGrid" Count="150"/>
+  				<Component Subtype="SteelPlate" Count="140"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_SAARP_1x2_Corner_Offset</BlockPairName>
+			<IsAirTight>true</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<MirroringY>X</MirroringY>
+			<MirroringX>MinusHalfZ</MirroringX>
+			<MirroringY>HalfZ</MirroringY>
+			<MirroringZ>XHalfZ</MirroringZ>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_SAARP_1x2_Offset</SubtypeId>
+			</Id>
+			<DisplayName>S-AARP 1x2 slope offset</DisplayName>
+			<Description>Smart Advanced Active Radar Panel
+			Sensors: 
+			-1 high FoV fixed radar
+			-1 gimbaled track radar</Description>
+			<Icon>Textures\Icons\S-AARP\SOFL_SAARP_1x2_Offset.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="2" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\S-AARP Panels\1x2 offset\SOFL_SAARP_1x2_Offset.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="20"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+ 			    <Component Subtype="LargeTube" Count="15"/>
+ 				<Component Subtype="Girder" Count="15"/>
+ 				<Component Subtype="PowerCell" Count="25"/>
+ 				<Component Subtype="MetalGrid" Count="125"/>
+ 				<Component Subtype="Superconductor" Count="100"/>
+  				<Component Subtype="Detector" Count="275"/>
+  				<Component Subtype="SOFL_AESA_TR_Comp" Count="15"/>
+				<Component Subtype="RadioCommunication" Count="275"/>
+  				<Component Subtype="Computer" Count="575"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="Construction" Count="50"/>
+  				<Component Subtype="MetalGrid" Count="150"/>
+  				<Component Subtype="SteelPlate" Count="140"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_SAARP_1x2_Offset</BlockPairName>
+			<IsAirTight>true</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<MirroringY>X</MirroringY>
+			<MirroringX>Y</MirroringX>
+			<MirroringY>X</MirroringY>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_SAARP_Half_Flat</SubtypeId>
+			</Id>
+			<DisplayName>S-AARP Half block</DisplayName>
+			<Description>Smart Advanced Active Radar Panel
+			Sensors: 
+			-1 high FoV fixed radar
+			-1 gimbaled track radar</Description>
+			<Icon>Textures\Icons\S-AARP\SOFL_SAARP_Half_Flat.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="1" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\S-AARP Panels\Flat Half\SOFL_SAARP_Half_Flat.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="20"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+ 			    <Component Subtype="LargeTube" Count="15"/>
+ 				<Component Subtype="Girder" Count="15"/>
+ 				<Component Subtype="PowerCell" Count="25"/>
+ 				<Component Subtype="MetalGrid" Count="125"/>
+ 				<Component Subtype="Superconductor" Count="100"/>
+  				<Component Subtype="Detector" Count="275"/>
+  				<Component Subtype="SOFL_AESA_TR_Comp" Count="15"/>
+				<Component Subtype="RadioCommunication" Count="275"/>
+  				<Component Subtype="Computer" Count="575"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="Construction" Count="50"/>
+  				<Component Subtype="MetalGrid" Count="150"/>
+  				<Component Subtype="SteelPlate" Count="140"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_SAARP_Half_Flat</BlockPairName>
+			<IsAirTight>true</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<MirroringY>X</MirroringY>
+			<MirroringY>X</MirroringY>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

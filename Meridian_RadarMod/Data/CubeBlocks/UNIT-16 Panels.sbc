@@ -1,0 +1,356 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_UNIT_16_Flat</SubtypeId>
+			</Id>
+			<DisplayName>UNIT-16 Panel Flat</DisplayName>
+			<Description>Small multi-purpose AESA panel for lighter vessels
+			Small Grid Tier Radar (1 Search Radar)</Description>
+			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_Flat.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="1" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_Flat.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="1"/>
+  				<Component Subtype="Construction" Count="4"/>
+  				<Component Subtype="SmallTube" Count="2"/>
+  				<Component Subtype="MetalGrid" Count="5"/>
+  				<Component Subtype="Detector" Count="4"/>
+  				<Component Subtype="RadioCommunication" Count="4"/>
+  				<Component Subtype="Computer" Count="24"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="SteelPlate" Count="5"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_UNIT_16_Flat</BlockPairName>
+			<MirroringY>X</MirroringY>
+			<IsAirTight>false</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+
+			<BlockVariants>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_UNIT_16_Flat</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_UNIT_16_1x2_Upright_Offset</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_UNIT_16_1x2_Upright</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_UNIT_16_1x2_Side</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_UNIT_16_1x1_Upright</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_UNIT_16_1x1_Side</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_UNIT_16_1x1_Offset</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_UNIT_16_1x1_Corner_Upright</SubtypeId>
+				</BlockVariant>
+			</BlockVariants>
+
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_UNIT_16_1x2_Upright_Offset</SubtypeId>
+			</Id>
+			<DisplayName>UNIT-16 Panel 1x2 upright offset</DisplayName>
+			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
+			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x2_Upright_Offset.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="3" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Upright_Offset.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="1"/>
+  				<Component Subtype="Construction" Count="4"/>
+  				<Component Subtype="SmallTube" Count="2"/>
+  				<Component Subtype="MetalGrid" Count="5"/>
+  				<Component Subtype="Detector" Count="4"/>
+  				<Component Subtype="RadioCommunication" Count="4"/>
+  				<Component Subtype="Computer" Count="24"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="SteelPlate" Count="5"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_UNIT_16_1x2_Upright_Offset</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<IsAirTight>false</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_UNIT_16_1x2_Upright</SubtypeId>
+			</Id>
+			<DisplayName>UNIT-16 Panel 1x2 upright</DisplayName>
+			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
+			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x2_Upright.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="3" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Upright.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="1"/>
+  				<Component Subtype="Construction" Count="4"/>
+  				<Component Subtype="SmallTube" Count="2"/>
+  				<Component Subtype="MetalGrid" Count="5"/>
+  				<Component Subtype="Detector" Count="4"/>
+  				<Component Subtype="RadioCommunication" Count="4"/>
+  				<Component Subtype="Computer" Count="24"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="SteelPlate" Count="5"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_UNIT_16_1x2_Upright</BlockPairName>
+			<MirroringX>Y</MirroringX>
+			<MirroringY>X</MirroringY>
+			<IsAirTight>false</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_UNIT_16_1x2_Side</SubtypeId>
+			</Id>
+			<DisplayName>UNIT-16 Panel 1x2 side</DisplayName>
+			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
+			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x2_Side.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="2" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Side.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="1"/>
+  				<Component Subtype="Construction" Count="4"/>
+  				<Component Subtype="SmallTube" Count="2"/>
+  				<Component Subtype="MetalGrid" Count="5"/>
+  				<Component Subtype="Detector" Count="4"/>
+  				<Component Subtype="RadioCommunication" Count="4"/>
+  				<Component Subtype="Computer" Count="24"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="SteelPlate" Count="5"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="3.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_UNIT_16_1x2_Side</BlockPairName>
+			<MirroringX>Y</MirroringX>
+			<MirroringY>X</MirroringY>
+			<IsAirTight>false</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_UNIT_16_1x1_Upright</SubtypeId>
+			</Id>
+			<DisplayName>UNIT-16 Panel 1x1 upright</DisplayName>
+			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
+			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Upright.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="2" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Upright.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="1"/>
+  				<Component Subtype="Construction" Count="4"/>
+  				<Component Subtype="SmallTube" Count="2"/>
+  				<Component Subtype="MetalGrid" Count="5"/>
+  				<Component Subtype="Detector" Count="4"/>
+  				<Component Subtype="RadioCommunication" Count="4"/>
+  				<Component Subtype="Computer" Count="24"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="SteelPlate" Count="5"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_UNIT_16_1x1_Upright</BlockPairName>
+			<MirroringX>Y</MirroringX>
+			<MirroringY>X</MirroringY>
+			<IsAirTight>false</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_UNIT_16_1x1_Side</SubtypeId>
+			</Id>
+			<DisplayName>UNIT-16 Panel 1x1 side</DisplayName>
+			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
+			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Side.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="2" z="2"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Side.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="1"/>
+  				<Component Subtype="Construction" Count="4"/>
+  				<Component Subtype="SmallTube" Count="2"/>
+  				<Component Subtype="MetalGrid" Count="5"/>
+  				<Component Subtype="Detector" Count="4"/>
+  				<Component Subtype="RadioCommunication" Count="4"/>
+  				<Component Subtype="Computer" Count="24"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="SteelPlate" Count="5"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_UNIT_16_1x1_Side</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<IsAirTight>false</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_UNIT_16_1x1_Offset</SubtypeId>
+			</Id>
+			<DisplayName>UNIT-16 Panel 1x1 offset</DisplayName>
+			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
+			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Offset.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="2" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Offset.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="1"/>
+  				<Component Subtype="Construction" Count="4"/>
+  				<Component Subtype="SmallTube" Count="2"/>
+  				<Component Subtype="MetalGrid" Count="5"/>
+  				<Component Subtype="Detector" Count="4"/>
+  				<Component Subtype="RadioCommunication" Count="4"/>
+  				<Component Subtype="Computer" Count="24"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="SteelPlate" Count="5"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_UNIT_16_1x1_Offset</BlockPairName>
+			<MirroringX>Y</MirroringX>
+			<MirroringY>X</MirroringY>
+			<IsAirTight>false</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_UNIT_16_1x1_Corner_Upright</SubtypeId>
+			</Id>
+			<DisplayName>UNIT-16 Panel 1x1 corner upright</DisplayName>
+			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
+			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Corner_Upright.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="3" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Corner_Upright.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="1"/>
+  				<Component Subtype="Construction" Count="4"/>
+  				<Component Subtype="SmallTube" Count="2"/>
+  				<Component Subtype="MetalGrid" Count="5"/>
+  				<Component Subtype="Detector" Count="4"/>
+  				<Component Subtype="RadioCommunication" Count="4"/>
+  				<Component Subtype="Computer" Count="24"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="SteelPlate" Count="5"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_UNIT_16_1x1_Corner_Upright</BlockPairName>
+			<MirroringX>MinusHalfY</MirroringX>
+			<MirroringY>ZHalfY</MirroringY>
+			<MirroringZ>HalfY</MirroringZ>
+			<IsAirTight>false</IsAirTight>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>

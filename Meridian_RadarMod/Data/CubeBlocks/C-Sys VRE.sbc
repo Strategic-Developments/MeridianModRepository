@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_C-SYS_VRE</SubtypeId>
+			</Id>
+			<DisplayName>C-Sys VIRE</DisplayName>
+			<Description>Chiara Systems Visual/IR Recognition  Equipment
+			Optical/IR Sensor (1 fixed optical, 1 fixed IR sensor)</Description>
+			<Icon>Textures\Icons\SOFL_C-Sys_VRE.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\C-Sys VRE\SOFL_C-SYS_VRE.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="35"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+  				<Component Subtype="LargeTube" Count="10"/>
+ 				<Component Subtype="Girder" Count="10"/>
+  				<Component Subtype="MetalGrid" Count="15"/>
+  				<Component Subtype="Detector" Count="35"/>
+  				<Component Subtype="RadioCommunication" Count="55"/>
+  				<Component Subtype="Computer" Count="60"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="SteelPlate" Count="50"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_C-SYS_VRE</BlockPairName>
+			<MirroringY>X</MirroringY>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<BlockVariants>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_C-SYS_VRE</SubtypeId>
+				</BlockVariant>
+				<BlockVariant>
+					<TypeId>CameraBlock</TypeId>
+					<SubtypeId>SOFL_C-SYS_VRE_Inset</SubtypeId>
+				</BlockVariant>
+			</BlockVariants>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+			<Id>
+				<TypeId>CameraBlock</TypeId>
+				<SubtypeId>SOFL_C-SYS_VRE_Inset</SubtypeId>
+			</Id>
+			<DisplayName>C-Sys VIRE Inset</DisplayName>
+			<Description>Chiara Systems Visual/IR Recognition  Equipment
+			Optical/IR Sensor (1 fixed optical, 1 fixed IR sensor)</Description>
+			<Icon>Textures\Icons\SOFL_C-Sys_VRE_Inset.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Sensors\C-Sys VRE\SOFL_C-SYS_VRE_Inset.mwm</Model>
+			<Components>
+  				<Component Subtype="SteelPlate" Count="15"/>
+  				<Component Subtype="Construction" Count="35"/>
+  				<Component Subtype="SmallTube" Count="15"/>
+  				<Component Subtype="LargeTube" Count="10"/>
+ 				<Component Subtype="Girder" Count="10"/>
+  				<Component Subtype="MetalGrid" Count="15"/>
+  				<Component Subtype="Detector" Count="35"/>
+  				<Component Subtype="RadioCommunication" Count="55"/>
+  				<Component Subtype="Computer" Count="60"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="SteelPlate" Count="50"/>
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_C-SYS_VRE_Inset</BlockPairName>
+			<IsAirTight>true</IsAirTight>
+			<MirroringY>X</MirroringY>
+			<OverlayTexture></OverlayTexture>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CategoryClasses>
+
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+        <Id>
+          <TypeId>GuiBlockCategoryDefinition</TypeId>
+          <SubtypeId/>
+        </Id>
+        <DisplayName>|M A X I M| Systems</DisplayName>
+        <Name>MAXIMSystems</Name>
+        <ItemIds>
+      		<string>CameraBlock/SOFL_Radar_1</string>
+      		<string>CameraBlock/SOFL_ASTS_5</string>
+      		<string>CameraBlock/SOFL_FR_057</string>
+      		<string>CameraBlock/SOFL_MXM_008</string>
+      		<string>CameraBlock/SOFL_MXM_008_Centered</string>
+      		<string>CameraBlock/SOFL_MXM_005</string>
+      		<string>CameraBlock/SOFL_MXM_009</string>
+      		<string>CameraBlock/SOFL_CSys_NS_RCG_62</string>
+
+      		<string>CameraBlock/SOFL_ASEL_MKXII_FCR</string>
+
+      		<string>CameraBlock/SOFL_SAARP_Flat</string>
+      		<!--<string>CameraBlock/SOFL_SAARP_1x1</string>
+      		<string>CameraBlock/SOFL_SAARP_1x2</string>
+      		<string>CameraBlock/SOFL_SAARP_1x1_Corner</string>
+      		<string>CameraBlock/SOFL_SAARP_1x2_Corner</string>-->
+          
+      		<string>CameraBlock/SOFL_UNIT_16_Flat</string>
+      		<!--<string>CameraBlock/SOFL_UNIT_16_1x2_Upright_Offset</string>
+      		<string>CameraBlock/SOFL_UNIT_16_1x2_Upright</string>
+      		<string>CameraBlock/SOFL_UNIT_16_1x2_Side</string>
+      		<string>CameraBlock/SOFL_UNIT_16_1x1_Upright</string>
+      		<string>CameraBlock/SOFL_UNIT_16_1x1_Side</string>
+      		<string>CameraBlock/SOFL_UNIT_16_1x1_Offset</string>
+      		<string>CameraBlock/SOFL_UNIT_16_1x1_Corner_Upright</string>-->
+			
+      		<string>CameraBlock/SOFL_SET2_Flat</string>
+			
+      		<string>CameraBlock/SOFL_SB_PRR_Series2_Flat</string>
+
+      		<string>CameraBlock/SOFL_C-SYS_VRE</string>
+      		<string>CameraBlock/SOFL_CSys_IRO_DetBlock_MkX</string>
+
+        </ItemIds>
+      </Category>
+  </CategoryClasses>
+
+
+</Definitions>
