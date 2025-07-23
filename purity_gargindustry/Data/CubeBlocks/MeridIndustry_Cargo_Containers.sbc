@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+
+		<Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+			<Id>
+				<TypeId>CargoContainer</TypeId>
+				<SubtypeId>SOFL_Large_Cargo</SubtypeId>
+			</Id>
+			<DisplayName>Larger Cargo Container</DisplayName>
+			<Description>Larger and betterer car that go</Description>
+			<Icon>Textures\Icons\Large_Cargo.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+            <GuiVisible>false</GuiVisible>
+			<Size x="3" y="3" z="7"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cargo\Large Cargo\SOFL_Large_Cargo.mwm</Model>
+			<Components>
+                <Component Subtype="InteriorPlate" Count="600" />
+                <Component Subtype="Construction" Count="90" />
+                <Component Subtype="MetalGrid" Count="40" />
+                <Component Subtype="SmallTube" Count="120" />
+                <Component Subtype="Motor" Count="20" />
+                <Component Subtype="Display" Count="1" />
+                <Component Subtype="Computer" Count="8" />
+                <Component Subtype="Construction" Count="30" />
+                <Component Subtype="InteriorPlate" Count="120" />
+            </Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="7.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="7.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="7.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="7.00"/>
+			</MountPoints>
+			<InventorySize>
+   				<X>5</X>
+   				<Y>15</Y>
+   				<Z>15</Z>
+			</InventorySize>
+			<BlockPairName>SOFL_Large_Cargo</BlockPairName>
+            <BuildTimeSeconds>45</BuildTimeSeconds>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+		</Definition>
+
+		
+		<Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+			<Id>
+				<TypeId>CargoContainer</TypeId>
+				<SubtypeId>SOFL_Huge_Cargo</SubtypeId>
+			</Id>
+			<DisplayName>Huge Cargo Container</DisplayName>
+			<Description>Very big cargo containing implement. One may even call it huge...</Description>
+			<Icon>Textures\Icons\Huge_Cargo.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="5" z="15"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cargo\Huge Cargo\SOFL_Huge_Cargo.mwm</Model>
+			<Components>
+                <Component Subtype="InteriorPlate" Count="1200" />
+                <Component Subtype="Construction" Count="150" />
+                <Component Subtype="MetalGrid" Count="100" />
+                <Component Subtype="SmallTube" Count="350" />
+                <Component Subtype="Motor" Count="60" />
+                <Component Subtype="Display" Count="15" />
+                <Component Subtype="Computer" Count="12" />
+                <Component Subtype="Construction" Count="60" />
+                <Component Subtype="InteriorPlate" Count="300" />
+            </Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="15.00" EndY="5.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="15.00" EndY="5.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="5.00" EndY="15.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="15.00"/>
+			</MountPoints>
+			<InventorySize>
+   				<X>20</X>
+   				<Y>20</Y>
+   				<Z>15</Z>
+			</InventorySize>
+			<BlockPairName>SOFL_Huge_Cargo</BlockPairName>
+            <BuildTimeSeconds>45</BuildTimeSeconds>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+		</Definition>
+
+
+	</CubeBlocks>
+</Definitions>

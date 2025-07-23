@@ -1,0 +1,185 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+
+		
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+			<Id>
+				<TypeId>OxygenTank</TypeId>
+				<SubtypeId>SOFL_Gas_Tank_AT</SubtypeId>
+			</Id>
+			<DisplayName>Reinforced Hydrogen Tank</DisplayName>
+			<Description>Hydrogen fuel tank reinforced with armored bracers, enhancing its integrity. Frequently used aboard all varieties of orbital warships.</Description>
+			<Icon>Textures\Icons\SOFL_Gas_Tank_AT.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Gas Tanks\1x2 AT\SOFL_Gas_Tank_AT.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="200" />
+                <Component Subtype="LargeTube" Count="40" />
+                <Component Subtype="SmallTube" Count="60" />
+                 
+                <Component Subtype="Computer" Count="8" />
+                <Component Subtype="MetalGrid" Count="75" />
+                <Component Subtype="BulletproofGlass" Count="12" />
+                <Component Subtype="Construction" Count="40" />
+                <Component Subtype="SteelPlate" Count="800" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>SOFL_Gas_Tank_AT</BlockPairName>
+            <IsAirTight>true</IsAirTight>
+			<ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>2000 </Capacity>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Hydrogen</SubtypeId>
+            </StoredGasId>
+            <BlueprintClasses>
+                <Class>HydrogenBottles</Class>
+            </BlueprintClasses>
+            <BuildTimeSeconds>32</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <PCU>25</PCU>
+            <LeakPercent>0.005</LeakPercent>
+            <GasExplosionMaxRadius>10</GasExplosionMaxRadius>
+            <GasExplosionNeededVolumeToReachMaxRadius>1000000</GasExplosionNeededVolumeToReachMaxRadius>
+            <GasExplosionDamageMultiplier>0.00005</GasExplosionDamageMultiplier>
+            <GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+            <GasExplosionEffect>Explosion_Warhead_15</GasExplosionEffect>
+		</Definition>
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+			<Id>
+				<TypeId>OxygenTank</TypeId>
+				<SubtypeId>SOFL_Gas_Huge_Tank</SubtypeId>
+			</Id>
+			<DisplayName>Mass Storage Gas Tank</DisplayName>
+			<Description>Industrial-grade heavy fuel storage, designed for refineries and fuel depots. Highly volatile, keep away from open flame. </Description>
+			<Icon>Textures\Icons\SOFL_Gas_Huge_Tank.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="9" y="9" z="9"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Gas Tanks\9x9x9\SOFL_Gas_Huge_Tank.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="1000" />
+                <Component Subtype="LargeTube" Count="120" />
+                <Component Subtype="SmallTube" Count="90" />
+                <Component Subtype="Computer" Count="15" />
+                <Component Subtype="Construction" Count="200" />
+                <Component Subtype="SteelPlate" Count="200" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="4.05" StartY="4.05" EndX="4.95" EndY="4.95"/>
+				<MountPoint Side="Back" StartX="4.00" StartY="4.00" EndX="5.00" EndY="5.00"/>
+				<MountPoint Side="Left" StartX="4.05" StartY="4.05" EndX="4.95" EndY="4.95"/>
+				<MountPoint Side="Right" StartX="4.05" StartY="4.05" EndX="4.95" EndY="4.95"/>
+				<MountPoint Side="Top" StartX="3.00" StartY="3.00" EndX="6.00" EndY="6.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Bottom" StartX="3.00" StartY="3.00" EndX="6.00" EndY="6.00" PressurizedWhenOpen="true"/>
+			</MountPoints>
+			<BlockPairName>SOFL_Gas_Huge_Tank</BlockPairName>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>3645000</Capacity>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Hydrogen</SubtypeId>
+            </StoredGasId>
+            <BuildTimeSeconds>32</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <PCU>25</PCU>
+            <LeakPercent>0.005</LeakPercent>
+            <GasExplosionMaxRadius>50</GasExplosionMaxRadius>
+            <GasExplosionNeededVolumeToReachMaxRadius>10</GasExplosionNeededVolumeToReachMaxRadius>
+            <GasExplosionDamageMultiplier>100</GasExplosionDamageMultiplier>
+            <GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+            <GasExplosionEffect>Explosion_Warhead_15</GasExplosionEffect>
+		</Definition>
+
+
+        <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+			<Id>
+				<TypeId>OxygenTank</TypeId>
+				<SubtypeId>SOFL_Gas_Stacked_Tank_AT</SubtypeId>
+			</Id>
+			<DisplayName>Reinforced Hydrogen Stacker Tank</DisplayName>
+			<Description>Stacker variant of the Reinforced Hydrogen Tank.</Description>
+			<Icon>Textures\Icons\SOFL_Gas_Stacked_Tank_AT.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="2" y="3" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Gas Tanks\2x3 AT\SOFL_Gas_Stacked_Tank_AT.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="800" />
+                <Component Subtype="LargeTube" Count="40" />
+                <Component Subtype="SmallTube" Count="60" />
+                 
+                <Component Subtype="Computer" Count="8" />
+                <Component Subtype="MetalGrid" Count="200" />
+                <Component Subtype="BulletproofGlass" Count="12" />
+                <Component Subtype="Construction" Count="40" />
+                <Component Subtype="SteelPlate" Count="900" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="3.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="3.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00" PressurizedWhenOpen="true"/>
+			</MountPoints>
+			<BlockPairName>SOFL_Gas_Stacked_Tank_AT</BlockPairName>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>9000</Capacity>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Hydrogen</SubtypeId>
+            </StoredGasId>
+            <BuildTimeSeconds>32</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <PCU>25</PCU>
+            <LeakPercent>0.005</LeakPercent>
+            <GasExplosionMaxRadius>10</GasExplosionMaxRadius>
+            <GasExplosionNeededVolumeToReachMaxRadius>1000000</GasExplosionNeededVolumeToReachMaxRadius>
+            <GasExplosionDamageMultiplier>0.00015</GasExplosionDamageMultiplier>
+            <GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+		</Definition>
+
+
+	</CubeBlocks>
+</Definitions>

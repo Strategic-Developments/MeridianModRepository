@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>AtmosphericThrusterSmall_SciFiForced</SubtypeId>
+            </Id>
+			<FuelConverter>
+				<FuelId>
+				<TypeId>GasProperties</TypeId>
+				<SubtypeId>Hydrogen</SubtypeId>
+				</FuelId>
+				<Efficiency>1</Efficiency>
+			</FuelConverter>
+            <ForceMagnitude>1296000</ForceMagnitude>
+            <MaxPowerConsumption>0.112032</MaxPowerConsumption>
+            <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
+            <SlowdownFactor>1</SlowdownFactor>
+        </Definition>
+
+		<Definition xsi:type="MyObjectBuilder_ThrustDefinition" Enabled="false">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>AtmosphericThrusterLarge_SciFiForced</SubtypeId>
+            </Id>
+            <FuelConverter>
+				<FuelId>
+				<TypeId>GasProperties</TypeId>
+				<SubtypeId>Hydrogen</SubtypeId>
+				</FuelId>
+				<Efficiency>1</Efficiency>
+			</FuelConverter>
+            <ForceMagnitude>1</ForceMagnitude>
+            <MaxPowerConsumption>1000</MaxPowerConsumption>
+            <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
+            <SlowdownFactor>1</SlowdownFactor>
+        </Definition>
+
+		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>AtmosphericThrusterSmall_SciFiForced123</SubtypeId>
+            </Id>
+			<FuelConverter>
+				<FuelId>
+				<TypeId>GasProperties</TypeId>
+				<SubtypeId>Hydrogen</SubtypeId>
+				</FuelId>
+				<Efficiency>1</Efficiency>
+			</FuelConverter>
+            <ForceMagnitude>192000</ForceMagnitude>
+            <MaxPowerConsumption>0.021339</MaxPowerConsumption>
+            <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
+            <SlowdownFactor>1</SlowdownFactor>
+        </Definition>
+
+	</CubeBlocks>
+</Definitions>

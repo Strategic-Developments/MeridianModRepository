@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+			<Id>
+				<TypeId>Thrust</TypeId>
+				<SubtypeId>RCS2Cube</SubtypeId>
+			</Id>
+			<FuelConverter>
+				<FuelId>
+					<TypeId>GasProperties</TypeId>
+					<SubtypeId>Hydrogen</SubtypeId>
+				</FuelId>
+				<Efficiency>1</Efficiency>
+			</FuelConverter>
+			<ForceMagnitude>1250000</ForceMagnitude>
+			<SlowdownFactor>1</SlowdownFactor>
+			<MaxPowerConsumption>0.353636</MaxPowerConsumption>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

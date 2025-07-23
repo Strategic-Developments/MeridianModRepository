@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>LargeBlockLargeAtmosphericThrustSciFi</SubtypeId>
+            </Id>
+			<FuelConverter>
+				<FuelId>
+				<TypeId>GasProperties</TypeId>
+				<SubtypeId>Hydrogen</SubtypeId>
+				</FuelId>
+				<Efficiency>1.0</Efficiency>
+			</FuelConverter>
+            <ForceMagnitude>6480000</ForceMagnitude>
+            <MaxPowerConsumption>0.387803</MaxPowerConsumption>
+            <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
+            <SlowdownFactor>1</SlowdownFactor>
+        </Definition>
+
+		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>LargeBlockSmallAtmosphericThrustSciFi</SubtypeId>
+            </Id>
+            <FuelConverter>
+				<FuelId>
+				<TypeId>GasProperties</TypeId>
+				<SubtypeId>Hydrogen</SubtypeId>
+				</FuelId>
+				<Efficiency>1.0</Efficiency>
+			</FuelConverter>
+            <ForceMagnitude>648000</ForceMagnitude>
+            <MaxPowerConsumption>0.045831</MaxPowerConsumption>
+            <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
+            <SlowdownFactor>1</SlowdownFactor>
+        </Definition>
+
+		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>SmallBlockLargeAtmosphericThrustSciFi</SubtypeId>
+            </Id>
+			<FuelConverter>
+				<FuelId>
+				<TypeId>GasProperties</TypeId>
+				<SubtypeId>Hydrogen</SubtypeId>
+				</FuelId>
+				<Efficiency>1.0</Efficiency>
+			</FuelConverter>
+            <ForceMagnitude>1150000</ForceMagnitude>
+            <MaxPowerConsumption>0.081336</MaxPowerConsumption>
+            <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
+            <SlowdownFactor>1</SlowdownFactor>
+        </Definition>
+
+		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+            <Id>
+                <TypeId>Thrust</TypeId>
+                <SubtypeId>SmallBlockSmallAtmosphericThrustSciFi</SubtypeId>
+            </Id>
+            <FuelConverter>
+				<FuelId>
+				<TypeId>GasProperties</TypeId>
+				<SubtypeId>Hydrogen</SubtypeId>
+				</FuelId>
+				<Efficiency>1.0</Efficiency>
+			</FuelConverter>
+            <ForceMagnitude>96000</ForceMagnitude>
+            <MaxPowerConsumption>0.008299</MaxPowerConsumption>
+            <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
+            <SlowdownFactor>1</SlowdownFactor>
+        </Definition>
+
+	</CubeBlocks>
+</Definitions>
