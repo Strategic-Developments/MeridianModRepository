@@ -120,14 +120,14 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f, // Multiplier for damage against large grids.
+                    Large = 2f, // Multiplier for damage against large grids.
                     Small = -1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
                     Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                     Light = -1f, // Multiplier for damage against light armor.
-                    Heavy = -1f, // Multiplier for damage against heavy armor.
+                    Heavy = 1.25f, // Multiplier for damage against heavy armor.
                     NonArmor = -1f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
@@ -365,18 +365,20 @@ namespace Scripts
                 },
                 Lines = new LineDef
                 {
-                    ColorVariance = Random(start: 0.5f, end: 2.5f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: 0f, end: 0.05f), // adds random value to default width (negatives shrinks width)
+                    ColorVariance = Random(start: 1f, end: 1f), // multiply the color by random values within range.
+                    WidthVariance = Random(start: 0f, end: 0f), // adds random value to default width (negatives shrinks width)
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 7f, //
-                        Width = 0.2f, //
-                        Color = Color(red: 10f, green: 10, blue: 10f, alpha: 1), // RBG 255 is Neon Glowing, 100 is Quite Bright.
+                        Length = 250, //
+                        Width = 0.3f, //
+                        Color = Color(red: 7, green: 5, blue: 5, alpha: 1), // RBG 255 is Neon Glowing, 100 is Quite Bright.
+                        FactionColor = DontUse, // DontUse, Foreground, Background.
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
-                        VisualFadeEnd = 240, // How many ticks after fade began before it will be invisible.
+                        VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
+                        AlwaysDraw = false, // Prevents this tracer from being culled.  Only use if you have a reason too (very long tracers/trails).
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
-                            "ProjectileTrailLine", // Please always have this Line set, if this Section is enabled.
+                            "ProjectileTrailLine", // Please always have this Line set if this Section is enabled.
                         },
                         TextureMode = Normal, // Normal, Cycle, Chaos, Wave
                         Segmentation = new SegmentDef
@@ -389,8 +391,9 @@ namespace Scripts
                             SegmentGap = 0f, // Uses Tracer textures and values
                             Speed = 1f, // meters per second
                             Color = Color(red: 1, green: 2, blue: 2.5f, alpha: 1),
+                            FactionColor = DontUse, // DontUse, Foreground, Background.
                             WidthMultiplier = 1f,
-                            Reverse = false, 
+                            Reverse = false,
                             UseLineVariance = true,
                             WidthVariance = Random(start: 0f, end: 0f),
                             ColorVariance = Random(start: 0f, end: 0f)
@@ -398,15 +401,15 @@ namespace Scripts
                     },
                     Trail = new TrailDef
                     {
-                        Enable = false,
+                        Enable = true,
                         Textures = new[] {
-                            "", // Please always have this Line set, if this Section is enabled.
+                            "WeaponLaser", // Please always have this Line set, if this Section is enabled.
                         },
                         TextureMode = Normal,
-                        DecayTime = 3, // In Ticks. 1 = 1 Additional Tracer generated per motion, 33 is 33 lines drawn per projectile. Keep this number low.
-                        Color = Color(red: 0, green: 0, blue: 1, alpha: 1),
+                        DecayTime = 4, // In Ticks. 1 = 1 Additional Tracer generated per motion, 33 is 33 lines drawn per projectile. Keep this number low.
+                        Color = Color(red: 6, green: 5, blue: 5, alpha: 0.5f),
                         Back = false,
-                        CustomWidth = 0,
+                        CustomWidth = 0.2f,
                         UseWidthVariance = false,
                         UseColorFade = true,
                     },

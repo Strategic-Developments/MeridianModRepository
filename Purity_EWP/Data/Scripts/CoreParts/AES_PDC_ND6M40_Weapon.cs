@@ -89,6 +89,24 @@ namespace Scripts {
                         DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
+                    new MountPointDef {
+                        SubtypeId = "MCRNMountedPDC_Block", // Block Subtypeid. Your Cubeblocks contain this information
+                        SpinPartId = "Barrels", // For weapons with a spinning barrel such as Gatling Guns.
+                        MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
+                        AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
+                        ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
+                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
+                    },
+                    new MountPointDef {
+                        SubtypeId = "MCRNMountedPDCSG_Block", // Block Subtypeid. Your Cubeblocks contain this information
+                        SpinPartId = "Barrels", // For weapons with a spinning barrel such as Gatling Guns.
+                        MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
+                        AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
+                        ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
+                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
+                    },
                 },	 
                 Muzzles = new[] {
                     "muzzle_projectile_1", // Where your Projectiles spawn. Use numbers not Letters. IE Muzzle_01 not Muzzle_A
