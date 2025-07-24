@@ -62,7 +62,7 @@
             <MaterialEfficiency>1.0</MaterialEfficiency>
             <IngotAmountPerPullRequest>2000</IngotAmountPerPullRequest>
             <DamageEffectName>Damage_Electrical_Prototech_Large</DamageEffectName>
-            <Center x="1" y="0" z="0" />
+           
             <DamagedSound>ParticleElectrical</DamagedSound>
             <PrimarySound>BlockRafinery</PrimarySound>
             <ActionSound>BlockRafineryProcess</ActionSound>

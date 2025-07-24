@@ -592,7 +592,7 @@
                 <SubtypeId>Neurofluon</SubtypeId>
             </Id>
             <DisplayName>Neurofluon</DisplayName>
-            <Icon>Textures\GUI\Icons\ingot\ChemComp3.dds</Icon>
+            <Icon>Textures\GUI\Icons\ingot\ChemVial.dds</Icon>
             <Size>
                 <X>0.05</X>
                 <Y>0.05</Y>
@@ -600,7 +600,7 @@
             </Size>
             <Mass>1</Mass>
             <Volume>15</Volume>
-            <Model>Models\Ingots\ChemComp3.mwm</Model>
+            <Model>Models\Ingots\ChemComp1.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <IconSymbol>Neuro</IconSymbol>
             <MinimumOfferAmount>1000</MinimumOfferAmount>
