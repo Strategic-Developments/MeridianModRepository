@@ -55,7 +55,7 @@ namespace Scripts
             {
                 PartName = "Ariadne 1200mm Gauss Turret", // name of weapon in terminal
                 DeviateShotAngle = 0,
-                AimingTolerance = 45f, // 0 - 180 firing angle
+                AimingTolerance = 1, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
@@ -83,7 +83,7 @@ namespace Scripts
                     MaxElevation = 90,
                     FixedOffset = false,
                     InventorySize = 6f,
-                     IdlePower = 1800f, // Constant base power draw in MW.
+                    IdlePower = 15f, // Constant base power draw in MW.
                     Offset = Vector(x: 0, y: 0, z: 0),
                     Type = BlockWeapon, // BlockWeapon, HandWeapon, Phantom 
                     CriticalReaction = new CriticalDef
@@ -113,10 +113,10 @@ namespace Scripts
                     SkipBarrels = 0,
                     ReloadTime = 69, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 420, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 0, //heat generated per shot
-                    MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)
+                    HeatPerShot = 5000, //heat generated per shot
+                    MaxHeat = 10000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 9000, //amount of heat lost per second
+                    HeatSinkRate = 200, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 0,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).

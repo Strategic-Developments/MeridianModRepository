@@ -6,7 +6,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>GaussAmmoMagDef</SubtypeId>
             </Id>
-            <DisplayName>1200mm Ferrous Ammo</DisplayName>
+            <DisplayName>Ariadne/Ares Railgun Sabot</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEGaussAmmo.dds</Icon>
             <Size>
                 <X>5</X>
@@ -31,7 +31,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>AryxRailgunMagDef</SubtypeId>
             </Id>
-            <DisplayName>250mm Ferrous Ammo</DisplayName>
+            <DisplayName>Apollo/Artemis Railgun Sabot</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWERailgunAmmo.dds</Icon>
             <Size>
                 <X>2</X>
@@ -56,7 +56,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>AryxSmallRailgunMagDef</SubtypeId>
             </Id>
-            <DisplayName>115mm Ferrous Ammo</DisplayName>
+            <DisplayName>Athena Railgun Sabot</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEPicketRailgunAmmo.dds</Icon>
             <Size>
                 <X>2</X>
@@ -64,7 +64,7 @@
                 <Z>1</Z>
             </Size>
             <Mass>400</Mass>
-            <Volume>100</Volume>
+            <Volume>25</Volume>
             <Model>Models\AWE_Ammo\AryxFerrous115mm.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
             <Capacity>1</Capacity>

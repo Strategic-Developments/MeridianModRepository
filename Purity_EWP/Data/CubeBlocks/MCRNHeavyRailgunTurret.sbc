@@ -1,14 +1,13 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<CubeBlocks>
-
 		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 			<Id>
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>MCRNHeavyRailgunTurret_Block</SubtypeId>
 			</Id>
-			<DisplayName>VX-12 Foehammer Heavy railgun turret [MCRN]</DisplayName>
-			<Description>One of the biggest ship grade railgun turrets ever built. Deals massive damage and has increased max range.</Description>
+			<DisplayName>Foehammer Heavy Railgun Turret</DisplayName>
+			<Description>Lighter Ariadne, 60km range, 28kps, infinite damage, 800MW, uses Foehammer Railgun Sabots.</Description>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNHeavyRailgunTurret.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
@@ -16,21 +15,19 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\MCRNHeavyRailgunTurret.mwm</Model>
 			<Components>
-							<Component Subtype="OpLicense" Count="4" />
-                          <Component Subtype="SteelPlate" Count="1000" />
-                          <Component Subtype="MetalGrid" Count="200" />
-                          <Component Subtype="Construction" Count="300" />
-						  	
-                          <Component Subtype="Superconductor" Count="500" />
-                          <Component Subtype="Thrust" Count="200" />
-                          <Component Subtype="PowerCell" Count="500"/>
-                          <Component Subtype="Computer" Count="1000" />
-                          <Component Subtype="MetalGrid" Count="80" />
-                          <Component Subtype="SteelPlate" Count="500" />
-						  
+				<Component Subtype="OpLicense" Count="2"/>
+				<Component Subtype="SteelPlate" Count="1000"/>
+				<Component Subtype="MetalGrid" Count="200"/>
+				<Component Subtype="Construction" Count="300"/>
+				<Component Subtype="Superconductor" Count="500"/>
+				<Component Subtype="Thrust" Count="200"/>
+				<Component Subtype="PowerCell" Count="500"/>
+				<Component Subtype="Computer" Count="1000"/>
+				<Component Subtype="MetalGrid" Count="80"/>
+				<Component Subtype="SteelPlate" Count="500"/>
 			</Components>
 			<CriticalComponent Index="0" Subtype="Computer"/>
-			<Center x="2" y="0" z="13" />
+			<Center x="2" y="0" z="13"/>
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="0.33" StartY="10.95" EndX="4.67" EndY="16.05" Default="true" PressurizedWhenOpen="true"/>
 			</MountPoints>
@@ -52,6 +49,5 @@
 				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\MCRNHeavyRailgunTurret_BS3.mwm"/>
 			</BuildProgressModels>
 		</Definition>
-
 	</CubeBlocks>
 </Definitions>

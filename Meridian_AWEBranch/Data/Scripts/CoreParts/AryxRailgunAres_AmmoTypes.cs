@@ -31,8 +31,8 @@ namespace Scripts
             AmmoMagazine = "GaussAmmoMagDef",
             AmmoRound = "AryxGaussAmmoWC",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 60000000,
+            EnergyCost = 2.88E-12f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            BaseDamage = 5E+16f,
             Mass = 200, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 100000f,
@@ -131,8 +131,8 @@ namespace Scripts
                 ByBlockHit = new ByBlockHitDef
                 {
                     Enable = true,
-                    Radius = 6f, // Meters
-                    Damage = 5000f,
+                    Radius = 8f, // Meters
+                    Damage = 500000f,
                     Depth = 6f, // Meters
                     MaxAbsorb = 0f,
                     Falloff = NoFalloff, //.NoFalloff applies the same damage to all blocks in radius
@@ -234,8 +234,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0,
-                DesiredSpeed = 50000f,
-                MaxTrajectory = 150000,
+                DesiredSpeed = 30000f,
+                MaxTrajectory = 125000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -304,18 +304,18 @@ namespace Scripts
                 },
                 Lines = new LineDef
                 {
-                    ColorVariance = Random(start: 0.75f, end: 2f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: 0f, end: 1.025f), // adds random value to default width (negatives shrinks width)
+                    ColorVariance = Random(start: 1f, end: 1f), // multiply the color by random values within range.
+                    WidthVariance = Random(start: 0f, end: 0f), // adds random value to default width (negatives shrinks width)
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 100f,
-                        Width = 2f,
-                        Color = Color(red: 35, green: 10, blue: 80, alpha: 1),
+                        Length = 2000f,
+                        Width = 4f,
+                        Color = Color(red: 35 * 2, green: 10 * 2, blue: 80 * 2, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
-                            "AryxBallisticTracer",
+                            "ProjectileTrailLine",
                         },
                         TextureMode = Normal, // Normal, Cycle, Chaos, Wave
                         Segmentation = new SegmentDef
@@ -343,9 +343,9 @@ namespace Scripts
                         },
                         TextureMode = Normal,
                         DecayTime = 48,
-                        Color = Color(red: 10, green: 6, blue: 25, alpha: 1),
+                        Color = Color(red: 10 * 2, green: 6 * 2, blue: 25 * 2, alpha: 1),
                         Back = false,
-                        CustomWidth = 2f,
+                        CustomWidth = 3f,
                         UseWidthVariance = false,
                         UseColorFade = true,
                     },

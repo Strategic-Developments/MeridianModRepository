@@ -1,35 +1,31 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<CubeBlocks>
-
 		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 			<Id>
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>MCRNLightRailgunTurret_Block</SubtypeId>
 			</Id>
-			<DisplayName>V-14 Stiletto light railgun turret [MCRN]</DisplayName>
-			<Description>Turreted MCRN light railgun</Description>
+			<DisplayName>Stiletto Light Railgun Turret</DisplayName>
+			<Description>Light cheap railgun, 40km range, 25kps, 10k damage, 100MW, uses Stiletto/Dagger Railgun Sabots.</Description>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNLightRailgunTurret.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="3" y="3" z="3"/>
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\MCRNLightRailgunTurret.mwm</Model>
-			<Components>	
-						 <Component Subtype="OpLicense" Count="2" />	
-                          <Component Subtype="SteelPlate" Count="150" />
-                          <Component Subtype="MetalGrid" Count="75" />
-                          <Component Subtype="Construction" Count="150" />
-                          <Component Subtype="Superconductor" Count="300" />
-						 
-                          <Component Subtype="LargeTube" Count="120" />
-                          <Component Subtype="PowerCell" Count="180"/>
-                          <Component Subtype="Computer" Count="500" />
-                          <Component Subtype="MetalGrid" Count="40" />
-                          <Component Subtype="SteelPlate" Count="250" />
-						  
+			<Components>
+				<Component Subtype="SteelPlate" Count="150"/>
+				<Component Subtype="MetalGrid" Count="75"/>
+				<Component Subtype="Construction" Count="150"/>
+				<Component Subtype="Superconductor" Count="300"/>
+				<Component Subtype="LargeTube" Count="120"/>
+				<Component Subtype="PowerCell" Count="180"/>
+				<Component Subtype="Computer" Count="500"/>
+				<Component Subtype="MetalGrid" Count="40"/>
+				<Component Subtype="SteelPlate" Count="250"/>
 			</Components>
-			<CriticalComponent Index="0" Subtype="OpLicense"/>
+			<CriticalComponent Index="0" Subtype="Computer"/>
 			<MountPoints>
 				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00" PressurizedWhenOpen="true"/>
 				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00" PressurizedWhenOpen="true"/>
@@ -55,6 +51,5 @@
 				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\MCRNLightRailgunTurret_BS3.mwm"/>
 			</BuildProgressModels>
 		</Definition>
-
 	</CubeBlocks>
 </Definitions>

@@ -21,22 +21,6 @@
 	<Blueprint>
             <Id>
                 <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>OPADecoy_Blueprint</SubtypeId>
-            </Id>
-            <DisplayName>OPA Decoy</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\DecoyAmmo.dds</Icon>
-            <Prerequisites>
-                <Item Amount="1" TypeId="Ingot" SubtypeId="Iron" />
-                <Item Amount="0.1" TypeId="Ingot" SubtypeId="Silver" />
-                <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />
-            </Prerequisites>
-            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="OPADecoy_Magazine" />
-            <BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
-        </Blueprint>
-
-	<Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
                 <SubtypeId>UNN40mm_Blueprint</SubtypeId>
             </Id>
             <DisplayName>UNN 40mm Ammo Box</DisplayName>
@@ -72,48 +56,31 @@
                 <TypeId>BlueprintDefinition</TypeId>
                 <SubtypeId>UNNRailgunSabotAmmo_Blueprint</SubtypeId>
             </Id>
-            <DisplayName>UNN Light Railgun Sabot</DisplayName>
+            <DisplayName>Dawson/Kopesh Railgun Sabot</DisplayName>
             <Icon>Textures\GUI\Icons\Ammo\UNNRailgunSabotAmmo.dds</Icon>
             <Prerequisites>
-                <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
-                <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
+                <Item Amount="200" TypeId="Ingot" SubtypeId="Iron" />
+                <Item Amount="10" TypeId="Ingot" SubtypeId="Nickel" />
                 <Item Amount="30" TypeId="Ingot" SubtypeId="Silicon" />
-                <Item Amount="2" TypeId="Ingot" SubtypeId="Uranium" />
+                <Item Amount="2" TypeId="Ingot" SubtypeId="Gold" />
             </Prerequisites>
             <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="UNNRailgunSabotAmmo_Magazine" />
             <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
         </Blueprint>
 
-	<Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>BelterRailgunSabotAmmo_Blueprint</SubtypeId>
-            </Id>
-            <DisplayName>Belter Railgun Sabot</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\BelterRailgunSabotAmmo.dds</Icon>
-            <Prerequisites>
-                <Item Amount="25" TypeId="Ingot" SubtypeId="Iron" />
-                <Item Amount="15" TypeId="Ingot" SubtypeId="Nickel" />
-                <Item Amount="25" TypeId="Ingot" SubtypeId="Silicon" />
-                <Item Amount="1" TypeId="Ingot" SubtypeId="Gold" />
-            </Prerequisites>
-            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="BelterRailgunSabotAmmo_Magazine" />
-            <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-        </Blueprint>
 
 	<Blueprint>
             <Id>
                 <TypeId>BlueprintDefinition</TypeId>
                 <SubtypeId>MCRNRailgunSabotAmmo_Blueprint</SubtypeId>
             </Id>
-            <DisplayName>MCRN Light Railgun Sabot</DisplayName>
+            <DisplayName>Stiletto/Dagger Railgun Sabot</DisplayName>
             <Icon>Textures\GUI\Icons\Ammo\MCRNRailgunSabotAmmo.dds</Icon>
             <Prerequisites>
-                <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+                <Item Amount="150" TypeId="Ingot" SubtypeId="Iron" />
                 <Item Amount="6" TypeId="Ingot" SubtypeId="Nickel" />
-                <Item Amount="30" TypeId="Ingot" SubtypeId="Silicon" />
-                <Item Amount="1" TypeId="Ingot" SubtypeId="Uranium" />
-                <Item Amount="1" TypeId="Ingot" SubtypeId="Gold" />
+                <Item Amount="20" TypeId="Ingot" SubtypeId="Silicon" />
+                <Item Amount="1" TypeId="Ingot" SubtypeId="Silver" />
             </Prerequisites>
             <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MCRNRailgunSabotAmmo_Magazine" />
             <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
@@ -124,147 +91,17 @@
                 <TypeId>BlueprintDefinition</TypeId>
                 <SubtypeId>MCRNHeavyRailgunSabotAmmo_Blueprint</SubtypeId>
             </Id>
-            <DisplayName>MCRN Heavy Railgun Sabot</DisplayName>
+            <DisplayName>Foehammer Railgun Sabot</DisplayName>
             <Icon>Textures\GUI\Icons\Ammo\MCRNHeavyRailgunSabotAmmo.dds</Icon>
             <Prerequisites>
-                <Item Amount="60" TypeId="Ingot" SubtypeId="Iron" />
-                <Item Amount="12" TypeId="Ingot" SubtypeId="Nickel" />
-                <Item Amount="45" TypeId="Ingot" SubtypeId="Silicon" />
-                <Item Amount="1" TypeId="Ingot" SubtypeId="Uranium" />
-                <Item Amount="1" TypeId="Ingot" SubtypeId="Platinum" />
+                <Item Amount="1200" TypeId="Ingot" SubtypeId="Iron" />
+                <Item Amount="120" TypeId="Ingot" SubtypeId="Nickel" />
+                <Item Amount="450" TypeId="Ingot" SubtypeId="Silicon" />
+                <Item Amount="10" TypeId="Ingot" SubtypeId="Uranium" />
+                <Item Amount="10" TypeId="Ingot" SubtypeId="Platinum" />
             </Prerequisites>
             <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MCRNHeavyRailgunSabotAmmo_Magazine" />
             <BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
         </Blueprint>
-
-	<Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>MCRNTorpedoLauncher_Blueprint</SubtypeId>
-            </Id>
-            <DisplayName>MCRN Torpedo</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\MCRNTorpedo.dds</Icon>
-            <Prerequisites>
-        <Item Amount="750" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="750" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Silicon" />
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="50" TypeId="Ingot" SubtypeId="Uranium" />
-        <Item Amount="150" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Platinum" />
-            </Prerequisites>
-            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MCRNTorpedoLauncher_Magazine" />
-            <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
-        </Blueprint>
-
-	<Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>UNNTorpedoLauncher_Blueprint</SubtypeId>
-            </Id>
-            <DisplayName>UNN Torpedo</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\UNNTorpedo.dds</Icon>
-            <Prerequisites>
-        <Item Amount="600" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="600" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Silicon" />
-        <Item Amount="45" TypeId="Ingot" SubtypeId="Gold" />
-        <Item Amount="45" TypeId="Ingot" SubtypeId="Uranium" />
-        <Item Amount="150" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="100" TypeId="Ingot" SubtypeId="Cobalt" />
-            </Prerequisites>
-            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="UNNTorpedoLauncher_Magazine" />
-            <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
-        </Blueprint>
-
-	<Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>OPATorpedo_Blueprint</SubtypeId>
-            </Id>
-            <DisplayName>OPA Torpedo</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\OPATorpedo.dds</Icon>
-            <Prerequisites>
-        <Item Amount="250" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="250" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="30" TypeId="Ingot" SubtypeId="Uranium" />
-        <Item Amount="75" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="25" TypeId="Ingot" SubtypeId="Cobalt" />
-            </Prerequisites>
-            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="OPATorpedo_Magazine" />
-            <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
-        </Blueprint>
-
-	<Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>UNNInterceptorMissile_Blueprint</SubtypeId>
-            </Id>
-            <DisplayName>UNN Interceptor Missile</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\UNNInterceptorMissileAmmo.dds</Icon>
-            <Prerequisites>
-        <Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="50" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="50" TypeId="Ingot" SubtypeId="Silicon" />
-        <Item Amount="50" TypeId="Ingot" SubtypeId="Magnesium" />
-            </Prerequisites>
-            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="UNNInterceptorMissile_Magazine" />
-            <BaseProductionTimeInSeconds>12</BaseProductionTimeInSeconds>
-        </Blueprint>
-
-        <Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>OPAArtilleryAP_Blueprint</SubtypeId>
-            </Id>
-            <DisplayName>Belter Artillery 180mm AP Shell</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\BelterArtilleryAmmoAP.dds</Icon>
-            <Icon>Textures\GUI\Icons\Extra\AntiArmorIcon.dds</Icon>
-            <Prerequisites>
-                <Item Amount="25" TypeId="Ingot" SubtypeId="Iron" />
-                <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
-                <Item Amount="2" TypeId="Ingot" SubtypeId="Magnesium" />
-                <Item Amount="2" TypeId="Ingot" SubtypeId="Cobalt" />
-            </Prerequisites>
-            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="OPAArtilleryAP_Magazine" />
-            <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
-        </Blueprint>
-
-        <Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>OPAArtilleryHE_Blueprint</SubtypeId>
-            </Id>
-            <DisplayName>Belter Artillery 180mm HE Shell</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\BelterArtilleryAmmoHE.dds</Icon>
-            <Icon>Textures\GUI\Icons\Extra\ExplosiveIcon.dds</Icon>
-            <Prerequisites>
-                <Item Amount="25" TypeId="Ingot" SubtypeId="Iron" />
-                <Item Amount="4" TypeId="Ingot" SubtypeId="Nickel" />
-                <Item Amount="4" TypeId="Ingot" SubtypeId="Magnesium" />
-                <Item Amount="1" TypeId="Ingot" SubtypeId="Cobalt" />
-            </Prerequisites>
-            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="OPAArtilleryHE_Magazine" />
-            <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
-        </Blueprint>
-
-        <Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>OPAArtilleryEMP_Blueprint</SubtypeId>
-            </Id>
-            <DisplayName>Belter Artillery 180mm EMP Shell</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\BelterArtilleryAmmoEMP.dds</Icon>
-            <Icon>Textures\GUI\Icons\Extra\EMPIcon.dds</Icon>
-            <Prerequisites>
-                <Item Amount="25" TypeId="Ingot" SubtypeId="Iron" />
-                <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
-                <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />
-                <Item Amount="0.1" TypeId="Ingot" SubtypeId="Gold" />
-            </Prerequisites>
-            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="OPAArtilleryEMP_Magazine" />
-            <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
-        </Blueprint>
-
 	</Blueprints>
 </Definitions>

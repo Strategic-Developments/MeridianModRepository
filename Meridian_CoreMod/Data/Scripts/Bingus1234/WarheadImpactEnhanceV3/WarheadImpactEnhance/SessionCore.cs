@@ -274,7 +274,7 @@ namespace WarheadRaycastImpact
                 {
                     if (e == null) continue;
                     if (e as IMyCubeGrid == null) continue;
-                    if (e.Closed || e == w.GetTopMostParent()) continue;
+                    if (e.Closed || e == w.GetTopMostParent() || e.Physics == null) continue;
                     ObjAABB.Min = e.PositionComp.WorldAABB.Min;
                     ObjAABB.Max = e.PositionComp.WorldAABB.Max;
 
@@ -310,7 +310,7 @@ namespace WarheadRaycastImpact
                             break;
                         }*/
 
-                        MyVisualScriptLogicProvider.SendChatMessage($"Raycasted Entities: {_ListOfIHitInfo_Temp.Count}");
+                        //MyVisualScriptLogicProvider.SendChatMessage($"Raycasted Entities: {_ListOfIHitInfo_Temp.Count}");
                         foreach (var hit in _ListOfIHitInfo_Temp)
                         {
                             if (hit.HitEntity.Closed) continue;
@@ -324,11 +324,11 @@ namespace WarheadRaycastImpact
                         }
 
                         Vector3D _RaycastLine_Norm = Warhead_VelocityDirection;
-                        MyVisualScriptLogicProvider.SendChatMessage($"Raycast Failed w/ Grid... {w.DisplayName}, {(TargetCenterPos - WarheadPos).Dot(_RaycastLine_Norm)}");
+                       // MyVisualScriptLogicProvider.SendChatMessage($"Raycast Failed w/ Grid... {w.DisplayName}, {(TargetCenterPos - WarheadPos).Dot(_RaycastLine_Norm)}");
                     } 
                     else
                     {
-                        MyVisualScriptLogicProvider.SendChatMessage($"Missed w/ Grid... {w.DisplayName}, {Vector3D.Distance(ObjAABB.Center, WarheadGrid_AABB.Center)}");
+                        //MyVisualScriptLogicProvider.SendChatMessage($"Missed w/ Grid... {w.DisplayName}, {Vector3D.Distance(ObjAABB.Center, WarheadGrid_AABB.Center)}");
                     }
                     if (_WarheadHasBeenTeleported) break;
                 }

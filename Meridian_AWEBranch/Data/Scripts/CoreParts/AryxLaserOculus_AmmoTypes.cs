@@ -79,13 +79,13 @@ namespace Scripts
                 Characters = 4f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 1000f, // Distance at which max damage begins falling off.
+                    Distance = 15000f, // Distance at which max damage begins falling off.
                     MinMultipler = 1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
                     Large = 0.001f,
-                    Small = 8f,
+                    Small = 80f,
                 },
                 Armor = new ArmorDef
                 {
@@ -217,7 +217,7 @@ namespace Scripts
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
                 DesiredSpeed = 0,
-                MaxTrajectory = 7500f,
+                MaxTrajectory = 15000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -309,7 +309,7 @@ namespace Scripts
                     {
                         Enable = true,
                         Length = 1f,
-                        Width = 0.0005f,
+                        Width = 0.5f,
                         Color = Color(red: 25, green: 12f, blue: 7, alpha: 1),
                         VisualFadeStart = 30, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 30, // How many ticks after fade began before it will be invisible.

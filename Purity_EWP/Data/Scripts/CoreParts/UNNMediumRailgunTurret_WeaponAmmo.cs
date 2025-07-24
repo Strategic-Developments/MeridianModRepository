@@ -39,20 +39,20 @@ namespace Scripts
 { // Don't edit above this line
     partial class Parts
     {
-        private AmmoDef KopeshLightRailgunSabot => new AmmoDef // Your ID, for slotting into the Weapon CS
+        private AmmoDef DawsonAPRailgunSabot => new AmmoDef // Your ID, for slotting into the Weapon CS
         {
             AmmoMagazine = "UNNRailgunSabotAmmo_Magazine", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
-            AmmoRound = "KopeshLightRailgunSabot", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
+            AmmoRound = "Dawson/Kopesh Railgun Sabot", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
             HybridRound = true, // Use both a physical ammo magazine and energy per shot.
-            EnergyCost = 0f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 500000f, // Direct damage; one steel plate is worth 100.
-            // Maximum amount of pen damage to apply per block hit.  Deducts from BaseDamage and uses DamageScales modifiers
-            Mass = 10f, // In kilograms; how much force the impact will apply to the target.
+            EnergyCost = 0.04f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
+            BaseDamage = 100000f, // Direct damage; one steel plate is worth 100.
+           // Maximum amount of pen damage to apply per block hit.  Deducts from BaseDamage and uses DamageScales modifiers
+            Mass = 100f, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
-            BackKickForce = 2400000f, // Recoil. This is applied to the Parent Grid.
+            BackKickForce = 24000f, // Recoil. This is applied to the Parent Grid.
             DecayPerShot = 0f, // Damage to the firing weapon itself.
             HardPointUsable = true, // Whether this is a primary ammo type fired directly by the turret. Set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
-            EnergyMagazineSize = 3, // For energy weapons, how many shots to fire before reloading.
+            EnergyMagazineSize = 1, // For energy weapons, how many shots to fire before reloading.
             IgnoreWater = false, // Whether the projectile should be able to penetrate water when using WaterMod.
             IgnoreVoxels = false, // Whether the projectile should be able to penetrate voxels.
 
@@ -64,7 +64,7 @@ namespace Scripts
 
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // Limits the number of grids or projectiles that damage can be applied to, useful to limit overpenetration; 0 = unlimited.
+                MaxObjectsHit = 10, // Limits the number of grids or projectiles that damage can be applied to, useful to limit overpenetration; 0 = unlimited.
                 CountBlocks = true, // Counts individual blocks, not just entities hit.  Note that every block touched by primary damage hits will count toward MaxObjectsHit
                 SkipBlocksForAOE = false, //If CountBlocks = true this will determine if AOE hits are counted against MaxObjectsHit.  Set true to skip counting for AOE
             },
@@ -72,7 +72,7 @@ namespace Scripts
             Pattern = new PatternDef
             {
                 Patterns = new[] { // If enabled, set of multiple ammos to fire in order instead of the main ammo.
-                    "KopeshlightRailgunSabotBonusDamage",
+                    "UNNLightRailgunSabotBonusDamage",
                 },
                 Enable = true,
                 TriggerChance = 1f,
@@ -99,14 +99,14 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = 1f, // Multiplier for damage against large grids.
-                    Small = 1f, // Multiplier for damage against small grids.
+                    Large = -1f, // Multiplier for damage against large grids.
+                    Small = -1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
                     Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
-                    Light = 0.25f, // Multiplier for damage against light armor.
-                    Heavy = 0.8f, // Multiplier for damage against heavy armor.
+                    Light = -1f, // Multiplier for damage against light armor.
+                    Heavy = -1f, // Multiplier for damage against heavy armor.
                     NonArmor = -1f, // Multiplier for damage against every else.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
@@ -121,7 +121,7 @@ namespace Scripts
             {
                 ByBlockHit = new ByBlockHitDef
                 {
-                    Enable = true,
+                    Enable = false,
                     Radius = 1f, // Meters
                     Damage = 200f,
                     Depth = 1f, // Meters
@@ -137,7 +137,7 @@ namespace Scripts
                 },
                 EndOfLife = new EndOfLifeDef
                 {
-                    Enable = true,
+                    Enable = false,
                     Radius = 2.5f, // Meters
                     Damage = 0f,
                     Depth = 0f,
@@ -227,8 +227,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..). Please have a value for this, It stops Bad things.
                 AccelPerSec = 0f, // Meters Per Second. This is the spawning Speed of the Projectile, and used by turning.
-                DesiredSpeed = 35000f, // voxel phasing if you go above 5100
-                MaxTrajectory = 90000f, // Max Distance the projectile or beam can Travel.
+                DesiredSpeed = 25000f, // voxel phasing if you go above 5100
+                MaxTrajectory = 100000f, // Max Distance the projectile or beam can Travel.
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable. Natural Gravity Only.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed. Be warned, you can make your projectile go backwards.
                 RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
@@ -382,13 +382,14 @@ namespace Scripts
             }, // Don't edit below this line
         };
 
-        private AmmoDef KopeshlightRailgunSabotBonusDamage => new AmmoDef // Your ID, for slotting into the Weapon CS
+     
+        private AmmoDef UNNLightRailgunSabotBonusDamage => new AmmoDef // Your ID, for slotting into the Weapon CS
         {
             AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
-            AmmoRound = "KopeshlightRailgunSabotBonusDamage", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
+            AmmoRound = "UNNLightRailgunSabotBonusDamage", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.00001f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 2500f, // Direct damage; one steel plate is worth 100.
+            BaseDamage = 5000f, // Direct damage; one steel plate is worth 100.
             Mass = 20f, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0f, // Recoil. This is applied to the Parent Grid.
@@ -449,7 +450,7 @@ namespace Scripts
             {
                 ByBlockHit = new ByBlockHitDef
                 {
-                    Enable = true,
+                    Enable = false,
                     Radius = 3f, // Meters
                     Damage = 2000f,
                     Depth = 1f, // Meters
@@ -632,25 +633,25 @@ namespace Scripts
                 },
                 Lines = new LineDef
                 {
-                    ColorVariance = Random(start: 0.1f, end: 1.8f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: 0f, end: 0.1f), // adds random value to default width (negatives shrinks width)
+                    ColorVariance = Random(start: 1f, end: 1f), // multiply the color by random values within range.
+                    WidthVariance = Random(start: 0f, end: 0f), // adds random value to default width (negatives shrinks width)
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 50f, //
-                        Width = 0.2f, //
-                        Color = Color(red: 20f, green: 20f, blue: 30f, alpha: 1f), // RBG 255 is Neon Glowing, 100 is Quite Bright.
+                        Length = 1200f,
+                        Width = 1f,
+                        Color = Color(red: 25, green: 30, blue: 40, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
-                        VisualFadeEnd = 240, // How many ticks after fade began before it will be invisible.
+                        VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
-                            "WeaponLaser", // Please always have this Line set, if this Section is enabled.
+                            "ProjectileTrailLine",
                         },
                         TextureMode = Normal, // Normal, Cycle, Chaos, Wave
                         Segmentation = new SegmentDef
                         {
                             Enable = false, // If true Tracer TextureMode is ignored
                             Textures = new[] {
-                                "", // Please always have this Line set, if this Section is enabled.
+                                "",
                             },
                             SegmentLength = 0f, // Uses the values below.
                             SegmentGap = 0f, // Uses Tracer textures and values
@@ -665,15 +666,15 @@ namespace Scripts
                     },
                     Trail = new TrailDef
                     {
-                        Enable = false,
+                        Enable = true,
                         Textures = new[] {
-                            "WeaponLaser", // Please always have this Line set, if this Section is enabled.
+                            "WeaponLaser",
                         },
                         TextureMode = Normal,
-                        DecayTime = 60, // In Ticks. 1 = 1 Additional Tracer generated per motion, 33 is 33 lines drawn per projectile. Keep this number low.
-                        Color = Color(red: 5f, green: 5f, blue: 18f, alpha: 1f),
+                        DecayTime = 45,
+                        Color = Color(red: 13, green: 18, blue: 36, alpha: 0.9f),
                         Back = false,
-                        CustomWidth = 0.2f,
+                        CustomWidth = 0.6f,
                         UseWidthVariance = false,
                         UseColorFade = true,
                     },
@@ -689,7 +690,7 @@ namespace Scripts
             {
                 TravelSound = "", // SubtypeID for your Sound File. Travel, is sound generated around your Projectile in flight
                 HitSound = "EWPRailgun_Impact",
-                ShotSound = "Kopesh_Shot",
+                ShotSound = "DawsonRailgun_Shot",
                 ShieldHitSound = "",
                 PlayerHitSound = "",
                 VoxelHitSound = "",
@@ -710,7 +711,6 @@ namespace Scripts
                 }
             }, // Don't edit below this line
         };
-
 
     }
 }

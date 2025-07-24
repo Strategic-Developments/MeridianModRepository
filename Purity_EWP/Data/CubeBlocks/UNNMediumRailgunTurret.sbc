@@ -1,14 +1,13 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<CubeBlocks>
-
 		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 			<Id>
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>UNNLightRailgunTurret_Block</SubtypeId>
 			</Id>
-			<DisplayName>Dawson-Pattern Medium Railgun Turret [UNN]</DisplayName>
-			<Description> UNN medium railgun. Has limited angle of articulation and relatively slow turn speed, but it's compensated with high damage per shot and 2 alternative ammo types: Armor-piercing (pierces through blocks dealing limited damage to each) and Anti-Hull (deals full damage to block it hits and penetrates if its destroyed). Consumes "UNN light railgun ammo" </Description>
+			<DisplayName>Dawson Medium Railgun Turret</DisplayName>
+			<Description>Medium railgun, 50km range, 25kps, 100k damage w/ max 10 block pen, 400MW, uses Dawson/Kopesh Railgun Sabots.</Description>
 			<Icon>Textures\GUI\Icons\Cubes\UNNLightRailgunTurret.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
@@ -16,17 +15,17 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\UNNLightRailgunTurret.mwm</Model>
 			<Components>
-						 <Component Subtype="TacLicense" Count="1" />	
-                          <Component Subtype="SteelPlate" Count="150" />
-                          <Component Subtype="MetalGrid" Count="90" />
-                          <Component Subtype="Construction" Count="200" />
-                          <Component Subtype="Superconductor" Count="300" />
-                          <Component Subtype="LargeTube" Count="90" />
-                          <Component Subtype="SmallTube" Count="200" />
-                          <Component Subtype="PowerCell" Count="240"/>
-                          <Component Subtype="Computer" Count="500" />
-                          <Component Subtype="MetalGrid" Count="40" />
-                          <Component Subtype="SteelPlate" Count="250" />
+				<Component Subtype="TacLicense" Count="2"/>
+				<Component Subtype="SteelPlate" Count="150"/>
+				<Component Subtype="MetalGrid" Count="90"/>
+				<Component Subtype="Construction" Count="200"/>
+				<Component Subtype="Superconductor" Count="300"/>
+				<Component Subtype="LargeTube" Count="90"/>
+				<Component Subtype="SmallTube" Count="200"/>
+				<Component Subtype="PowerCell" Count="240"/>
+				<Component Subtype="Computer" Count="500"/>
+				<Component Subtype="MetalGrid" Count="40"/>
+				<Component Subtype="SteelPlate" Count="250"/>
 			</Components>
 			<CriticalComponent Index="0" Subtype="Computer"/>
 			<MountPoints>
@@ -54,6 +53,5 @@
 				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\UNNLightRailgunTurret_BS3.mwm"/>
 			</BuildProgressModels>
 		</Definition>
-
 	</CubeBlocks>
 </Definitions>

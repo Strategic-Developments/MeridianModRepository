@@ -42,10 +42,10 @@ namespace Scripts
         private AmmoDef MCRNHeavyRailgunSabot => new AmmoDef // Your ID, for slotting into the Weapon CS
         {
             AmmoMagazine = "MCRNHeavyRailgunSabotAmmo_Magazine", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
-            AmmoRound = "MCRNHeavyRailgunSabot", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
+            AmmoRound = "Foehammer Railgun Sabot", // Name of ammo in terminal, should be different for each ammo type used by the same weapon. Is used by Shrapnel.
             HybridRound = true, // Use both a physical ammo magazine and energy per shot.
-            EnergyCost = 0f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 9900000f, // Direct damage; one steel plate is worth 100.
+            EnergyCost = 0.8E-12f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
+            BaseDamage = 1E+16f, // Direct damage; one steel plate is worth 100.
               // Maximum amount of pen damage to apply per block hit.  Deducts from BaseDamage and uses DamageScales modifiers
             Mass = 20f, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
@@ -106,7 +106,7 @@ namespace Scripts
                 {
                     Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
                     Light = -1f, // Multiplier for damage against light armor.
-                    Heavy = 2f, // Multiplier for damage against heavy armor.
+                    Heavy = -1f, // Multiplier for damage against heavy armor.
                     NonArmor = -1f, // Multiplier for damage against every else.
                 },
                 DamageType = new DamageTypes // Damage type of each element of the projectile's damage; Kinetic, Energy
@@ -121,7 +121,7 @@ namespace Scripts
             {
                 ByBlockHit = new ByBlockHitDef
                 {
-                    Enable = true,
+                    Enable = false,
                     Radius = 3f, // Meters
                     Damage = 2000f,
                     Depth = 1f, // Meters
@@ -137,7 +137,7 @@ namespace Scripts
                 },
                 EndOfLife = new EndOfLifeDef
                 {
-                    Enable = true,
+                    Enable = false,
                     Radius = 3f, // Meters
                     Damage = 0f,
                     Depth = 0f,
@@ -227,8 +227,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 300, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..). Please have a value for this, It stops Bad things.
                 AccelPerSec = 0f, // Meters Per Second. This is the spawning Speed of the Projectile, and used by turning.
-                DesiredSpeed = 40000f, // voxel phasing if you go above 5100
-                MaxTrajectory = 140000f, // Max Distance the projectile or beam can Travel.
+                DesiredSpeed = 28000, // voxel phasing if you go above 5100
+                MaxTrajectory = 100000f, // Max Distance the projectile or beam can Travel.
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable. Natural Gravity Only.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed. Be warned, you can make your projectile go backwards.
                 RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
@@ -631,31 +631,31 @@ namespace Scripts
                 },
                 Lines = new LineDef
                 {
-                    ColorVariance = Random(start: 0.1f, end: 1.8f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: 0f, end: 0.1f), // adds random value to default width (negatives shrinks width)
+                    ColorVariance = Random(start: 1f, end: 1f), // multiply the color by random values within range.
+                    WidthVariance = Random(start: 0f, end: 0f), // adds random value to default width (negatives shrinks width)
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 50f, //
-                        Width = 0.2f, //
-                        Color = Color(red: 20f, green: 20f, blue: 30f, alpha: 1f), // RBG 255 is Neon Glowing, 100 is Quite Bright.
+                        Length = 2000f,
+                        Width = 3.75f,
+                        Color = Color(red: 35 * 2, green: 10 * 2, blue: 80 * 1.75f, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
-                        VisualFadeEnd = 240, // How many ticks after fade began before it will be invisible.
+                        VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
-                            "WeaponLaser", // Please always have this Line set, if this Section is enabled.
+                            "ProjectileTrailLine",
                         },
                         TextureMode = Normal, // Normal, Cycle, Chaos, Wave
                         Segmentation = new SegmentDef
                         {
                             Enable = false, // If true Tracer TextureMode is ignored
                             Textures = new[] {
-                                "", // Please always have this Line set, if this Section is enabled.
+                                "AryxPulseLaserEffectL2",
                             },
-                            SegmentLength = 0f, // Uses the values below.
+                            SegmentLength = 100f, // Uses the values below.
                             SegmentGap = 0f, // Uses Tracer textures and values
-                            Speed = 1f, // meters per second
-                            Color = Color(red: 1, green: 2, blue: 2.5f, alpha: 1),
-                            WidthMultiplier = 1f,
+                            Speed = 50f, // meters per second
+                            Color = Color(red: 5f, green: 5, blue: 35f, alpha: 0.5f),
+                            WidthMultiplier = 2f,
                             Reverse = false,
                             UseLineVariance = true,
                             WidthVariance = Random(start: 0f, end: 0f),
@@ -664,15 +664,15 @@ namespace Scripts
                     },
                     Trail = new TrailDef
                     {
-                        Enable = false,
+                        Enable = true,
                         Textures = new[] {
-                            "WeaponLaser", // Please always have this Line set, if this Section is enabled.
+                            "AryxPulseLaserEffectL2",
                         },
                         TextureMode = Normal,
-                        DecayTime = 60, // In Ticks. 1 = 1 Additional Tracer generated per motion, 33 is 33 lines drawn per projectile. Keep this number low.
-                        Color = Color(red: 5f, green: 5f, blue: 18f, alpha: 1f),
+                        DecayTime = 48,
+                        Color = Color(red: 10 * 2, green: 6 * 2, blue: 25 * 1.75f, alpha: 1),
                         Back = false,
-                        CustomWidth = 0.2f,
+                        CustomWidth = 2.75f,
                         UseWidthVariance = false,
                         UseColorFade = true,
                     },

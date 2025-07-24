@@ -7,7 +7,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>GaussAmmoBP</SubtypeId>
       </Id>
-      <DisplayName>1200mm Ferrous Slug</DisplayName>
+      <DisplayName>Ariadne/Ares Railgun Sabot</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEGaussAmmo.dds</Icon>
       <Prerequisites>
         <Item Amount="2000" TypeId="Ingot" SubtypeId="Iron" />
@@ -26,7 +26,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>AryxRailgunAmmoBP</SubtypeId>
       </Id>
-      <DisplayName>250mm Ferrous Slug</DisplayName>
+      <DisplayName>Apollo/Artemis Railgun Sabot</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWERailgunAmmo.dds</Icon>
       <Prerequisites>
         <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
@@ -79,7 +79,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>AryxSmallRailgunAmmoBP</SubtypeId>
       </Id>
-      <DisplayName>115mm Ferrous Slug</DisplayName>
+      <DisplayName>Athena Railgun Sabot</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEPicketRailgunAmmo.dds</Icon>
       <Prerequisites>
         <Item Amount="250" TypeId="Ingot" SubtypeId="Iron" />
