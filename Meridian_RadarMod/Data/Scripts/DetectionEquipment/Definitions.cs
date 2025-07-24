@@ -939,7 +939,7 @@ namespace DetectionEquipment
 
             DetectionThreshold = 1000,
             BearingErrorModifier = 0,
-            RangeErrorModifier = 1,
+            RangeErrorModifier = 100,
 
             MaxPowerDraw = -1,
 
