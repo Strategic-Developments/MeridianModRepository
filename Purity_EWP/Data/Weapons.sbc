@@ -41,7 +41,7 @@
 		<DeviateShotAngle>10</DeviateShotAngle>
 		<MuzzleFlashLifeSpan>40</MuzzleFlashLifeSpan>
 		<AmmoMagazines>
-			<AmmoMagazine Subtype="MCRN40mm_Magazine" />
+			<AmmoMagazine Subtype="AES_NARIMAN_40MM_AMMOMAGAZINE" />
 			<AmmoMagazine Subtype="UNN40mm_Magazine" />
 			<AmmoMagazine Subtype="OPAFlak_Magazine" />
 			<AmmoMagazine Subtype="OPAAutocannonPDC_Magazine" />

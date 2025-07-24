@@ -71,7 +71,7 @@ namespace Scripts {
                 AddToleranceToTracking = true, // Allows turret to track to the edge of the AimingTolerance cone instead of dead centre.
                 CanShootSubmerged = true, // Whether the weapon can be fired underwater when using WaterMod.
                 NpcSafe = false, // This is you tell npc moders that your ammo was designed with them in mind, if they tell you otherwise set this to false.
-                ScanTrackOnly = false, // This weapon only scans and tracks entities, this disables un-needed functionality and customizes for this purpose. 
+                ScanTrackOnly = true, // This weapon only scans and tracks entities, this disables un-needed functionality and customizes for this purpose. 
                 Ui = new UiDef
                 {
                     RateOfFire = false, // Enables terminal slider for changing rate of fire.

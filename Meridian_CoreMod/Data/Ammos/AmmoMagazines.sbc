@@ -27,7 +27,7 @@
             <Volume>20</Volume>
             <Model>Models\GreenAmmo.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
-            <Capacity>240</Capacity>
+            <Capacity>600</Capacity>
             <AmmoDefinitionId Subtype="SAIDS_Green_Ammo" />
 
             <MinimumOfferAmount>10</MinimumOfferAmount>

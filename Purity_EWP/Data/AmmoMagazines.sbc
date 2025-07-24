@@ -57,32 +57,6 @@
         <AmmoMagazine>
             <Id>
                 <TypeId>AmmoMagazine</TypeId>
-                <SubtypeId>MCRN40mm_Magazine</SubtypeId>
-            </Id>
-            <DisplayName>MCRN 40mm Ammo Box</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\MCRNAmmoPDC.dds</Icon>
-            <Size>
-                <X>0.25</X>
-                <Y>0.2</Y>
-                <Z>0.2</Z>
-            </Size>
-            <Mass>50</Mass>
-            <Volume>50</Volume>
-            <Model>Models\Ammo\MCRNAmmoPDC.mwm</Model>
-            <PhysicalMaterial>Ammo</PhysicalMaterial>
-            <Capacity>300</Capacity>
-            <AmmoDefinitionId Subtype="MCRN40mm_Ammo" />
-
-            <MinimumOfferAmount>50</MinimumOfferAmount>
-            <MaximumOfferAmount>500</MaximumOfferAmount>
-            <MinimumOrderAmount>100</MinimumOrderAmount>
-            <MaximumOrderAmount>2000</MaximumOrderAmount>
-            <CanPlayerOrder>true</CanPlayerOrder>
-        </AmmoMagazine>
-
-        <AmmoMagazine>
-            <Id>
-                <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>OPAAutocannonPDC_Magazine</SubtypeId>
             </Id>
             <DisplayName>OPA Autocannon Ammo</DisplayName>

@@ -25,16 +25,70 @@ namespace Scripts {
                         MuzzlePartId = "zenith", // The subpart where your muzzle empties are located. This is often the elevation subpart. Subpart_Boomsticks must be written as Boomsticks.
                         AzimuthPartId = "azimuth", // Your Rotating Subpart, the bit that moves sideways.
                         ElevationPartId = "zenith",// Your Elevating Subpart, that bit that moves up.
-                        DurabilityMod = 0.25f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                     },
-					new MountPointDef {
+                    new MountPointDef {
                         SubtypeId = "Aryx_AES_6M40_PDC_SG", // Block Subtypeid. Your Cubeblocks contain this information
                         SpinPartId = "barrel", // For weapons with a spinning barrel such as Gatling Guns. Subpart_Boomsticks must be written as Boomsticks.
                         MuzzlePartId = "zenith", // The subpart where your muzzle empties are located. This is often the elevation subpart. Subpart_Boomsticks must be written as Boomsticks.
                         AzimuthPartId = "azimuth", // Your Rotating Subpart, the bit that moves sideways.
                         ElevationPartId = "zenith",// Your Elevating Subpart, that bit that moves up.
-                        DurabilityMod = 0.25f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
-                    },			
+                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                    },
+                    new MountPointDef {
+                        SubtypeId = "MCRNRetractablePDC_Block", // Block Subtypeid. Your Cubeblocks contain this information
+                        SpinPartId = "Barrels", // For weapons with a spinning barrel such as Gatling Guns.
+                        MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
+                        AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
+                        ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
+                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
+                    },
+                    new MountPointDef {
+                        SubtypeId = "MCRNRetractablePDCMIRRORED_Block", // Block Subtypeid. Your Cubeblocks contain this information
+                        SpinPartId = "Barrels", // For weapons with a spinning barrel such as Gatling Guns.
+                        MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
+                        AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
+                        ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
+                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
+                    },
+                    new MountPointDef {
+                        SubtypeId = "MCRNRetractablePDCSlope_Block", // Block Subtypeid. Your Cubeblocks contain this information
+                        SpinPartId = "Barrels", // For weapons with a spinning barrel such as Gatling Guns.
+                        MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
+                        AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
+                        ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
+                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
+                    },
+                    new MountPointDef {
+                        SubtypeId = "MCRNRetractablePDCSlopeMIRRORED_Block", // Block Subtypeid. Your Cubeblocks contain this information
+                        SpinPartId = "Barrels", // For weapons with a spinning barrel such as Gatling Guns.
+                        MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
+                        AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
+                        ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
+                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
+                    },
+                    new MountPointDef {
+                        SubtypeId = "MCRNRetractablePDCSlopeAlt_Block", // Block Subtypeid. Your Cubeblocks contain this information
+                        SpinPartId = "Barrels", // For weapons with a spinning barrel such as Gatling Guns.
+                        MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
+                        AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
+                        ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
+                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
+                    },
+                    new MountPointDef {
+                        SubtypeId = "MCRNRetractablePDCSlopeAltMIRRORED_Block", // Block Subtypeid. Your Cubeblocks contain this information
+                        SpinPartId = "Barrels", // For weapons with a spinning barrel such as Gatling Guns.
+                        MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
+                        AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
+                        ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
+                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
+                    },
                 },	 
                 Muzzles = new[] {
                     "muzzle_projectile_1", // Where your Projectiles spawn. Use numbers not Letters. IE Muzzle_01 not Muzzle_A
@@ -50,7 +104,7 @@ namespace Scripts {
                 SubSystems = new[] {
                     Thrust, Utility, Offense, Power, Production, Any, // Subsystem targeting priority: Offense, Utility, Power, Production, Thrust, Jumping, Steering, Any
                 },
-                ClosestFirst = true, // Tries to pick closest targets first (blocks on grids, projectiles, etc...).
+                ClosestFirst = false, // Tries to pick closest targets first (blocks on grids, projectiles, etc...).
                 IgnoreDumbProjectiles = false, // Don't fire at non-smart projectiles.
                 LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 0, // Minimum radius of threat to engage.
@@ -118,8 +172,8 @@ namespace Scripts {
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.11f, // Max traversal speed of azimuth subpart in radians per tick (0.1 is approximately 360 degrees per second).
-                    ElevateRate = 0.11f, // Max traversal speed of elevation subpart in radians per tick.
+                    RotateRate = 0.15f, // Max traversal speed of azimuth subpart in radians per tick (0.1 is approximately 360 degrees per second).
+                    ElevateRate = 0.15f, // Max traversal speed of elevation subpart in radians per tick.
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -90,
@@ -155,21 +209,21 @@ namespace Scripts {
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 3000, // Set this to 3600 for beam weapons. This is how fast your Gun fires.
+                    RateOfFire = 1800, // Set this to 3600 for beam weapons. This is how fast your Gun fires.
                     BarrelsPerShot = 1, // How many muzzles will fire a projectile per fire event.
                     TrajectilesPerBarrel = 1, // Number of projectiles per muzzle per fire event.
                     SkipBarrels = 0, // Number of muzzles to skip after each fire event.
-                    ReloadTime = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 10, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     MagsToLoad = 1, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 0, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 1, // Heat generated per shot.
-                    MaxHeat = 70000, // Max heat before weapon enters cooldown (70% of max heat).
+                    HeatPerShot = 40, // Heat generated per shot.
+                    MaxHeat = 3950, // Max heat before weapon enters cooldown (70% of max heat).
                     Cooldown = .95f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
-                    HeatSinkRate = 9000000, // Amount of heat lost per second.
-                    DegradeRof = false, // Progressively lower rate of fire when over 80% heat threshold (80% of max heat).
-                    ShotsInBurst = 10, // Use this if you don't want the weapon to fire an entire physical magazine in one go. Should not be more than your magazine capacity.
+                    HeatSinkRate = 800, // Amount of heat lost per second.
+                    DegradeRof = true, // Progressively lower rate of fire when over 80% heat threshold (80% of max heat).
+                    ShotsInBurst = 30, // Use this if you don't want the weapon to fire an entire physical magazine in one go. Should not be more than your magazine capacity.
                     DelayAfterBurst = 0, // How long to spend "reloading" after each burst. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    FireFull = false, // Whether the weapon should fire the full magazine (or the full burst instead if ShotsInBurst > 0), even if the target is lost or the player stops firing prematurely.
+                    FireFull = true, // Whether the weapon should fire the full magazine (or the full burst instead if ShotsInBurst > 0), even if the target is lost or the player stops firing prematurely.
                     GiveUpAfter = true, // Whether the weapon should drop its current target and reacquire a new target after finishing its magazine or burst.
                     BarrelSpinRate = 600, // Visual only, 0 disables and uses RateOfFire.
                     DeterministicSpin = false, // Spin barrel position will always be relative to initial / starting positions (spin will not be as smooth).

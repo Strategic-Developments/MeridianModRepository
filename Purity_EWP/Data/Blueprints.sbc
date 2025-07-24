@@ -5,23 +5,6 @@
 	<Blueprint>
             <Id>
                 <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>MCRN40mm_Blueprint</SubtypeId>
-            </Id>
-            <DisplayName>MCRN 40mm Ammo Box</DisplayName>
-            <Icon>Textures\GUI\Icons\Ammo\MCRNAmmoPDC.dds</Icon>
-            <Prerequisites>
-                <Item Amount="40" TypeId="Ingot" SubtypeId="Iron" />
-                <Item Amount="6" TypeId="Ingot" SubtypeId="Nickel" />
-                <Item Amount="4" TypeId="Ingot" SubtypeId="Magnesium" />
-                <Item Amount="2" TypeId="Ingot" SubtypeId="Cobalt" />
-            </Prerequisites>
-            <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="MCRN40mm_Magazine" />
-            <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
-        </Blueprint>
-
-	<Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
                 <SubtypeId>OPAAutocannonPDC_Blueprint</SubtypeId>
             </Id>
             <DisplayName>OPA Autocannon Ammo</DisplayName>
