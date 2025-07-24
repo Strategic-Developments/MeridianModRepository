@@ -17,8 +17,8 @@ namespace DetectionEquipment
         //Tier SG
         private static int PowerDraw_SG = 5000000;
 
-        private static double DetThreshold_SG_S = 8.873949985;
-        private static double DetThreshold_SG_P = 8.873949985;
+        private static double DetThreshold_SG_S = 20.91514981;
+        private static double DetThreshold_SG_P = 20.91514981;
         private static double DetThreshold_SG_T = 7.043650362;
 
         private static double BearingError_Search_SG = 0.4;
@@ -45,8 +45,8 @@ namespace DetectionEquipment
         //Tier I
         private static int PowerDraw_I = 15000000;
 
-        private static double DetThreshold_I_S = 14.5271161;
-        private static double DetThreshold_I_P = 7.483465734;
+        private static double DetThreshold_I_S = 25.28092859;
+        private static double DetThreshold_I_P = 18.23727823;
         private static double DetThreshold_I_T = 4.997549464;
 
         private static double BearingError_Search_I = 0.4;
@@ -73,8 +73,8 @@ namespace DetectionEquipment
         //Tier II
         private static int PowerDraw_II = 30000000;
 
-        private static double DetThreshold_II_S = 18.23727823;
-        private static double DetThreshold_II_P = 13.23972876;
+        private static double DetThreshold_II_S = 27.95880017;
+        private static double DetThreshold_II_P = 22.96125071;
         private static double DetThreshold_II_T = 3.87640052;
 
         private static double BearingError_Search_II = 0.2;
@@ -101,8 +101,8 @@ namespace DetectionEquipment
         //Tier III
         private static int PowerDraw_III = 60000000;
 
-        private static double DetThreshold_III_S = 18.74084332;
-        private static double DetThreshold_III_P = 14.8644428;
+        private static double DetThreshold_III_S = 29.7890998;
+        private static double DetThreshold_III_P = 25.91269928;
         private static double DetThreshold_III_T = 3.167249842;
 
         private static double BearingError_Search_III = 0.1;
@@ -130,8 +130,8 @@ namespace DetectionEquipment
         private static int PowerDraw_IV = 120000000;
         private static int PowerDraw_IV_Track = 85000000;
 
-        private static double DetThreshold_IV_S = 21.76272177;
-        private static double DetThreshold_IV_P = 19.08485019;
+        private static double DetThreshold_IV_S = 33.8039216;
+        private static double DetThreshold_IV_P = 31.12605002;
         private static double DetThreshold_IV_T = 2.677871585;
 
         private static double BearingError_Search_IV = 0.05;
