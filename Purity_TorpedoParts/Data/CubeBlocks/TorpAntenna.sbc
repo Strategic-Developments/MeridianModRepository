@@ -158,13 +158,13 @@
 			<BlockPairName>TorpedoBattery</BlockPairName>
 		
             <ResourceSourceGroup>Battery</ResourceSourceGroup>
-            <MaxPowerOutput>50000</MaxPowerOutput>
+            <MaxPowerOutput>500000</MaxPowerOutput>
 
             <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
             <RequiredPowerInput>0.2</RequiredPowerInput>
-            <MaxStoredPower>125000</MaxStoredPower>
+            <MaxStoredPower>1250000</MaxStoredPower>
             <InitialStoredPowerRatio>1</InitialStoredPowerRatio>
-            <RechargeMultiplier>12000</RechargeMultiplier>
+            <RechargeMultiplier>120000</RechargeMultiplier>
 
             <InventorySize>
                 <X>1</X>
@@ -213,8 +213,8 @@
 			<BlockPairName>TorpedoThruster</BlockPairName>
 			<BuildTimeSeconds>8</BuildTimeSeconds>
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
-            <ForceMagnitude>400000</ForceMagnitude>
-            <MaxPowerConsumption>18000</MaxPowerConsumption>
+            <ForceMagnitude>600000</ForceMagnitude>
+            <MaxPowerConsumption>180000</MaxPowerConsumption>
             <MinPowerConsumption>0.000001</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
             <FlameDamageLengthScale>0</FlameDamageLengthScale>
@@ -237,10 +237,10 @@
             <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
             <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
             <FlameGlareMaterial>GlareLsThrustSmall</FlameGlareMaterial>
-            <FlameVisibilityDistance>150000</FlameVisibilityDistance>
-            <FlameGlareSize>7</FlameGlareSize>
-            <FlameGlareQuerySize>7</FlameGlareQuerySize>
-            <PrimarySound>LrgShipSmJet</PrimarySound>			
+            <FlameVisibilityDistance>300000</FlameVisibilityDistance>
+            <FlameGlareSize>15</FlameGlareSize>
+            <FlameGlareQuerySize>15</FlameGlareQuerySize>
+            <PrimarySound>LrgShipSmJet</PrimarySound>
 		</Definition>		
 		
 
@@ -427,8 +427,8 @@
 			<BlockPairName>TorpRCS</BlockPairName>
 			<BuildTimeSeconds>8</BuildTimeSeconds>
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
-            <ForceMagnitude>325000</ForceMagnitude>
-            <MaxPowerConsumption>13000</MaxPowerConsumption>
+            <ForceMagnitude>450000</ForceMagnitude>
+            <MaxPowerConsumption>130000</MaxPowerConsumption>
             <MinPowerConsumption>0.000001</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
             <FlameDamage>0</FlameDamage>

@@ -20,15 +20,15 @@
 				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
 				<Text Name="EmitterSetup" Value="
                     Particle : meridian_torpedo_thruster_1x1_particle;
-                    Type : SPRITE;
+                    Type : PARTICLE;
                     AtmoOnly : FALSE;
                     ThrustMin : 0;
                     ThrustMax : 1;
-                    Size : 1;
+                    Size : 0.5;
                     Offset : 0;
                     OffsetScaling : 0;
                     VelocityScalingFrom : -1;
-                    VelocityScalingTo : -1;
+                    VelocityScalingTo : 2;
                     CullingTime:90;
                     Dummies : thruster_flame_1;              
                     "/>

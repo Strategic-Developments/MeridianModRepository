@@ -12,7 +12,7 @@ namespace DetectionEquipment
         //Common
         private static double Bandwidth_General = 1670000;
         private static double Freq_General = 2800000000;
-        private static double PowerEfficiency_General = 2.50E-16;
+        private static double PowerEfficiency_General = 2.50E-18;
 
         //Tier SG
         private static int PowerDraw_SG = 5000000;
@@ -937,9 +937,9 @@ namespace DetectionEquipment
 
             TerminalName = "SB-PRR RWR sensor",
 
-            DetectionThreshold = 30,
-            BearingErrorModifier = 0.5,
-            RangeErrorModifier = 0.01,
+            DetectionThreshold = 1000,
+            BearingErrorModifier = 0,
+            RangeErrorModifier = 1,
 
             MaxPowerDraw = -1,
 
@@ -967,17 +967,17 @@ namespace DetectionEquipment
             SensorEmpty = "C-Sys_VRE_Opt_Sensor",
 
             MaxAperture = MathHelper.ToRadians(55),
-            MinAperture = MathHelper.ToRadians(35),
+            MinAperture = MathHelper.ToRadians(55),
 
             Movement = null,
 
             TerminalName = "C-Sys VRE Optic sensor",
 
-            DetectionThreshold = 30,
-            BearingErrorModifier = 0.9,
-            RangeErrorModifier = 0.6,
+            DetectionThreshold = 7.43E-09,
+            BearingErrorModifier = 0.01,
+            RangeErrorModifier = 15,
 
-            MaxPowerDraw = 500000,
+            MaxPowerDraw = 3500000,
         };
         private static SensorDefinition C_Sys_VRE_IR_Def => new SensorDefinition
         {
@@ -996,17 +996,17 @@ namespace DetectionEquipment
             SensorEmpty = "C-Sys_VRE_IR_Sensor",
 
             MaxAperture = MathHelper.ToRadians(55),
-            MinAperture = MathHelper.ToRadians(35),
+            MinAperture = MathHelper.ToRadians(55),
 
             Movement = null,
 
             TerminalName = "C-Sys VRE IR sensor",
 
-            DetectionThreshold = 30,
-            BearingErrorModifier = 0.1,
-            RangeErrorModifier = 3,
+            DetectionThreshold = 1.45E-07,
+            BearingErrorModifier = 0.001,
+            RangeErrorModifier = 15,
 
-            MaxPowerDraw = 500000,
+            MaxPowerDraw = 3500000,
         };
 
         private static SensorDefinition C_Sys_IRO_DetBlock_Optical_Def => new SensorDefinition
@@ -1024,7 +1024,7 @@ namespace DetectionEquipment
             SensorEmpty = "CSys_IRO_DetBlock_Sensor_Opt",
 
             MaxAperture = MathHelper.ToRadians(20),
-            MinAperture = MathHelper.ToRadians(0.5),
+            MinAperture = MathHelper.ToRadians(10),
 
             Movement = new SensorDefinition.SensorMovementDefinition
             {
@@ -1041,11 +1041,11 @@ namespace DetectionEquipment
 
             TerminalName = "C-Sys IR/O DetBlock Optical Sensor",
 
-            DetectionThreshold = 30,
+            DetectionThreshold = 1.02E-08,
             BearingErrorModifier = 0.01,
-            RangeErrorModifier = 1,
+            RangeErrorModifier = 15,
 
-            MaxPowerDraw = 500000,
+            MaxPowerDraw = 3500000,
 
         };
         private static SensorDefinition C_Sys_IRO_DetBlock_IR_Def => new SensorDefinition
@@ -1080,11 +1080,11 @@ namespace DetectionEquipment
 
             TerminalName = "C-Sys IR/O DetBlock IR Sensor",
 
-            DetectionThreshold = 30,
-            BearingErrorModifier = 0.1,
-            RangeErrorModifier = 1,
+            DetectionThreshold = 3.27E-07,
+            BearingErrorModifier = 0.001,
+            RangeErrorModifier = 15,
 
-            MaxPowerDraw = 500000,
+            MaxPowerDraw = 3500000,
 
         };
 
