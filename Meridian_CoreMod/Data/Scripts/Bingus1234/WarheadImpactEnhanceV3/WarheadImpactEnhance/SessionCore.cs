@@ -99,7 +99,7 @@ namespace WarheadRaycastImpact
             if(_LastUpdateTime + TimeSpan.FromSeconds(60) < DateTime.UtcNow)
             {
                 _LastUpdateTime = DateTime.UtcNow;
-                MyVisualScriptLogicProvider.SendChatMessage($"Thread Alive: {_TrackingWarheadGrid.Count}");
+                //MyVisualScriptLogicProvider.SendChatMessage($"Thread Alive: {_TrackingWarheadGrid.Count}");
             }
         }
 
@@ -155,17 +155,17 @@ namespace WarheadRaycastImpact
 
         private void TeleportWarheadToPointAndDetonate(IMyEntity WarheadGrid, IMyEntity HitEntity, Vector3D IntersectedPos)
         {
-            MyVisualScriptLogicProvider.SendChatMessage($"Intersect w/ Grid... teleport {WarheadGrid.DisplayName}, {Vector3D.Distance(IntersectedPos, WarheadGrid.GetPosition())}");
+            //MyVisualScriptLogicProvider.SendChatMessage($"Intersect w/ Grid... teleport {WarheadGrid.DisplayName}, {Vector3D.Distance(IntersectedPos, WarheadGrid.GetPosition())}");
             WarheadGrid.SetPosition(IntersectedPos + HitEntity.Physics.LinearVelocity/60);
             //WarheadGrid.Physics.SetSpeeds(HitEntity.Physics.LinearVelocity + Vector3D.Normalize(HitEntity.GetPosition() - WarheadGrid.GetPosition()) * 50, Vector3D.Zero);
             WarheadGrid.Physics.SetSpeeds(Vector3.Zero, Vector3D.Zero);
             foreach (IMyWarhead w in (WarheadGrid as IMyCubeGrid).GetFatBlocks<IMyWarhead>())
             {
                 if (!w.Closed && w.IsFunctional && !w.IsCountingDown) { w.Detonate(); w.DetonationTime = 0.5f; w.StartCountdown(); w.DoDamage(0.01f, MyDamageType.Bullet, true); (w as VRage.Game.ModAPI.IMyCubeBlock).OnDestroy(); }
-                if (!w.IsFunctional)
-                {
-                    MyVisualScriptLogicProvider.SendChatMessage($"Warhead-Malfunctional {WarheadGrid.DisplayName}");
-                }
+                //if (!w.IsFunctional)
+                //{
+                //    MyVisualScriptLogicProvider.SendChatMessage($"Warhead-Malfunctional {WarheadGrid.DisplayName}");
+                //}
             }
         }
         public override void UpdateAfterSimulation()

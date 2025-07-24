@@ -54,7 +54,7 @@
             <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
             <DynamicMusicAmount>25</DynamicMusicAmount>
 	    <PreventSynchronization>2</PreventSynchronization>
-            <Volume>1.2</Volume>
+            <Volume>4</Volume>
             <VolumeVariation>0.2</VolumeVariation>
 	    <Loopable>true</Loopable>
             <Waves>
