@@ -17,7 +17,7 @@
             <Mass>30</Mass>
             <Volume>50</Volume>
             <PhysicalMaterial>Metal</PhysicalMaterial>
-            <Capacity>600</Capacity>
+            <Capacity>1800</Capacity>
             <AmmoDefinitionId Subtype="AES_GENERIC_AMMO" />
             <CanPlayerOrder>false</CanPlayerOrder>
         </AmmoMagazine>
