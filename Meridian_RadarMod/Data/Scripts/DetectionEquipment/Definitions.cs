@@ -12,7 +12,7 @@ namespace DetectionEquipment
         //Common
         private static double Bandwidth_General = 1670000;
         private static double Freq_General = 2800000000;
-        private static double PowerEfficiency_General = 2.50E-18;
+        private static double PowerEfficiency_General = 2.50E-16;
 
         //Tier SG
         private static int PowerDraw_SG = 5000000;
@@ -38,9 +38,9 @@ namespace DetectionEquipment
         private static double ApMax_P_SG = 75;
         private static double ApMax_T_SG = 2;
 
-        private static double PowerEffMod_SG_S = 4.3921686E+04;
-        private static double PowerEffMod_SG_P = 6.4347690E+08;
-        private static double PowerEffMod_SG_T = 1.1736116E-03;
+        private static double PowerEffMod_SG_S = 4.3921686E+02;
+        private static double PowerEffMod_SG_P = 6.4347690E+06;
+        private static double PowerEffMod_SG_T = 1.1736116E-05;
 
         //Tier I
         private static int PowerDraw_I = 15000000;
@@ -66,9 +66,9 @@ namespace DetectionEquipment
         private static double ApMax_P_I = 65;
         private static double ApMax_T_I = 2;
 
-        private static double PowerEffMod_I_S = 7.4117846E+04;
-        private static double PowerEffMod_I_P = 6.0545738E+07;
-        private static double PowerEffMod_I_T = 1.2363974E-03;
+        private static double PowerEffMod_I_S = 1.8529461E+02;
+        private static double PowerEffMod_I_P = 1.5136435E+05;
+        private static double PowerEffMod_I_T = 3.0909934E-06;
 
         //Tier II
         private static int PowerDraw_II = 30000000;
@@ -94,9 +94,9 @@ namespace DetectionEquipment
         private static double ApMax_P_II = 70;
         private static double ApMax_T_II = 2;
 
-        private static double PowerEffMod_II_S = 2.6930985E+06;
-        private static double PowerEffMod_II_P = 2.9203212E+08;
-        private static double PowerEffMod_II_T = 1.5092741E-03;
+        private static double PowerEffMod_II_S = 1.6831866E+03;
+        private static double PowerEffMod_II_P = 1.8252007E+05;
+        private static double PowerEffMod_II_T = 9.4329634E-07;
 
         //Tier III
         private static int PowerDraw_III = 60000000;
@@ -122,9 +122,9 @@ namespace DetectionEquipment
         private static double ApMax_P_III = 75;
         private static double ApMax_T_III = 2;
 
-        private static double PowerEffMod_III_S = 2.7593369E+07;
-        private static double PowerEffMod_III_P = 8.5796920E+08;
-        private static double PowerEffMod_III_T = 1.5648154E-03;
+        private static double PowerEffMod_III_S = 4.3114640E+03;
+        private static double PowerEffMod_III_P = 1.3405769E+05;
+        private static double PowerEffMod_III_T = 2.4450241E-07;
 
         //Tier IV
         private static int PowerDraw_IV = 120000000;
@@ -151,9 +151,9 @@ namespace DetectionEquipment
         private static double ApMax_P_IV = 90;
         private static double ApMax_T_IV = 2;
 
-        private static double PowerEffMod_IV_S = 4.0234064E+09;
-        private static double PowerEffMod_IV_P = 1.9910596E+12;
-        private static double PowerEffMod_IV_T = 2.0463627E-03;
+        private static double PowerEffMod_IV_S = 6.2865724E+05;
+        private static double PowerEffMod_IV_P = 7.0982104E+06;
+        private static double PowerEffMod_IV_T = 3.1974417E-07;
 
         // Hover over field names or look at the base definition for more information.
         private static SensorDefinition MXM_012_FCR_Def => new SensorDefinition
@@ -930,8 +930,8 @@ namespace DetectionEquipment
 
             SensorEmpty = "SB_PRR_Series2_Sensor",
 
-            MaxAperture = MathHelper.ToRadians(45),
-            MinAperture = MathHelper.ToRadians(40),
+            MaxAperture = MathHelper.ToRadians(360),
+            MinAperture = MathHelper.ToRadians(360),
 
             Movement = null,
 
@@ -939,7 +939,7 @@ namespace DetectionEquipment
 
             DetectionThreshold = 1000,
             BearingErrorModifier = 0,
-            RangeErrorModifier = 100,
+            RangeErrorModifier = 1,
 
             MaxPowerDraw = -1,
 
