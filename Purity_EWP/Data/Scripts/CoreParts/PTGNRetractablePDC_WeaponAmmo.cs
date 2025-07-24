@@ -370,13 +370,15 @@ namespace Scripts
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 7f, //
+                        Length = 25, //
                         Width = 0.2f, //
-                        Color = Color(red: 10f, green: 10, blue: 10f, alpha: 1), // RBG 255 is Neon Glowing, 100 is Quite Bright.
+                        Color = Color(red: 5, green: 5, blue: 5, alpha: 1), // RBG 255 is Neon Glowing, 100 is Quite Bright.
+
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
-                        VisualFadeEnd = 240, // How many ticks after fade began before it will be invisible.
+                        VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
+                        AlwaysDraw = false, // Prevents this tracer from being culled.  Only use if you have a reason too (very long tracers/trails).
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
-                            "ProjectileTrailLine", // Please always have this Line set, if this Section is enabled.
+                            "ProjectileTrailLine", // Please always have this Line set if this Section is enabled.
                         },
                         TextureMode = Normal, // Normal, Cycle, Chaos, Wave
                         Segmentation = new SegmentDef
@@ -389,8 +391,9 @@ namespace Scripts
                             SegmentGap = 0f, // Uses Tracer textures and values
                             Speed = 1f, // meters per second
                             Color = Color(red: 1, green: 2, blue: 2.5f, alpha: 1),
+
                             WidthMultiplier = 1f,
-                            Reverse = false, 
+                            Reverse = false,
                             UseLineVariance = true,
                             WidthVariance = Random(start: 0f, end: 0f),
                             ColorVariance = Random(start: 0f, end: 0f)
@@ -398,15 +401,15 @@ namespace Scripts
                     },
                     Trail = new TrailDef
                     {
-                        Enable = false,
+                        Enable = true,
                         Textures = new[] {
-                            "", // Please always have this Line set, if this Section is enabled.
+                            "ProjectileTrailLine", // Please always have this Line set, if this Section is enabled.
                         },
                         TextureMode = Normal,
-                        DecayTime = 3, // In Ticks. 1 = 1 Additional Tracer generated per motion, 33 is 33 lines drawn per projectile. Keep this number low.
-                        Color = Color(red: 0, green: 0, blue: 1, alpha: 1),
+                        DecayTime = 1, // In Ticks. 1 = 1 Additional Tracer generated per motion, 33 is 33 lines drawn per projectile. Keep this number low.
+                        Color = Color(red: 5, green: 5, blue: 5, alpha: 1),
                         Back = false,
-                        CustomWidth = 0,
+                        CustomWidth = 0.15f,
                         UseWidthVariance = false,
                         UseColorFade = true,
                     },

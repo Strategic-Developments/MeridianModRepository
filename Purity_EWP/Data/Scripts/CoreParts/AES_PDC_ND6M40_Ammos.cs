@@ -578,7 +578,7 @@ namespace Scripts
                     {
                         Enable = true,
                         Length = 45, //
-                        Width = 0.1f, //
+                        Width = 0.2f, //
                         Color = Color(red: 5, green: 4, blue: 3, alpha: 1), // RBG 255 is Neon Glowing, 100 is Quite Bright.
                         FactionColor = DontUse, // DontUse, Foreground, Background.
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
@@ -608,17 +608,15 @@ namespace Scripts
                     },
                     Trail = new TrailDef
                     {
-                        Enable = false,
-                        AlwaysDraw = false, // Prevents this tracer from being culled.  Only use if you have a reason too (very long tracers/trails).
+                        Enable = true,
                         Textures = new[] {
-                            "WeaponLaser", // Please always have this Line set, if this Section is enabled.
+                            "ProjectileTrailLine", // Please always have this Line set, if this Section is enabled.
                         },
                         TextureMode = Normal,
-                        DecayTime = 5, // In Ticks. 1 = 1 Additional Tracer generated per motion, 33 is 33 lines drawn per projectile. Keep this number low.
-                        Color = Color(red: 20, green: 10, blue: 5, alpha: 1),
-                        FactionColor = DontUse, // DontUse, Foreground, Background.
+                        DecayTime = 1, // In Ticks. 1 = 1 Additional Tracer generated per motion, 33 is 33 lines drawn per projectile. Keep this number low.
+                        Color = Color(red: 5, green: 4, blue: 3, alpha: 0.75f),
                         Back = false,
-                        CustomWidth = 0,
+                        CustomWidth = 0.1f,
                         UseWidthVariance = false,
                         UseColorFade = true,
                     },
