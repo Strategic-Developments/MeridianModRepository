@@ -35,7 +35,7 @@
 	    </Id>
 	    <Category>WEP_EXPL</Category>
 	    <MaxDistance>1000</MaxDistance>
-	    <Volume>16.0</Volume>
+	    <Volume>10.0</Volume>
 	    <PitchVariation>100</PitchVariation>
 	    <PreventSynchronization>10</PreventSynchronization>
 	    <SoundLimit>6</SoundLimit>
@@ -48,6 +48,29 @@
 	      </Wave>
 	      <Wave Type="D3">
 	        <Start>Audio\sfx\CannonBurst2.wav</Start>
+	      </Wave>
+	    </Waves>
+	  </Sound>
+
+	  <Sound>
+	    <Id>
+	      <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+	      <SubtypeId>cannonburst3</SubtypeId>
+	    </Id>
+	    <Category>WEP_EXPL</Category>
+	    <MaxDistance>1000</MaxDistance>
+	    <Volume>10.0</Volume>
+	    <PitchVariation>100</PitchVariation>
+	    <PreventSynchronization>10</PreventSynchronization>
+	    <Waves>
+	      <Wave Type="D3">
+	        <Start>Audio\sfx\CannonBurst3.wav</Start>
+	      </Wave>
+	      <Wave Type="D3">
+	        <Start>Audio\sfx\CannonBurst3.wav</Start>
+	      </Wave>
+	      <Wave Type="D3">
+	        <Start>Audio\sfx\CannonBurst3.wav</Start>
 	      </Wave>
 	    </Waves>
 	  </Sound>
