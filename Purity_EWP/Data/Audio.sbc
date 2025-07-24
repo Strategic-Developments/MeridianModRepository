@@ -50,13 +50,13 @@
                 <SubtypeId>PDCShotLoopedV2</SubtypeId>
             </Id>
             <Category>SHOT</Category>
-            <MaxDistance>750</MaxDistance>
+            <MaxDistance>2000</MaxDistance>
             <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
             <DynamicMusicAmount>25</DynamicMusicAmount>
-	    <PreventSynchronization>2</PreventSynchronization>
-            <Volume>4</Volume>
+	        <PreventSynchronization>2</PreventSynchronization>
+            <Volume>8</Volume>
             <VolumeVariation>0.2</VolumeVariation>
-	    <Loopable>true</Loopable>
+	        <Loopable>true</Loopable>
             <Waves>
                 <Wave Type="D3">
                     <Loop>Audio\saw_fireLoop.wav</Loop>
