@@ -7,7 +7,7 @@
 				<SubtypeId>ChemicalRefinery</SubtypeId>
 			</Id>
 			<DisplayName>Chemical Reprocessor</DisplayName>
-			<Description>This device reprocesses chemicals into workable solutions for use in pharmaceuticals - both legal and... dubious.</Description>
+			<Description>This device reprocesses chemicals into workable solutions for use in pharmaceuticals - both legal and dubious. Refines Hexadrine, Cyclocerin, Thaladrine, and Methylaurate.</Description>
 			<Icon>Textures\GUI\Icons\Cubes\ChemicalRefinery.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
