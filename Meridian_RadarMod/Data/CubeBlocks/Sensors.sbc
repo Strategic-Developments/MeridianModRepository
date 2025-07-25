@@ -391,7 +391,7 @@
 			</Id>
 			<DisplayName>C-Sys NS/RCG-62 FCR</DisplayName>
 			<Description>Older but high performance Fire Control Radar with origins in naval warfare
-			Tier 2 Fire Control Radar (1 Track Radar Sensor)</Description>
+			Tier 3 Fire Control Radar (1 Track Radar Sensor)</Description>
 			<Icon>Textures\Icons\SOFL_CSys_NS_RCG_62.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>

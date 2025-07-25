@@ -311,8 +311,8 @@ namespace DetectionEquipment
 
             SensorEmpty = "CSys_NS_RCG_62_Sensor",
 
-            MaxAperture = MathHelper.ToRadians(ApMax_T_II),
-            MinAperture = MathHelper.ToRadians(ApMin_T_II),
+            MaxAperture = MathHelper.ToRadians(ApMax_T_III),
+            MinAperture = MathHelper.ToRadians(ApMin_T_III),
 
             Movement = new SensorDefinition.SensorMovementDefinition
             {
@@ -329,16 +329,16 @@ namespace DetectionEquipment
 
             TerminalName = "NS/RCG-62 Track Sensor",
 
-            DetectionThreshold = DetThreshold_II_T,
-            BearingErrorModifier = BearingError_Track_II,
-            RangeErrorModifier = RangeError_Track_II,
+            DetectionThreshold = DetThreshold_III_T,
+            BearingErrorModifier = BearingError_Track_III,
+            RangeErrorModifier = RangeError_Track_III,
 
-            MaxPowerDraw = PowerDraw_II,
+            MaxPowerDraw = PowerDraw_III,
 
             RadarProperties = new SensorDefinition.RadarPropertiesDefinition
             {
-                ReceiverArea = ReceiverArea_II,
-                PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_II_T,
+                ReceiverArea = ReceiverArea_III,
+                PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_III_T,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
             }
