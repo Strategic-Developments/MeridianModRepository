@@ -1,0 +1,431 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>YourName.ModName</RootNamespace>
+    <TargetFramework>net481</TargetFramework>
+    <Platforms>x64</Platforms>
+    <LangVersion>6</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+    <AssemblyName>Meridian CoreMod</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mal.Mdk2.ModAnalyzers" Version="2.1.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Mal.Mdk2.References" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NLog">
+      <HintPath>..\..\ClientBinaries\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoBuf.Net">
+      <HintPath>..\..\ClientBinaries\ProtoBuf.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoBuf.Net.Core">
+      <HintPath>..\..\ClientBinaries\ProtoBuf.Net.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Common">
+      <HintPath>..\..\ClientBinaries\Sandbox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Game">
+      <HintPath>..\..\ClientBinaries\Sandbox.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Game.XmlSerializers">
+      <HintPath>..\..\ClientBinaries\Sandbox.Game.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Graphics">
+      <HintPath>..\..\ClientBinaries\Sandbox.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.Game">
+      <HintPath>..\..\ClientBinaries\SpaceEngineers.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.ObjectBuilders">
+      <HintPath>..\..\ClientBinaries\SpaceEngineers.ObjectBuilders.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.ObjectBuilders.XmlSerializers">
+      <HintPath>..\..\ClientBinaries\SpaceEngineers.ObjectBuilders.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VRage">
+      <HintPath>..\..\ClientBinaries\VRage.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Game">
+      <HintPath>..\..\ClientBinaries\VRage.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Game.XmlSerializers">
+      <HintPath>..\..\ClientBinaries\VRage.Game.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Input">
+      <HintPath>..\..\ClientBinaries\VRage.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Library">
+      <HintPath>..\..\ClientBinaries\VRage.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Math">
+      <HintPath>..\..\ClientBinaries\VRage.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Math.XmlSerializers">
+      <HintPath>..\..\ClientBinaries\VRage.Math.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.NativeAftermath">
+      <HintPath>..\..\ClientBinaries\VRage.NativeAftermath.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.NativeWrapper">
+      <HintPath>..\..\ClientBinaries\VRage.NativeWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Network">
+      <HintPath>..\..\ClientBinaries\VRage.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Render">
+      <HintPath>..\..\ClientBinaries\VRage.Render.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Render11">
+      <HintPath>..\..\ClientBinaries\VRage.Render11.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Scripting">
+      <HintPath>..\..\ClientBinaries\VRage.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.UserInterface">
+      <HintPath>..\..\ClientBinaries\VRage.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.XmlSerializers">
+      <HintPath>..\..\ClientBinaries\VRage.XmlSerializers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="MERIDIAN_AutoCleanup\**" />
+    <Compile Remove="Meridian_AWEBranch\**" />
+    <Compile Remove="MERIDIAN_Pipelines\**" />
+    <Compile Remove="MERIDIAN_Resourcing\**" />
+    <Compile Remove="MeridianPrefabs\**" />
+    <Compile Remove="PURITY_ALED_NERF\**" />
+    <Compile Remove="Purity_EWP\**" />
+    <Compile Remove="purity_gargindustry\**" />
+    <Compile Remove="Purity_Nukes\**" />
+    <Compile Remove="PURITY_SPAWNPOD_ECONOMY\**" />
+    <Compile Remove="Purity_TorpedoParts\**" />
+    <Compile Remove="Utility Mods\**" />
+    <Compile Remove="Meridian_CoreMod\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="MERIDIAN_AutoCleanup\**" />
+    <EmbeddedResource Remove="Meridian_AWEBranch\**" />
+    <EmbeddedResource Remove="MERIDIAN_Pipelines\**" />
+    <EmbeddedResource Remove="MERIDIAN_Resourcing\**" />
+    <EmbeddedResource Remove="MeridianPrefabs\**" />
+    <EmbeddedResource Remove="PURITY_ALED_NERF\**" />
+    <EmbeddedResource Remove="Purity_EWP\**" />
+    <EmbeddedResource Remove="purity_gargindustry\**" />
+    <EmbeddedResource Remove="Purity_Nukes\**" />
+    <EmbeddedResource Remove="PURITY_SPAWNPOD_ECONOMY\**" />
+    <EmbeddedResource Remove="Purity_TorpedoParts\**" />
+    <EmbeddedResource Remove="Utility Mods\**" />
+    <EmbeddedResource Remove="Meridian_CoreMod\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="MERIDIAN_AutoCleanup\**" />
+    <None Remove="Meridian_AWEBranch\**" />
+    <None Remove="MERIDIAN_Pipelines\**" />
+    <None Remove="MERIDIAN_Resourcing\**" />
+    <None Remove="MeridianPrefabs\**" />
+    <None Remove="PURITY_ALED_NERF\**" />
+    <None Remove="Purity_EWP\**" />
+    <None Remove="purity_gargindustry\**" />
+    <None Remove="Purity_Nukes\**" />
+    <None Remove="PURITY_SPAWNPOD_ECONOMY\**" />
+    <None Remove="Purity_TorpedoParts\**" />
+    <None Remove="Utility Mods\**" />
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+    <None Remove="CONTRIBUTING.md" />
+    <None Remove="fixaudio.py" />
+    <None Remove="LICENSE" />
+    <None Remove="ModIdFinder.sh" />
+    <None Remove="README.md" />
+    <None Remove="remove-semods-symlinks.bat" />
+    <None Remove="symlink-to-semods-recursive.bat" />
+    <None Remove="VisualStudioSLNs.zip" />
+    <None Remove="Meridian_CoreMod\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Meridian_RadarMod\Data\BlockCategories.sbc" />
+    <Content Include="Meridian_RadarMod\Data\BlueprintClasses1.sbc" />
+    <Content Include="Meridian_RadarMod\Data\Blueprints1.sbc" />
+    <Content Include="Meridian_RadarMod\Data\Components.sbc" />
+    <Content Include="Meridian_RadarMod\Data\CubeBlocks\C-Sys VRE.sbc" />
+    <Content Include="Meridian_RadarMod\Data\CubeBlocks\S-AARP Panel.sbc" />
+    <Content Include="Meridian_RadarMod\Data\CubeBlocks\SB-PRR Series2 RWR.sbc" />
+    <Content Include="Meridian_RadarMod\Data\CubeBlocks\Sensors.sbc" />
+    <Content Include="Meridian_RadarMod\Data\CubeBlocks\SET-2 Panels.sbc" />
+    <Content Include="Meridian_RadarMod\Data\CubeBlocks\UNIT-16 Panels.sbc" />
+    <Content Include="Meridian_RadarMod\Data\Scripts\DetectionEquipment\Detection-Equipment-Mod-Template.csproj.DotSettings" />
+    <Content Include="Meridian_RadarMod\Data\TransparentMaterials.sbc" />
+    <Content Include="Meridian_RadarMod\metadata.mod" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Components\AESA TR Module\SOFL_AESA_TR_Comp.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Components\AESA TR Module\SOFL_AESA_TR_Comp_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Components\AESA TR Module\SOFL_AESA_TR_Comp_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Components\Beamformer Chipset\SOFL_Beamformer Chipset.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Components\Beamformer Chipset\SOFL_Beamformer Chipset_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Components\Beamformer Chipset\SOFL_Beamformer Chipset_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Components\EM Horn Assembly\SOFL_EM_Horn_Assembly.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Components\EM Horn Assembly\SOFL_EM_Horn_Assembly_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Components\EM Horn Assembly\SOFL_EM_Horn_Assembly_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_Azi.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_Azi_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_Azi_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_Azi_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_Elev.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_Elev_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_Elev_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_Elev_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASEL MkXII FCR\SOFL_ASEL_MKXII_FCR_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASTS 5\SOFL_ASTS_5.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASTS 5\SOFL_ASTS_5_Azi.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASTS 5\SOFL_ASTS_5_Elev.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASTS 5\SOFL_ASTS_5_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASTS 5\SOFL_ASTS_5_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\ASTS 5\SOFL_ASTS_5_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_Azi.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_Azi_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_Azi_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_Azi_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_Elev.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_Elev_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_Elev_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_Elev_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_MkX.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_MkX_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_MkX_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys IRO DetBlock MkX\SOFL_CSys_IRO_DetBlock_MkX_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys VRE\SOFL_C-SYS_VRE.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys VRE\SOFL_C-SYS_VRE_Inset.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys VRE\SOFL_C-SYS_VRE_Inset_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys VRE\SOFL_C-SYS_VRE_Inset_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys VRE\SOFL_C-SYS_VRE_Inset_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys VRE\SOFL_C-SYS_VRE_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys VRE\SOFL_C-SYS_VRE_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\C-Sys VRE\SOFL_C-SYS_VRE_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_Azi.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_Azi_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_Azi_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_Azi_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_Elev.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_Elev_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_Elev_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_Elev_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_Azi.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_Azi_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_Azi_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_Azi_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_Elev.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_Elev_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_Elev_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_Elev_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\FR-057 block7\SOFL_FR_057_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-005\SOFL_MXM_005.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-005\SOFL_MXM_005_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-005\SOFL_MXM_005_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-005\SOFL_MXM_005_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-009\SOFL_MXM_009.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-009\SOFL_MXM_009_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-009\SOFL_MXM_009_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-009\SOFL_MXM_009_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-012 Centered\SOFL_MXM_012_Centered.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-012 Centered\SOFL_MXM_012_Centered_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-012 Centered\SOFL_MXM_012_Centered_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-012 Centered\SOFL_MXM_012_Centered_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-012\SOFL_MXM_012.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-012\SOFL_MXM_012_Azi.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-012\SOFL_MXM_012_Elev.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-012\SOFL_MXM_012_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-012\SOFL_MXM_012_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\MXM-012\SOFL_MXM_012_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\Radar 1\SOFL_Radar1_Fake_Elev.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\Radar 1\SOFL_Radar_1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\Radar 1\SOFL_Radar_1_Azi.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\Radar 1\SOFL_Radar_1_Azi_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\Radar 1\SOFL_Radar_1_Azi_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\Radar 1\SOFL_Radar_1_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 corner\SOFL_SAARP_1x1_Corner.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 corner\SOFL_SAARP_1x1_Corner_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 corner\SOFL_SAARP_1x1_Corner_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 corner\SOFL_SAARP_1x1_Corner_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset.fbx" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset.hkt" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset.hkt.fbx" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset.hkt.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset.xml" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset_LOD1.fbx" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset_LOD1.xml" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset_LOD2.fbx" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset_LOD2.xml" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset_LOD3.fbx" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset_LOD3.xml" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1\SOFL_SAARP_1x1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1\SOFL_SAARP_1x1_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1\SOFL_SAARP_1x1_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x1\SOFL_SAARP_1x1_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 corner base\SOFL_SAARP_1x2_Corner.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 corner base\SOFL_SAARP_1x2_Corner_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 corner base\SOFL_SAARP_1x2_Corner_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 corner base\SOFL_SAARP_1x2_Corner_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 corner offset\SOFL_SAARP_1x2_Corner_Offset.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 corner offset\SOFL_SAARP_1x2_Corner_Offset_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 corner offset\SOFL_SAARP_1x2_Corner_Offset_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 corner offset\SOFL_SAARP_1x2_Corner_Offset_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 offset\SOFL_SAARP_1x2_Offset.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 offset\SOFL_SAARP_1x2_Offset_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 offset\SOFL_SAARP_1x2_Offset_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2 offset\SOFL_SAARP_1x2_Offset_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2\SOFL_SAARP_1x2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2\SOFL_SAARP_1x2_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2\SOFL_SAARP_1x2_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\1x2\SOFL_SAARP_1x2_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\Flat Half\SOFL_SAARP_Half_Flat.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\Flat Half\SOFL_SAARP_Half_Flat_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\Flat Half\SOFL_SAARP_Half_Flat_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\Flat Half\SOFL_SAARP_Half_Flat_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\Flat\SOFL_SAARP_Flat.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\Flat\SOFL_SAARP_Flat_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\Flat\SOFL_SAARP_Flat_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\S-AARP Panels\Flat\SOFL_SAARP_Flat_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SB-PRR Series2\Flat\SOFL_SB_PRR_Series2_Flat.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SB-PRR Series2\Flat\SOFL_SB_PRR_Series2_Flat_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SB-PRR Series2\Flat\SOFL_SB_PRR_Series2_Flat_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SB-PRR Series2\Flat\SOFL_SB_PRR_Series2_Flat_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1X1 corner offset\SOFL_SET2_1x1_Corner_Offset.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1X1 corner offset\SOFL_SET2_1x1_Corner_Offset_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1X1 corner offset\SOFL_SET2_1x1_Corner_Offset_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1X1 corner offset\SOFL_SET2_1x1_Corner_Offset_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1 corner\SOFL_SET2_1x1_Corner.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1 corner\SOFL_SET2_1x1_Corner_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1 corner\SOFL_SET2_1x1_Corner_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1 corner\SOFL_SET2_1x1_Corner_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1 offset\SOFL_SET2_1x1_Offset.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1 offset\SOFL_SET2_1x1_Offset_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1 offset\SOFL_SET2_1x1_Offset_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1 offset\SOFL_SET2_1x1_Offset_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1\SOFL_SET2_1x1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1\SOFL_SET2_1x1_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1\SOFL_SET2_1x1_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x1\SOFL_SET2_1x1_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x2 offset\SOFL_SET2_1x2_Offset.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x2 offset\SOFL_SET2_1x2_Offset_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x2 offset\SOFL_SET2_1x2_Offset_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x2 offset\SOFL_SET2_1x2_Offset_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x2\SOFL_SET2_1x2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x2\SOFL_SET2_1x2_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x2\SOFL_SET2_1x2_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\1x2\SOFL_SET2_1x2_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\Flat Half\SOFL_SET2_Flat_Half.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\Flat Half\SOFL_SET2_Flat_Half_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\Flat Half\SOFL_SET2_Flat_Half_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\Flat Half\SOFL_SET2_Flat_Half_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\Flat\SOFL_SET2_Flat.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\Flat\SOFL_SET2_Flat_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\Flat\SOFL_SET2_Flat_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\SET-2 Panels\Flat\SOFL_SET2_Flat_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Corner_Upright.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Corner_Upright_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Corner_Upright_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Corner_Upright_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Offset.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Offset_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Offset_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Offset_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Side.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Side_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Side_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Side_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Upright.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Upright_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Upright_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x1_Upright_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Side.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Side_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Side_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Side_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Upright.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Upright_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Upright_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Upright_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Upright_Offset.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Upright_Offset_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Upright_Offset_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_1x2_Upright_Offset_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_Flat.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_Flat_LOD1.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_Flat_LOD2.mwm" />
+    <Content Include="Meridian_RadarMod\Models\Cubes\Sensors\UNIT-16 panels\SOFL_UNIT_16_Flat_LOD3.mwm" />
+    <Content Include="Meridian_RadarMod\modinfo.sbmi" />
+    <Content Include="Meridian_RadarMod\Textures\Custom\enenra\EmissiveSpectrumAtlas_add.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Custom\enenra\EmissiveSpectrumAtlas_cm.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Custom\enenra\EmissiveSpectrumAtlas_ng.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\000 Components\SOFL_AESA_TR_Comp.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\000 Components\SOFL_Beamformer Chipset.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\000 Components\SOFL_EM_Horn_Assembly.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\S-AARP\SOFL_SAARP_1x1.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\S-AARP\SOFL_SAARP_1x1_Corner.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\S-AARP\SOFL_SAARP_1x1_Offset.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\S-AARP\SOFL_SAARP_1x2.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\S-AARP\SOFL_SAARP_1x2_Corner.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\S-AARP\SOFL_SAARP_1x2_Corner_Offset.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\S-AARP\SOFL_SAARP_1x2_Offset.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\S-AARP\SOFL_SAARP_Flat.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\S-AARP\SOFL_SAARP_Half_Flat.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SB PRR Series2\SOFL_SB_PRR_Series2_Flat.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SET-2\SOFL_SET2_1x1.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SET-2\SOFL_SET2_1x1_Corner.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SET-2\SOFL_SET2_1x1_Corner_Offset.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SET-2\SOFL_SET2_1x1_Offset.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SET-2\SOFL_SET2_1x2.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SET-2\SOFL_SET2_1x2_Offset.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SET-2\SOFL_SET2_Flat.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SET-2\SOFL_SET2_Flat_Half.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_ASEL_MKXII_FCR.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_ASTS_5.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_C-Sys_VRE.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_C-SYS_VRE_Inset.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_CSys_IRO_DetBlock_MkX.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_CSys_NS_RCG_62.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_FR_057.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_MXM_005.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_MXM_009.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_MXM_012.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\SOFL_Radar_1.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Corner_Upright.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Offset.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Side.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Upright.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\UNIT-16\SOFL_UNIT_16_1x2_Side.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\UNIT-16\SOFL_UNIT_16_1x2_Upright.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\UNIT-16\SOFL_UNIT_16_1x2_Upright_Offset.dds" />
+    <Content Include="Meridian_RadarMod\Textures\Icons\UNIT-16\SOFL_UNIT_16_Flat.dds" />
+  </ItemGroup>
+
+</Project>

@@ -83,7 +83,7 @@ namespace Scripts
                     MaxElevation = 90,
                     FixedOffset = false,
                     InventorySize = 6f,
-                    IdlePower = 15f, // Constant base power draw in MW.
+                    IdlePower = 1200, // Constant base power draw in MW.
                     Offset = Vector(x: 0, y: 0, z: 0),
                     Type = BlockWeapon, // BlockWeapon, HandWeapon, Phantom 
                     CriticalReaction = new CriticalDef
@@ -106,7 +106,7 @@ namespace Scripts
                     CheckForAnyWeapon = false, // if true, the check will fail if ANY gun is present, false only looks for this subtype
                 },
                 Loading = new LoadingDef {
-                    RateOfFire = 30,
+                    RateOfFire = 5,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.

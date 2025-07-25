@@ -186,7 +186,7 @@ namespace Scripts
                 },
             },
             Ammos = new[] {
-                DawsonAPRailgunSabot, UNNLightRailgunSabotBonusDamage,
+                DawsonAPRailgunSabot,
             // Must list all primary, shrapnel, and pattern ammos.
             },
             Animations = LightRailgunTurretAnimation,

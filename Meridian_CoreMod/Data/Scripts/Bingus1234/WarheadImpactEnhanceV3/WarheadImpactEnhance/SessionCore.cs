@@ -248,7 +248,7 @@ namespace WarheadRaycastImpact
 
             Vector3D WarheadPos = Vector3D.Zero, Warhead_Velocity = Vector3D.Zero, Warhead_VelocityDirection = Vector3D.Zero;
             double WarheadSpeed = 0;
-            float Discrete_Error = 2000f / 60 + 0.5f;
+            float Discrete_Error = 3000f / 60 + 0.5f;
             bool _WarheadHasBeenTeleported = false;
             foreach (IMyCubeGrid w in _Tmp_KeysOfTrackingGrids)
             {

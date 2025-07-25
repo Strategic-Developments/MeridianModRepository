@@ -10,150 +10,150 @@ namespace DetectionEquipment
     internal partial class DetectionDefinitions
     {
         //Common
-        private static double Bandwidth_General = 1670000;
-        private static double Freq_General = 2800000000;
-        private static double PowerEfficiency_General = 2.50E-16;
+        private const double Bandwidth_General = 1670000;
+        private const double Freq_General = 2800000000;
+        private const double PowerEfficiency_General = 2.50E-16;
 
         //Tier SG
-        private static int PowerDraw_SG = 5000000;
+        private const int PowerDraw_SG = 5000000;
 
-        private static double DetThreshold_SG_S = 20.91514981;
-        private static double DetThreshold_SG_P = 20.91514981;
-        private static double DetThreshold_SG_T = 7.043650362;
+        private const double DetThreshold_SG_S = 20.91514981;
+        private const double DetThreshold_SG_P = 20.91514981;
+        private const double DetThreshold_SG_T = 7.043650362;
 
-        private static double BearingError_Search_SG = 0.4;
-        private static double RangeError_Search_SG = 0.4;
-        private static double BearingError_Panel_SG = 0.4;
-        private static double RangeError_Panel_SG = 0.4;
-        private static double BearingError_Track_SG = 0.4;
-        private static double RangeError_Track_SG = 0.4;
+        private const double BearingError_Search_SG = 0.4;
+        private const double RangeError_Search_SG = 0.4;
+        private const double BearingError_Panel_SG = 0.4;
+        private const double RangeError_Panel_SG = 0.4;
+        private const double BearingError_Track_SG = 0.4;
+        private const double RangeError_Track_SG = 0.4;
 
-        private static double ReceiverArea_SG = 10;
+        private const double ReceiverArea_SG = 10;
 
-        private static double ApMin_S_SG = 15;
-        private static double ApMin_P_SG = 65;
-        private static double ApMin_T_SG = 1;
+        private const double ApMin_S_SG = 15;
+        private const double ApMin_P_SG = 65;
+        private const double ApMin_T_SG = 1;
 
         private static double ApMax_S_SG = 25;
         private static double ApMax_P_SG = 75;
         private static double ApMax_T_SG = 2;
 
-        private static double PowerEffMod_SG_S = 4.3921686E+02;
-        private static double PowerEffMod_SG_P = 6.4347690E+06;
-        private static double PowerEffMod_SG_T = 1.1736116E-05;
+        private const double PowerEffMod_SG_S = 4.3921686E+02;
+        private const double PowerEffMod_SG_P = 6.4347690E+06;
+        private const double PowerEffMod_SG_T = 1.1736116E-05;
 
         //Tier I
-        private static int PowerDraw_I = 15000000;
+        private const int PowerDraw_I = 15000000;
 
-        private static double DetThreshold_I_S = 25.28092859;
-        private static double DetThreshold_I_P = 18.23727823;
-        private static double DetThreshold_I_T = 4.997549464;
+        private const double DetThreshold_I_S = 25.28092859;
+        private const double DetThreshold_I_P = 18.23727823;
+        private const double DetThreshold_I_T = 4.997549464;
 
-        private static double BearingError_Search_I = 0.4;
-        private static double RangeError_Search_I = 0.4;
-        private static double BearingError_Panel_I = 0.4;
-        private static double RangeError_Panel_I = 0.4;
-        private static double BearingError_Track_I = 0.4;
-        private static double RangeError_Track_I = 0.4;
+        private const double BearingError_Search_I = 0.4;
+        private const double RangeError_Search_I = 0.4;
+        private const double BearingError_Panel_I = 0.4;
+        private const double RangeError_Panel_I = 0.4;
+        private const double BearingError_Track_I = 0.4;
+        private const double RangeError_Track_I = 0.4;
 
-        private static double ReceiverArea_I = 20;
+        private const double ReceiverArea_I = 20;
 
-        private static double ApMin_S_I = 15;
-        private static double ApMin_P_I = 55;
-        private static double ApMin_T_I = 1;
+        private const double ApMin_S_I = 15;
+        private const double ApMin_P_I = 55;
+        private const double ApMin_T_I = 1;
 
-        private static double ApMax_S_I = 25;
-        private static double ApMax_P_I = 65;
-        private static double ApMax_T_I = 2;
+        private const double ApMax_S_I = 25;
+        private const double ApMax_P_I = 65;
+        private const double ApMax_T_I = 2;
 
-        private static double PowerEffMod_I_S = 1.8529461E+02;
-        private static double PowerEffMod_I_P = 1.5136435E+05;
-        private static double PowerEffMod_I_T = 3.0909934E-06;
+        private const double PowerEffMod_I_S = 1.8529461E+02;
+        private const double PowerEffMod_I_P = 1.5136435E+05;
+        private const double PowerEffMod_I_T = 3.0909934E-06;
 
         //Tier II
-        private static int PowerDraw_II = 30000000;
+        private const int PowerDraw_II = 30000000;
 
-        private static double DetThreshold_II_S = 27.95880017;
-        private static double DetThreshold_II_P = 22.96125071;
-        private static double DetThreshold_II_T = 3.87640052;
+        private const double DetThreshold_II_S = 27.95880017;
+        private const double DetThreshold_II_P = 22.96125071;
+        private const double DetThreshold_II_T = 3.87640052;
 
-        private static double BearingError_Search_II = 0.2;
-        private static double RangeError_Search_II = 0.2;
-        private static double BearingError_Panel_II = 0.2;
-        private static double RangeError_Panel_II = 0.2;
-        private static double BearingError_Track_II = 0.2;
-        private static double RangeError_Track_II = 0.2;
+        private const double BearingError_Search_II = 0.2;
+        private const double RangeError_Search_II = 0.2;
+        private const double BearingError_Panel_II = 0.2;
+        private const double RangeError_Panel_II = 0.2;
+        private const double BearingError_Track_II = 0.2;
+        private const double RangeError_Track_II = 0.2;
 
-        private static double ReceiverArea_II = 40;
+        private const double ReceiverArea_II = 40;
 
-        private static double ApMin_S_II = 25;
-        private static double ApMin_P_II = 60;
-        private static double ApMin_T_II = 1;
+        private const double ApMin_S_II = 25;
+        private const double ApMin_P_II = 60;
+        private const double ApMin_T_II = 1;
 
-        private static double ApMax_S_II = 35;
-        private static double ApMax_P_II = 70;
-        private static double ApMax_T_II = 2;
+        private const double ApMax_S_II = 35;
+        private const double ApMax_P_II = 70;
+        private const double ApMax_T_II = 2;
 
-        private static double PowerEffMod_II_S = 1.6831866E+03;
-        private static double PowerEffMod_II_P = 1.8252007E+05;
-        private static double PowerEffMod_II_T = 9.4329634E-07;
+        private const double PowerEffMod_II_S = 1.6831866E+03;
+        private const double PowerEffMod_II_P = 1.8252007E+05;
+        private const double PowerEffMod_II_T = 9.4329634E-07;
 
         //Tier III
-        private static int PowerDraw_III = 60000000;
+        private const int PowerDraw_III = 60000000;
 
-        private static double DetThreshold_III_S = 29.7890998;
-        private static double DetThreshold_III_P = 25.91269928;
-        private static double DetThreshold_III_T = 3.167249842;
+        private const double DetThreshold_III_S = 29.7890998;
+        private const double DetThreshold_III_P = 25.91269928;
+        private const double DetThreshold_III_T = 3.167249842;
 
-        private static double BearingError_Search_III = 0.1;
-        private static double RangeError_Search_III = 0.1;
-        private static double BearingError_Panel_III = 0.1;
-        private static double RangeError_Panel_III = 0.1;
-        private static double BearingError_Track_III = 0.1;
-        private static double RangeError_Track_III = 0.1;
+        private const double BearingError_Search_III = 0.1;
+        private const double RangeError_Search_III = 0.1;
+        private const double BearingError_Panel_III = 0.1;
+        private const double RangeError_Panel_III = 0.1;
+        private const double BearingError_Track_III = 0.1;
+        private const double RangeError_Track_III = 0.1;
 
-        private static double ReceiverArea_III = 80;
+        private const double ReceiverArea_III = 80;
 
-        private static double ApMin_S_III = 35;
-        private static double ApMin_P_III = 65;
-        private static double ApMin_T_III = 1;
+        private const double ApMin_S_III = 35;
+        private const double ApMin_P_III = 65;
+        private const double ApMin_T_III = 1;
 
-        private static double ApMax_S_III = 45;
-        private static double ApMax_P_III = 75;
-        private static double ApMax_T_III = 2;
+        private const double ApMax_S_III = 45;
+        private const double ApMax_P_III = 75;
+        private const double ApMax_T_III = 2;
 
-        private static double PowerEffMod_III_S = 4.3114640E+03;
-        private static double PowerEffMod_III_P = 1.3405769E+05;
-        private static double PowerEffMod_III_T = 2.4450241E-07;
+        private const double PowerEffMod_III_S = 4.3114640E+03;
+        private const double PowerEffMod_III_P = 1.3405769E+05;
+        private const double PowerEffMod_III_T = 2.4450241E-07;
 
         //Tier IV
-        private static int PowerDraw_IV = 120000000;
-        private static int PowerDraw_IV_Track = 85000000;
+        private const int PowerDraw_IV = 120000000;
+        private const int PowerDraw_IV_Track = 85000000;
 
-        private static double DetThreshold_IV_S = 33.8039216;
-        private static double DetThreshold_IV_P = 31.12605002;
-        private static double DetThreshold_IV_T = 2.677871585;
+        private const double DetThreshold_IV_S = 33.8039216;
+        private const double DetThreshold_IV_P = 31.12605002;
+        private const double DetThreshold_IV_T = 2.677871585;
 
-        private static double BearingError_Search_IV = 0.05;
-        private static double RangeError_Search_IV = 0.05;
-        private static double BearingError_Panel_IV = 0.05;
-        private static double RangeError_Panel_IV = 0.05;
-        private static double BearingError_Track_IV = 0.05;
-        private static double RangeError_Track_IV = 0.05;
+        private const double BearingError_Search_IV = 0.05;
+        private const double RangeError_Search_IV = 0.05;
+        private const double BearingError_Panel_IV = 0.05;
+        private const double RangeError_Panel_IV = 0.05;
+        private const double BearingError_Track_IV = 0.05;
+        private const double RangeError_Track_IV = 0.05;
 
-        private static double ReceiverArea_IV = 160;
+        private const double ReceiverArea_IV = 160;
 
-        private static double ApMin_S_IV = 65;
-        private static double ApMin_P_IV = 89;
-        private static double ApMin_T_IV = 1;
+        private const double ApMin_S_IV = 65;
+        private const double ApMin_P_IV = 89;
+        private const double ApMin_T_IV = 1;
 
-        private static double ApMax_S_IV = 85;
-        private static double ApMax_P_IV = 90;
-        private static double ApMax_T_IV = 2;
+        private const double ApMax_S_IV = 85;
+        private const double ApMax_P_IV = 90;
+        private const double ApMax_T_IV = 2;
 
-        private static double PowerEffMod_IV_S = 6.2865724E+05;
-        private static double PowerEffMod_IV_P = 7.0982104E+06;
-        private static double PowerEffMod_IV_T = 3.1974417E-07;
+        private const double PowerEffMod_IV_S = 6.2865724E+05;
+        private const double PowerEffMod_IV_P = 7.0982104E+06;
+        private const double PowerEffMod_IV_T = 3.1974417E-07;
 
         // Hover over field names or look at the base definition for more information.
         private static SensorDefinition MXM_012_FCR_Def => new SensorDefinition
@@ -311,8 +311,8 @@ namespace DetectionEquipment
 
             SensorEmpty = "CSys_NS_RCG_62_Sensor",
 
-            MaxAperture = MathHelper.ToRadians(ApMax_T_II),
-            MinAperture = MathHelper.ToRadians(ApMin_T_II),
+            MaxAperture = MathHelper.ToRadians(ApMax_T_III),
+            MinAperture = MathHelper.ToRadians(ApMin_T_III),
 
             Movement = new SensorDefinition.SensorMovementDefinition
             {
@@ -329,16 +329,16 @@ namespace DetectionEquipment
 
             TerminalName = "NS/RCG-62 Track Sensor",
 
-            DetectionThreshold = DetThreshold_II_T,
-            BearingErrorModifier = BearingError_Track_II,
-            RangeErrorModifier = RangeError_Track_II,
+            DetectionThreshold = DetThreshold_III_T,
+            BearingErrorModifier = BearingError_Track_III,
+            RangeErrorModifier = RangeError_Track_III,
 
-            MaxPowerDraw = PowerDraw_II,
+            MaxPowerDraw = PowerDraw_III,
 
             RadarProperties = new SensorDefinition.RadarPropertiesDefinition
             {
-                ReceiverArea = ReceiverArea_II,
-                PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_II_T,
+                ReceiverArea = ReceiverArea_III,
+                PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_III_T,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
             }

@@ -124,8 +124,8 @@ namespace Scripts
                     Cooldown = .5f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 600, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 60, //for beam this is time in ticks
-                    DelayAfterBurst = 60, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ShotsInBurst = 0, //for beam this is time in ticks
+                    DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFull = true,
                     GiveUpAfter = true,
                 },

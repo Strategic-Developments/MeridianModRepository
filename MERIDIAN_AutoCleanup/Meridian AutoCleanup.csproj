@@ -1,0 +1,161 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>YourName.ModName</RootNamespace>
+    <TargetFramework>net481</TargetFramework>
+    <Platforms>x64</Platforms>
+    <LangVersion>6</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+    <AssemblyName>Meridian CoreMod</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mal.Mdk2.ModAnalyzers" Version="2.1.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Mal.Mdk2.References" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NLog">
+      <HintPath>..\..\ClientBinaries\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoBuf.Net">
+      <HintPath>..\..\ClientBinaries\ProtoBuf.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="ProtoBuf.Net.Core">
+      <HintPath>..\..\ClientBinaries\ProtoBuf.Net.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Common">
+      <HintPath>..\..\ClientBinaries\Sandbox.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Game">
+      <HintPath>..\..\ClientBinaries\Sandbox.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Game.XmlSerializers">
+      <HintPath>..\..\ClientBinaries\Sandbox.Game.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Graphics">
+      <HintPath>..\..\ClientBinaries\Sandbox.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.Game">
+      <HintPath>..\..\ClientBinaries\SpaceEngineers.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.ObjectBuilders">
+      <HintPath>..\..\ClientBinaries\SpaceEngineers.ObjectBuilders.dll</HintPath>
+    </Reference>
+    <Reference Include="SpaceEngineers.ObjectBuilders.XmlSerializers">
+      <HintPath>..\..\ClientBinaries\SpaceEngineers.ObjectBuilders.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VRage">
+      <HintPath>..\..\ClientBinaries\VRage.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Game">
+      <HintPath>..\..\ClientBinaries\VRage.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Game.XmlSerializers">
+      <HintPath>..\..\ClientBinaries\VRage.Game.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Input">
+      <HintPath>..\..\ClientBinaries\VRage.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Library">
+      <HintPath>..\..\ClientBinaries\VRage.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Math">
+      <HintPath>..\..\ClientBinaries\VRage.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Math.XmlSerializers">
+      <HintPath>..\..\ClientBinaries\VRage.Math.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.NativeAftermath">
+      <HintPath>..\..\ClientBinaries\VRage.NativeAftermath.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.NativeWrapper">
+      <HintPath>..\..\ClientBinaries\VRage.NativeWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Network">
+      <HintPath>..\..\ClientBinaries\VRage.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Render">
+      <HintPath>..\..\ClientBinaries\VRage.Render.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Render11">
+      <HintPath>..\..\ClientBinaries\VRage.Render11.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Scripting">
+      <HintPath>..\..\ClientBinaries\VRage.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.UserInterface">
+      <HintPath>..\..\ClientBinaries\VRage.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.XmlSerializers">
+      <HintPath>..\..\ClientBinaries\VRage.XmlSerializers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Meridian_AWEBranch\**" />
+    <Compile Remove="Meridian_CoreMod\**" />
+    <Compile Remove="MERIDIAN_Pipelines\**" />
+    <Compile Remove="Meridian_RadarMod\**" />
+    <Compile Remove="MERIDIAN_Resourcing\**" />
+    <Compile Remove="MeridianPrefabs\**" />
+    <Compile Remove="PURITY_ALED_NERF\**" />
+    <Compile Remove="Purity_EWP\**" />
+    <Compile Remove="purity_gargindustry\**" />
+    <Compile Remove="Purity_Nukes\**" />
+    <Compile Remove="PURITY_SPAWNPOD_ECONOMY\**" />
+    <Compile Remove="Purity_TorpedoParts\**" />
+    <Compile Remove="Utility Mods\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Meridian_AWEBranch\**" />
+    <EmbeddedResource Remove="Meridian_CoreMod\**" />
+    <EmbeddedResource Remove="MERIDIAN_Pipelines\**" />
+    <EmbeddedResource Remove="Meridian_RadarMod\**" />
+    <EmbeddedResource Remove="MERIDIAN_Resourcing\**" />
+    <EmbeddedResource Remove="MeridianPrefabs\**" />
+    <EmbeddedResource Remove="PURITY_ALED_NERF\**" />
+    <EmbeddedResource Remove="Purity_EWP\**" />
+    <EmbeddedResource Remove="purity_gargindustry\**" />
+    <EmbeddedResource Remove="Purity_Nukes\**" />
+    <EmbeddedResource Remove="PURITY_SPAWNPOD_ECONOMY\**" />
+    <EmbeddedResource Remove="Purity_TorpedoParts\**" />
+    <EmbeddedResource Remove="Utility Mods\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Meridian_AWEBranch\**" />
+    <None Remove="Meridian_CoreMod\**" />
+    <None Remove="MERIDIAN_Pipelines\**" />
+    <None Remove="Meridian_RadarMod\**" />
+    <None Remove="MERIDIAN_Resourcing\**" />
+    <None Remove="MeridianPrefabs\**" />
+    <None Remove="PURITY_ALED_NERF\**" />
+    <None Remove="Purity_EWP\**" />
+    <None Remove="purity_gargindustry\**" />
+    <None Remove="Purity_Nukes\**" />
+    <None Remove="PURITY_SPAWNPOD_ECONOMY\**" />
+    <None Remove="Purity_TorpedoParts\**" />
+    <None Remove="Utility Mods\**" />
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+    <None Remove="CONTRIBUTING.md" />
+    <None Remove="fixaudio.py" />
+    <None Remove="LICENSE" />
+    <None Remove="ModIdFinder.sh" />
+    <None Remove="README.md" />
+    <None Remove="remove-semods-symlinks.bat" />
+    <None Remove="symlink-to-semods-recursive.bat" />
+    <None Remove="VisualStudioSLNs.zip" />
+  </ItemGroup>
+
+</Project>
