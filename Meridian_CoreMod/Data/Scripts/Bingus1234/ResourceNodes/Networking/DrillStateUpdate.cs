@@ -45,7 +45,7 @@ namespace Math0424.Networking
                     {
                         d1.IsProducing = isProducing;
                         d1.state = this;
-                        d.optionsClient = oreList;
+                        d1.optionsClient = oreList;
                     }
                     else if (d2 != null)
                     {
