@@ -193,11 +193,10 @@ namespace ResourceNodes
             }
 
 
-            if (!MyAPIGateway.Session.IsServer)
-                return;
+            
 
             tick++;
-            if (!Blocc.CubeGrid.IsStatic)
+            if (!Blocc.CubeGrid.IsStatic && MyAPIGateway.Session.IsServer)
             {
                 Blocc.Enabled = false;
             }
@@ -222,6 +221,9 @@ namespace ResourceNodes
                 }
                 timesChecked++;
             }
+
+            if (!MyAPIGateway.Session.IsServer)
+                return;
 
             IsProducing = Blocc.Enabled && Blocc.IsWorking && !Inv.IsFull && InGround;
 
