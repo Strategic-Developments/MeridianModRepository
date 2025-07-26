@@ -142,6 +142,9 @@ namespace ResourceNodes
                 {
                     if (MyAPIGateway.Multiplayer.IsServer)
                     {
+                        if (block?.options == null)
+                            return;
+
                         foreach (var ore in block.options)
                         {
                             double amount = block.baseSpeed * block.Blocc.UpgradeValues["Productivity"] * block.Blocc.UpgradeValues["Effectiveness"] * ore.MinedOreRatio * ore.MinedOreRatio;
@@ -165,6 +168,9 @@ namespace ResourceNodes
                     }
                     else
                     {
+                        if (block?.optionsClient == null)
+                            return;
+
                         foreach (var ore in block.optionsClient)
                         {
 
