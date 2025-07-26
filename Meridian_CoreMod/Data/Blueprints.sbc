@@ -12,6 +12,9 @@
 
 
 
+
+
+
    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -759,9 +762,115 @@ Licenses -->
 
 
 
+ <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>RationPacksBP</SubtypeId>
+      </Id>
+      <DisplayName>Ration Packs BP</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="RationPacks" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
 
 
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ContractorHelmetsBP</SubtypeId>
+      </Id>
+      <DisplayName>Contractor Helmet BP</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ContractorHelmets" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
 
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>LiqueurShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Contractor Helmet BP</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="LiqueurShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+    
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>CESM_CrateBP</SubtypeId>
+      </Id>
+      <DisplayName>CESM Crate BP</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="CESM_Crate" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>LedgerBP</SubtypeId>
+      </Id>
+      <DisplayName>Ledger Files BP</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Ledger" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>CertificateBP</SubtypeId>
+      </Id>
+      <DisplayName>Certificate Files BP</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Certificate" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
+
+
+ 
 
 
 
