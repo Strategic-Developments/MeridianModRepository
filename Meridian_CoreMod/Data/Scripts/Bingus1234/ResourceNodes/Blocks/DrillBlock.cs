@@ -138,7 +138,7 @@ namespace ResourceNodes
             list.ListContent = (b, content, preSelect) =>
             {
                 DrillBlock block;
-                if (ResourceNode.Instance?.Blocks?.TryGetValue(b.EntityId, out block) ?? false)
+                if (ResourceNode.Instance.Blocks.TryGetValue(b.EntityId, out block))
                 {
                     if (MyAPIGateway.Multiplayer.IsServer)
                     {
