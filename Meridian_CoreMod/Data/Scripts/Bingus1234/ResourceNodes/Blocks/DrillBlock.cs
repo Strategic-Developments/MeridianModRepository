@@ -40,6 +40,7 @@ namespace ResourceNodes
         protected bool InvFull, InGround;
         public MyVoxelMaterialDefinition myOre = null;
         public List<MyVoxelMaterialDefinition> options = new List<MyVoxelMaterialDefinition>();
+        public List<MyTuple<string, int>> optionsClient = new List<MyTuple<string, int>>();
         protected Action DepositedResources;
 
         protected float baseSpeed = 10;
@@ -139,26 +140,50 @@ namespace ResourceNodes
                 DrillBlock block;
                 if (ResourceNode.Instance.Blocks.TryGetValue(b.EntityId, out block))
                 {
-                    foreach (var ore in block.options)
+                    if (MyAPIGateway.Multiplayer.IsServer)
                     {
-                        float speed = block.baseSpeed * block.Blocc.UpgradeValues["Productivity"];
-                        float yield = speed * block.Blocc.UpgradeValues["Effectiveness"]; // lmao
-                        double amount = yield * ore.MinedOreRatio * ore.MinedOreRatio;
+                        if (block?.options == null)
+                            return;
 
-                        if (ore.MinedOre == "Stone")
+                        foreach (var ore in block.options)
                         {
-                            amount *= 25;
+                            double amount = block.baseSpeed * block.Blocc.UpgradeValues["Productivity"] * block.Blocc.UpgradeValues["Effectiveness"] * ore.MinedOreRatio * ore.MinedOreRatio;
+
+                            if (ore.MinedOre == "Stone")
+                            {
+                                amount *= 10;
+                            }
+
+                            var item = new MyTerminalControlListBoxItem(MyStringId.GetOrCompute($"{ore.MinedOre}"),
+                                                                        tooltip: MyStringId.GetOrCompute($"{amount} per 100 ticks"),
+                                                                        userData: ore.MinedOre); // userData can be whatever you wish and it's retrievable in the ItemSelected call.
+
+                            content.Add(item);
+
+                            if (ore == block.myOre)
+                            {
+                                preSelect.Add(item);
+                            }
                         }
+                    }
+                    else
+                    {
+                        if (block?.optionsClient == null)
+                            return;
 
-                        var item = new MyTerminalControlListBoxItem(MyStringId.GetOrCompute($"{ore.MinedOre}"),
-                                                                    tooltip: MyStringId.GetOrCompute($"{amount} per 100 ticks"),
-                                                                    userData: ore.MinedOre); // userData can be whatever you wish and it's retrievable in the ItemSelected call.
-
-                        content.Add(item);
-
-                        if (ore == block.myOre)
+                        foreach (var ore in block.optionsClient)
                         {
-                            preSelect.Add(item);
+
+                            var item = new MyTerminalControlListBoxItem(MyStringId.GetOrCompute($"{ore.Item1}"),
+                                                                        tooltip: MyStringId.GetOrCompute($"{ore.Item2} per 100 ticks"),
+                                                                        userData: ore.Item1); // userData can be whatever you wish and it's retrievable in the ItemSelected call.
+
+                            content.Add(item);
+
+                            if (ore.Item1 == block.state?.oreName)
+                            {
+                                preSelect.Add(item);
+                            }
                         }
                     }
                 }
@@ -192,9 +217,9 @@ namespace ResourceNodes
                 AddTerminalOptions();
             }
 
-
             if (!MyAPIGateway.Session.IsServer)
                 return;
+
 
             tick++;
             if (!Blocc.CubeGrid.IsStatic)
@@ -223,6 +248,8 @@ namespace ResourceNodes
                 timesChecked++;
             }
 
+            
+
             IsProducing = Blocc.Enabled && Blocc.IsWorking && !Inv.IsFull && InGround;
 
             if (IsProducing)
@@ -232,14 +259,34 @@ namespace ResourceNodes
 
             if (tick % 10 == 0)
             {
+                if (optionsClient == null)
+                {
+                    optionsClient = new List<MyTuple<string, int>>();
+                }
+                else
+                {
+                    optionsClient.Clear();
+                }
+
+                foreach (var option in options)
+                {
+                    optionsClient.Add(new MyTuple<string, int>
+                    {
+                        Item1 = option.MinedOre,
+                        Item2 = (int)(baseSpeed * Blocc.UpgradeValues["Productivity"] * Blocc.UpgradeValues["Effectiveness"] * option.MinedOreRatio * option.MinedOreRatio * (option.MinedOre == "Stone" ? 25 : 1))
+                    });
+                }
+
                 DrillStateUpdate packet = new DrillStateUpdate
                 {
                     blockId = Block.EntityId,
                     isInGround = InGround,
                     invFull = InvFull,
                     oreName = myOre?.MinedOre ?? "nothing",
-                    isProducing = IsProducing
+                    isProducing = IsProducing,
+                    oreList = optionsClient
                 };
+
                 ResourceNode.Instance.Network.TransmitToPlayersWithinRange(Block.PositionComp.GetPosition(), packet, 1500, false);
 
                 if (Block.IsBuilt)
@@ -277,34 +324,25 @@ namespace ResourceNodes
                 }
             }
 
-            if (IsProducing)
+            if (IsProducing && myOre != null && tick % 100 == 0)
             {
-                if (myOre != null)
+                float speed = baseSpeed * Block.UpgradeValues["Productivity"];
+                float yield = speed * Block.UpgradeValues["Effectiveness"]; // lmao
+                MyObjectBuilder_Ore oreObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_Ore>(myOre.MinedOre);
+
+                double amount = yield * myOre.MinedOreRatio * myOre.MinedOreRatio;
+
+                if (myOre.MinedOre == "Stone")
                 {
-                    
+                    amount *= 10;
+                }
 
-                    if (tick % 100 == 0)
-                    {
-                        float speed = baseSpeed * Block.UpgradeValues["Productivity"];
-                        float yield = speed * Block.UpgradeValues["Effectiveness"]; // lmao
-                        MyObjectBuilder_Ore oreObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_Ore>(myOre.MinedOre);
-                        
-                        double amount = yield * myOre.MinedOreRatio * myOre.MinedOreRatio;
+                InvFull = !Inv.CanItemsBeAdded((MyFixedPoint)amount, oreObject);
 
-                        if(myOre.MinedOre == "Stone")
-                        {
-                            amount *= 25;
-                        }
-
-                        InvFull = !Inv.CanItemsBeAdded((MyFixedPoint)amount, oreObject);
-
-                        if (!InvFull)
-                        {
-                            Inv.AddItems((MyFixedPoint)amount, oreObject);
-                            DepositedResources?.Invoke();
-                        }
-
-                    }
+                if (!InvFull)
+                {
+                    Inv.AddItems((MyFixedPoint)amount, oreObject);
+                    DepositedResources?.Invoke();
                 }
             }
         }

@@ -1,6 +1,8 @@
 ﻿using ProtoBuf;
 using ResourceNodes;
 using Sandbox.Game.Entities;
+using System.Collections.Generic;
+using VRage;
 using static Math0424.Networking.EasyNetworker;
 
 namespace Math0424.Networking
@@ -15,7 +17,7 @@ namespace Math0424.Networking
         [ProtoMember(3)] public bool isProducing;
         [ProtoMember(4)] public bool invFull;
         [ProtoMember(5)] public string oreName;
-
+        [ProtoMember(6)] public List<MyTuple<string, int>> oreList;
 
         public int GetId()
         {
@@ -37,16 +39,19 @@ namespace Math0424.Networking
                     {
                         d.IsProducing = isProducing;
                         d.state = this;
+                        d.optionsClient = oreList;
                     }
                     else if (d1 != null)
                     {
                         d1.IsProducing = isProducing;
                         d1.state = this;
+                        d1.optionsClient = oreList;
                     }
                     else if (d2 != null)
                     {
                         d2.IsProducing = isProducing;
                         d2.state = this;
+                        d2.optionsClient = oreList;
                     }
                 }
             }
