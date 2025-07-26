@@ -151,7 +151,7 @@ namespace ResourceNodes
 
                             if (ore.MinedOre == "Stone")
                             {
-                                amount *= 25;
+                                amount *= 10;
                             }
 
                             var item = new MyTerminalControlListBoxItem(MyStringId.GetOrCompute($"{ore.MinedOre}"),
@@ -334,7 +334,7 @@ namespace ResourceNodes
 
                 if (myOre.MinedOre == "Stone")
                 {
-                    amount *= 25;
+                    amount *= 10;
                 }
 
                 InvFull = !Inv.CanItemsBeAdded((MyFixedPoint)amount, oreObject);
