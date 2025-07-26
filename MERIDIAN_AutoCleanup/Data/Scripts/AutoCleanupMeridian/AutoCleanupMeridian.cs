@@ -113,7 +113,19 @@ namespace AutoCleanup
 
             IMyCubeGrid g = ent as IMyCubeGrid;
             gridDumpList.Clear();
-            g.GetGridGroup(GridLinkTypeEnum.Mechanical).GetGrids(gridDumpList);
+            g.GetGridGroup(GridLinkTypeEnum.Logical).GetGrids(gridDumpList);
+
+            if (gridDumpList.Count == 1 && ((MyCubeGrid)g).BlocksCount == 1)
+            {
+                var wheels = g.GetFatBlocks<IMyWheel>();
+
+                foreach (var wheel in wheels)
+                {
+                    if (wheel.IsAttached)
+                        return false;
+                }
+            }
+
 
             bool IsNamed = false;
             foreach (var grid in gridDumpList)
