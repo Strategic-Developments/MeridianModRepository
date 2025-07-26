@@ -4,6 +4,206 @@
 
 
 
+<!-- TRADE COMPONENTS -->
+
+        <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>Certificate</SubtypeId>
+            </Id>
+            <DisplayName>Transit Certificate</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Certificate.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1000</Mass>
+            <Volume>500</Volume>
+            <Model>Models\Components\Certificate.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>Ledger</SubtypeId>
+            </Id>
+            <DisplayName>Ledger Verification Unit</DisplayName>
+            <Icon>Textures\GUI\Icons\components\Ledger.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1000</Mass>
+            <Volume>500</Volume>
+            <Model>Models\Components\Ledger.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>CESM_Crate</SubtypeId>
+            </Id>
+            <DisplayName>CESM Crate</DisplayName>
+            <Icon>Textures\GUI\Icons\components\CESM_Crate.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1000</Mass>
+            <Volume>500</Volume>
+            <Model>Models\Components\CESM_Crate.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>LiqueurShipment</SubtypeId>
+            </Id>
+            <DisplayName>Csillan Liqueur Shipment</DisplayName>
+            <Icon>Textures\GUI\Icons\components\LiqueurShipment.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1000</Mass>
+            <Volume>500</Volume>
+            <Model>Models\Components\LiqueurShipment.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>ContractorHelmets</SubtypeId>
+            </Id>
+            <DisplayName>Contractor Helmets</DisplayName>
+            <Icon>Textures\GUI\Icons\components\ContractorHelmets.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1000</Mass>
+            <Volume>500</Volume>
+            <Model>Models\Components\ContractorHelmets.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+         <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>RationPacks</SubtypeId>
+            </Id>
+            <DisplayName>EnCorp Ration Packs</DisplayName>
+            <Icon>Textures\GUI\Icons\components\RationPacks.dds</Icon>
+            <Size>
+                <X>0.1</X>
+                <Y>0.1</Y>
+                <Z>0.05</Z>
+            </Size>
+            <Mass>1000</Mass>
+            <Volume>500</Volume>
+            <Model>Models\Components\RationPacks.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>25</MaxIntegrity>
+            <DropProbability>0.45</DropProbability>
+            <Health>25</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
+            <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
+        </Component> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- CRAFTABLE NUCLEAR COMPONENTS -->
     <Component>
