@@ -113,7 +113,7 @@ namespace AutoCleanup
 
             IMyCubeGrid g = ent as IMyCubeGrid;
             gridDumpList.Clear();
-            g.GetGridGroup(GridLinkTypeEnum.Logical).GetGrids(gridDumpList);
+            g.GetGridGroup(GridLinkTypeEnum.Mechanical).GetGrids(gridDumpList);
 
             bool IsNamed = false;
             foreach (var grid in gridDumpList)
