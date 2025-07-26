@@ -267,7 +267,7 @@ namespace ResourceNodes
                     optionsClient.Add(new MyTuple<string, int>
                     {
                         Item1 = option.MinedOre,
-                        Item2 = (int)(baseSpeed * Blocc.UpgradeValues["Productivity"] * Blocc.UpgradeValues["Effectiveness"] * option.MinedOreRatio * option.MinedOreRatio)
+                        Item2 = (int)(baseSpeed * Blocc.UpgradeValues["Productivity"] * Blocc.UpgradeValues["Effectiveness"] * option.MinedOreRatio * option.MinedOreRatio * (option.MinedOre == "Stone" ? 25 : 1))
                     });
                 }
 
@@ -318,34 +318,25 @@ namespace ResourceNodes
                 }
             }
 
-            if (IsProducing)
+            if (IsProducing && myOre != null && tick % 100 == 0)
             {
-                if (myOre != null)
+                float speed = baseSpeed * Block.UpgradeValues["Productivity"];
+                float yield = speed * Block.UpgradeValues["Effectiveness"]; // lmao
+                MyObjectBuilder_Ore oreObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_Ore>(myOre.MinedOre);
+
+                double amount = yield * myOre.MinedOreRatio * myOre.MinedOreRatio;
+
+                if (myOre.MinedOre == "Stone")
                 {
-                    
+                    amount *= 25;
+                }
 
-                    if (tick % 100 == 0)
-                    {
-                        float speed = baseSpeed * Block.UpgradeValues["Productivity"];
-                        float yield = speed * Block.UpgradeValues["Effectiveness"]; // lmao
-                        MyObjectBuilder_Ore oreObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_Ore>(myOre.MinedOre);
-                        
-                        double amount = yield * myOre.MinedOreRatio * myOre.MinedOreRatio;
+                InvFull = !Inv.CanItemsBeAdded((MyFixedPoint)amount, oreObject);
 
-                        if(myOre.MinedOre == "Stone")
-                        {
-                            amount *= 25;
-                        }
-
-                        InvFull = !Inv.CanItemsBeAdded((MyFixedPoint)amount, oreObject);
-
-                        if (!InvFull)
-                        {
-                            Inv.AddItems((MyFixedPoint)amount, oreObject);
-                            DepositedResources?.Invoke();
-                        }
-
-                    }
+                if (!InvFull)
+                {
+                    Inv.AddItems((MyFixedPoint)amount, oreObject);
+                    DepositedResources?.Invoke();
                 }
             }
         }
