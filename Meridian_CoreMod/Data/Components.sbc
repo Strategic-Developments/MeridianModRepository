@@ -157,7 +157,7 @@
                 <TypeId>Component</TypeId>
                 <SubtypeId>RationPacks</SubtypeId>
             </Id>
-            <DisplayName>EnCorp Ration Packs</DisplayName>
+            <DisplayName>EnCorp Ration Bricks</DisplayName>
             <Icon>Textures\GUI\Icons\components\RationPacks.dds</Icon>
             <Size>
                 <X>0.1</X>
