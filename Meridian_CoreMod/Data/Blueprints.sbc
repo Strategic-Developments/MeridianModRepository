@@ -600,7 +600,22 @@ Licenses -->
     </Blueprint>
 
 
-
+<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>StoneShipmentBP</SubtypeId>
+      </Id>
+      <DisplayName>Gravel Shipment</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
+	  
+      <Prerequisites>
+        <Item Amount="250000" TypeId="Ingot" SubtypeId="Stone" />
+        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="IronShipment" />
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+	  
+    </Blueprint>
 
 
   <Blueprint>
