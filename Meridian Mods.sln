@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meridian Torpedo Parts", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meridian PaperDoll", "Utility Mods\PaperDoll\Meridian PaperDoll.csproj", "{ECE3E95C-8A65-4D0F-9D69-0A93FD874B2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meridian G forces", "Brill G forces Mod\Meridian G forces.csproj", "{ED3BCF4E-D3A3-4240-A3A0-F311A7EBE0C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{ECE3E95C-8A65-4D0F-9D69-0A93FD874B2B}.Debug|Any CPU.Build.0 = Debug|x64
 		{ECE3E95C-8A65-4D0F-9D69-0A93FD874B2B}.Release|Any CPU.ActiveCfg = Release|x64
 		{ECE3E95C-8A65-4D0F-9D69-0A93FD874B2B}.Release|Any CPU.Build.0 = Release|x64
+		{ED3BCF4E-D3A3-4240-A3A0-F311A7EBE0C4}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{ED3BCF4E-D3A3-4240-A3A0-F311A7EBE0C4}.Debug|Any CPU.Build.0 = Debug|x64
+		{ED3BCF4E-D3A3-4240-A3A0-F311A7EBE0C4}.Release|Any CPU.ActiveCfg = Release|x64
+		{ED3BCF4E-D3A3-4240-A3A0-F311A7EBE0C4}.Release|Any CPU.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
