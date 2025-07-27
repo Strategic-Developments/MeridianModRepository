@@ -1404,7 +1404,7 @@
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
             <OperationalPowerConsumption>0.0002</OperationalPowerConsumption>
             <StandbyPowerConsumption>0.0000002</StandbyPowerConsumption>
-            <Capacity>15000 </Capacity>
+            <Capacity>500</Capacity>
             <InventoryMaxVolume>0.12</InventoryMaxVolume>
             <InventorySize>
                 <X>2</X>
