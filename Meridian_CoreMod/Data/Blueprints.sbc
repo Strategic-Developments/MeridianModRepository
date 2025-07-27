@@ -612,7 +612,7 @@ Licenses -->
         <Item Amount="250000" TypeId="Ingot" SubtypeId="Stone" />
         
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="IronShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="StoneShipment" />
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
 	  
     </Blueprint>
