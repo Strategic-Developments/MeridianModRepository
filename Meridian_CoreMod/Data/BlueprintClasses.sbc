@@ -113,6 +113,7 @@
       <Entry Class="ShipmentComponents" BlueprintSubtypeId="SiliconShipmentBP" />
       <Entry Class="ShipmentComponents" BlueprintSubtypeId="NickelShipmentBP" />
       <Entry Class="ShipmentComponents" BlueprintSubtypeId="IronShipmentBP" />
+      <Entry Class="ShipmentComponents" BlueprintSubtypeId="StoneShipmentBP" />
 
       <Entry Class="ChemicalComponents" BlueprintSubtypeId="TrihexonReaction" />
       <Entry Class="ChemicalComponents" BlueprintSubtypeId="DicyclineReaction" />
@@ -135,11 +136,6 @@
       <Entry Class="Ammo" BlueprintSubtypeId="SAIDSGreenBP" />
    
 	   <Entry Class="EliteConsumables" BlueprintSubtypeId="SAIDSGreenBP" />
-
-      <Entry Class="EliteEquipment" BlueprintSubtypeId="IssuedIngotShipmentBP" />
-      <Entry Class="EliteEquipment" BlueprintSubtypeId="TechIngotShipmentBP" />
-      <Entry Class="EliteEquipment" BlueprintSubtypeId="AdvancedIngotShipmentBP" />
-      <Entry Class="EliteEquipment" BlueprintSubtypeId="StarterOreShipmentBP" />
 
 
       <Entry Class="NUKE_COMPONENTS" BlueprintSubtypeId="FusionCoreBP" />

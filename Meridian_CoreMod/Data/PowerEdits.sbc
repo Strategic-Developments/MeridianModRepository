@@ -181,7 +181,7 @@
                     </Id>
                 </FuelInfo>
             </FuelInfos>
-            <FuelProductionToCapacityMultiplier>0.02</FuelProductionToCapacityMultiplier>
+            <FuelProductionToCapacityMultiplier>0.05</FuelProductionToCapacityMultiplier>
             <PrimarySound>ArcBlockHydrogenEngine</PrimarySound>
 
             <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -258,7 +258,7 @@
             <BuildTimeSeconds>40</BuildTimeSeconds>
             <ResourceSinkGroup>Generators</ResourceSinkGroup>
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-            <MaxPowerOutput>0.5</MaxPowerOutput>
+            <MaxPowerOutput>1</MaxPowerOutput>
             <FuelCapacity>500</FuelCapacity>
             <IsAirTight>false</IsAirTight>
             <InventorySize>
@@ -274,7 +274,7 @@
                     </Id>
                 </FuelInfo>
             </FuelInfos>
-            <FuelProductionToCapacityMultiplier>0.01</FuelProductionToCapacityMultiplier>
+            <FuelProductionToCapacityMultiplier>0.05</FuelProductionToCapacityMultiplier>
             <PrimarySound>ArcBlockHydrogenEngine</PrimarySound>
 
             <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -1541,7 +1541,7 @@
             <BuildTimeSeconds>20</BuildTimeSeconds>
 
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
-            <MaxPowerOutput>0.04</MaxPowerOutput>
+            <MaxPowerOutput>1</MaxPowerOutput>
 
             <PanelOrientation>
                 <X>0</X>
@@ -1674,7 +1674,7 @@
             <BuildTimeSeconds>30</BuildTimeSeconds>
 
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
-            <MaxPowerOutput>0.5</MaxPowerOutput>
+            <MaxPowerOutput>2.0</MaxPowerOutput>
 
             <PanelOrientation>
                 <X>0</X>
@@ -1807,7 +1807,7 @@
             <BuildTimeSeconds>24</BuildTimeSeconds>
 
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
-            <MaxPowerOutput>0.25</MaxPowerOutput>
+            <MaxPowerOutput>1</MaxPowerOutput>
             <!-- When it is Two sided odd - should be on one side, even - on other side -->
             <Pivots>
                 <Vector3>
@@ -1917,7 +1917,7 @@
             <BuildTimeSeconds>24</BuildTimeSeconds>
 
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
-            <MaxPowerOutput>0.25</MaxPowerOutput>
+            <MaxPowerOutput>1</MaxPowerOutput>
 
             <PanelOrientation>
                 <X>0</X>
@@ -2027,7 +2027,7 @@
             <BuildTimeSeconds>20</BuildTimeSeconds>
 
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
-            <MaxPowerOutput>0.04</MaxPowerOutput>
+            <MaxPowerOutput>1</MaxPowerOutput>
 
             <PanelOrientation>
                 <X>0</X>
@@ -2161,7 +2161,7 @@
             <BuildTimeSeconds>14</BuildTimeSeconds>
 
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
-            <MaxPowerOutput>0.02</MaxPowerOutput>
+            <MaxPowerOutput>0.5</MaxPowerOutput>
 
             <PanelOrientation>
                 <X>0</X>
@@ -2270,7 +2270,7 @@
             <BuildTimeSeconds>14</BuildTimeSeconds>
 
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
-            <MaxPowerOutput>0.02</MaxPowerOutput>
+            <MaxPowerOutput>0.5</MaxPowerOutput>
             <Pivots>
                <Vector3>
                   <X>1.25</X>
