@@ -1,11 +1,6 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Components>
-
-
-
-<!-- TRADE COMPONENTS -->
-
+    <Components><!-- TRADE COMPONENTS -->
         <Component>
             <Id>
                 <TypeId>Component</TypeId>
@@ -30,13 +25,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>Ledger</SubtypeId>
@@ -60,12 +52,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>CESM_Crate</SubtypeId>
@@ -89,12 +79,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>LiqueurShipment</SubtypeId>
@@ -118,12 +106,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>ContractorHelmets</SubtypeId>
@@ -147,12 +133,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>RationPacks</SubtypeId>
@@ -176,37 +160,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- CRAFTABLE NUCLEAR COMPONENTS -->
-    <Component>
+        </Component><!-- CRAFTABLE NUCLEAR COMPONENTS -->
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>FusionCore</SubtypeId>
@@ -230,12 +187,9 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-<!-- DRUGS -->
+        </Component><!-- DRUGS -->
         <Component>
             <Id>
                 <TypeId>Component</TypeId>
@@ -260,12 +214,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>Oxihex</SubtypeId>
@@ -289,12 +241,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>Sleipnir</SubtypeId>
@@ -318,12 +268,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>HCP221</SubtypeId>
@@ -347,16 +295,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-
-
-<!-- UNCRAFTABLE CSILLAN SPECCOMPS -->
-    <Component>
+        </Component><!-- UNCRAFTABLE CSILLAN SPECCOMPS -->
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>CsillanHeirloom</SubtypeId>
@@ -380,24 +322,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- UNCRAFTABLE LICENSE COMPONENTS -->
-    <Component>
+        </Component><!-- UNCRAFTABLE LICENSE COMPONENTS -->
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>TacLicense</SubtypeId>
@@ -421,11 +349,9 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
+        </Component>
         <Component>
             <Id>
                 <TypeId>Component</TypeId>
@@ -450,12 +376,9 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
+        </Component>
         <Component>
             <Id>
                 <TypeId>Component</TypeId>
@@ -480,14 +403,9 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-
-<!-- BULK INGOT COMPONENTS -->
+        </Component><!-- BULK INGOT COMPONENTS -->
         <Component>
             <Id>
                 <TypeId>Component</TypeId>
@@ -512,11 +430,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-     <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>IronShipment</SubtypeId>
@@ -540,13 +457,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>NickelShipment</SubtypeId>
@@ -570,12 +484,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>SiliconShipment</SubtypeId>
@@ -599,12 +511,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>MagnesiumShipment</SubtypeId>
@@ -628,12 +538,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>CobaltShipment</SubtypeId>
@@ -657,12 +565,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>SilverShipment</SubtypeId>
@@ -686,13 +592,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>GoldShipment</SubtypeId>
@@ -716,12 +619,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>PlatinumShipment</SubtypeId>
@@ -745,13 +646,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-         <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>UraniumShipment</SubtypeId>
@@ -775,21 +673,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-
-
-
-
-
-
-       
-<!-- BULK ORE SHIPMENT COMPONENTS -->
-     <Component>
+        </Component><!-- BULK ORE SHIPMENT COMPONENTS -->
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>StarterOreShipment</SubtypeId>
@@ -813,13 +700,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-    <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>AdvancedOreShipment</SubtypeId>
@@ -843,19 +727,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-
-
-
-
-
-
-    <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>RestrictedOreShipment</SubtypeId>
@@ -879,16 +754,10 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-
-
-
-    <Component>
+        </Component>
+        <Component>
             <Id>
                 <TypeId>Component</TypeId>
                 <SubtypeId>IssuedIngotShipment</SubtypeId>
@@ -912,16 +781,8 @@
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
-        </Component> 
-
-
-
-
-
-
-
+        </Component>
     </Components>
 </Definitions>

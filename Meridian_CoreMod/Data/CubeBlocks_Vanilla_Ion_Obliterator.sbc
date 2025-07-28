@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<CubeBlocks>
-		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+    <CubeBlocks>
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockSmallThrust</SubtypeId>
@@ -12,33 +12,32 @@
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="2" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="2"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\ThrustSmall.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="LargeTube" Count="1" />
-                <Component Subtype="Thrust" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="LargeTube" Count="1"/>
+                <Component Subtype="Thrust" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="SteelPlate" Count="1"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustSmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustSmallConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustSmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustSmallConstruction_2.mwm"/>
             </BuildProgressModels>
-            <VoxelPlacement>
-                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+            <VoxelPlacement><!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
                 <StaticMode>
                     <PlacementMode>Volumetric</PlacementMode>
                     <MaxAllowed>0.2</MaxAllowed>
@@ -51,23 +50,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>SmallThrust</BlockPairName>
-            <Center x="0" y="0" z="1" />
+            <Center x="0" y="0" z="1"/>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <BuildTimeSeconds>10</BuildTimeSeconds>
             <EdgeType>Light</EdgeType>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
             <FlameDamage>0.1</FlameDamage>
             <FlameLengthScale>1.4</FlameLengthScale>
@@ -114,33 +110,32 @@
             <Description>Description_IonThrust</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="2" z="4" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="2" z="4"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\ThrustLarge.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="LargeTube" Count="5" />
-                <Component Subtype="Thrust" Count="12" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="SteelPlate" Count="4" />
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="LargeTube" Count="5"/>
+                <Component Subtype="Thrust" Count="12"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="SteelPlate" Count="4"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
-                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
-                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2"/>
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustLargeConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustLargeConstruction_2.mwm"/>
             </BuildProgressModels>
-            <VoxelPlacement>
-                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+            <VoxelPlacement><!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
                 <StaticMode>
                     <PlacementMode>Volumetric</PlacementMode>
                     <MaxAllowed>0.2</MaxAllowed>
@@ -153,23 +148,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>LargeThrust</BlockPairName>
-            <Center x="1" y="0" z="2" />
+            <Center x="1" y="0" z="2"/>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <BuildTimeSeconds>20</BuildTimeSeconds>
             <EdgeType>Light</EdgeType>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
             <FlameDamage>0.2</FlameDamage>
             <FlameLengthScale>1.15</FlameLengthScale>
@@ -217,34 +209,33 @@
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="2" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="2"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\ThrustSmall.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="15" />
-                <Component Subtype="Construction" Count="40" />
-                <Component Subtype="LargeTube" Count="8" />
-                <Component Subtype="Thrust" Count="80" />
-                <Component Subtype="Construction" Count="20" />
-                <Component Subtype="SteelPlate" Count="10" />
+                <Component Subtype="SteelPlate" Count="15"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="LargeTube" Count="8"/>
+                <Component Subtype="Thrust" Count="80"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="SteelPlate" Count="10"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
-                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2"/>
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustSmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ThrustSmallConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustSmallConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustSmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ThrustSmallConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustSmallConstruction_3.mwm"/>
             </BuildProgressModels>
-            <VoxelPlacement>
-                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+            <VoxelPlacement><!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
                 <StaticMode>
                     <PlacementMode>Volumetric</PlacementMode>
                     <MaxAllowed>0.2</MaxAllowed>
@@ -257,23 +248,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>SmallThrust</BlockPairName>
-            <Center x="0" y="0" z="1" />
+            <Center x="0" y="0" z="1"/>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>40</BuildTimeSeconds>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.61</FlameDamageLengthScale>
             <FlameLengthScale>1.5</FlameLengthScale>
             <FlameIdleColor>
@@ -319,36 +307,35 @@
             <Description>Description_IonThrust</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="2" z="4" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="2" z="4"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\ThrustLarge.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="100" />
-                <Component Subtype="Construction" Count="70" />
-                <Component Subtype="LargeTube" Count="40" />
-                <Component Subtype="Thrust" Count="960" />
-                <Component Subtype="Construction" Count="30" />
-                <Component Subtype="SteelPlate" Count="50" />
+                <Component Subtype="SteelPlate" Count="100"/>
+                <Component Subtype="Construction" Count="70"/>
+                <Component Subtype="LargeTube" Count="40"/>
+                <Component Subtype="Thrust" Count="960"/>
+                <Component Subtype="Construction" Count="30"/>
+                <Component Subtype="SteelPlate" Count="50"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
-                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
-                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4"/>
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\ThrustLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustLargeConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="0.49" File="Models\Cubes\Large\ThrustLargeConstruction_3.mwm" />
-                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\ThrustLargeConstruction_4.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustLargeConstruction_5.mwm" />
+                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\ThrustLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="0.49" File="Models\Cubes\Large\ThrustLargeConstruction_3.mwm"/>
+                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\ThrustLargeConstruction_4.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustLargeConstruction_5.mwm"/>
             </BuildProgressModels>
-            <VoxelPlacement>
-                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+            <VoxelPlacement><!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
                 <StaticMode>
                     <PlacementMode>Volumetric</PlacementMode>
                     <MaxAllowed>0.2</MaxAllowed>
@@ -361,23 +348,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>LargeThrust</BlockPairName>
-            <Center x="1" y="0" z="2" />
+            <Center x="1" y="0" z="2"/>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>90</BuildTimeSeconds>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.8</FlameDamageLengthScale>
             <FlameLengthScale>1.15</FlameLengthScale>
             <FlameIdleColor>
@@ -412,9 +396,7 @@
                 <string>Propulsion</string>
             </TargetingGroups>
             <Public>false</Public>
-        </Definition>
-        <!-- Region Thrusters-->
-
+        </Definition><!-- Region Thrusters-->
         <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
@@ -426,30 +408,30 @@
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="2" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="2"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\IonThrusterSmall_SciFi.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="LargeTube" Count="1" />
-                <Component Subtype="Thrust" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="LargeTube" Count="1"/>
+                <Component Subtype="Thrust" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="SteelPlate" Count="1"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\IonThrusterSmall_SciFi_Construction1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\IonThrusterSmall_SciFi_Construction2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\IonThrusterSmall_SciFi_Construction1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\IonThrusterSmall_SciFi_Construction2.mwm"/>
             </BuildProgressModels>
             <VoxelPlacement>
                 <StaticMode>
@@ -464,23 +446,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>SmallThrustSciFi</BlockPairName>
-            <Center x="0" y="0" z="1" />
+            <Center x="0" y="0" z="1"/>
             <MirroringX>Z</MirroringX>
             <MirroringZ>X</MirroringZ>
             <BuildTimeSeconds>10</BuildTimeSeconds>
             <EdgeType>Light</EdgeType>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
             <FlameDamage>0.1</FlameDamage>
             <FlameLengthScale>1.4</FlameLengthScale>
@@ -513,7 +492,6 @@
             </TargetingGroups>
             <Public>false</Public>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
@@ -524,30 +502,30 @@
             <Description>Description_IonThrust</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="2" z="4" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="2" z="4"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\IonThrusterLarge_SciFi.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="LargeTube" Count="5" />
-                <Component Subtype="Thrust" Count="12" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="SteelPlate" Count="4" />
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="LargeTube" Count="5"/>
+                <Component Subtype="Thrust" Count="12"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="SteelPlate" Count="4"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
-                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
-                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2"/>
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\IonThrusterLarge_SciFi_Construction1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\IonThrusterLarge_SciFi_Construction2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\IonThrusterLarge_SciFi_Construction1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\IonThrusterLarge_SciFi_Construction2.mwm"/>
             </BuildProgressModels>
             <VoxelPlacement>
                 <StaticMode>
@@ -562,23 +540,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>LargeThrustSciFi</BlockPairName>
-            <Center x="1" y="0" z="2" />
+            <Center x="1" y="0" z="2"/>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <BuildTimeSeconds>20</BuildTimeSeconds>
             <EdgeType>Light</EdgeType>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
             <FlameDamage>0.2</FlameDamage>
             <FlameLengthScale>1.15</FlameLengthScale>
@@ -611,7 +586,6 @@
             </TargetingGroups>
             <Public>false</Public>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
@@ -623,31 +597,31 @@
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="2" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="2"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\IonThrusterSmall_SciFi.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="15" />
-                <Component Subtype="Construction" Count="40" />
-                <Component Subtype="LargeTube" Count="8" />
-                <Component Subtype="Thrust" Count="80" />
-                <Component Subtype="Construction" Count="20" />
-                <Component Subtype="SteelPlate" Count="10" />
+                <Component Subtype="SteelPlate" Count="15"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="LargeTube" Count="8"/>
+                <Component Subtype="Thrust" Count="80"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="SteelPlate" Count="10"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
-                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2"/>
+                <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\IonThrusterSmall_SciFi_Construction3.mwm"/>
             </BuildProgressModels>
             <VoxelPlacement>
                 <StaticMode>
@@ -662,23 +636,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>SmallThrustSciFi</BlockPairName>
-            <Center x="0" y="0" z="1" />
+            <Center x="0" y="0" z="1"/>
             <MirroringX>Z</MirroringX>
             <MirroringZ>X</MirroringZ>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>40</BuildTimeSeconds>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.61</FlameDamageLengthScale>
             <FlameLengthScale>1.5</FlameLengthScale>
             <FlameIdleColor>
@@ -710,7 +681,6 @@
             </TargetingGroups>
             <Public>false</Public>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
@@ -721,33 +691,33 @@
             <Description>Description_IonThrust</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="2" z="4" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="2" z="4"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\IonThrusterLarge_SciFi.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="100" />
-                <Component Subtype="Construction" Count="70" />
-                <Component Subtype="LargeTube" Count="40" />
-                <Component Subtype="Thrust" Count="960" />
-                <Component Subtype="Construction" Count="30" />
-                <Component Subtype="SteelPlate" Count="50" />
+                <Component Subtype="SteelPlate" Count="100"/>
+                <Component Subtype="Construction" Count="70"/>
+                <Component Subtype="LargeTube" Count="40"/>
+                <Component Subtype="Thrust" Count="960"/>
+                <Component Subtype="Construction" Count="30"/>
+                <Component Subtype="SteelPlate" Count="50"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
-                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
-                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4"/>
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.2" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction1.mwm" />
-                <Model BuildPercentUpperBound="0.4" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction2.mwm" />
-                <Model BuildPercentUpperBound="0.6" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction3.mwm" />
-                <Model BuildPercentUpperBound="0.8" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction4.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction5.mwm" />
+                <Model BuildPercentUpperBound="0.2" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction1.mwm"/>
+                <Model BuildPercentUpperBound="0.4" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction2.mwm"/>
+                <Model BuildPercentUpperBound="0.6" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction3.mwm"/>
+                <Model BuildPercentUpperBound="0.8" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction4.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\IonThrusterLarge_SciFi_Construction5.mwm"/>
             </BuildProgressModels>
             <VoxelPlacement>
                 <StaticMode>
@@ -762,23 +732,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>LargeThrustSciFi</BlockPairName>
-            <Center x="1" y="0" z="2" />
+            <Center x="1" y="0" z="2"/>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>90</BuildTimeSeconds>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.8</FlameDamageLengthScale>
             <FlameLengthScale>1.15</FlameLengthScale>
             <FlameIdleColor>
@@ -821,30 +788,30 @@
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="2" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="2"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\ModularIonThrusterSmall.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="LargeTube" Count="1" />
-                <Component Subtype="Thrust" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="SteelPlate" Count="1" />
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="LargeTube" Count="1"/>
+                <Component Subtype="Thrust" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="SteelPlate" Count="1"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="2" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.5" EndY="1" />
-                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.5" EndY="1"/>
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2" EndY="1"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ModularIonThrusterSmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ModularIonThrusterSmallConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ModularIonThrusterSmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ModularIonThrusterSmallConstruction_2.mwm"/>
             </BuildProgressModels>
             <VoxelPlacement>
                 <StaticMode>
@@ -859,23 +826,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>SmallModularThruster</BlockPairName>
-            <Center x="0" y="0" z="1" />
+            <Center x="0" y="0" z="1"/>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <BuildTimeSeconds>10</BuildTimeSeconds>
             <EdgeType>Light</EdgeType>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.36</FlameDamageLengthScale>
             <FlameDamage>0.1</FlameDamage>
             <FlameLengthScale>1.6</FlameLengthScale>
@@ -908,7 +872,6 @@
             </TargetingGroups>
             <Public>false</Public>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
@@ -919,34 +882,34 @@
             <Description>Description_IonThrust</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="2" y="3" z="4" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="2" y="3" z="4"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\ModularIonThrusterLarge.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="LargeTube" Count="5" />
-                <Component Subtype="Thrust" Count="12" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="SteelPlate" Count="4" />
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="LargeTube" Count="5"/>
+                <Component Subtype="Thrust" Count="12"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="SteelPlate" Count="4"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="3" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2" />
-                <MountPoint Side="Top" StartX="0.5" StartY="2" EndX="1.5" EndY="3.5" />
-                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="4" />
-                <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.5" EndY="2" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3" />
-                <MountPoint Side="Right" StartX="2" StartY="0.5" EndX="3.5" EndY="2.5" />
-                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="3" />
-                <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="2" EndY="2.5" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="3" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2"/>
+                <MountPoint Side="Top" StartX="0.5" StartY="2" EndX="1.5" EndY="3.5"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="4"/>
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.5" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Right" StartX="2" StartY="0.5" EndX="3.5" EndY="2.5"/>
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="3"/>
+                <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="2" EndY="2.5"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ModularIonThrusterLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ModularIonThrusterLargeConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ModularIonThrusterLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ModularIonThrusterLargeConstruction_2.mwm"/>
             </BuildProgressModels>
             <VoxelPlacement>
                 <StaticMode>
@@ -961,23 +924,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>LargeModularThruster</BlockPairName>
-            <Center x="0" y="1" z="2" />
+            <Center x="0" y="1" z="2"/>
             <MirroringX>Z</MirroringX>
             <MirroringZ>X</MirroringZ>
             <BuildTimeSeconds>20</BuildTimeSeconds>
             <EdgeType>Light</EdgeType>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
             <FlameDamage>0.2</FlameDamage>
             <FlameLengthScale>1.1</FlameLengthScale>
@@ -1010,7 +970,6 @@
             </TargetingGroups>
             <Public>false</Public>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
@@ -1022,31 +981,31 @@
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="2" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="2"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\ModularIonThrusterSmall.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="15" />
-                <Component Subtype="Construction" Count="40" />
-                <Component Subtype="LargeTube" Count="8" />
-                <Component Subtype="Thrust" Count="80" />
-                <Component Subtype="Construction" Count="20" />
-                <Component Subtype="SteelPlate" Count="10" />
+                <Component Subtype="SteelPlate" Count="15"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="LargeTube" Count="8"/>
+                <Component Subtype="Thrust" Count="80"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="SteelPlate" Count="10"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="2" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.5" EndY="1" />
-                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1.5"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.5" EndY="1"/>
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2" EndY="1"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ModularIonThrusterSmallConstruction_3.mwm"/>
             </BuildProgressModels>
             <VoxelPlacement>
                 <StaticMode>
@@ -1061,23 +1020,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>SmallModularThruster</BlockPairName>
-            <Center x="0" y="0" z="1" />
+            <Center x="0" y="0" z="1"/>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>40</BuildTimeSeconds>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.61</FlameDamageLengthScale>
             <FlameLengthScale>1.5</FlameLengthScale>
             <FlameIdleColor>
@@ -1109,7 +1065,6 @@
             </TargetingGroups>
             <Public>false</Public>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
@@ -1120,35 +1075,35 @@
             <Description>Description_IonThrust</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="2" y="3" z="4" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="2" y="3" z="4"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\ModularIonThrusterLarge.mwm</Model>
             <ThrusterType>Ion</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="100" />
-                <Component Subtype="Construction" Count="70" />
-                <Component Subtype="LargeTube" Count="40" />
-                <Component Subtype="Thrust" Count="960" />
-                <Component Subtype="Construction" Count="30" />
-                <Component Subtype="SteelPlate" Count="50" />
+                <Component Subtype="SteelPlate" Count="100"/>
+                <Component Subtype="Construction" Count="70"/>
+                <Component Subtype="LargeTube" Count="40"/>
+                <Component Subtype="Thrust" Count="960"/>
+                <Component Subtype="Construction" Count="30"/>
+                <Component Subtype="SteelPlate" Count="50"/>
             </Components>
-            <CriticalComponent Subtype="Thrust" Index="0" />
+            <CriticalComponent Subtype="Thrust" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="3" Default="true" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2" />
-                <MountPoint Side="Top" StartX="0.5" StartY="2" EndX="1.5" EndY="3.5" />
-                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="4" />
-                <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.5" EndY="2" />
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3" />
-                <MountPoint Side="Right" StartX="2" StartY="0.5" EndX="3.5" EndY="2.5" />
-                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="3" />
-                <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="2" EndY="2.5" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="3" Default="true"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="2"/>
+                <MountPoint Side="Top" StartX="0.5" StartY="2" EndX="1.5" EndY="3.5"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="2" EndY="4"/>
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="1.5" EndY="2"/>
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="3"/>
+                <MountPoint Side="Right" StartX="2" StartY="0.5" EndX="3.5" EndY="2.5"/>
+                <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="3"/>
+                <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="2" EndY="2.5"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ModularIonThrusterLargeConstruction_3.mwm"/>
             </BuildProgressModels>
             <VoxelPlacement>
                 <StaticMode>
@@ -1163,23 +1118,20 @@
                 </DynamicMode>
             </VoxelPlacement>
             <BlockPairName>LargeModularThruster</BlockPairName>
-            <Center x="0" y="1" z="2" />
+            <Center x="0" y="1" z="2"/>
             <MirroringX>Z</MirroringX>
             <MirroringZ>X</MirroringZ>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>90</BuildTimeSeconds>
-
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>1</ForceMagnitude>
             <MaxPowerConsumption>600</MaxPowerConsumption>
             <MinPowerConsumption>300</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
-
             <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
             <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
             <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
             <EffectivenessAtMaxInfluence>0.2</EffectivenessAtMaxInfluence>
-
             <FlameDamageLengthScale>0.8</FlameDamageLengthScale>
             <FlameLengthScale>1.15</FlameLengthScale>
             <FlameIdleColor>
@@ -1211,5 +1163,5 @@
             </TargetingGroups>
             <Public>false</Public>
         </Definition>
-	</CubeBlocks>
+    </CubeBlocks>
 </Definitions>

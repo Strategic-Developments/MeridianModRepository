@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Sounds>
-
 		<Sound>
 			<Id>
 				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
@@ -17,7 +16,6 @@
 				</Wave>
 			</Waves>
 		</Sound>
-
 		<Sound>
 			<Id>
 				<TypeId>MyObjectBuilder_AudioDefinition</TypeId>
@@ -33,6 +31,5 @@
 				</Wave>
 			</Waves>
 		</Sound>
-
 	</Sounds>
 </Definitions>

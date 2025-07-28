@@ -1,128 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <CubeBlocks>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <Definition xsi:type="MyObjectBuilder_HydrogenEngineDefinition">
-            <Id>
-                <TypeId>HydrogenEngine</TypeId>
-                <SubtypeId>LargePrototechReactor</SubtypeId>
-            </Id>
-            <DisplayName>DisplayName_Block_PrototechReactor</DisplayName>
-            <Description>Description_PrototechReactor</Description>
-            <Icon>Textures\GUI\Icons\Cubes\Prototech_Reactor.dds</Icon>
-            <CubeSize>Large</CubeSize>
-            <GuiVisible>false</GuiVisible>
-            <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="2" z="2" />
-            <ModelOffset x="0" y="0" z="0" />
-            <Model>Models\Cubes\Large\Prototech_Reactor.mwm</Model>
-            <Components>
-                <Component Subtype="PrototechFrame" Count="1">
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>PrototechScrap</SubtypeId>
-                    </DeconstructId>
-                </Component>
-                <Component Subtype="PrototechPanel" Count="125" />
-                <Component Subtype="Construction" Count="200" />
-                <Component Subtype="PrototechCapacitor" Count="10">
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>PrototechScrap</SubtypeId>
-                    </DeconstructId>
-                </Component>
-                <Component Subtype="PrototechCoolingUnit" Count="30">
-                    <DeconstructId>
-                        <TypeId>Ingot</TypeId>
-                        <SubtypeId>PrototechScrap</SubtypeId>
-                    </DeconstructId>
-                </Component>
-                <Component Subtype="Superconductor" Count="400" />
-                <Component Subtype="Reactor" Count="1000" />
-                <Component Subtype="Computer" Count="100" />
-                <Component Subtype="PrototechPanel" Count="275" />
-            </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
-            <MountPoints>
-                <MountPoint Side="Bottom" StartX="0" StartY="0.15" EndX="3" EndY="2" Default="true" />
-                <MountPoint Side="Front" StartX="0" StartY="0.15" EndX="0.1" EndY="1" />
-                <MountPoint Side="Front" StartX="2.9" StartY="0.15" EndX="3" EndY="1" />
-                <MountPoint Side="Back" StartX="0.1" StartY="0" EndX="2.9" EndY="0.9" />
-                <MountPoint Side="Back" StartX="0" StartY="0.9" EndX="0.9" EndY="1.5" />
-                <MountPoint Side="Back" StartX="2.1" StartY="0.9" EndX="3" EndY="1.5" />
-                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1.9" EndY="1" />
-                <MountPoint Side="Left" StartX="0.5" StartY="1" EndX="2" EndY="1.5" />
-                <MountPoint Side="Right" StartX="0.1" StartY="0" EndX="2" EndY="1" />
-                <MountPoint Side="Right" StartX="0" StartY="1" EndX="1.5" EndY="1.5" />
-            </MountPoints>
-            <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Prototech_Reactor_Construction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Prototech_Reactor_Construction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Prototech_Reactor_Construction_3.mwm" />
-            </BuildProgressModels>
-            <BlockPairName>PrototechReactor</BlockPairName>
-            <MirroringY>Z</MirroringY>
-            <MirroringZ>Y</MirroringZ>
-            <EdgeType>Light</EdgeType>
-            <BuildTimeSeconds>120</BuildTimeSeconds>
-			<DisassembleRatio>5</DisassembleRatio>
-            <ResourceSinkGroup>Generators</ResourceSinkGroup>
-            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
-            <MaxPowerOutput>400</MaxPowerOutput>
-            <FuelCapacity>150000</FuelCapacity>
-            <EmissiveColorPreset>Extended</EmissiveColorPreset>
-            <IsAirTight>false</IsAirTight>
-            <InventorySize>
-                <X>1</X>
-                <Y>1</Y>
-                <Z>1</Z>
-            </InventorySize>
-            <FuelInfos>
-                <FuelInfo>
-                    <Id>
-                        <TypeId>GasProperties</TypeId>
-                        <SubtypeId>Hydrogen</SubtypeId>
-                    </Id>
-                </FuelInfo>
-            </FuelInfos>
-            <FuelProductionToCapacityMultiplier>400</FuelProductionToCapacityMultiplier>
-            <PrimarySound>ArcShipLrgFusionLrg</PrimarySound>
-
-            <DamageEffectName>Damage_Electrical_Prototech_Reactor</DamageEffectName>
-            <DamagedSound>ParticleElectrical</DamagedSound>
-            <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
-            <DestroySound>WepSmallWarheadExpl</DestroySound>
-
-			<!-- Turbine Speed / Animation Controls -->
-            <AnimationSpeed>1.5</AnimationSpeed>
-            <AnimationSpinUpSpeed>0.3</AnimationSpinUpSpeed>
-            <AnimationSpinDownSpeed>0.3</AnimationSpinDownSpeed>
-
-            <PCU>25</PCU>
-            <TargetingGroups>
-                <string>PowerSystems</string>
-            </TargetingGroups>
-        </Definition>
-
-
-
-
-
-<Definition xsi:type="MyObjectBuilder_HydrogenEngineDefinition">
+        <Definition xsi:type="MyObjectBuilder_HydrogenEngineDefinition">
             <Id>
                 <TypeId>HydrogenEngine</TypeId>
                 <SubtypeId>LargeHydrogenEngine</SubtypeId>
@@ -133,29 +12,29 @@
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="2" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="2"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\HydrogenEngine.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="80" />
-                <Component Subtype="Construction" Count="60" />
-                <Component Subtype="LargeTube" Count="12" />
-                <Component Subtype="SmallTube" Count="20" />
-                <Component Subtype="Motor" Count="12" />
-                <Component Subtype="Computer" Count="4" />
-                <Component Subtype="PowerCell" Count="1" />
-                <Component Subtype="Construction" Count="10" />
-                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="SteelPlate" Count="80"/>
+                <Component Subtype="Construction" Count="60"/>
+                <Component Subtype="LargeTube" Count="12"/>
+                <Component Subtype="SmallTube" Count="20"/>
+                <Component Subtype="Motor" Count="12"/>
+                <Component Subtype="Computer" Count="4"/>
+                <Component Subtype="PowerCell" Count="1"/>
+                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
-            <CriticalComponent Subtype="PowerCell" Index="0" />
+            <CriticalComponent Subtype="PowerCell" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Bottom" StartX="0.15" StartY="0.15" EndX="0.85" EndY="1.85" Default="true" />
-                <MountPoint Side="Front" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85" />
+                <MountPoint Side="Bottom" StartX="0.15" StartY="0.15" EndX="0.85" EndY="1.85" Default="true"/>
+                <MountPoint Side="Front" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenEngine_Construction1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenEngine_Construction2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenEngine_Construction3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\HydrogenEngine_Construction1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\HydrogenEngine_Construction2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\HydrogenEngine_Construction3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>HydrogenEngine</BlockPairName>
             <MirroringY>Z</MirroringY>
@@ -183,12 +62,10 @@
             </FuelInfos>
             <FuelProductionToCapacityMultiplier>0.05</FuelProductionToCapacityMultiplier>
             <PrimarySound>ArcBlockHydrogenEngine</PrimarySound>
-
             <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
             <DamagedSound>ParticleWeapExpl</DamagedSound>
             <DestroyEffect>Explosion_Warhead_02</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
-
             <AnimationSpeed>5</AnimationSpeed>
             <PistonAnimationMin>-0.15</PistonAnimationMin>
             <PistonAnimationMax>0.01</PistonAnimationMax>
@@ -222,34 +99,34 @@
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="2" z="2" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="2" z="2"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\HydrogenEngine.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="20" />
-                <Component Subtype="Construction" Count="18" />
-                <Component Subtype="LargeTube" Count="4" />
-                <Component Subtype="SmallTube" Count="6" />
-                <Component Subtype="Motor" Count="4" />
-                <Component Subtype="Computer" Count="1" />
-                <Component Subtype="PowerCell" Count="1" />
-                <Component Subtype="Construction" Count="2" />
-                <Component Subtype="SteelPlate" Count="10" />
+                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="Construction" Count="18"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="SmallTube" Count="6"/>
+                <Component Subtype="Motor" Count="4"/>
+                <Component Subtype="Computer" Count="1"/>
+                <Component Subtype="PowerCell" Count="1"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="SteelPlate" Count="10"/>
             </Components>
-            <CriticalComponent Subtype="PowerCell" Index="0" />
+            <CriticalComponent Subtype="PowerCell" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="1" />
-                <MountPoint Side="Left" StartX="0" StartY="0" EndX="2" EndY="1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="2" Default="true" />
-                <MountPoint Side="Top" StartX="1" StartY="0" EndX="2" EndY="2" />
-                <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="1" />
-                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="1" />
-                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="2" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="2" Default="true"/>
+                <MountPoint Side="Top" StartX="1" StartY="0" EndX="2" EndY="2"/>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="1"/>
+                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="1"/>
+                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\HydrogenEngine_Construction1.mwm" />
-                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Small\HydrogenEngine_Construction2.mwm" />
+                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\HydrogenEngine_Construction1.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Small\HydrogenEngine_Construction2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>HydrogenEngine</BlockPairName>
             <MirroringY>Z</MirroringY>
@@ -276,12 +153,10 @@
             </FuelInfos>
             <FuelProductionToCapacityMultiplier>0.05</FuelProductionToCapacityMultiplier>
             <PrimarySound>ArcBlockHydrogenEngine</PrimarySound>
-
             <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
             <DamagedSound>ParticleWeapExpl</DamagedSound>
             <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
             <DestroySound>WepSmallWarheadExpl</DestroySound>
-
             <AnimationSpeed>20</AnimationSpeed>
             <AnimationSpinUpSpeed>5</AnimationSpinUpSpeed>
             <AnimationSpinDownSpeed>5</AnimationSpinDownSpeed>
@@ -290,28 +165,7 @@
                 <string>PowerSystems</string>
             </TargetingGroups>
         </Definition>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
+        <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
                 <TypeId>Reactor</TypeId>
                 <SubtypeId>LargeBlockSmallGeneratorWarfare2</SubtypeId>
@@ -321,31 +175,31 @@
             <Description>Description_Reactor</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\ReactorReskinSmall.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="50" />
-                <Component Subtype="Construction" Count="40" />
-                <Component Subtype="MetalGrid" Count="4" />
-                <Component Subtype="LargeTube" Count="8" />
-                <Component Subtype="Reactor" Count="100" />
-                <Component Subtype="Motor" Count="6" />
-                <Component Subtype="Computer" Count="25" />
-                <Component Subtype="SteelPlate" Count="30" />
+                <Component Subtype="SteelPlate" Count="50"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="MetalGrid" Count="4"/>
+                <Component Subtype="LargeTube" Count="8"/>
+                <Component Subtype="Reactor" Count="100"/>
+                <Component Subtype="Motor" Count="6"/>
+                <Component Subtype="Computer" Count="25"/>
+                <Component Subtype="SteelPlate" Count="30"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="1" EndY="0.9" />
-                <MountPoint Side="Back" StartX="0.4" StartY="0" EndX="0.9" EndY="0.9" />
-                <MountPoint Side="Right" StartX="0.1" StartY="0" EndX="0.9" EndY="0.9" />
-                <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="1" EndY="0.9" Default="true" />
-                <MountPoint Side="Front" StartX="0.1" StartY="0" EndX="0.6" EndY="0.9" />
+                <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="1" EndY="0.9"/>
+                <MountPoint Side="Back" StartX="0.4" StartY="0" EndX="0.9" EndY="0.9"/>
+                <MountPoint Side="Right" StartX="0.1" StartY="0" EndX="0.9" EndY="0.9"/>
+                <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="1" EndY="0.9" Default="true"/>
+                <MountPoint Side="Front" StartX="0.1" StartY="0" EndX="0.6" EndY="0.9"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ReactorReskinSmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ReactorReskinSmallConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ReactorReskinSmallConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ReactorReskinSmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ReactorReskinSmallConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ReactorReskinSmallConstruction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>SmallReactorWarfare2</BlockPairName>
             <MirroringY>X</MirroringY>
@@ -358,16 +212,13 @@
                 <X>1</X>
                 <Y>1</Y>
                 <Z>1</Z>
-            </InventorySize>
-            <!-- 
+            </InventorySize><!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
-
-            <!-- 
+            <InventoryFillFactorMax>0.001</InventoryFillFactorMax><!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
@@ -399,7 +250,6 @@
             </TargetingGroups>
             <DLC>Warfare2</DLC>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
                 <TypeId>Reactor</TypeId>
@@ -411,35 +261,35 @@
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="3" z="3" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\ReactorReskinLarge.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="800" />
-                <Component Subtype="Construction" Count="70" />
-                <Component Subtype="MetalGrid" Count="40" />
-                <Component Subtype="LargeTube" Count="40" />
-                <Component Subtype="Superconductor" Count="100" />
-                <Component Subtype="Reactor" Count="2000" />
-                <Component Subtype="Motor" Count="20" />
-                <Component Subtype="Computer" Count="75" />
-                <Component Subtype="SteelPlate" Count="200" />
+                <Component Subtype="SteelPlate" Count="800"/>
+                <Component Subtype="Construction" Count="70"/>
+                <Component Subtype="MetalGrid" Count="40"/>
+                <Component Subtype="LargeTube" Count="40"/>
+                <Component Subtype="Superconductor" Count="100"/>
+                <Component Subtype="Reactor" Count="2000"/>
+                <Component Subtype="Motor" Count="20"/>
+                <Component Subtype="Computer" Count="75"/>
+                <Component Subtype="SteelPlate" Count="200"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0.9" StartY="1.3" EndX="2.1" EndY="2.6" />
-                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2.5" EndY="0.5" />
-                <MountPoint Side="Top" StartX="0.9" StartY="0.9" EndX="2.6" EndY="2.1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0.6" EndX="2.5" EndY="2.4" Default="true" />
-                <MountPoint Side="Bottom" StartX="0.5" StartY="0" EndX="1.8" EndY="0.6" />
-                <MountPoint Side="Bottom" StartX="0.5" StartY="2.4" EndX="1.8" EndY="3" />
-                <MountPoint Side="Front" StartX="1.2" StartY="0" EndX="2.5" EndY="0.5" />
-                <MountPoint Side="Back" StartX="0.5" StartY="0" EndX="1.8" EndY="0.5" />
+                <MountPoint Side="Right" StartX="0.9" StartY="1.3" EndX="2.1" EndY="2.6"/>
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="2.5" EndY="0.5"/>
+                <MountPoint Side="Top" StartX="0.9" StartY="0.9" EndX="2.6" EndY="2.1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.6" EndX="2.5" EndY="2.4" Default="true"/>
+                <MountPoint Side="Bottom" StartX="0.5" StartY="0" EndX="1.8" EndY="0.6"/>
+                <MountPoint Side="Bottom" StartX="0.5" StartY="2.4" EndX="1.8" EndY="3"/>
+                <MountPoint Side="Front" StartX="1.2" StartY="0" EndX="2.5" EndY="0.5"/>
+                <MountPoint Side="Back" StartX="0.5" StartY="0" EndX="1.8" EndY="0.5"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ReactorReskinLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ReactorReskinLargeConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ReactorReskinLargeConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ReactorReskinLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ReactorReskinLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ReactorReskinLargeConstruction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>LargeReactorWarfare2</BlockPairName>
             <MirroringY>X</MirroringY>
@@ -452,16 +302,13 @@
                 <X>2</X>
                 <Y>2</Y>
                 <Z>2</Z>
-            </InventorySize>
-            <!-- 
+            </InventorySize><!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
-            <!-- 
+            <InventoryFillFactorMax>0.002</InventoryFillFactorMax><!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
@@ -494,7 +341,6 @@
             </TargetingGroups>
             <DLC>Warfare2</DLC>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
                 <TypeId>Reactor</TypeId>
@@ -505,36 +351,36 @@
             <Description>Description_Reactor</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\ReactorReskinSmall.mwm</Model>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="10" />
-                <Component Subtype="MetalGrid" Count="2" />
-                <Component Subtype="LargeTube" Count="1" />
-                <Component Subtype="Reactor" Count="3" />
-                <Component Subtype="Motor" Count="1" />
-                <Component Subtype="Computer" Count="10" />
-                <Component Subtype="SteelPlate" Count="2" />
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="MetalGrid" Count="2"/>
+                <Component Subtype="LargeTube" Count="1"/>
+                <Component Subtype="Reactor" Count="3"/>
+                <Component Subtype="Motor" Count="1"/>
+                <Component Subtype="Computer" Count="10"/>
+                <Component Subtype="SteelPlate" Count="2"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
-                <MountPoint Side="Right" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
-                <MountPoint Side="Left" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
-                <MountPoint Side="Left" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
-                <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
-                <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true" />
-                <MountPoint Side="Front" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
-                <MountPoint Side="Front" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
-                <MountPoint Side="Back" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15" />
-                <MountPoint Side="Back" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1" />
+                <MountPoint Side="Right" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15"/>
+                <MountPoint Side="Right" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1"/>
+                <MountPoint Side="Left" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15"/>
+                <MountPoint Side="Left" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1"/>
+                <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9"/>
+                <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" Default="true"/>
+                <MountPoint Side="Front" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15"/>
+                <MountPoint Side="Front" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1"/>
+                <MountPoint Side="Back" StartX="0.4" StartY="0" EndX="0.6" EndY="0.15"/>
+                <MountPoint Side="Back" StartX="0.4" StartY="0.85" EndX="0.6" EndY="1"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ReactorReskinSmallConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ReactorReskinSmallConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ReactorReskinSmallConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ReactorReskinSmallConstruction_1.mwm"/>
             </BuildProgressModels>
             <BlockPairName>SmallReactorWarfare2</BlockPairName>
             <MirroringY>Z</MirroringY>
@@ -547,16 +393,13 @@
                 <X>0.5</X>
                 <Y>0.5</Y>
                 <Z>0.5</Z>
-            </InventorySize>
-            <!-- 
+            </InventorySize><!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.0002</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.0004</InventoryFillFactorMax>
-
-            <!-- 
+            <InventoryFillFactorMax>0.0004</InventoryFillFactorMax><!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
@@ -588,7 +431,6 @@
             </TargetingGroups>
             <DLC>Warfare2</DLC>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
                 <TypeId>Reactor</TypeId>
@@ -600,36 +442,36 @@
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="3" z="3" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\ReactorReskinLarge.mwm</Model>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="40" />
-                <Component Subtype="Construction" Count="9" />
-                <Component Subtype="MetalGrid" Count="9" />
-                <Component Subtype="LargeTube" Count="3" />
-                <Component Subtype="Reactor" Count="95" />
-                <Component Subtype="Motor" Count="5" />
-                <Component Subtype="Computer" Count="25" />
-                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="Construction" Count="9"/>
+                <Component Subtype="MetalGrid" Count="9"/>
+                <Component Subtype="LargeTube" Count="3"/>
+                <Component Subtype="Reactor" Count="95"/>
+                <Component Subtype="Motor" Count="5"/>
+                <Component Subtype="Computer" Count="25"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
-                <MountPoint Side="Right" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
-                <MountPoint Side="Left" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
-                <MountPoint Side="Left" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
-                <MountPoint Side="Top" StartX="0.2" StartY="0.2" EndX="2.8" EndY="2.8" />
-                <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="2.8" EndY="2.8" Default="true" />
-                <MountPoint Side="Front" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
-                <MountPoint Side="Front" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
-                <MountPoint Side="Back" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5" />
-                <MountPoint Side="Back" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3" />
+                <MountPoint Side="Right" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5"/>
+                <MountPoint Side="Right" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3"/>
+                <MountPoint Side="Left" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5"/>
+                <MountPoint Side="Left" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3"/>
+                <MountPoint Side="Top" StartX="0.2" StartY="0.2" EndX="2.8" EndY="2.8"/>
+                <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="2.8" EndY="2.8" Default="true"/>
+                <MountPoint Side="Front" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5"/>
+                <MountPoint Side="Front" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3"/>
+                <MountPoint Side="Back" StartX="1.3" StartY="0" EndX="1.7" EndY="0.5"/>
+                <MountPoint Side="Back" StartX="1.3" StartY="2.5" EndX="1.7" EndY="3"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ReactorReskinLargeConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ReactorReskinLargeConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ReactorReskinLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ReactorReskinLargeConstruction_1.mwm"/>
             </BuildProgressModels>
             <BlockPairName>LargeReactorWarfare2</BlockPairName>
             <MirroringY>Z</MirroringY>
@@ -642,16 +484,13 @@
                 <X>1</X>
                 <Y>1</Y>
                 <Z>1</Z>
-            </InventorySize>
-            <!-- 
+            </InventorySize><!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
-
-            <!-- 
+            <InventoryFillFactorMax>0.001</InventoryFillFactorMax><!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
@@ -682,44 +521,7 @@
             </TargetingGroups>
             <DLC>Warfare2</DLC>
         </Definition>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
             <Id>
                 <TypeId>BatteryBlock</TypeId>
                 <SubtypeId>LargeBlockBatteryBlock</SubtypeId>
@@ -729,42 +531,39 @@
             <Description>Description_Battery</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\BatteryLarge.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="20" />
-                <Component Subtype="Construction" Count="10" />
+                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="Construction" Count="10"/>
                 <Component Subtype="PowerCell" Count="80">
                     <DeconstructId>
                         <TypeId>Ore</TypeId>
                         <SubtypeId>Scrap</SubtypeId>
                     </DeconstructId>
                 </Component>
-                <Component Subtype="Computer" Count="25" />
-                <Component Subtype="Construction" Count="20" />
-                <Component Subtype="SteelPlate" Count="60" />
+                <Component Subtype="Computer" Count="25"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="SteelPlate" Count="60"/>
             </Components>
-            <CriticalComponent Subtype="PowerCell" Index="0" />
+            <CriticalComponent Subtype="PowerCell" Index="0"/>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\BatteryLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\BatteryLargeConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\BatteryLargeConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\BatteryLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\BatteryLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\BatteryLargeConstruction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>BatteryBlock</BlockPairName>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>40</BuildTimeSeconds>
-
             <ResourceSourceGroup>Battery</ResourceSourceGroup>
             <MaxPowerOutput>12</MaxPowerOutput>
-
             <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
             <RequiredPowerInput>12</RequiredPowerInput>
             <AdaptibleInput>true</AdaptibleInput>
             <MaxStoredPower>3</MaxStoredPower>
             <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
             <RechargeMultiplier>0.8</RechargeMultiplier>
-
             <InventorySize>
                 <X>1</X>
                 <Y>1</Y>
@@ -794,40 +593,37 @@
             <Description>Description_Battery</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="2" z="3" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="2" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\BatterySmall.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="5" />
-                <Component Subtype="Construction" Count="2" />
+                <Component Subtype="SteelPlate" Count="5"/>
+                <Component Subtype="Construction" Count="2"/>
                 <Component Subtype="PowerCell" Count="20">
                     <DeconstructId>
                         <TypeId>Ore</TypeId>
                         <SubtypeId>Scrap</SubtypeId>
                     </DeconstructId>
                 </Component>
-                <Component Subtype="Computer" Count="2" />
-                <Component Subtype="Construction" Count="3" />
-                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="Computer" Count="2"/>
+                <Component Subtype="Construction" Count="3"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
-            <CriticalComponent Subtype="PowerCell" Index="0" />
+            <CriticalComponent Subtype="PowerCell" Index="0"/>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatterySmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatterySmallConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatterySmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatterySmallConstruction_2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>BatteryBlock</BlockPairName>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>20</BuildTimeSeconds>
-
             <ResourceSourceGroup>Battery</ResourceSourceGroup>
             <MaxPowerOutput>4</MaxPowerOutput>
-
             <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
             <RequiredPowerInput>4</RequiredPowerInput>
             <MaxStoredPower>1</MaxStoredPower>
             <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
             <RechargeMultiplier>0.8</RechargeMultiplier>
-
             <InventorySize>
                 <X>1</X>
                 <Y>1</Y>
@@ -858,40 +654,37 @@
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\BatterySmall1x1.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="2" />
-                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="1"/>
                 <Component Subtype="PowerCell" Count="2">
                     <DeconstructId>
                         <TypeId>Ore</TypeId>
                         <SubtypeId>Scrap</SubtypeId>
                     </DeconstructId>
                 </Component>
-                <Component Subtype="Computer" Count="2" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="SteelPlate" Count="2" />
+                <Component Subtype="Computer" Count="2"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="SteelPlate" Count="2"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatterySmall1x1_Construction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatterySmall1x1_Construction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\BatterySmall1x1_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\BatterySmall1x1_Construction_2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>Battery1x1Block</BlockPairName>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>8</BuildTimeSeconds>
-
             <ResourceSourceGroup>Battery</ResourceSourceGroup>
             <MaxPowerOutput>0.2</MaxPowerOutput>
-
             <ResourceSinkGroup>BatteryBlock</ResourceSinkGroup>
             <RequiredPowerInput>0.2</RequiredPowerInput>
             <MaxStoredPower>0.05</MaxStoredPower>
             <InitialStoredPowerRatio>0.3</InitialStoredPowerRatio>
             <RechargeMultiplier>0.8</RechargeMultiplier>
-
             <InventorySize>
                 <X>1</X>
                 <Y>1</Y>
@@ -908,11 +701,7 @@
             <TargetingGroups>
                 <string>PowerSystems</string>
             </TargetingGroups>
-        </Definition>
-        <!-- End Region BatteryBlock-->
-
-
-         <!-- Region -->
+        </Definition><!-- End Region BatteryBlock--><!-- Region -->
         <Definition xsi:type="MyObjectBuilder_ReactorDefinition">
             <Id>
                 <TypeId>Reactor</TypeId>
@@ -923,64 +712,56 @@
             <Description>Description_Reactor</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\GeneratorSmall.mwm</Model>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="10" />
-                <Component Subtype="MetalGrid" Count="2" />
-                <Component Subtype="LargeTube" Count="1" />
-                <Component Subtype="Reactor" Count="3" />
-                <Component Subtype="Motor" Count="1" />
-                <Component Subtype="Computer" Count="10" />
-                <Component Subtype="SteelPlate" Count="2" />
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="MetalGrid" Count="2"/>
+                <Component Subtype="LargeTube" Count="1"/>
+                <Component Subtype="Reactor" Count="3"/>
+                <Component Subtype="Motor" Count="1"/>
+                <Component Subtype="Computer" Count="10"/>
+                <Component Subtype="SteelPlate" Count="2"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
-                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
-                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true"/>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1"/>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GeneratorSmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GeneratorSmallConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GeneratorSmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GeneratorSmallConstruction_2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>SmallReactor</BlockPairName>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>20</BuildTimeSeconds>
-
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
             <MaxPowerOutput>0.5</MaxPowerOutput>
-
             <InventorySize>
                 <X>0.5</X>
                 <Y>0.5</Y>
                 <Z>0.5</Z>
-            </InventorySize>
-
-
-            <!-- 
+            </InventorySize><!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.0002</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.0004</InventoryFillFactorMax>
-
-            <!-- 
+            <InventoryFillFactorMax>0.0004</InventoryFillFactorMax><!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-
             <FuelInfos>
                 <FuelInfo>
                     <Id>
@@ -989,7 +770,6 @@
                     </Id>
                 </FuelInfo>
             </FuelInfos>
-
             <PrimarySound>ShipSmNuclearSm</PrimarySound>
             <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
             <DamagedSound>ParticleReactor</DamagedSound>
@@ -1018,67 +798,60 @@
             <CubeSize>Small</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="3" z="3" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\GeneratorLarge.mwm</Model>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="40" />
-                <Component Subtype="Construction" Count="9" />
-                <Component Subtype="MetalGrid" Count="9" />
-                <Component Subtype="LargeTube" Count="3" />
-                <Component Subtype="Reactor" Count="95" />
-                <Component Subtype="Motor" Count="5" />
-                <Component Subtype="Computer" Count="25" />
-                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="Construction" Count="9"/>
+                <Component Subtype="MetalGrid" Count="9"/>
+                <Component Subtype="LargeTube" Count="3"/>
+                <Component Subtype="Reactor" Count="95"/>
+                <Component Subtype="Motor" Count="5"/>
+                <Component Subtype="Computer" Count="25"/>
+                <Component Subtype="SteelPlate" Count="20"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true" />
-                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true"/>
+                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GeneratorLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GeneratorLargeConstruction_2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>LargeReactor</BlockPairName>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <BuildTimeSeconds>30</BuildTimeSeconds>
             <EdgeType>Light</EdgeType>
-
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
             <MaxPowerOutput>11</MaxPowerOutput>
-
             <InventorySize>
                 <X>1</X>
                 <Y>1</Y>
                 <Z>1</Z>
-            </InventorySize>
-
-            <!-- 
+            </InventorySize><!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
-
-            <!-- 
+            <InventoryFillFactorMax>0.001</InventoryFillFactorMax><!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-
             <FuelInfos>
                 <FuelInfo>
                     <Id>
@@ -1113,63 +886,56 @@
             <Description>Description_Reactor</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="1" y="1" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="1" y="1" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\GeneratorSmall.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="50" />
-                <Component Subtype="Construction" Count="40" />
-                <Component Subtype="MetalGrid" Count="4" />
-                <Component Subtype="LargeTube" Count="8" />
-                <Component Subtype="Reactor" Count="100" />
-                <Component Subtype="Motor" Count="6" />
-                <Component Subtype="Computer" Count="25" />
-                <Component Subtype="SteelPlate" Count="30" />
+                <Component Subtype="SteelPlate" Count="50"/>
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="MetalGrid" Count="4"/>
+                <Component Subtype="LargeTube" Count="8"/>
+                <Component Subtype="Reactor" Count="100"/>
+                <Component Subtype="Motor" Count="6"/>
+                <Component Subtype="Computer" Count="25"/>
+                <Component Subtype="SteelPlate" Count="30"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Top" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85" />
-                <MountPoint Side="Back" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85" />
-                <MountPoint Side="Right" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7" />
-                <MountPoint Side="Left" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7" />
-                <MountPoint Side="Bottom" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7" Default="true" />
-                <MountPoint Side="Front" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7" />
+                <MountPoint Side="Top" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85"/>
+                <MountPoint Side="Back" StartX="0.15" StartY="0.15" EndX="0.85" EndY="0.85"/>
+                <MountPoint Side="Right" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7"/>
+                <MountPoint Side="Left" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7"/>
+                <MountPoint Side="Bottom" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7" Default="true"/>
+                <MountPoint Side="Front" StartX="0.3" StartY="0.3" EndX="0.7" EndY="0.7"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GeneratorSmallConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\GeneratorSmallConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GeneratorSmallConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GeneratorSmallConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\GeneratorSmallConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GeneratorSmallConstruction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>SmallReactor</BlockPairName>
             <MirroringY>Z</MirroringY>
             <MirroringZ>Y</MirroringZ>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>40</BuildTimeSeconds>
-
             <ResourceSourceGroup>Reactors</ResourceSourceGroup>
             <MaxPowerOutput>15</MaxPowerOutput>
-
             <InventorySize>
                 <X>1</X>
                 <Y>1</Y>
                 <Z>1</Z>
-            </InventorySize>
-
-            <!-- 
+            </InventorySize><!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.0005</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.001</InventoryFillFactorMax>
-
-            <!-- 
+            <InventoryFillFactorMax>0.001</InventoryFillFactorMax><!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-
             <FuelInfos>
                 <FuelInfo>
                     <Id>
@@ -1178,7 +944,6 @@
                     </Id>
                 </FuelInfo>
             </FuelInfos>
-
             <PrimarySound>ShipLrgNuclearSm</PrimarySound>
             <DamageEffectName>Damage_Reactor_Damaged</DamageEffectName>
             <DamagedSound>ParticleReactor</DamagedSound>
@@ -1207,35 +972,35 @@
             <CubeSize>Large</CubeSize>
             <GuiVisible>false</GuiVisible>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="3" z="3" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="3" z="3"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\GeneratorLarge.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="800" />
-                <Component Subtype="Construction" Count="70" />
-                <Component Subtype="MetalGrid" Count="40" />
-                <Component Subtype="LargeTube" Count="40" />
-                <Component Subtype="Superconductor" Count="100" />
-                <Component Subtype="Reactor" Count="2000" />
-                <Component Subtype="Motor" Count="20" />
-                <Component Subtype="Computer" Count="75" />
-                <Component Subtype="SteelPlate" Count="200" />
+                <Component Subtype="SteelPlate" Count="800"/>
+                <Component Subtype="Construction" Count="70"/>
+                <Component Subtype="MetalGrid" Count="40"/>
+                <Component Subtype="LargeTube" Count="40"/>
+                <Component Subtype="Superconductor" Count="100"/>
+                <Component Subtype="Reactor" Count="2000"/>
+                <Component Subtype="Motor" Count="20"/>
+                <Component Subtype="Computer" Count="75"/>
+                <Component Subtype="SteelPlate" Count="200"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true" />
-                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2" />
-                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2" />
+                <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Left" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Top" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true"/>
+                <MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2"/>
+                <MountPoint Side="Back" StartX="1" StartY="1" EndX="2" EndY="2"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\GeneratorLargeConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GeneratorLargeConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\GeneratorLargeConstruction_3.mwm" />
-                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\GeneratorLargeConstruction_4.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GeneratorLargeConstruction_5.mwm" />
+                <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\GeneratorLargeConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\GeneratorLargeConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\GeneratorLargeConstruction_3.mwm"/>
+                <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\GeneratorLargeConstruction_4.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\GeneratorLargeConstruction_5.mwm"/>
             </BuildProgressModels>
             <BlockPairName>LargeReactor</BlockPairName>
             <MirroringY>Z</MirroringY>
@@ -1248,23 +1013,18 @@
                 <X>2</X>
                 <Y>2</Y>
                 <Z>2</Z>
-            </InventorySize>
-
-            <!-- 
+            </InventorySize><!-- 
                 Values are volume fill ratio, means how much fuel reactor pulls from conveyor system to the inventory.
                 If volume fill ratio is bellow minimum, reactor starts pulling fuel up to maximum value.
                 Warning: Changing these values will affect performance.
             -->
             <InventoryFillFactorMin>0.001</InventoryFillFactorMin>
-            <InventoryFillFactorMax>0.002</InventoryFillFactorMax>
-
-            <!-- 
+            <InventoryFillFactorMax>0.002</InventoryFillFactorMax><!-- 
                 This is how much of fuel is pulled from conveyor system in one tick.
                 It's in minutes, means that it will pull X minutes of fuel in one tick.
                 Warning: Changing this value will affect performance.
             -->
             <FuelPullAmountFromConveyorInMinutes>10.0</FuelPullAmountFromConveyorInMinutes>
-
             <FuelInfos>
                 <FuelInfo>
                     <Id>
@@ -1291,8 +1051,6 @@
                 <string>PowerSystems</string>
             </TargetingGroups>
         </Definition>
-
-
         <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
             <Id>
                 <TypeId>WindTurbine</TypeId>
@@ -1307,42 +1065,38 @@
             <ResearchGroup>Tier00Basics</ResearchGroup>
             <ResearchCost>5</ResearchCost>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="3" y="3" z="3" />
-            <Center x="1" y="0" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="3" y="3" z="3"/>
+            <Center x="1" y="0" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\WindTurbine.mwm</Model>
             <Components>
-                <Component Subtype="InteriorPlate" Count="10" />
-                <Component Subtype="Motor" Count="8" />
-                <Component Subtype="Construction" Count="20" />
-                <Component Subtype="Girder" Count="24" />
-                <Component Subtype="Computer" Count="2" />
-                <Component Subtype="InteriorPlate" Count="30" />
+                <Component Subtype="InteriorPlate" Count="10"/>
+                <Component Subtype="Motor" Count="8"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="Girder" Count="24"/>
+                <Component Subtype="Computer" Count="2"/>
+                <Component Subtype="InteriorPlate" Count="30"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true" />
+                <MountPoint Side="Bottom" StartX="1" StartY="1" EndX="2" EndY="2" Default="true"/>
             </MountPoints>
             <MirroringY>Z</MirroringY>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\WindTurbine_Construction1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\WindTurbine_Construction2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WindTurbine_Construction3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\WindTurbine_Construction1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\WindTurbine_Construction2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WindTurbine_Construction3.mwm"/>
             </BuildProgressModels>
-
             <BlockPairName>WindTurbine</BlockPairName>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>20</BuildTimeSeconds>
             <DamageEffectId>214</DamageEffectId>
-
             <ActionSound>ArcBlockWindTurbine</ActionSound>
             <DamagedSound>ParticleElectrical</DamagedSound>
-
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
             <MaxPowerOutput>2.5</MaxPowerOutput>
             <EmissiveColorPreset>Default</EmissiveColorPreset>
             <IsAirTight>false</IsAirTight>
-
             <VoxelPlacement>
                 <StaticMode>
                     <PlacementMode>OutsideVoxel</PlacementMode>
@@ -1351,7 +1105,6 @@
                     <PlacementMode>OutsideVoxel</PlacementMode>
                 </DynamicMode>
             </VoxelPlacement>
-
             <RaycasterSize>20</RaycasterSize>
             <RaycastersCount>9</RaycastersCount>
             <MinRaycasterClearance>0.3</MinRaycasterClearance>
@@ -1376,43 +1129,40 @@
             <Description>Description_SolarPanel</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="4" y="2" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="4" y="2" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\SolarPanel.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="4" />
-                <Component Subtype="Construction" Count="10" />
-                <Component Subtype="Girder" Count="12" />
-                <Component Subtype="Computer" Count="4" />
-                <Component Subtype="SolarCell" Count="32" />
-                <Component Subtype="Construction" Count="4" />
-                <Component Subtype="BulletproofGlass" Count="4" />
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="Girder" Count="12"/>
+                <Component Subtype="Computer" Count="4"/>
+                <Component Subtype="SolarCell" Count="32"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="BulletproofGlass" Count="4"/>
             </Components>
-            <CriticalComponent Subtype="SolarCell" Index="0" />
-            <Center x="0" y="0" z="0" />
+            <CriticalComponent Subtype="SolarCell" Index="0"/>
+            <Center x="0" y="0" z="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0.9" StartY="0" EndX="1" EndY="2" />
-                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.1" EndY="2" Default="true" />
-                <MountPoint Side="Top" StartX="3.8" StartY="0.9" EndX="4" EndY="1" />
-                <MountPoint Side="Top" StartX="0" StartY="0.9" EndX="0.2" EndY="1" />
-                <MountPoint Side="Bottom" StartX="3.8" StartY="0" EndX="4" EndY="0.1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
-                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.2" EndY="2" />
-                <MountPoint Side="Front" StartX="3.8" StartY="0" EndX="4" EndY="2" />
+                <MountPoint Side="Right" StartX="0.9" StartY="0" EndX="1" EndY="2"/>
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.1" EndY="2" Default="true"/>
+                <MountPoint Side="Top" StartX="3.8" StartY="0.9" EndX="4" EndY="1"/>
+                <MountPoint Side="Top" StartX="0" StartY="0.9" EndX="0.2" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="3.8" StartY="0" EndX="4" EndY="0.1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="0.1"/>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.2" EndY="2"/>
+                <MountPoint Side="Front" StartX="3.8" StartY="0" EndX="4" EndY="2"/>
             </MountPoints>
-
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\SolarPanelConstruction1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\SolarPanelConstruction2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SolarPanelConstruction3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\SolarPanelConstruction1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\SolarPanelConstruction2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SolarPanelConstruction3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>SolarPanel</BlockPairName>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>30</BuildTimeSeconds>
-
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
             <MaxPowerOutput>2.0</MaxPowerOutput>
-
             <PanelOrientation>
                 <X>0</X>
                 <Y>0</Y>
@@ -1421,69 +1171,64 @@
             <TwoSidedPanel>true</TwoSidedPanel>
             <Pivots>
                 <Vector3>
-                  <X>0</X>
-                  <Y>0.5</Y>
-                  <Z>0.45</Z>
+                    <X>0</X>
+                    <Y>0.5</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>0</X>
-                  <Y>0.5</Y>
-                  <Z>0.45</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>0</X>
-                  <Y>-0.5</Y>
-                  <Z>0.45</Z>
+                    <X>0</X>
+                    <Y>0.5</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>0</X>
-                  <Y>-0.5</Y>
-                  <Z>0.45</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>1.33</X>
-                  <Y>0.5</Y>
-                  <Z>0.45</Z>
+                    <X>0</X>
+                    <Y>-0.5</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>1.33</X>
-                  <Y>0.5</Y>
-                  <Z>0.45</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>1.33</X>
-                  <Y>-0.5</Y>
-                  <Z>0.45</Z>
+                    <X>0</X>
+                    <Y>-0.5</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>1.33</X>
-                  <Y>-0.5</Y>
-                  <Z>0.45</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-1.33</X>
-                  <Y>0.5</Y>
-                  <Z>0.45</Z>
+                    <X>1.33</X>
+                    <Y>0.5</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-1.33</X>
-                  <Y>0.5</Y>
-                  <Z>0.45</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-1.33</X>
-                  <Y>-0.5</Y>
-                  <Z>0.45</Z>
+                    <X>1.33</X>
+                    <Y>0.5</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-1.33</X>
-                  <Y>-0.5</Y>
-                  <Z>0.45</Z>
+                    <X>1.33</X>
+                    <Y>-0.5</Y>
+                    <Z>0.45</Z>
+                </Vector3>
+                <Vector3>
+                    <X>1.33</X>
+                    <Y>-0.5</Y>
+                    <Z>0.45</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-1.33</X>
+                    <Y>0.5</Y>
+                    <Z>0.45</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-1.33</X>
+                    <Y>0.5</Y>
+                    <Z>0.45</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-1.33</X>
+                    <Y>-0.5</Y>
+                    <Z>0.45</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-1.33</X>
+                    <Y>-0.5</Y>
+                    <Z>0.45</Z>
                 </Vector3>
             </Pivots>
             <DamageEffectName>Damage_Electrical_Damaged_SolarPanels</DamageEffectName>
@@ -1508,41 +1253,39 @@
             <Description>Description_SolarPanel</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="10" y="5" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="10" y="5" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\SolarPanel.mwm</Model>
-            <Center x="0" y="0" z="0" />
+            <Center x="0" y="0" z="0"/>
             <Components>
-                <Component Subtype="SteelPlate" Count="2" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="Girder" Count="4" />
-                <Component Subtype="Computer" Count="1" />
-                <Component Subtype="SolarCell" Count="8" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="BulletproofGlass" Count="1" />
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="Girder" Count="4"/>
+                <Component Subtype="Computer" Count="1"/>
+                <Component Subtype="SolarCell" Count="8"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="BulletproofGlass" Count="1"/>
             </Components>
-            <CriticalComponent Subtype="SolarCell" Index="0" />
+            <CriticalComponent Subtype="SolarCell" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0.9" StartY="0" EndX="1" EndY="5" />
-                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.1" EndY="5" Default="true" />
-                <MountPoint Side="Top" StartX="9.8" StartY="0.9" EndX="10" EndY="1" />
-                <MountPoint Side="Top" StartX="0" StartY="0.9" EndX="0.2" EndY="1" />
-                <MountPoint Side="Bottom" StartX="9.8" StartY="0" EndX="10" EndY="0.1" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="0.1" />
-                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.2" EndY="5" />
-                <MountPoint Side="Front" StartX="9.8" StartY="0" EndX="10" EndY="5" />
+                <MountPoint Side="Right" StartX="0.9" StartY="0" EndX="1" EndY="5"/>
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.1" EndY="5" Default="true"/>
+                <MountPoint Side="Top" StartX="9.8" StartY="0.9" EndX="10" EndY="1"/>
+                <MountPoint Side="Top" StartX="0" StartY="0.9" EndX="0.2" EndY="1"/>
+                <MountPoint Side="Bottom" StartX="9.8" StartY="0" EndX="10" EndY="0.1"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="0.2" EndY="0.1"/>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.2" EndY="5"/>
+                <MountPoint Side="Front" StartX="9.8" StartY="0" EndX="10" EndY="5"/>
             </MountPoints>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\SolarPanelConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Small\SolarPanelConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\SolarPanelConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Small\SolarPanelConstruction_2.mwm"/>
             </BuildProgressModels>
             <BlockPairName>SolarPanel</BlockPairName>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>20</BuildTimeSeconds>
-
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
             <MaxPowerOutput>1</MaxPowerOutput>
-
             <PanelOrientation>
                 <X>0</X>
                 <Y>0</Y>
@@ -1551,69 +1294,64 @@
             <TwoSidedPanel>true</TwoSidedPanel>
             <Pivots>
                 <Vector3>
-                  <X>0</X>
-                  <Y>1.25</Y>
-                  <Z>0.45</Z>
+                    <X>0</X>
+                    <Y>1.25</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>0</X>
-                  <Y>1.25</Y>
-                  <Z>0.45</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>0</X>
-                  <Y>-1.25</Y>
-                  <Z>0.45</Z>
+                    <X>0</X>
+                    <Y>1.25</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>0</X>
-                  <Y>-1.25</Y>
-                  <Z>0.45</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>3.325</X>
-                  <Y>1.25</Y>
-                  <Z>0.45</Z>
+                    <X>0</X>
+                    <Y>-1.25</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>3.325</X>
-                  <Y>1.25</Y>
-                  <Z>0.45</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>3.325</X>
-                  <Y>-1.25</Y>
-                  <Z>0.45</Z>
+                    <X>0</X>
+                    <Y>-1.25</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>3.325</X>
-                  <Y>-1.25</Y>
-                  <Z>0.45</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-3.325</X>
-                  <Y>1.25</Y>
-                  <Z>0.45</Z>
+                    <X>3.325</X>
+                    <Y>1.25</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-3.325</X>
-                  <Y>1.25</Y>
-                  <Z>0.45</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-3.325</X>
-                  <Y>-1.25</Y>
-                  <Z>0.45</Z>
+                    <X>3.325</X>
+                    <Y>1.25</Y>
+                    <Z>0.45</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-3.325</X>
-                  <Y>-1.25</Y>
-                  <Z>0.45</Z>
+                    <X>3.325</X>
+                    <Y>-1.25</Y>
+                    <Z>0.45</Z>
+                </Vector3>
+                <Vector3>
+                    <X>3.325</X>
+                    <Y>-1.25</Y>
+                    <Z>0.45</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-3.325</X>
+                    <Y>1.25</Y>
+                    <Z>0.45</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-3.325</X>
+                    <Y>1.25</Y>
+                    <Z>0.45</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-3.325</X>
+                    <Y>-1.25</Y>
+                    <Z>0.45</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-3.325</X>
+                    <Y>-1.25</Y>
+                    <Z>0.45</Z>
                 </Vector3>
             </Pivots>
             <MirroringX>Z</MirroringX>
@@ -1630,10 +1368,7 @@
                 <string>PowerSystems</string>
             </TargetingGroups>
         </Definition>
-
-
-
-         <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
+        <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
             <Id>
                 <TypeId>SolarPanel</TypeId>
                 <SubtypeId>LargeBlockColorableSolarPanel</SubtypeId>
@@ -1643,39 +1378,36 @@
             <Description>Description_SolarPanel</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="2" y="4" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="2" y="4" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\SolarPanelReskin.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="4" />
-                <Component Subtype="Construction" Count="10" />
-                <Component Subtype="Girder" Count="12" />
-                <Component Subtype="Computer" Count="4" />
-                <Component Subtype="SolarCell" Count="32" />
-                <Component Subtype="Construction" Count="4" />
-                <Component Subtype="BulletproofGlass" Count="4" />
+                <Component Subtype="SteelPlate" Count="4"/>
+                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="Girder" Count="12"/>
+                <Component Subtype="Computer" Count="4"/>
+                <Component Subtype="SolarCell" Count="32"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="BulletproofGlass" Count="4"/>
             </Components>
-            <CriticalComponent Subtype="SolarCell" Index="0" />
-            <Center x="0" y="0" z="0" />
+            <CriticalComponent Subtype="SolarCell" Index="0"/>
+            <Center x="0" y="0" z="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="4" />
-                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="4" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="0.5" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="2" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="4"/>
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="4"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="0.5"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="2" EndY="1"/>
             </MountPoints>
-
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\SolarPanelReskinConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\SolarPanelReskinConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SolarPanelReskinConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\SolarPanelReskinConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\SolarPanelReskinConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SolarPanelReskinConstruction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>ColorableSolarPanel</BlockPairName>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>30</BuildTimeSeconds>
-
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
             <MaxPowerOutput>2.0</MaxPowerOutput>
-
             <PanelOrientation>
                 <X>0</X>
                 <Y>0</Y>
@@ -1684,71 +1416,64 @@
             <TwoSidedPanel>true</TwoSidedPanel>
             <Pivots>
                 <Vector3>
-                  <X>-0.5</X>
-                  <Y>0</Y>
-                  <Z>0</Z>
+                    <X>-0.5</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-0.5</X>
-                  <Y>0</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-0.5</X>
-                  <Y>1.33</Y>
-                  <Z>0</Z>
+                    <X>-0.5</X>
+                    <Y>0</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-0.5</X>
-                  <Y>1.33</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-0.5</X>
-                  <Y>-1.33</Y>
-                  <Z>0</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-0.5</X>
-                  <Y>-1.33</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>0.5</X>
-                  <Y>0</Y>
-                  <Z>0</Z>
+                    <X>-0.5</X>
+                    <Y>1.33</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>0.5</X>
-                  <Y>0</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>0.5</X>
-                  <Y>1.33</Y>
-                  <Z>0</Z>
+                    <X>-0.5</X>
+                    <Y>1.33</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>0.5</X>
-                  <Y>1.33</Y>
-                  <Z>-0.5</Z>
+                    <X>-0.5</X>
+                    <Y>-1.33</Y>
+                    <Z>0</Z>
                 </Vector3>
-                
                 <Vector3>
-                  <X>0.5</X>
-                  <Y>-1.33</Y>
-                  <Z>0</Z>
+                    <X>-0.5</X>
+                    <Y>-1.33</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
-                
                 <Vector3>
-                  <X>0.5</X>
-                  <Y>-1.33</Y>
-                  <Z>-0.5</Z>
+                    <X>0.5</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>0.5</X>
+                    <Y>0</Y>
+                    <Z>-0.5</Z>
+                </Vector3>
+                <Vector3>
+                    <X>0.5</X>
+                    <Y>1.33</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>0.5</X>
+                    <Y>1.33</Y>
+                    <Z>-0.5</Z>
+                </Vector3>
+                <Vector3>
+                    <X>0.5</X>
+                    <Y>-1.33</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>0.5</X>
+                    <Y>-1.33</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
             </Pivots>
             <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
@@ -1764,7 +1489,6 @@
             </TargetingGroups>
             <DLC>DecorativeBlocks3</DLC>
         </Definition>
-        
         <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
             <Id>
                 <TypeId>SolarPanel</TypeId>
@@ -1775,29 +1499,28 @@
             <Description>Description_SolarPanel</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="2" y="4" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="2" y="4" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\SolarPanelReskinCorner.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="2" />
-                <Component Subtype="Construction" Count="5" />
-                <Component Subtype="Girder" Count="6" />
-                <Component Subtype="Computer" Count="4" />
-                <Component Subtype="SolarCell" Count="16" />
-                <Component Subtype="Construction" Count="2" />
-                <Component Subtype="BulletproofGlass" Count="2" />
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="5"/>
+                <Component Subtype="Girder" Count="6"/>
+                <Component Subtype="Computer" Count="4"/>
+                <Component Subtype="SolarCell" Count="16"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="BulletproofGlass" Count="2"/>
             </Components>
-            <CriticalComponent Subtype="SolarCell" Index="0" />
-            <Center x="0" y="0" z="0" />
+            <CriticalComponent Subtype="SolarCell" Index="0"/>
+            <Center x="0" y="0" z="0"/>
             <MountPoints>
-                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="4" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="2" EndY="1" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="4"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="2" EndY="1"/>
             </MountPoints>
-
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\SolarPanelReskinCornerConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\SolarPanelReskinCornerConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SolarPanelReskinCornerConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\SolarPanelReskinCornerConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\SolarPanelReskinCornerConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SolarPanelReskinCornerConstruction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>ColorableSolarPanelCorner</BlockPairName>
             <MirroringZ>Y</MirroringZ>
@@ -1805,54 +1528,48 @@
             <MirroringBlock>LargeBlockColorableSolarPanelCornerInverted</MirroringBlock>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>24</BuildTimeSeconds>
-
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
-            <MaxPowerOutput>1</MaxPowerOutput>
-            <!-- When it is Two sided odd - should be on one side, even - on other side -->
+            <MaxPowerOutput>1</MaxPowerOutput><!-- When it is Two sided odd - should be on one side, even - on other side -->
             <Pivots>
                 <Vector3>
-                  <X>-0.5</X>
-                  <Y>0</Y>
-                  <Z>0</Z>
+                    <X>-0.5</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-0.5</X>
-                  <Y>0</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                
-                <Vector3>
-                  <X>-0.75</X>
-                  <Y>1.33</Y>
-                  <Z>0</Z>
+                    <X>-0.5</X>
+                    <Y>0</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-0.75</X>
-                  <Y>1.33</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-0.75</X>
-                  <Y>-1.33</Y>
-                  <Z>0</Z>
+                    <X>-0.75</X>
+                    <Y>1.33</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-0.75</X>
-                  <Y>-1.33</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>0.50</X>
-                  <Y>-1.33</Y>
-                  <Z>0</Z>
+                    <X>-0.75</X>
+                    <Y>1.33</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>0.50</X>
-                  <Y>-1.33</Y>
-                  <Z>-0.5</Z>
+                    <X>-0.75</X>
+                    <Y>-1.33</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-0.75</X>
+                    <Y>-1.33</Y>
+                    <Z>-0.5</Z>
+                </Vector3>
+                <Vector3>
+                    <X>0.50</X>
+                    <Y>-1.33</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>0.50</X>
+                    <Y>-1.33</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
             </Pivots>
             <PanelOrientation>
@@ -1874,7 +1591,6 @@
             </TargetingGroups>
             <DLC>DecorativeBlocks3</DLC>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
             <Id>
                 <TypeId>SolarPanel</TypeId>
@@ -1885,29 +1601,28 @@
             <Description>Description_SolarPanel</Description>
             <CubeSize>Large</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="2" y="4" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="2" y="4" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Large\SolarPanelReskinCornerInverted.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="2" />
-                <Component Subtype="Construction" Count="5" />
-                <Component Subtype="Girder" Count="6" />
-                <Component Subtype="Computer" Count="4" />
-                <Component Subtype="SolarCell" Count="16" />
-                <Component Subtype="Construction" Count="2" />
-                <Component Subtype="BulletproofGlass" Count="2" />
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="5"/>
+                <Component Subtype="Girder" Count="6"/>
+                <Component Subtype="Computer" Count="4"/>
+                <Component Subtype="SolarCell" Count="16"/>
+                <Component Subtype="Construction" Count="2"/>
+                <Component Subtype="BulletproofGlass" Count="2"/>
             </Components>
-            <CriticalComponent Subtype="SolarCell" Index="0" />
-            <Center x="1" y="0" z="0" />
+            <CriticalComponent Subtype="SolarCell" Index="0"/>
+            <Center x="1" y="0" z="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="4" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="2" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="4"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="2" EndY="1"/>
             </MountPoints>
-
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\SolarPanelReskinCornerInvertedConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\SolarPanelReskinCornerInvertedConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SolarPanelReskinCornerInvertedConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\SolarPanelReskinCornerInvertedConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\SolarPanelReskinCornerInvertedConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SolarPanelReskinCornerInvertedConstruction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>ColorableSolarPanelCornerInverted</BlockPairName>
             <MirroringZ>Y</MirroringZ>
@@ -1915,61 +1630,54 @@
             <MirroringBlock>LargeBlockColorableSolarPanelCorner</MirroringBlock>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>24</BuildTimeSeconds>
-
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
             <MaxPowerOutput>1</MaxPowerOutput>
-
             <PanelOrientation>
                 <X>0</X>
                 <Y>0</Y>
                 <Z>-1</Z>
             </PanelOrientation>
-            <TwoSidedPanel>true</TwoSidedPanel>
-            <!-- When it is Two sided odd - should be on one side, even - on other side -->
+            <TwoSidedPanel>true</TwoSidedPanel><!-- When it is Two sided odd - should be on one side, even - on other side -->
             <Pivots>
                 <Vector3>
-                  <X>0.5</X>
-                  <Y>0</Y>
-                  <Z>0</Z>
+                    <X>0.5</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>0.5</X>
-                  <Y>0</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                
-                <Vector3>
-                  <X>0.75</X>
-                  <Y>1.33</Y>
-                  <Z>0</Z>
+                    <X>0.5</X>
+                    <Y>0</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>0.75</X>
-                  <Y>1.33</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>0.75</X>
-                  <Y>-1.33</Y>
-                  <Z>0</Z>
+                    <X>0.75</X>
+                    <Y>1.33</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>0.75</X>
-                  <Y>-1.33</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-0.50</X>
-                  <Y>-1.33</Y>
-                  <Z>0</Z>
+                    <X>0.75</X>
+                    <Y>1.33</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-0.50</X>
-                  <Y>-1.33</Y>
-                  <Z>-0.5</Z>
+                    <X>0.75</X>
+                    <Y>-1.33</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>0.75</X>
+                    <Y>-1.33</Y>
+                    <Z>-0.5</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-0.50</X>
+                    <Y>-1.33</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-0.50</X>
+                    <Y>-1.33</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
             </Pivots>
             <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
@@ -1985,7 +1693,6 @@
             </TargetingGroups>
             <DLC>DecorativeBlocks3</DLC>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
             <Id>
                 <TypeId>SolarPanel</TypeId>
@@ -1996,113 +1703,102 @@
             <Description>Description_SolarPanel</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="5" y="10" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="5" y="10" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\SolarPanelReskin.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="2" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="Girder" Count="4" />
-                <Component Subtype="Computer" Count="1" />
-                <Component Subtype="SolarCell" Count="8" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="BulletproofGlass" Count="1" />
+                <Component Subtype="SteelPlate" Count="2"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="Girder" Count="4"/>
+                <Component Subtype="Computer" Count="1"/>
+                <Component Subtype="SolarCell" Count="8"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="BulletproofGlass" Count="1"/>
             </Components>
-            <CriticalComponent Subtype="SolarCell" Index="0" />
-            <Center x="0" y="0" z="0" />
+            <CriticalComponent Subtype="SolarCell" Index="0"/>
+            <Center x="0" y="0" z="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="10" />
-                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="10" />
-                <MountPoint Side="Top" StartX="0" StartY="0" EndX="5" EndY="0.5" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="5" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="10"/>
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="10"/>
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="5" EndY="0.5"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="5" EndY="1"/>
             </MountPoints>
-
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\SolarPanelReskinConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\SolarPanelReskinConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SolarPanelReskinConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\SolarPanelReskinConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\SolarPanelReskinConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SolarPanelReskinConstruction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>ColorableSolarPanel</BlockPairName>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>20</BuildTimeSeconds>
-
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
             <MaxPowerOutput>1</MaxPowerOutput>
-
             <PanelOrientation>
                 <X>0</X>
                 <Y>0</Y>
                 <Z>-1</Z>
             </PanelOrientation>
-            <TwoSidedPanel>true</TwoSidedPanel>
-            <!-- When it is Two sided odd - should be on one side, even - on other side -->
+            <TwoSidedPanel>true</TwoSidedPanel><!-- When it is Two sided odd - should be on one side, even - on other side -->
             <Pivots>
                 <Vector3>
-                  <X>-1.25</X>
-                  <Y>0</Y>
-                  <Z>0</Z>
+                    <X>-1.25</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-1.25</X>
-                  <Y>0</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-1.25</X>
-                  <Y>3.325</Y>
-                  <Z>0</Z>
+                    <X>-1.25</X>
+                    <Y>0</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-1.25</X>
-                  <Y>3.325</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-1.25</X>
-                  <Y>-3.325</Y>
-                  <Z>0</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-1.25</X>
-                  <Y>-3.325</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>1.25</X>
-                  <Y>0</Y>
-                  <Z>0</Z>
+                    <X>-1.25</X>
+                    <Y>3.325</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>1.25</X>
-                  <Y>0</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>1.25</X>
-                  <Y>3.325</Y>
-                  <Z>0</Z>
+                    <X>-1.25</X>
+                    <Y>3.325</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>1.25</X>
-                  <Y>3.325</Y>
-                  <Z>-0.5</Z>
+                    <X>-1.25</X>
+                    <Y>-3.325</Y>
+                    <Z>0</Z>
                 </Vector3>
-                
                 <Vector3>
-                  <X>1.25</X>
-                  <Y>-3.325</Y>
-                  <Z>0</Z>
+                    <X>-1.25</X>
+                    <Y>-3.325</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
-                
                 <Vector3>
-                  <X>1.25</X>
-                  <Y>-3.325</Y>
-                  <Z>-0.5</Z>
+                    <X>1.25</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>1.25</X>
+                    <Y>0</Y>
+                    <Z>-0.5</Z>
+                </Vector3>
+                <Vector3>
+                    <X>1.25</X>
+                    <Y>3.325</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>1.25</X>
+                    <Y>3.325</Y>
+                    <Z>-0.5</Z>
+                </Vector3>
+                <Vector3>
+                    <X>1.25</X>
+                    <Y>-3.325</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>1.25</X>
+                    <Y>-3.325</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
             </Pivots>
             <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
@@ -2118,7 +1814,6 @@
             </TargetingGroups>
             <DLC>DecorativeBlocks3</DLC>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
             <Id>
                 <TypeId>SolarPanel</TypeId>
@@ -2129,29 +1824,28 @@
             <Description>Description_SolarPanel</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="5" y="10" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="5" y="10" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\SolarPanelReskinCorner.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="Girder" Count="2" />
-                <Component Subtype="Computer" Count="1" />
-                <Component Subtype="SolarCell" Count="4" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="BulletproofGlass" Count="1" />
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="Girder" Count="2"/>
+                <Component Subtype="Computer" Count="1"/>
+                <Component Subtype="SolarCell" Count="4"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="BulletproofGlass" Count="1"/>
             </Components>
-            <CriticalComponent Subtype="SolarCell" Index="0" />
-            <Center x="0" y="0" z="0" />
+            <CriticalComponent Subtype="SolarCell" Index="0"/>
+            <Center x="0" y="0" z="0"/>
             <MountPoints>
-                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="10" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="5" EndY="1" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="10"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="5" EndY="1"/>
             </MountPoints>
-
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\SolarPanelReskinCornerConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\SolarPanelReskinCornerConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SolarPanelReskinCornerConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\SolarPanelReskinCornerConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\SolarPanelReskinCornerConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SolarPanelReskinCornerConstruction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>ColorableSolarPanelCorner</BlockPairName>
             <MirroringZ>Y</MirroringZ>
@@ -2159,10 +1853,8 @@
             <MirroringBlock>SmallBlockColorableSolarPanelCornerInverted</MirroringBlock>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>14</BuildTimeSeconds>
-
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
             <MaxPowerOutput>0.5</MaxPowerOutput>
-
             <PanelOrientation>
                 <X>0</X>
                 <Y>0</Y>
@@ -2171,47 +1863,44 @@
             <TwoSidedPanel>true</TwoSidedPanel>
             <Pivots>
                 <Vector3>
-                  <X>-1.25</X>
-                  <Y>0</Y>
-                  <Z>0</Z>
+                    <X>-1.25</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-1.25</X>
-                  <Y>0</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-1.875</X>
-                  <Y>3.325</Y>
-                  <Z>0</Z>
+                    <X>-1.25</X>
+                    <Y>0</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-1.875</X>
-                  <Y>3.325</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-1.875</X>
-                  <Y>-3.325</Y>
-                  <Z>0</Z>
+                    <X>-1.875</X>
+                    <Y>3.325</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-1.875</X>
-                  <Y>-3.325</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>1.25</X>
-                  <Y>-3.325</Y>
-                  <Z>0</Z>
+                    <X>-1.875</X>
+                    <Y>3.325</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>1.25</X>
-                  <Y>-3.325</Y>
-                  <Z>-0.5</Z>
+                    <X>-1.875</X>
+                    <Y>-3.325</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-1.875</X>
+                    <Y>-3.325</Y>
+                    <Z>-0.5</Z>
+                </Vector3>
+                <Vector3>
+                    <X>1.25</X>
+                    <Y>-3.325</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>1.25</X>
+                    <Y>-3.325</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
             </Pivots>
             <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
@@ -2227,7 +1916,6 @@
             </TargetingGroups>
             <DLC>DecorativeBlocks3</DLC>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition">
             <Id>
                 <TypeId>SolarPanel</TypeId>
@@ -2238,29 +1926,28 @@
             <Description>Description_SolarPanel</Description>
             <CubeSize>Small</CubeSize>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="5" y="10" z="1" />
-            <ModelOffset x="0" y="0" z="0" />
+            <Size x="5" y="10" z="1"/>
+            <ModelOffset x="0" y="0" z="0"/>
             <Model>Models\Cubes\Small\SolarPanelReskinCornerInverted.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="Girder" Count="2" />
-                <Component Subtype="Computer" Count="1" />
-                <Component Subtype="SolarCell" Count="4" />
-                <Component Subtype="Construction" Count="1" />
-                <Component Subtype="BulletproofGlass" Count="1" />
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="Girder" Count="2"/>
+                <Component Subtype="Computer" Count="1"/>
+                <Component Subtype="SolarCell" Count="4"/>
+                <Component Subtype="Construction" Count="1"/>
+                <Component Subtype="BulletproofGlass" Count="1"/>
             </Components>
-            <CriticalComponent Subtype="SolarCell" Index="0" />
-            <Center x="1" y="0" z="0" />
+            <CriticalComponent Subtype="SolarCell" Index="0"/>
+            <Center x="1" y="0" z="0"/>
             <MountPoints>
-                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="10" />
-                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="5" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="10"/>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="5" EndY="1"/>
             </MountPoints>
-
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\SolarPanelReskinCornerInvertedConstruction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\SolarPanelReskinCornerInvertedConstruction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SolarPanelReskinCornerInvertedConstruction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Small\SolarPanelReskinCornerInvertedConstruction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Small\SolarPanelReskinCornerInvertedConstruction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SolarPanelReskinCornerInvertedConstruction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>ColorableSolarPanelCornerInverted</BlockPairName>
             <MirroringZ>Y</MirroringZ>
@@ -2268,52 +1955,48 @@
             <MirroringBlock>SmallBlockColorableSolarPanelCorner</MirroringBlock>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>14</BuildTimeSeconds>
-
             <ResourceSourceGroup>SolarPanels</ResourceSourceGroup>
             <MaxPowerOutput>0.5</MaxPowerOutput>
             <Pivots>
-               <Vector3>
-                  <X>1.25</X>
-                  <Y>0</Y>
-                  <Z>0</Z>
+                <Vector3>
+                    <X>1.25</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>1.25</X>
-                  <Y>0</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>1.875</X>
-                  <Y>3.325</Y>
-                  <Z>0</Z>
+                    <X>1.25</X>
+                    <Y>0</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>1.875</X>
-                  <Y>3.325</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>1.875</X>
-                  <Y>-3.325</Y>
-                  <Z>0</Z>
+                    <X>1.875</X>
+                    <Y>3.325</Y>
+                    <Z>0</Z>
                 </Vector3>
                 <Vector3>
-                  <X>1.875</X>
-                  <Y>-3.325</Y>
-                  <Z>-0.5</Z>
-                </Vector3>
-                
-                <Vector3>
-                  <X>-1.25</X>
-                  <Y>-3.325</Y>
-                  <Z>0</Z>
+                    <X>1.875</X>
+                    <Y>3.325</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
                 <Vector3>
-                  <X>-1.25</X>
-                  <Y>-3.325</Y>
-                  <Z>-0.5</Z>
+                    <X>1.875</X>
+                    <Y>-3.325</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>1.875</X>
+                    <Y>-3.325</Y>
+                    <Z>-0.5</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-1.25</X>
+                    <Y>-3.325</Y>
+                    <Z>0</Z>
+                </Vector3>
+                <Vector3>
+                    <X>-1.25</X>
+                    <Y>-3.325</Y>
+                    <Z>-0.5</Z>
                 </Vector3>
             </Pivots>
             <PanelOrientation>
@@ -2336,7 +2019,6 @@
             </TargetingGroups>
             <DLC>DecorativeBlocks3</DLC>
         </Definition>
-
         <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
             <Id>
                 <TypeId>WindTurbine</TypeId>
@@ -2349,29 +2031,28 @@
             <GuiVisible>false</GuiVisible>
             <PlaceDecals>false</PlaceDecals>
             <BlockTopology>TriangleMesh</BlockTopology>
-            <Size x="5" y="5" z="5" />
-            <Center x="2" y="0" z="2" />
-            <!-- The Offset is there as the Base model had to be placed in the world origin 0,0,0. If the Base of the block was offseted like usual, it couldn't be built properly and had a lot of broken triangles-->
-            <ModelOffset x="0" y="-6.25" z="0" />
+            <Size x="5" y="5" z="5"/>
+            <Center x="2" y="0" z="2"/><!-- The Offset is there as the Base model had to be placed in the world origin 0,0,0. If the Base of the block was offseted like usual, it couldn't be built properly and had a lot of broken triangles-->
+            <ModelOffset x="0" y="-6.25" z="0"/>
             <Model>Models\Cubes\Large\WindTurbineBaseReskin.mwm</Model>
             <Components>
-                <Component Subtype="InteriorPlate" Count="10" />
-                <Component Subtype="Motor" Count="8" />
-                <Component Subtype="Construction" Count="20" />
-                <Component Subtype="Girder" Count="24" />
-                <Component Subtype="Computer" Count="2" />
-                <Component Subtype="InteriorPlate" Count="30" />
+                <Component Subtype="InteriorPlate" Count="10"/>
+                <Component Subtype="Motor" Count="8"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="Girder" Count="24"/>
+                <Component Subtype="Computer" Count="2"/>
+                <Component Subtype="InteriorPlate" Count="30"/>
             </Components>
-            <CriticalComponent Subtype="Computer" Index="0" />
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <MountPoints>
-                <MountPoint Side="Bottom" StartX="2" StartY="2" EndX="3" EndY="3" Default="true" />
+                <MountPoint Side="Bottom" StartX="2" StartY="2" EndX="3" EndY="3" Default="true"/>
             </MountPoints>
             <MirroringY>X</MirroringY>
             <MirroringX>Y</MirroringX>
             <BuildProgressModels>
-                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\WindTurbineReskin_Construction_1.mwm" />
-                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\WindTurbineReskin_Construction_2.mwm" />
-                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WindTurbineReskin_Construction_3.mwm" />
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\WindTurbineReskin_Construction_1.mwm"/>
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\WindTurbineReskin_Construction_2.mwm"/>
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WindTurbineReskin_Construction_3.mwm"/>
             </BuildProgressModels>
             <BlockPairName>WindTurbineReskin</BlockPairName>
             <EdgeType>Light</EdgeType>
@@ -2406,12 +2087,5 @@
             </TargetingGroups>
             <DLC>DecorativeBlocks3</DLC>
         </Definition>
-
-
-
-
-
-
-
     </CubeBlocks>
 </Definitions>

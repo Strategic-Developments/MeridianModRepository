@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <!--
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><!--
   Usage:
   
   All entity component definitions (not components used in assemblers in game) have base class MyComponentDefinitionBase.
@@ -52,9 +51,7 @@
                     <SubtypeId>ZoneChip</SubtypeId>
                 </Entry>
             </InputConstraint>
-        </EntityComponent>
-
-        <!--
+        </EntityComponent><!--
         <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
             <Id>
                 <TypeId>Inventory</TypeId>
@@ -79,8 +76,7 @@
             <DefaultComponents>
                 <Component BuilderType="MyObjectBuilder_Inventory" SubtypeId="meridian_safezone_base" ForceCreate="true"/>
             </DefaultComponents>
-        </Container>
-        <!--
+        </Container><!--
          <Container>
             <Id>
                 <TypeId>SafeZoneBlock</TypeId>

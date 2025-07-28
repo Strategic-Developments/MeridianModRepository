@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <PhysicalItems>
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ore</TypeId>
@@ -25,11 +24,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>500</MaximumAcquisitionAmount>
         </PhysicalItem>
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ore</TypeId>
@@ -53,14 +50,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>500</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-
-
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ore</TypeId>
@@ -84,12 +76,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>500</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ore</TypeId>
@@ -113,14 +102,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>100</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>500</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-
-
-		<PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Hexon_Ingot</SubtypeId>
@@ -142,11 +127,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
@@ -169,14 +152,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-
-
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
@@ -199,12 +177,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Cycline_Ingot</SubtypeId>
@@ -226,12 +202,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Auriculene_Ingot</SubtypeId>
@@ -253,12 +227,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Thalon_Ingot</SubtypeId>
@@ -280,13 +252,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Thalanine_Ingot</SubtypeId>
@@ -308,13 +277,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Methylamine_Ingot</SubtypeId>
@@ -336,13 +302,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Morphazine_Ingot</SubtypeId>
@@ -364,13 +327,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Trihexon</SubtypeId>
@@ -392,11 +352,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
@@ -419,11 +377,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
@@ -446,11 +402,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
@@ -473,11 +427,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
@@ -500,11 +452,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
@@ -527,11 +477,9 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
         <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
@@ -554,12 +502,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Hexox</SubtypeId>
@@ -581,12 +527,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Neurofluon</SubtypeId>
@@ -608,12 +552,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Crystane</SubtypeId>
@@ -635,12 +577,10 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-         <PhysicalItem>
+        <PhysicalItem>
             <Id>
                 <TypeId>Ingot</TypeId>
                 <SubtypeId>Myothyrate</SubtypeId>
@@ -662,37 +602,8 @@
             <MinimumOrderAmount>1000</MinimumOrderAmount>
             <MaximumOrderAmount>20000</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
-
             <MinimumAcquisitionAmount>30</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>300</MaximumAcquisitionAmount>
         </PhysicalItem>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </PhysicalItems>
 </Definitions>

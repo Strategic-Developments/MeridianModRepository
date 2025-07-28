@@ -1,21 +1,7 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Blueprints> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <Blueprint>
+  <Blueprints>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>HexadrineRefine</SubtypeId>
@@ -23,18 +9,16 @@
       <DisplayName>Hexadrine Refine</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\DMSO_Ore.dds</Icon>
       <Prerequisites>
-        <Item Amount="1" TypeId="Ore" SubtypeId="Hexa_Ore" />
+        <Item Amount="1" TypeId="Ore" SubtypeId="Hexa_Ore"/>
       </Prerequisites>
       <Results>
-       <Item Amount="0.54" TypeId="Ingot" SubtypeId="Hexon_Ingot" />
-       <Item Amount="0.54" TypeId="Ingot" SubtypeId="Pyrmid_Ingot" />
-       <Item Amount="0.54" TypeId="Ingot" SubtypeId="Oxycarbide_Ingot" />
-       </Results>
-      
+        <Item Amount="0.54" TypeId="Ingot" SubtypeId="Hexon_Ingot"/>
+        <Item Amount="0.54" TypeId="Ingot" SubtypeId="Pyrmid_Ingot"/>
+        <Item Amount="0.54" TypeId="Ingot" SubtypeId="Oxycarbide_Ingot"/>
+      </Results>
       <BaseProductionTimeInSeconds>2.0</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -43,19 +27,16 @@
       <DisplayName>Cyclocerin Refine</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\DMSO_Ore.dds</Icon>
       <Prerequisites>
-        <Item Amount="1" TypeId="Ore" SubtypeId="Cyclo_Ore" />
+        <Item Amount="1" TypeId="Ore" SubtypeId="Cyclo_Ore"/>
       </Prerequisites>
       <Results>
-       <Item Amount="0.54" TypeId="Ingot" SubtypeId="Cycline_Ingot" />
-       <Item Amount="0.54" TypeId="Ingot" SubtypeId="Auriculene_Ingot" />
-       
-       </Results>
-      
+        <Item Amount="0.54" TypeId="Ingot" SubtypeId="Cycline_Ingot"/>
+        <Item Amount="0.54" TypeId="Ingot" SubtypeId="Auriculene_Ingot"/>
+      </Results>
       <BaseProductionTimeInSeconds>2.0</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>ThaladrineRefine</SubtypeId>
@@ -63,18 +44,15 @@
       <DisplayName>Thaladrine Refine</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\DMSO_Ore.dds</Icon>
       <Prerequisites>
-        <Item Amount="1" TypeId="Ore" SubtypeId="Thala_Ore" />
+        <Item Amount="1" TypeId="Ore" SubtypeId="Thala_Ore"/>
       </Prerequisites>
       <Results>
-       <Item Amount="0.54" TypeId="Ingot" SubtypeId="Thalon_Ingot" />
-       <Item Amount="0.54" TypeId="Ingot" SubtypeId="Thalanine_Ingot" />
-       
-       </Results>
-      
+        <Item Amount="0.54" TypeId="Ingot" SubtypeId="Thalon_Ingot"/>
+        <Item Amount="0.54" TypeId="Ingot" SubtypeId="Thalanine_Ingot"/>
+      </Results>
       <BaseProductionTimeInSeconds>2.0</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -83,37 +61,16 @@
       <DisplayName>Methylaurate Refine</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\DMSO_Ore.dds</Icon>
       <Prerequisites>
-        <Item Amount="1" TypeId="Ore" SubtypeId="Methyl_Ore" />
+        <Item Amount="1" TypeId="Ore" SubtypeId="Methyl_Ore"/>
       </Prerequisites>
       <Results>
-       <Item Amount="0.54" TypeId="Ingot" SubtypeId="Methylamine_Ingot" />
-       <Item Amount="0.54" TypeId="Ingot" SubtypeId="Morphazine_Ingot" />
-       
-       </Results>
-      
+        <Item Amount="0.54" TypeId="Ingot" SubtypeId="Methylamine_Ingot"/>
+        <Item Amount="0.54" TypeId="Ingot" SubtypeId="Morphazine_Ingot"/>
+      </Results>
       <BaseProductionTimeInSeconds>2.0</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>TrihexonReaction</SubtypeId>
@@ -121,16 +78,15 @@
       <DisplayName>Trihexon</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Hexon_Ingot" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Oxycarbide_Ingot" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Hexon_Ingot"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Oxycarbide_Ingot"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Trihexon" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Trihexon"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-  <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>DicyclineReaction</SubtypeId>
@@ -138,17 +94,16 @@
       <DisplayName>Dicycline</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Pyrmid_Ingot" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Cycline_Ingot" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Pyrmid_Ingot"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Cycline_Ingot"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Dicycline" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Dicycline"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>AuronReaction</SubtypeId>
@@ -156,18 +111,16 @@
       <DisplayName>Auron</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Auriculene_Ingot" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Thalon_Ingot" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Auriculene_Ingot"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Thalon_Ingot"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Iron"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Auron" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Auron"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -176,17 +129,16 @@
       <DisplayName>Neurocline</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Thalanine_Ingot" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Thalon_Ingot" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Thalanine_Ingot"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Thalon_Ingot"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Neurocline" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Neurocline"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-        <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>MyotheneReaction</SubtypeId>
@@ -194,16 +146,14 @@
       <DisplayName>Myothene</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Thalanine_Ingot" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Methylamine_Ingot" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Thalanine_Ingot"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Methylamine_Ingot"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Myothene" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Myothene"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-    
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -212,17 +162,15 @@
       <DisplayName>Mirazine</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemComp2.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Morphazine_Ingot" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Morphazine_Ingot"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Mirazine" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Mirazine"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-
-  <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>DMSOReaction</SubtypeId>
@@ -230,16 +178,15 @@
       <DisplayName>DMSO</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemVial.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Trihexon" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Dicycline" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Trihexon"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Dicycline"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Iron"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="DMSO" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="DMSO"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -248,16 +195,15 @@
       <DisplayName>Hexox</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemVial.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Trihexon" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Auron" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Trihexon"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Auron"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Hexox" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Hexox"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -266,17 +212,15 @@
       <DisplayName>Neurofluon</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemVial.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurocline" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Auron" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurocline"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Auron"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Neurofluon" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Neurofluon"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -285,17 +229,15 @@
       <DisplayName>Crystane</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemVial.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurocline" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Myothene" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurocline"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Myothene"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Iron"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Crystane" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Crystane"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -304,18 +246,16 @@
       <DisplayName>Myothyrate</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\ChemVial.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Mirazine" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Myothene" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Mirazine"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Myothene"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Iron"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Myothyrate" />
+      <Result Amount="0.54" TypeId="Ingot" SubtypeId="Myothyrate"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -324,18 +264,16 @@
       <DisplayName>HCP-221 Cold Red</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\DrugComp1.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Myothyrate" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Crystane" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluon" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Hexox" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Myothyrate"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Crystane"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluon"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Hexox"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="HCP221" />
+      <Result Amount="1" TypeId="Component" SubtypeId="HCP221"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -344,16 +282,14 @@
       <DisplayName>Sleipnir SC-9</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\DrugComp3.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluon" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Crystane" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluon"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Crystane"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="Sleipnir" />
+      <Result Amount="1" TypeId="Component" SubtypeId="Sleipnir"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -362,16 +298,14 @@
       <DisplayName>OxiHex OH-2</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\DrugComp4.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Hexox" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluon" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Hexox"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Neurofluon"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="Oxihex" />
+      <Result Amount="1" TypeId="Component" SubtypeId="Oxihex"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -380,44 +314,30 @@
       <DisplayName>Blissfire B-7</DisplayName>
       <Icon>Textures\GUI\Icons\ingot\DrugComp2.dds</Icon>
       <Prerequisites>
-        <Item Amount="15" TypeId="Ingot" SubtypeId="Hexox" />
-        <Item Amount="15" TypeId="Ingot" SubtypeId="DMSO" />
-        <Item Amount="500" TypeId="Ore" SubtypeId="Ice" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Hexox"/>
+        <Item Amount="15" TypeId="Ingot" SubtypeId="DMSO"/>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Ice"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="Blissfire" />
+      <Result Amount="1" TypeId="Component" SubtypeId="Blissfire"/>
       <BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
       <IsPrimary>true</IsPrimary>
     </Blueprint>
-
-
-
-
-
-
-
-
-
-
-
-	<Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>StarterOreShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Basic Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="50000" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Silicon" />
-        <Item Amount="750" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="350" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Iron"/>
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Silicon"/>
+        <Item Amount="750" TypeId="Ingot" SubtypeId="Nickel"/>
+        <Item Amount="350" TypeId="Ingot" SubtypeId="Cobalt"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="StarterOreShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="StarterOreShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -425,22 +345,14 @@
       </Id>
       <DisplayName>76mm Autocannon Cartridge</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\greenammo.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="3" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="5" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Iron"/>
+        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Magnesium"/>
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Cobalt"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="GreenAmmoMagDef" />
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="GreenAmmoMagDef"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
-
-
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -448,19 +360,15 @@
       </Id>
       <DisplayName>Advanced Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="50000" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Silicon" />
-        <Item Amount="750" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="350" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Iron"/>
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Silicon"/>
+        <Item Amount="750" TypeId="Ingot" SubtypeId="Nickel"/>
+        <Item Amount="350" TypeId="Ingot" SubtypeId="Cobalt"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="AdvancedOreShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="AdvancedOreShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -468,19 +376,15 @@
       </Id>
       <DisplayName>Restricted Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="10000" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="2000" TypeId="Ingot" SubtypeId="Gold" />
-        <Item Amount="1000" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="2000" TypeId="Ingot" SubtypeId="Silver" />
+        <Item Amount="10000" TypeId="Ingot" SubtypeId="Iron"/>
+        <Item Amount="2000" TypeId="Ingot" SubtypeId="Gold"/>
+        <Item Amount="1000" TypeId="Ingot" SubtypeId="Magnesium"/>
+        <Item Amount="2000" TypeId="Ingot" SubtypeId="Silver"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="RestrictedOreShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="RestrictedOreShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -488,41 +392,29 @@
       </Id>
       <DisplayName>Fleet-Issue Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="100000" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="2000" TypeId="Ingot" SubtypeId="Uranium" />
-        <Item Amount="2000" TypeId="Ingot" SubtypeId="Platinum" />
-        <Item Amount="2000" TypeId="Ingot" SubtypeId="Silver" />
+        <Item Amount="100000" TypeId="Ingot" SubtypeId="Iron"/>
+        <Item Amount="2000" TypeId="Ingot" SubtypeId="Uranium"/>
+        <Item Amount="2000" TypeId="Ingot" SubtypeId="Platinum"/>
+        <Item Amount="2000" TypeId="Ingot" SubtypeId="Silver"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="IssuedIngotShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="IssuedIngotShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
-    </Blueprint>
-
-
-<!-- 
+    </Blueprint><!-- 
 Licenses -->
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>TacLicenseBP</SubtypeId>
       </Id>
       <DisplayName>Tactical License Blueprint</DisplayName>
       <Icon>Textures\GUI\Icons\Components\TacLicense.dds</Icon>
-	  
       <Prerequisites>
-      
-        <Item Amount="50" TypeId="Ingot" SubtypeId="Platinum" />
-        
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Platinum"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="TacLicense" />
+      <Result Amount="1" TypeId="Component" SubtypeId="TacLicense"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-    
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -530,17 +422,12 @@ Licenses -->
       </Id>
       <DisplayName>Operational License Blueprint</DisplayName>
       <Icon>Textures\GUI\Icons\Components\OpLicense.dds</Icon>
-	  
       <Prerequisites>
-  
-        <Item Amount="150" TypeId="Ingot" SubtypeId="Platinum" />
-        
+        <Item Amount="150" TypeId="Ingot" SubtypeId="Platinum"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="OpLicense" />
+      <Result Amount="1" TypeId="Component" SubtypeId="OpLicense"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -548,19 +435,12 @@ Licenses -->
       </Id>
       <DisplayName>Strategic License Blueprint</DisplayName>
       <Icon>Textures\GUI\Icons\Components\CorporateLicense.dds</Icon>
-	  
       <Prerequisites>
-       
-        <Item Amount="300" TypeId="Ingot" SubtypeId="Platinum" />
-        
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Platinum"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="StratLicense" />
+      <Result Amount="1" TypeId="Component" SubtypeId="StratLicense"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -568,18 +448,13 @@ Licenses -->
       </Id>
       <DisplayName>Fusion Core Blueprint</DisplayName>
       <Icon>Textures\GUI\Icons\Components\FusionCore.dds</Icon>
-	  
       <Prerequisites>
-       
-        <Item Amount="300" TypeId="Ingot" SubtypeId="Uranium" />
-        <Item Amount="300" TypeId="Ingot" SubtypeId="Platinum" />
-        
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Uranium"/>
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Platinum"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="FusionCore" />
+      <Result Amount="1" TypeId="Component" SubtypeId="FusionCore"/>
       <BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -587,214 +462,156 @@ Licenses -->
       </Id>
       <DisplayName>Heirloom Blueprint</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Heirloom.dds</Icon>
-	  
       <Prerequisites>
-       
-        <Item Amount="300" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="300" TypeId="Ingot" SubtypeId="Gold" />
-        
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Iron"/>
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Gold"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="CsillanHeirloom" />
+      <Result Amount="1" TypeId="Component" SubtypeId="CsillanHeirloom"/>
       <BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
-<Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>StoneShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Gravel Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="250000" TypeId="Ingot" SubtypeId="Stone" />
-        
+        <Item Amount="250000" TypeId="Ingot" SubtypeId="Stone"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="StoneShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="StoneShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
-  <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>IronShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Iron Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="50000" TypeId="Ingot" SubtypeId="Iron" />
-        
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Iron"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="IronShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="IronShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>NickelShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Nickel Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="50000" TypeId="Ingot" SubtypeId="Nickel" />
-        
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Nickel"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="NickelShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="NickelShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>SiliconShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Silicon Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="50000" TypeId="Ingot" SubtypeId="Silicon" />
-        
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Silicon"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="SiliconShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="SiliconShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>MagnesiumShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Magnesium Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="30000" TypeId="Ingot" SubtypeId="Magnesium" />
-        
+        <Item Amount="30000" TypeId="Ingot" SubtypeId="Magnesium"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="MagnesiumShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="MagnesiumShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>CobaltShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Cobalt Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="50000" TypeId="Ingot" SubtypeId="Cobalt" />
-        
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Cobalt"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="CobaltShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="CobaltShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>SilverShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Silver Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="50000" TypeId="Ingot" SubtypeId="Silver" />
-        
+        <Item Amount="50000" TypeId="Ingot" SubtypeId="Silver"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="SilverShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="SilverShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>GoldShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Gold Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="12000" TypeId="Ingot" SubtypeId="Gold" />
-        
+        <Item Amount="12000" TypeId="Ingot" SubtypeId="Gold"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="GoldShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="GoldShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>PlatinumShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Platinum Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="9000" TypeId="Ingot" SubtypeId="Platinum" />
-        
+        <Item Amount="9000" TypeId="Ingot" SubtypeId="Platinum"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="PlatinumShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="PlatinumShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-     <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>UraniumShipmentBP</SubtypeId>
       </Id>
       <DisplayName>Uranium Ingot Shipment</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="5000" TypeId="Ingot" SubtypeId="Uranium" />
-        
+        <Item Amount="5000" TypeId="Ingot" SubtypeId="Uranium"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="UraniumShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="UraniumShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
-
-
-
-
- <Blueprint>
+    <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>RationPacksBP</SubtypeId>
       </Id>
       <DisplayName>Ration Packs BP</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
-        
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="RationPacks" />
+      <Result Amount="1" TypeId="Component" SubtypeId="RationPacks"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -802,17 +619,12 @@ Licenses -->
       </Id>
       <DisplayName>Contractor Helmet BP</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
-        
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="ContractorHelmets" />
+      <Result Amount="1" TypeId="Component" SubtypeId="ContractorHelmets"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -820,17 +632,12 @@ Licenses -->
       </Id>
       <DisplayName>Contractor Helmet BP</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
-        
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="LiqueurShipment" />
+      <Result Amount="1" TypeId="Component" SubtypeId="LiqueurShipment"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-    
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -838,17 +645,12 @@ Licenses -->
       </Id>
       <DisplayName>CESM Crate BP</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
-        
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="CESM_Crate" />
+      <Result Amount="1" TypeId="Component" SubtypeId="CESM_Crate"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -856,17 +658,12 @@ Licenses -->
       </Id>
       <DisplayName>Ledger Files BP</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
-        
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="Ledger" />
+      <Result Amount="1" TypeId="Component" SubtypeId="Ledger"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -874,59 +671,37 @@ Licenses -->
       </Id>
       <DisplayName>Certificate Files BP</DisplayName>
       <Icon>Textures\GUI\Icons\Components\Pallet.dds</Icon>
-	  
       <Prerequisites>
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
-        
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Iron"/>
       </Prerequisites>
-      <Result Amount="1" TypeId="Component" SubtypeId="Certificate" />
+      <Result Amount="1" TypeId="Component" SubtypeId="Certificate"/>
       <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
-	  
     </Blueprint>
-
-
- 
-
-
-
-
-          <Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>PlatinumOreToIngot</SubtypeId>
-            </Id>
-            <DisplayName>DisplayName_Item_PlatinumIngot</DisplayName>
-            <Icon>Textures\GUI\Icons\ingot\platinum_ingot.dds</Icon>
-            <Prerequisites>
-                <Item Amount="1" TypeId="Ore" SubtypeId="Platinum" />
-            </Prerequisites>
-            <Result Amount="0.005" TypeId="Ingot" SubtypeId="Platinum" />
-            <BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
-        </Blueprint>
-
-        <Blueprint>
-            <Id>
-                <TypeId>BlueprintDefinition</TypeId>
-                <SubtypeId>UraniumOreToIngot</SubtypeId>
-            </Id>
-            <DisplayName>DisplayName_Item_UraniumIngot</DisplayName>
-            <Icon>Textures\GUI\Icons\ingot\uranium_ingot.dds</Icon>
-            <Prerequisites>
-                <Item Amount="1" TypeId="Ore" SubtypeId="Uranium" />
-            </Prerequisites>
-            <Result Amount="0.01" TypeId="Ingot" SubtypeId="Uranium" />
-            <BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
-        </Blueprint>
-
-
-
-
-
-
-
-
-
-
-    
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>PlatinumOreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_PlatinumIngot</DisplayName>
+      <Icon>Textures\GUI\Icons\ingot\platinum_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Ore" SubtypeId="Platinum"/>
+      </Prerequisites>
+      <Result Amount="0.005" TypeId="Ingot" SubtypeId="Platinum"/>
+      <BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>UraniumOreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Item_UraniumIngot</DisplayName>
+      <Icon>Textures\GUI\Icons\ingot\uranium_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Ore" SubtypeId="Uranium"/>
+      </Prerequisites>
+      <Result Amount="0.01" TypeId="Ingot" SubtypeId="Uranium"/>
+      <BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+    </Blueprint>
   </Blueprints>
 </Definitions>
