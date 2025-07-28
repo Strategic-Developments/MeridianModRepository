@@ -61,6 +61,7 @@ namespace AutoCleanup
 
         private void Cleanup()
         {
+            return;
             if (MyAPIGateway.Utilities.IsDedicated)
             {
                 HashSet<IMyEntity> gridsToDelete = new HashSet<IMyEntity>();
