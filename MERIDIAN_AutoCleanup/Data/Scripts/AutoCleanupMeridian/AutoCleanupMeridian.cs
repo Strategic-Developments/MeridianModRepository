@@ -21,7 +21,7 @@ namespace AutoCleanup
         
         public override void BeforeStart()
         {
-            Cleanup();
+            //Cleanup();
         }
 
         private void Cleanup()
