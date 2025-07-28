@@ -83,7 +83,7 @@ namespace AutoCleanup
 
                 if (m != null)
                 {
-                    MyAPIGateway.Physics.CastRay(m.Value.Translation, m.Value.Translation + m.Value.Forward * 200, hits);
+                    MyAPIGateway.Physics.CastRay(m.Value.Translation + m.Value.Up, m.Value.Translation + m.Value.Up + m.Value.Forward * 200, hits);
 
                     if (hits.Count > 0)
                     {
