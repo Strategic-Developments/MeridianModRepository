@@ -181,7 +181,7 @@
                     </Id>
                 </FuelInfo>
             </FuelInfos>
-            <FuelProductionToCapacityMultiplier>0.01</FuelProductionToCapacityMultiplier>
+            <FuelProductionToCapacityMultiplier>0.05</FuelProductionToCapacityMultiplier>
             <PrimarySound>ArcBlockHydrogenEngine</PrimarySound>
 
             <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -274,7 +274,7 @@
                     </Id>
                 </FuelInfo>
             </FuelInfos>
-            <FuelProductionToCapacityMultiplier>0.01</FuelProductionToCapacityMultiplier>
+            <FuelProductionToCapacityMultiplier>0.05</FuelProductionToCapacityMultiplier>
             <PrimarySound>ArcBlockHydrogenEngine</PrimarySound>
 
             <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
