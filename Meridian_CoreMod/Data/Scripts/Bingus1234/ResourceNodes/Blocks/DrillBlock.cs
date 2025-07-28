@@ -147,7 +147,7 @@ namespace ResourceNodes
 
                         foreach (var ore in block.options)
                         {
-                            double amount = block.baseSpeed * block.Blocc.UpgradeValues["Productivity"] * block.Blocc.UpgradeValues["Effectiveness"] * ore.MinedOreRatio * ore.MinedOreRatio;
+                            double amount = block.baseSpeed * block.Blocc.UpgradeValues["Productivity"] * block.Blocc.UpgradeValues["Effectiveness"] * Math.Max(1, ore.MinedOreRatio * ore.MinedOreRatio);
 
                             if (ore.MinedOre == "Stone")
                             {
@@ -330,7 +330,7 @@ namespace ResourceNodes
                 float yield = speed * Block.UpgradeValues["Effectiveness"]; // lmao
                 MyObjectBuilder_Ore oreObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_Ore>(myOre.MinedOre);
 
-                double amount = yield * myOre.MinedOreRatio * myOre.MinedOreRatio;
+                double amount = yield * Math.Max(1, myOre.MinedOreRatio * myOre.MinedOreRatio);
 
                 if (myOre.MinedOre == "Stone")
                 {
