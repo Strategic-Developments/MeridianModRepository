@@ -38,8 +38,8 @@ namespace DetectionEquipment
         private static double ApMax_P_SG = 75;
         private static double ApMax_T_SG = 2;
 
-        private const double PowerEffMod_SG_S = 4.3921686E+02;
-        private const double PowerEffMod_SG_P = 6.4347690E+06;
+        private const double PowerEffMod_SG_S = 2.6406260E+01;
+        private const double PowerEffMod_SG_P = 1.7483947E+05;
         private const double PowerEffMod_SG_T = 1.1736116E-05;
 
         //Tier I
@@ -66,8 +66,8 @@ namespace DetectionEquipment
         private const double ApMax_P_I = 65;
         private const double ApMax_T_I = 2;
 
-        private const double PowerEffMod_I_S = 1.8529461E+02;
-        private const double PowerEffMod_I_P = 1.5136435E+05;
+        private const double PowerEffMod_I_S = 1.1140141E+01;
+        private const double PowerEffMod_I_P = 5.3475424E+03;
         private const double PowerEffMod_I_T = 3.0909934E-06;
 
         //Tier II
@@ -94,8 +94,8 @@ namespace DetectionEquipment
         private const double ApMax_P_II = 70;
         private const double ApMax_T_II = 2;
 
-        private const double PowerEffMod_II_S = 1.6831866E+03;
-        private const double PowerEffMod_II_P = 1.8252007E+05;
+        private const double PowerEffMod_II_S = 9.4329634E+01;
+        private const double PowerEffMod_II_P = 5.7037523E+03;
         private const double PowerEffMod_II_T = 9.4329634E-07;
 
         //Tier III
@@ -122,8 +122,8 @@ namespace DetectionEquipment
         private const double ApMax_P_III = 75;
         private const double ApMax_T_III = 2;
 
-        private const double PowerEffMod_III_S = 4.3114640E+03;
-        private const double PowerEffMod_III_P = 1.3405769E+05;
+        private const double PowerEffMod_III_S = 2.1675365E+02;
+        private const double PowerEffMod_III_P = 3.6424890E+03;
         private const double PowerEffMod_III_T = 2.4450241E-07;
 
         //Tier IV
@@ -151,8 +151,8 @@ namespace DetectionEquipment
         private const double ApMax_P_IV = 90;
         private const double ApMax_T_IV = 2;
 
-        private const double PowerEffMod_IV_S = 6.2865724E+05;
-        private const double PowerEffMod_IV_P = 7.0982104E+06;
+        private const double PowerEffMod_IV_S = 1.7081281E+04;
+        private const double PowerEffMod_IV_P = 6.4969303E+04;
         private const double PowerEffMod_IV_T = 3.1974417E-07;
 
         // Hover over field names or look at the base definition for more information.
