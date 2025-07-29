@@ -60,7 +60,7 @@
         <Efficiency>1</Efficiency>
       </FuelConverter>	  
 	  
-      <SlowdownFactor>1.5</SlowdownFactor>
+      <SlowdownFactor>1</SlowdownFactor>
       <FlameDamageLengthScale>1</FlameDamageLengthScale>
       <FlameLengthScale>1.35</FlameLengthScale>
       <FlameIdleColor>
@@ -149,7 +149,7 @@
         <Efficiency>1</Efficiency>
       </FuelConverter>	  
 	  
-      <SlowdownFactor>1.25</SlowdownFactor>
+      <SlowdownFactor>1</SlowdownFactor>
       <FlameDamageLengthScale>1</FlameDamageLengthScale>
       <FlameLengthScale>1.35</FlameLengthScale>
       <FlameIdleColor>
