@@ -2,7 +2,12 @@
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Prefabs>
     <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
-      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="KCORE C-18 Battle" />
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="C18" />
+       <DisplayName>KCORE C-18 Battle Destroyer</DisplayName>
+	  <Description>Heavy torpedo gunship built by KCORE.</Description>
+      <Icon>Textures\GUI\Prefabs\tektontripoli.dds</Icon>
+      <TooltipImage>Textures\GUI\Prefabs\tektontripoli.png</TooltipImage>
+	  <EnvironmentType>All</EnvironmentType>
       <CubeGrids>
         <CubeGrid>
           <SubtypeName />
