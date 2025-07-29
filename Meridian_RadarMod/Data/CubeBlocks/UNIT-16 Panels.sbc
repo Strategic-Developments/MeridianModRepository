@@ -7,7 +7,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_UNIT_16_Flat</SubtypeId>
 			</Id>
-			<DisplayName>UNIT-16 Panel Flat</DisplayName>
+			<DisplayName>UNIT-16 Radar Panel Flat</DisplayName>
 			<Description>Small multi-purpose AESA panel for lighter vessels
 			Small Grid Tier Radar (1 Search Radar)</Description>
 			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_Flat.dds</Icon>
@@ -83,7 +83,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_UNIT_16_1x2_Upright_Offset</SubtypeId>
 			</Id>
-			<DisplayName>UNIT-16 Panel 1x2 upright offset</DisplayName>
+			<DisplayName>UNIT-16 Radar Panel 1x2 Upright Offset</DisplayName>
 			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
 			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x2_Upright_Offset.dds</Icon>
 			<CubeSize>Small</CubeSize>
@@ -122,7 +122,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_UNIT_16_1x2_Upright</SubtypeId>
 			</Id>
-			<DisplayName>UNIT-16 Panel 1x2 upright</DisplayName>
+			<DisplayName>UNIT-16 Radar Panel 1x2 Upright</DisplayName>
 			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
 			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x2_Upright.dds</Icon>
 			<CubeSize>Small</CubeSize>
@@ -161,7 +161,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_UNIT_16_1x2_Side</SubtypeId>
 			</Id>
-			<DisplayName>UNIT-16 Panel 1x2 side</DisplayName>
+			<DisplayName>UNIT-16 Radar Panel 1x2 Side</DisplayName>
 			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
 			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x2_Side.dds</Icon>
 			<CubeSize>Small</CubeSize>
@@ -200,7 +200,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_UNIT_16_1x1_Upright</SubtypeId>
 			</Id>
-			<DisplayName>UNIT-16 Panel 1x1 upright</DisplayName>
+			<DisplayName>UNIT-16 Radar Panel 1x1 Upright</DisplayName>
 			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
 			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Upright.dds</Icon>
 			<CubeSize>Small</CubeSize>
@@ -239,7 +239,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_UNIT_16_1x1_Side</SubtypeId>
 			</Id>
-			<DisplayName>UNIT-16 Panel 1x1 side</DisplayName>
+			<DisplayName>UNIT-16 Radar Panel 1x1 Side</DisplayName>
 			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
 			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Side.dds</Icon>
 			<CubeSize>Small</CubeSize>
@@ -278,7 +278,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_UNIT_16_1x1_Offset</SubtypeId>
 			</Id>
-			<DisplayName>UNIT-16 Panel 1x1 offset</DisplayName>
+			<DisplayName>UNIT-16 Radar Panel 1x1 Offset</DisplayName>
 			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
 			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Offset.dds</Icon>
 			<CubeSize>Small</CubeSize>
@@ -317,7 +317,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_UNIT_16_1x1_Corner_Upright</SubtypeId>
 			</Id>
-			<DisplayName>UNIT-16 Panel 1x1 corner upright</DisplayName>
+			<DisplayName>UNIT-16 Radar Panel 1x1 Corner Upright</DisplayName>
 			<Description>Small multi-purpose AESA panel for lighter vessels</Description>
 			<Icon>Textures\Icons\UNIT-16\SOFL_UNIT_16_1x1_Corner_Upright.dds</Icon>
 			<CubeSize>Small</CubeSize>

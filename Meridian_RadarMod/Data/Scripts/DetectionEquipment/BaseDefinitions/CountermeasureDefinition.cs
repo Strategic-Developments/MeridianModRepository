@@ -9,14 +9,14 @@ namespace DetectionEquipment.BaseDefinitions
     [ProtoContract]
     public class CountermeasureDefinition
     {
-        #if MAINMOD
+#if MAINMOD
         [ProtoIgnore] public int Id; // DO NOT NETWORK THIS!!! Hashcode of the definition name.
-        #else
+#else
         /// <summary>
         /// Unique name for this definition.
         /// </summary>
         [ProtoIgnore] public string Name;
-        #endif
+#endif
 
         /// <summary>
         /// Sensor types this countermeasure affects.
@@ -82,7 +82,7 @@ namespace DetectionEquipment.BaseDefinitions
             Quadratic = 2,
         }
 
-        #if MAINMOD
+#if MAINMOD
         public static bool Verify(CountermeasureDefinition def)
         {
             bool isValid = true;
@@ -101,6 +101,6 @@ namespace DetectionEquipment.BaseDefinitions
 
             return isValid;
         }
-        #endif
+#endif
     }
 }

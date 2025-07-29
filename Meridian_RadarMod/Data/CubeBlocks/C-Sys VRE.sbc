@@ -6,7 +6,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_C-SYS_VRE</SubtypeId>
 			</Id>
-			<DisplayName>C-Sys VIRE</DisplayName>
+			<DisplayName>C-Sys VIRE IR/Opt Sensor</DisplayName>
 			<Description>Chiara Systems Visual/IR Recognition  Equipment
 			Optical/IR Sensor (1 fixed optical, 1 fixed IR sensor)</Description>
 			<Icon>Textures\Icons\SOFL_C-Sys_VRE.dds</Icon>
@@ -53,7 +53,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_C-SYS_VRE_Inset</SubtypeId>
 			</Id>
-			<DisplayName>C-Sys VIRE Inset</DisplayName>
+			<DisplayName>C-Sys VIRE IR/Opt Sensor Inset</DisplayName>
 			<Description>Chiara Systems Visual/IR Recognition  Equipment
 			Optical/IR Sensor (1 fixed optical, 1 fixed IR sensor)</Description>
 			<Icon>Textures\Icons\SOFL_C-Sys_VRE_Inset.dds</Icon>

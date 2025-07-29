@@ -6,7 +6,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_SB_PRR_Series2_Flat</SubtypeId>
 			</Id>
-			<DisplayName>SB PRR Series2 RWR</DisplayName>
+			<DisplayName>SB PRR Series2 Passive Radar (RWR)</DisplayName>
 			<Description>Reliable modern Passive Radar</Description>
 			<Icon>Textures\Icons\SB PRR Series2\SOFL_SB_PRR_Series2_Flat.dds</Icon>
 			<CubeSize>Large</CubeSize>

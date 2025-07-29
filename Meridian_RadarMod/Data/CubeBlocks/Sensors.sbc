@@ -114,7 +114,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_FR_057</SubtypeId>
 			</Id>
-			<DisplayName>FR-057 Block7</DisplayName>
+			<DisplayName>FR-057 Block7 Radar</DisplayName>
 			<Description>Full-utility-Radar, this specific variant is specifically designed for astronautic use
 			Tier 2 Radar (1 Track Radar)</Description>
 			<Icon>Textures\Icons\SOFL_FR_057.dds</Icon>
@@ -232,7 +232,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_MXM_005</SubtypeId>
 			</Id>
-			<DisplayName>MAXIM-005 Search radar</DisplayName>
+			<DisplayName>MAXIM-005 Search Radar</DisplayName>
 			<Description>Small radar made to outfit smaller vessels, or supplement defensive systems of larger ones.
 			Tier 1 Radar (1 Search Radar)</Description>
 			<Icon>Textures\Icons\SOFL_MXM_005.dds</Icon>
@@ -314,7 +314,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_ASEL_MKXII_FCR</SubtypeId>
 			</Id>
-			<DisplayName>ASEL MkXII FCR</DisplayName>
+			<DisplayName>ASEL MkXII Fire Control Radar</DisplayName>
 			<Description>Capable fire control radar made for smaller vessels
 			Small Grid Tier Radar (1 Track Radar)</Description>
 			<Icon>Textures\Icons\SOFL_ASEL_MKXII_FCR.dds</Icon>
@@ -351,7 +351,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_CSys_IRO_DetBlock_MkX</SubtypeId>
 			</Id>
-			<DisplayName>C-Sys IR/Opt Detection Block MkX</DisplayName>
+			<DisplayName>C-Sys IR/Opt Sensor Detection Block MkX</DisplayName>
 			<Description>Combined visual sensor unit for passive detection of targets </Description>
 			<Icon>Textures\Icons\SOFL_CSys_IRO_DetBlock_MkX.dds</Icon>
 			<CubeSize>Large</CubeSize>
@@ -389,7 +389,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_CSys_NS_RCG_62</SubtypeId>
 			</Id>
-			<DisplayName>C-Sys NS/RCG-62 FCR</DisplayName>
+			<DisplayName>C-Sys NS/RCG-62 Fire Control Radar</DisplayName>
 			<Description>Older but high performance Fire Control Radar with origins in naval warfare
 			Tier 3 Fire Control Radar (1 Track Radar Sensor)</Description>
 			<Icon>Textures\Icons\SOFL_CSys_NS_RCG_62.dds</Icon>
@@ -400,19 +400,21 @@
 			<Model>Models\Cubes\Sensors\CSys NS_RCG_62\SOFL_CSys_NS_RCG_62.mwm</Model>
 			<Components>
   				<Component Subtype="SteelPlate" Count="15"/>
-  				<Component Subtype="Construction" Count="35"/>
+  				<Component Subtype="Construction" Count="20"/>
   				<Component Subtype="SmallTube" Count="15"/>
-  				<Component Subtype="LargeTube" Count="10"/>
-  				<Component Subtype="Girder" Count="10"/>
-  				<Component Subtype="Motor" Count="30"/>
- 			    <Component Subtype="PowerCell" Count="15"/>
-  				<Component Subtype="MetalGrid" Count="50"/>
-  				<Component Subtype="Superconductor" Count="100"/>
-  				<Component Subtype="Detector" Count="125"/>
-  				<Component Subtype="RadioCommunication" Count="125"/>
-  				<Component Subtype="Computer" Count="150"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
-  				<Component Subtype="SteelPlate" Count="100"/>
-  			</Components>
+ 			    <Component Subtype="LargeTube" Count="15"/>
+ 				<Component Subtype="Girder" Count="15"/>
+ 				<Component Subtype="PowerCell" Count="25"/>
+ 				<Component Subtype="MetalGrid" Count="125"/>
+ 				<Component Subtype="Superconductor" Count="100"/>
+  				<Component Subtype="Detector" Count="275"/>
+  				<Component Subtype="SOFL_AESA_TR_Comp" Count="15"/>
+				<Component Subtype="RadioCommunication" Count="275"/>
+  				<Component Subtype="Computer" Count="575"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+  				<Component Subtype="Construction" Count="50"/>
+  				<Component Subtype="MetalGrid" Count="150"/>
+  				<Component Subtype="SteelPlate" Count="140"/>
+			</Components>
 			<CriticalComponent Subtype="Computer" Index="0"/>
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>

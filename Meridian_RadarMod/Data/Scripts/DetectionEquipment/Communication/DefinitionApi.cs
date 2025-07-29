@@ -34,7 +34,10 @@ namespace DetectionEquipment.Communication
         /// <summary>
         ///     Displays whether endpoints are loaded and the API is ready for use.
         /// </summary>
-        public bool IsReady { get; private set; }
+        public bool IsReady
+        {
+            get; private set;
+        }
 
         /// <summary>
         ///     Call this to initialize the Modular API.<br />
@@ -80,7 +83,7 @@ namespace DetectionEquipment.Communication
             OnReady = null;
             MyLog.Default.WriteLineAndConsole($"{_modContext.ModName}: DefinitionAPI unloaded.");
         }
-        
+
         // These sections are what the user can actually see when referencing the API, and can be used freely. //
         // Note the null checks. //
 
@@ -123,6 +126,14 @@ namespace DetectionEquipment.Communication
         /// <typeparam name="T"></typeparam>
         /// <param name="definitionId"></param>
         public void RemoveDefinition<T>(string definitionId) where T : class => _removeDefinition?.Invoke(definitionId, typeof(T));
+
+        /// <summary>
+        /// Checks if a given definition and its type exist.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="definitionId"></param>
+        /// <returns></returns>
+        public bool HasDefinition<T>(string definitionId) where T : class => _hasDefinition?.Invoke(definitionId, typeof(T)) ?? false;
 
         #endregion
 
@@ -191,6 +202,7 @@ namespace DetectionEquipment.Communication
         private Func<string, Type, byte[]> _getDefinition;
         private Func<Type, string[]> _getDefinitionsOfType;
         private Action<string, Type> _removeDefinition;
+        private Func<string, Type, bool> _hasDefinition;
 
         // Delegates
         private Action<string, Type, Dictionary<string, Delegate>> _registerDelegates;
@@ -205,7 +217,7 @@ namespace DetectionEquipment.Communication
         private Action<string> _logInfo;
 
         #endregion
-        
+
         #region API Initialization
 
         private bool _isRegistered;
@@ -227,6 +239,7 @@ namespace DetectionEquipment.Communication
             SetApiMethod("GetDefinition", ref _getDefinition);
             SetApiMethod("GetDefinitionsOfType", ref _getDefinitionsOfType);
             SetApiMethod("RemoveDefinition", ref _removeDefinition);
+            SetApiMethod("HasDefinition", ref _hasDefinition);
 
             // Delegates
             SetApiMethod("RegisterDelegates", ref _registerDelegates);
@@ -286,7 +299,7 @@ namespace DetectionEquipment.Communication
                 if (_apiInit || obj is string || obj == null) // the "ApiEndpointRequest" message will also be received here, we're ignoring that
                     return;
 
-                var tuple = (MyTuple<int, IReadOnlyDictionary<string, Delegate>>) obj;
+                var tuple = (MyTuple<int, IReadOnlyDictionary<string, Delegate>>)obj;
                 var receivedVersion = tuple.Item1;
                 var dict = tuple.Item2;
 

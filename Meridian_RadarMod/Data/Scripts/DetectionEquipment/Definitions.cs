@@ -200,6 +200,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_I_T,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
 
@@ -247,6 +248,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_III_S,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
 
@@ -294,6 +296,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_II_T,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
 
@@ -341,6 +344,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_III_T,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
 
@@ -389,6 +393,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_II_S * 2,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
         private static SensorDefinition MXM_008_Sensor_Track_Def => new SensorDefinition
@@ -436,6 +441,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_II_T * 2,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
 
@@ -483,6 +489,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_III_S * 3,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
         private static SensorDefinition MXM_009_Sensor_Track1_Def => new SensorDefinition
@@ -529,6 +536,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_III_T * 3,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
         private static SensorDefinition MXM_009_Sensor_Track2_Def => new SensorDefinition
@@ -575,6 +583,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_III_T * 3,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
 
@@ -622,6 +631,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_I_S,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
         
@@ -669,6 +679,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_SG_T,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
 
@@ -714,6 +725,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_III_P * 3,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
         private static SensorDefinition MXM_SAARP_Sensor_Track1_Def => new SensorDefinition
@@ -768,6 +780,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_III_T * 3,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
         private static SensorDefinition MXM_SAARP_Sensor_Track2_Def => new SensorDefinition
@@ -822,6 +835,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_III_T * 3,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
 
@@ -866,6 +880,7 @@ namespace DetectionEquipment
                 PowerEfficiencyModifier = PowerEfficiency_General * PowerEffMod_SG_P,
                 Bandwidth = Bandwidth_General,
                 Frequency = Freq_General,
+                AccountForRadarAngle = false,
             }
         };
 
@@ -930,15 +945,15 @@ namespace DetectionEquipment
 
             SensorEmpty = "SB_PRR_Series2_Sensor",
 
-            MaxAperture = MathHelper.ToRadians(360),
-            MinAperture = MathHelper.ToRadians(360),
+            MaxAperture = Math.PI,
+            MinAperture = Math.PI,
 
             Movement = null,
 
             TerminalName = "SB-PRR RWR sensor",
 
             DetectionThreshold = 1000,
-            BearingErrorModifier = 0,
+            BearingErrorModifier = 0.00001,
             RangeErrorModifier = 1,
 
             MaxPowerDraw = -1,

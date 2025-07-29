@@ -42,7 +42,7 @@ namespace DetectionEquipment.BaseDefinitions
         /// Number of shots in the magazine. Set less than or equal to 0 to ignore.
         /// </summary>
         [ProtoMember(6)] public int MagazineSize;
-        
+
         /// <summary>
         /// Reload time. Set to less than or equal to 1/60f to ignore.
         /// </summary>
@@ -67,5 +67,10 @@ namespace DetectionEquipment.BaseDefinitions
         /// Power draw while active, in megawatts.
         /// </summary>
         [ProtoMember(11)] public float ActivePowerDraw;
+
+        /// <summary>
+        /// Inventory size, kiloliters
+        /// </summary>
+        [ProtoMember(12)] public float InventorySize;
     }
 }

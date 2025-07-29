@@ -6,7 +6,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_SAARP_Flat</SubtypeId>
 			</Id>
-			<DisplayName>S-AARP Flat</DisplayName>
+			<DisplayName>S-AARP Flat Radar Panel</DisplayName>
 			<Description>Smart Advanced Active Radar Panel
 			Tier 3 Radar (1 Search Radar, 2 Track Radars)</Description>
 			<Icon>Textures\Icons\S-AARP\SOFL_SAARP_Flat.dds</Icon>
@@ -91,7 +91,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_SAARP_1x1</SubtypeId>
 			</Id>
-			<DisplayName>S-AARP 1x1</DisplayName>
+			<DisplayName>S-AARP 1x1 Radar Panel</DisplayName>
 			<Description>Smart Advanced Active Radar Panel
 			Sensors: 
 			-1 high FoV fixed radar
@@ -140,7 +140,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_SAARP_1x1_Corner</SubtypeId>
 			</Id>
-			<DisplayName>S-AARP 1x1 Corner</DisplayName>
+			<DisplayName>S-AARP 1x1 Corner Radar Panel</DisplayName>
 			<Description>Smart Advanced Active Radar Panel
 			Sensors: 
 			-1 high FoV fixed radar
@@ -189,7 +189,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_SAARP_1x2</SubtypeId>
 			</Id>
-			<DisplayName>S-AARP 1x2</DisplayName>
+			<DisplayName>S-AARP 1x2 Radar Panel</DisplayName>
 			<Description>Smart Advanced Active Radar Panel
 			Sensors: 
 			-1 high FoV fixed radar
@@ -238,7 +238,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_SAARP_1x2_Corner</SubtypeId>
 			</Id>
-			<DisplayName>S-AARP 1x2 Corner</DisplayName>
+			<DisplayName>S-AARP 1x2 Corner Radar Panel</DisplayName>
 			<Description>Smart Advanced Active Radar Panel
 			Sensors: 
 			-1 high FoV fixed radar
@@ -288,7 +288,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_SAARP_1x1_Offset</SubtypeId>
 			</Id>
-			<DisplayName>S-AARP 1x1 slope offset</DisplayName>
+			<DisplayName>S-AARP 1x1 slope offset Radar Panel</DisplayName>
 			<Description>Smart Advanced Active Radar Panel
 			Sensors: 
 			-1 high FoV fixed radar
@@ -338,7 +338,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_SAARP_1x2_Corner_Offset</SubtypeId>
 			</Id>
-			<DisplayName>S-AARP 1x2 corner offset</DisplayName>
+			<DisplayName>S-AARP 1x2 corner offset Radar Panel</DisplayName>
 			<Description>Smart Advanced Active Radar Panel
 			Sensors: 
 			-1 high FoV fixed radar
@@ -391,7 +391,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_SAARP_1x2_Offset</SubtypeId>
 			</Id>
-			<DisplayName>S-AARP 1x2 slope offset</DisplayName>
+			<DisplayName>S-AARP 1x2 slope offset Radar Panel</DisplayName>
 			<Description>Smart Advanced Active Radar Panel
 			Sensors: 
 			-1 high FoV fixed radar
@@ -442,7 +442,7 @@
 				<TypeId>CameraBlock</TypeId>
 				<SubtypeId>SOFL_SAARP_Half_Flat</SubtypeId>
 			</Id>
-			<DisplayName>S-AARP Half block</DisplayName>
+			<DisplayName>S-AARP Half block Radar Panel</DisplayName>
 			<Description>Smart Advanced Active Radar Panel
 			Sensors: 
 			-1 high FoV fixed radar

@@ -3,7 +3,7 @@ using VRage.Utils;
 
 namespace DetectionEquipment.Communication
 {
-    [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]
+    [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate, DetectionDefinitions.LoadPriority)]
     // ReSharper disable once UnusedType.Global
     internal class DefinitionCollector : MySessionComponentBase
     {
