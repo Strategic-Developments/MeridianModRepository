@@ -1,4 +1,5 @@
 ﻿using Math0424.Networking;
+using System;
 using System.Collections.Generic;
 using VRage.Game;
 using VRage.Game.Components;
@@ -19,6 +20,8 @@ namespace ResourceNodes
 
         public EasyNetworker Network;
         public string ModPath;
+
+        public Random rand = new Random();
 
         public static ResourceNode Instance { get; private set; }
         
