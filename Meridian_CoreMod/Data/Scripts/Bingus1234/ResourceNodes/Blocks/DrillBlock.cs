@@ -75,7 +75,7 @@ namespace ResourceNodes
 
             BlockInit();
 
-            tick = ResourceNode.Instance.rand.Next(100);
+            tick = ResourceNode.Instance.rand.Next(1000);
         }
 
         public abstract void BlockInit();
