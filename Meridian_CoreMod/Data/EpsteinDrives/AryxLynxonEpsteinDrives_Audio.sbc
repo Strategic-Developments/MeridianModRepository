@@ -7,9 +7,9 @@
         <SubtypeId>ArcARYLYN_edrive_standard_burn</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>1500</MaxDistance>
+      <MaxDistance>15000</MaxDistance>
       <PreventSynchronization>1</PreventSynchronization>	  
-      <Volume>1</Volume>
+      <Volume>10</Volume>
       <Loopable>true</Loopable>
       <Waves>
         <Wave Type="D3">
@@ -28,9 +28,9 @@
         <SubtypeId>ArcARYLYN_Very_Large_Epstein_Drive_Fire</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>2000</MaxDistance>
+      <MaxDistance>20000</MaxDistance>
       <PreventSynchronization>0</PreventSynchronization>	  
-      <Volume>1</Volume>
+      <Volume>10</Volume>
       <Loopable>true</Loopable>
       <Waves>
         <Wave Type="D3">
@@ -44,7 +44,7 @@
         <SubtypeId>ArcARYLYN_edrive_comically_loud_burn</SubtypeId>
       </Id>
       <Category>SHIP_JET</Category>
-      <MaxDistance>1500</MaxDistance>
+      <MaxDistance>15000</MaxDistance>
       <PreventSynchronization>1</PreventSynchronization>	  
       <Volume>300</Volume>
       <Loopable>true</Loopable>

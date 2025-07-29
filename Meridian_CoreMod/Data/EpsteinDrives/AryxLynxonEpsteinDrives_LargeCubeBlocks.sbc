@@ -64,14 +64,14 @@
 			<W>0</W>
 		  </FlameIdleColor>
 		  <FlameFullColor>
-			<X>2.5</X><Y>7.5</Y><Z>12.5</Z><W>0.98</W>
+			<X>5</X><Y>15</Y><Z>25</Z><W>0.98</W>
 		  </FlameFullColor>
 		  
 		  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
 		  <FlameLengthMaterial>AryxEpsteinDriveThrustMiddle</FlameLengthMaterial>
 		  <FlameFlare>LargeGridSmallThruster</FlameFlare>
-		  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
-		  <FlameGlareQuerySize>5</FlameGlareQuerySize>
+		  <FlameVisibilityDistance>250000</FlameVisibilityDistance>
+		  <FlameGlareQuerySize>50</FlameGlareQuerySize>
 		  <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
 		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 		  <DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -147,14 +147,14 @@
 			<W>0</W>
 		  </FlameIdleColor>
 		  <FlameFullColor>
-			<X>2.5</X><Y>7.5</Y><Z>12.5</Z><W>0.98</W>
+			<X>5</X><Y>15</Y><Z>25</Z><W>0.98</W>
 		  </FlameFullColor>
 		  
 		  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
 		  <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
 		  <FlameFlare>LargeGridSmallThruster</FlameFlare>
-		  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
-		  <FlameGlareQuerySize>5</FlameGlareQuerySize>
+		  <FlameVisibilityDistance>250000</FlameVisibilityDistance>
+		  <FlameGlareQuerySize>50</FlameGlareQuerySize>
 		  <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
 		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 		  <DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -231,14 +231,14 @@
 			<W>0</W>
 		  </FlameIdleColor>
 		  <FlameFullColor>
-			<X>2.5</X><Y>7.5</Y><Z>12.5</Z><W>0.98</W>
+			<X>5</X><Y>15</Y><Z>25</Z><W>0.98</W>
 		  </FlameFullColor>
 		  
 		  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
 		  <FlameLengthMaterial>AryxEpsteinDriveThrustMiddle</FlameLengthMaterial>
 		  <FlameFlare>LargeGridSmallThruster</FlameFlare>
-		  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
-		  <FlameGlareQuerySize>5</FlameGlareQuerySize>
+		  <FlameVisibilityDistance>250000</FlameVisibilityDistance>
+		  <FlameGlareQuerySize>50</FlameGlareQuerySize>
 		  <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
 		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 		  <DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -309,14 +309,14 @@
 			<W>0</W>
 		  </FlameIdleColor>
 		  <FlameFullColor>
-			<X>2.5</X><Y>7.5</Y><Z>12.5</Z><W>0.98</W>
+			<X>5</X><Y>15</Y><Z>25</Z><W>0.98</W>
 		  </FlameFullColor>
 		  
 		  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
 		  <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
 		  <FlameFlare>LargeGridSmallThruster</FlameFlare>
-		  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
-		  <FlameGlareQuerySize>5</FlameGlareQuerySize>
+		  <FlameVisibilityDistance>250000</FlameVisibilityDistance>
+		  <FlameGlareQuerySize>50</FlameGlareQuerySize>
 		  <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
 		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 		  <DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -389,14 +389,14 @@
 			<W>0</W>
 		  </FlameIdleColor>
 		  <FlameFullColor>
-			<X>2.5</X><Y>7.5</Y><Z>12.5</Z><W>0.98</W>
+			<X>5</X><Y>15</Y><Z>25</Z><W>0.98</W>
 		  </FlameFullColor>
 		  
 		  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
 		  <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
 		  <FlameFlare>LargeGridSmallThruster</FlameFlare>
-		  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
-		  <FlameGlareQuerySize>5</FlameGlareQuerySize>
+		  <FlameVisibilityDistance>250000</FlameVisibilityDistance>
+		  <FlameGlareQuerySize>50</FlameGlareQuerySize>
 		  <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
 		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 		  <DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -472,14 +472,14 @@
 			<W>0</W>
 		  </FlameIdleColor>
 		  <FlameFullColor>
-			<X>2.5</X><Y>7.5</Y><Z>12.5</Z><W>0.98</W>
+			<X>5</X><Y>15</Y><Z>25</Z><W>0.98</W>
 		  </FlameFullColor>
 		  
 		  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
 		  <FlameLengthMaterial>AryxEpsteinDriveThrustMiddle</FlameLengthMaterial>
 		  <FlameFlare>LargeGridSmallThruster</FlameFlare>
-		  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
-		  <FlameGlareQuerySize>5</FlameGlareQuerySize>
+		  <FlameVisibilityDistance>250000</FlameVisibilityDistance>
+		  <FlameGlareQuerySize>50</FlameGlareQuerySize>
 		  <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
 		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 		  <DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -562,14 +562,14 @@
 			<W>0</W>
 		  </FlameIdleColor>
 		  <FlameFullColor>
-			<X>2.5</X><Y>7.5</Y><Z>12.5</Z><W>0.98</W>
+			<X>5</X><Y>15</Y><Z>25</Z><W>0.98</W>
 		  </FlameFullColor>
 		  
 		  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
 		  <FlameLengthMaterial>AryxEpsteinDriveThrustMiddle</FlameLengthMaterial>
 		  <FlameFlare>LargeGridSmallThruster</FlameFlare>
-		  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
-		  <FlameGlareQuerySize>5</FlameGlareQuerySize>
+		  <FlameVisibilityDistance>250000</FlameVisibilityDistance>
+		  <FlameGlareQuerySize>50</FlameGlareQuerySize>
 		  <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
 		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 		  <DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -646,14 +646,14 @@
 			<W>0</W>
 		  </FlameIdleColor>
 		  <FlameFullColor>
-			<X>2.5</X><Y>7.5</Y><Z>12.5</Z><W>0.98</W>
+			<X>5</X><Y>15</Y><Z>25</Z><W>0.98</W>
 		  </FlameFullColor>
 		  
 		  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
 		  <FlameLengthMaterial>AryxEpsteinDriveThrustMiddle</FlameLengthMaterial>
 		  <FlameFlare>LargeGridSmallThruster</FlameFlare>
-		  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
-		  <FlameGlareQuerySize>5</FlameGlareQuerySize>
+		  <FlameVisibilityDistance>250000</FlameVisibilityDistance>
+		  <FlameGlareQuerySize>50</FlameGlareQuerySize>
 		  <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
 		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 		  <DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -734,14 +734,14 @@
 			<W>0</W>
 		  </FlameIdleColor>
 		  <FlameFullColor>
-			<X>2.5</X><Y>7.5</Y><Z>12.5</Z><W>0.98</W>
+			<X>5</X><Y>15</Y><Z>25</Z><W>0.98</W>
 		  </FlameFullColor>
 		  
 		  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
 		  <FlameLengthMaterial>AryxEpsteinDriveThrustMiddle</FlameLengthMaterial>
 		  <FlameFlare>LargeGridSmallThruster</FlameFlare>
-		  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
-		  <FlameGlareQuerySize>5</FlameGlareQuerySize>
+		  <FlameVisibilityDistance>250000</FlameVisibilityDistance>
+		  <FlameGlareQuerySize>50</FlameGlareQuerySize>
 		  <PrimarySound>ArcARYLYN_edrive_standard_burn</PrimarySound>
 		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 		  <DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -823,14 +823,14 @@
 			<W>0</W>
 		  </FlameIdleColor>
 		  <FlameFullColor>
-			<X>2.5</X><Y>7.5</Y><Z>12.5</Z><W>0.98</W>
+			<X>5</X><Y>15</Y><Z>25</Z><W>0.98</W>
 		  </FlameFullColor>
 		  
 		  <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
 		  <FlameLengthMaterial>AryxEpsteinDriveThrustMiddle</FlameLengthMaterial>
 		  <FlameFlare>LargeGridLargeThruster</FlameFlare>
-		  <FlameVisibilityDistance>25000</FlameVisibilityDistance>
-		  <FlameGlareQuerySize>5</FlameGlareQuerySize>
+		  <FlameVisibilityDistance>250000</FlameVisibilityDistance>
+		  <FlameGlareQuerySize>50</FlameGlareQuerySize>
 		  <PrimarySound>ArcARYLYN_Very_Large_Epstein_Drive_Fire</PrimarySound>
 		  <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
 		  <DamagedSound>ParticleWeapExpl</DamagedSound>
