@@ -40,6 +40,8 @@ namespace ResourceNodes
         protected bool InvFull, InGround;
         public MyVoxelMaterialDefinition myOre = null;
         public List<MyVoxelMaterialDefinition> options = new List<MyVoxelMaterialDefinition>();
+        bool optionsChanged = false, OreDirty = false;
+        MyObjectBuilder_Ore oreObject;
         public List<MyTuple<string, int>> optionsClient = new List<MyTuple<string, int>>();
         protected Action DepositedResources;
 
@@ -114,7 +116,9 @@ namespace ResourceNodes
                     if (MyAPIGateway.Multiplayer.IsServer)
                     {
                         Blocc.CustomData = myOre.MinedOre;
+                        OreDirty = true;
                     }
+                    
                     break;
                 }
             }
@@ -259,25 +263,30 @@ namespace ResourceNodes
                 IsProducing = Block.ResourceSink.IsPoweredByType(EId) && Block.ResourceSink.IsPowerAvailable(EId, Block.ResourceSink.MaxRequiredInput);
             }
 
-            if (tick % 10 == 0)
+            if (tick % 25 == 0)
             {
-                if (optionsClient == null)
+                if (optionsChanged)
                 {
-                    optionsClient = new List<MyTuple<string, int>>();
-                }
-                else
-                {
-                    optionsClient.Clear();
+                    if (optionsClient == null)
+                    {
+                        optionsClient = new List<MyTuple<string, int>>();
+                    }
+                    else
+                    {
+                        optionsClient.Clear();
+                    }
+
+                    foreach (var option in options)
+                    {
+                        optionsClient.Add(new MyTuple<string, int>
+                        {
+                            Item1 = option.MinedOre,
+                            Item2 = (int)(baseSpeed * Blocc.UpgradeValues["Productivity"] * Blocc.UpgradeValues["Effectiveness"] * option.MinedOreRatio * option.MinedOreRatio * (option.MinedOre == "Stone" ? 10 : 1))
+                        });
+                    }
                 }
 
-                foreach (var option in options)
-                {
-                    optionsClient.Add(new MyTuple<string, int>
-                    {
-                        Item1 = option.MinedOre,
-                        Item2 = (int)(baseSpeed * Blocc.UpgradeValues["Productivity"] * Blocc.UpgradeValues["Effectiveness"] * option.MinedOreRatio * option.MinedOreRatio * (option.MinedOre == "Stone" ? 25 : 1))
-                    });
-                }
+
 
                 DrillStateUpdate packet = new DrillStateUpdate
                 {
@@ -286,51 +295,57 @@ namespace ResourceNodes
                     invFull = InvFull,
                     oreName = myOre?.MinedOre ?? "nothing",
                     isProducing = IsProducing,
-                    oreList = optionsClient
+                    oreList = optionsChanged ? optionsClient : null,
                 };
+
+                optionsChanged = false;
 
                 ResourceNode.Instance.Network.TransmitToPlayersWithinRange(Block.PositionComp.GetPosition(), packet, 1500, false);
 
-                if (Block.IsBuilt)
-                {
-                    if (!Block.IsFunctional)
-                    {
-                        SetEmissive(Color.Orange);
-                    }
-                    else
-                    {
-                        if (!InGround || !Blocc.Enabled || !Blocc.IsWorking)
-                        {
-                            SetEmissive(Color.Red);
-                        }
-                        else if (!IsProducing || myOre == null || Inv.IsFull || InvFull)
-                        {
-                            SetEmissive(Color.Yellow);
-                        }
-                    }
-                }
-                else
-                {
-                    if (!InGround)
-                    {
-                        SetEmissive(Color.Red);
-                    }
-                    else if (myOre != null)
-                    {
-                        SetEmissive(Color.Aqua);
-                    }
-                    else
-                    {
-                        SetEmissive(Color.Yellow);
-                    }
-                }
+                //if (Block.IsBuilt)
+                //{
+                //    if (!Block.IsFunctional)
+                //    {
+                //        SetEmissive(Color.Orange);
+                //    }
+                //    else
+                //    {
+                //        if (!InGround || !Blocc.Enabled || !Blocc.IsWorking)
+                //        {
+                //            SetEmissive(Color.Red);
+                //        }
+                //        else if (!IsProducing || myOre == null || Inv.IsFull || InvFull)
+                //        {
+                //            SetEmissive(Color.Yellow);
+                //        }
+                //    }
+                //}
+                //else
+                //{
+                //    if (!InGround)
+                //    {
+                //        SetEmissive(Color.Red);
+                //    }
+                //    else if (myOre != null)
+                //    {
+                //        SetEmissive(Color.Aqua);
+                //    }
+                //    else
+                //    {
+                //        SetEmissive(Color.Yellow);
+                //    }
+                //}
             }
 
             if (IsProducing && myOre != null && tick % 100 == 0)
             {
                 float speed = baseSpeed * Block.UpgradeValues["Productivity"];
                 float yield = speed * Block.UpgradeValues["Effectiveness"]; // lmao
-                MyObjectBuilder_Ore oreObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_Ore>(myOre.MinedOre);
+                if (oreObject == null || OreDirty)
+                {
+                    oreObject = MyObjectBuilderSerializer.CreateNewObject<MyObjectBuilder_Ore>(myOre.MinedOre);
+                    OreDirty = false;
+                }
 
                 double amount = yield * Math.Max(1, myOre.MinedOreRatio * myOre.MinedOreRatio);
 
@@ -352,7 +367,7 @@ namespace ResourceNodes
         private void AssignNewMaterial()
         {
             //get all the materials
-            for(int i = 0; i < 50; i++)
+            for(int i = 0; i < 100; i++)
             {
                 List<MyVoxelBase> detected = new List<MyVoxelBase>();
                 Vector3D position = Block.PositionComp.GetPosition() + Block.PositionComp.WorldMatrixRef.Down * i * 3;
@@ -428,7 +443,7 @@ namespace ResourceNodes
             }
 
             RemoveFromMiners(Block);
-
+            optionsChanged = true;
             SetOreFromString(Blocc.CustomData);
 
             if (myOre == null)

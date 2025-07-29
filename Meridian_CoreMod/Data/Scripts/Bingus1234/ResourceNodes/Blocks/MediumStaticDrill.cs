@@ -35,7 +35,7 @@ namespace ResourceNodes
 
         public override void BlockInit()
         {
-            DepositedResources += TickEmissive;
+            //DepositedResources += TickEmissive;
             baseSpeed = 2f;
             invMultiplier = 4;
             ((IMyShipDrill)Block).PowerConsumptionMultiplier = 18f;

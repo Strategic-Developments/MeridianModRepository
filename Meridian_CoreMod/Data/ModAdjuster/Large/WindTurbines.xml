@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
+            <Id>
+                <TypeId>WindTurbine</TypeId>
+                <SubtypeId>Serg_25MW_Wind_Turbine</SubtypeId>
+            </Id>
+            <DisplayName>100MW Wind Turbine</DisplayName>
+            <MaxPowerOutput>100</MaxPowerOutput>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
+            <Id>
+                <TypeId>WindTurbine</TypeId>
+                <SubtypeId>SergWindTurbine</SubtypeId>
+            </Id>
+            <DisplayName>20MW Vertical Wind Turbine Top</DisplayName>
+            <MaxPowerOutput>20</MaxPowerOutput>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
+            <Id>
+                <TypeId>WindTurbine</TypeId>
+                <SubtypeId>SergWindTurbinePart</SubtypeId>
+            </Id>
+            <DisplayName>20MW Vertical Wind Turbine</DisplayName>
+            <MaxPowerOutput>20</MaxPowerOutput>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
+            <Id>
+                <TypeId>WindTurbine</TypeId>
+                <SubtypeId>Serg_10MW_Wind_Turbine</SubtypeId>
+            </Id>
+            <DisplayName>40MW Vertical Wind Turbine</DisplayName>
+            <MaxPowerOutput>20</MaxPowerOutput>
+        </Definition>
+    </CubeBlocks>
+</Definitions>
