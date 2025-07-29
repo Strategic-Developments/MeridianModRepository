@@ -26,3 +26,4 @@ Small\RetractableThrusterAltSG.xml
 Small\RetractableThrusterSG.xml
 Small\Small3x3Thruster.xml
 Small\Small3x3ThrusterNoShroud.xml
+WindTurbines.xml

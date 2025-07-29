@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <CubeBlocks>
+            <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
+                <Id>
+                    <TypeId>WindTurbine</TypeId>
+                    <SubtypeId>Serg_25MW_Wind_Turbine</SubtypeId>
+                </Id>
+                <DisplayName>100MW Wind Turbine</DisplayName>
+                <Description>Unlimited Power</Description>
+                <MaxPowerOutput>100</MaxPowerOutput>
+                <RaycasterSize>20</RaycasterSize>
+                <RaycastersCount>9</RaycastersCount>
+                <MinRaycasterClearance>0.3</MinRaycasterClearance>
+                <OptimalGroundClearance>25</OptimalGroundClearance>
+                <RaycastersToFullEfficiency>7</RaycastersToFullEfficiency>
+                <OptimalWindSpeed>80</OptimalWindSpeed>
+                <TurbineSpinUpSpeed>3</TurbineSpinUpSpeed>
+                <TurbineSpinDownSpeed>0.3</TurbineSpinDownSpeed>
+                <TurbineRotationSpeed>2</TurbineRotationSpeed>
+                <PCU>1000</PCU>
+            </Definition>
+            <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
+                <Id>
+                    <TypeId>WindTurbine</TypeId>
+                    <SubtypeId>SergWindTurbine</SubtypeId>
+                </Id>
+                <DisplayName>20MW Vertical Wind Turbine Top</DisplayName>
+                <Description>Unlimited Power</Description>
+                <MaxPowerOutput>20</MaxPowerOutput>
+                <RaycasterSize>20</RaycasterSize>
+                <RaycastersCount>9</RaycastersCount>
+                <MinRaycasterClearance>0.3</MinRaycasterClearance>
+                <OptimalGroundClearance>25</OptimalGroundClearance>
+                <RaycastersToFullEfficiency>7</RaycastersToFullEfficiency>
+                <OptimalWindSpeed>80</OptimalWindSpeed>
+                <TurbineSpinUpSpeed>3</TurbineSpinUpSpeed>
+                <TurbineSpinDownSpeed>0.3</TurbineSpinDownSpeed>
+                <TurbineRotationSpeed>5</TurbineRotationSpeed>
+                <PCU>250</PCU>
+            </Definition>
+            <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
+                <Id>
+                    <TypeId>WindTurbine</TypeId>
+                    <SubtypeId>SergWindTurbinePart</SubtypeId>
+                </Id>
+                <DisplayName>20MW Vertical Wind Turbine</DisplayName>
+                <Description>Unlimited Power</Description>
+                <MaxPowerOutput>20</MaxPowerOutput>
+                <RaycasterSize>20</RaycasterSize>
+                <RaycastersCount>9</RaycastersCount>
+                <MinRaycasterClearance>0.3</MinRaycasterClearance>
+                <OptimalGroundClearance>25</OptimalGroundClearance>
+                <RaycastersToFullEfficiency>7</RaycastersToFullEfficiency>
+                <OptimalWindSpeed>80</OptimalWindSpeed>
+                <TurbineSpinUpSpeed>3</TurbineSpinUpSpeed>
+                <TurbineSpinDownSpeed>0.3</TurbineSpinDownSpeed>
+                <TurbineRotationSpeed>5</TurbineRotationSpeed>
+                <PCU>250</PCU>
+            </Definition>
+            <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
+                <Id>
+                    <TypeId>WindTurbine</TypeId>
+                    <SubtypeId>Serg_10MW_Wind_Turbine</SubtypeId>
+                </Id>
+                <DisplayName>40MW Vertical Wind Turbine</DisplayName>
+                <Description>Unlimited Power</Description>
+                <MaxPowerOutput>20</MaxPowerOutput>
+                <RaycasterSize>20</RaycasterSize>
+                <RaycastersCount>9</RaycastersCount>
+                <MinRaycasterClearance>0.3</MinRaycasterClearance>
+                <OptimalGroundClearance>25</OptimalGroundClearance>
+                <RaycastersToFullEfficiency>7</RaycastersToFullEfficiency>
+                <OptimalWindSpeed>80</OptimalWindSpeed>
+                <TurbineSpinUpSpeed>3</TurbineSpinUpSpeed>
+                <TurbineSpinDownSpeed>0.3</TurbineSpinDownSpeed>
+                <TurbineRotationSpeed>5</TurbineRotationSpeed>
+                <PCU>500</PCU>
+            </Definition>
+        </CubeBlocks>
+    </CubeBlocks>
+</Definitions>
