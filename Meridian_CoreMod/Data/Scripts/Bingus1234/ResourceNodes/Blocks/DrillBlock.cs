@@ -34,7 +34,7 @@ namespace ResourceNodes
         protected IMyInventory Inventory;
 
         protected int tick = -1;
-        protected int timesChecked = 0;
+        protected bool boolHasChecked = false;
         protected int slowdown = 1;
         public bool IsProducing;
         protected bool InvFull, InGround;
@@ -74,6 +74,8 @@ namespace ResourceNodes
             Blocc.AppendingCustomInfo += CustomInfo;
 
             BlockInit();
+
+            tick = ResourceNode.Instance.rand.Next(1000);
         }
 
         public abstract void BlockInit();
@@ -227,7 +229,7 @@ namespace ResourceNodes
                 Blocc.Enabled = false;
             }
 
-            if (tick % 1000 == 0 && timesChecked < 20 && myOre == null)
+            if (tick % 1000 == 0 && !boolHasChecked && myOre == null)
             {
 
 
@@ -245,7 +247,7 @@ namespace ResourceNodes
                     InGround = true;
                     AssignNewMaterial();
                 }
-                timesChecked++;
+                boolHasChecked = true;
             }
 
             
