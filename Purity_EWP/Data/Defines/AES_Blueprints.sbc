@@ -6,7 +6,7 @@
 				<TypeId>BlueprintDefinition</TypeId>
 				<SubtypeId>AES_NARIMAN_40MM_AMMOMAGAZINE_BP</SubtypeId>
 			</Id>
-            <DisplayName>MCRN 600x 77x40mm AP Ammo Box</DisplayName>
+            <DisplayName>Nariman Ammo Box</DisplayName>
 			<Icon>Textures\GUI\Icons\Aryx\AES6M40AMMO.dds</Icon>
 			<Prerequisites>
 				<Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />

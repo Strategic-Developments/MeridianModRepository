@@ -9,9 +9,8 @@
       <DisplayName>Aryx Expanse Weapons</DisplayName>
       <Name>AESWeapons</Name>
       <ItemIds>
-		<string>ConveyorSorter/Aryx_AES_6M40_PDC</string>		  
+        <string>ConveyorSorter/Aryx_AES_6M40_PDC</string>
       </ItemIds>
-    </Category> 
-	
-</CategoryClasses>
+    </Category>
+  </CategoryClasses>
 </Definitions>

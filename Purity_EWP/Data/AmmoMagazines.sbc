@@ -8,7 +8,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>OPAAutocannonPDC_Magazine</SubtypeId>
             </Id>
-            <DisplayName>OPA Autocannon Ammo</DisplayName>
+            <DisplayName>Kess-Hashari Ammo Box</DisplayName>
             <Icon>Textures\GUI\Icons\Ammo\OPAAutocannonMagazine.dds</Icon>
             <Size>
                 <X>0.25</X>
@@ -34,7 +34,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>UNN40mm_Magazine</SubtypeId>
             </Id>
-            <DisplayName>Bush 40mm Ammo Box</DisplayName>
+            <DisplayName>Bush PDC Ammo Box</DisplayName>
             <Icon>Textures\GUI\Icons\Ammo\UNNAmmoPDC.dds</Icon>
             <Size>
                 <X>0.25</X>
@@ -60,7 +60,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>OPAFlak_Magazine</SubtypeId>
             </Id>
-            <DisplayName>OPA Flak Cannon Ammo Box</DisplayName>
+            <DisplayName>Flak Cannon Ammo Box</DisplayName>
             <Icon>Textures\GUI\Icons\Ammo\OPAFlakAmmoBox.dds</Icon>
             <Size>
                 <X>0.25</X>

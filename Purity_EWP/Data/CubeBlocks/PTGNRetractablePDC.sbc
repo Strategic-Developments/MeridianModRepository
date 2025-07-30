@@ -6,8 +6,9 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>PTGNRetractablePDC_Block</SubtypeId>
 			</Id>
-			<DisplayName>Bush Shipyards Hypercooled Retractable PDC</DisplayName>
-			<Description>Doesn&apos;t overheat and fires in bursts.</Description>
+			<DisplayName>Bush Shipyards Hypercooled Retractable PD Turret</DisplayName>
+			<Description>More powerful and expensive rotary PD option than the Nariman, which does not overheat.
+			25km range, 18kps, very good vs SGs, 5MW, uses Bush PDC Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\PTGNRetractablePDC.dds</Icon>
 			<CubeSize>Large</CubeSize>

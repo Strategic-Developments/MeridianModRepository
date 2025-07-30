@@ -343,7 +343,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>SAIDSGreenBP</SubtypeId>
       </Id>
-      <DisplayName>76mm Autocannon Cartridge</DisplayName>
+      <DisplayName>Viceroy Autocannon Cartridge</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\greenammo.dds</Icon>
       <Prerequisites>
         <Item Amount="3" TypeId="Ingot" SubtypeId="Iron"/>

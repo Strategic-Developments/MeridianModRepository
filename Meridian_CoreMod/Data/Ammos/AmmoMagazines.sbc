@@ -1,22 +1,12 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <AmmoMagazines>
-     
-    
-
-
-
-
-
-
-
-
+    <AmmoMagazines>
         <AmmoMagazine>
             <Id>
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>GreenAmmoMagDef</SubtypeId>
             </Id>
-            <DisplayName>76mm Autocannon Cartridge</DisplayName>
+            <DisplayName>Viceroy Autocannon Cartridge</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\greenammo.dds</Icon>
             <Size>
                 <X>5</X>
@@ -28,20 +18,12 @@
             <Model>Models\GreenAmmo.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
             <Capacity>600</Capacity>
-            <AmmoDefinitionId Subtype="SAIDS_Green_Ammo" />
-
+            <AmmoDefinitionId Subtype="SAIDS_Green_Ammo"/>
             <MinimumOfferAmount>10</MinimumOfferAmount>
             <MaximumOfferAmount>100</MaximumOfferAmount>
             <MinimumOrderAmount>10</MinimumOrderAmount>
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
         </AmmoMagazine>
-   
-
-    
-   
-
-
-	
-  </AmmoMagazines>
+    </AmmoMagazines>
 </Definitions>

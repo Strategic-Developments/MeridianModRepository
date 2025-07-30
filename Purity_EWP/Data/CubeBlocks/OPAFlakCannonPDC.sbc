@@ -6,8 +6,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>OPAFlakCannonPDC_Block</SubtypeId>
 			</Id>
-			<DisplayName>Belter Flak Cannon</DisplayName>
-			<Description>Has both Large grid and Small grid variants. This PDC has pretty bad accuracy, overheat issues and low fire rate compared to its inner counterparts. All of this is compensated by the bigger shells and a giant cloud of deadly shrapnel they create on explosion. Shells can be set to timed fuze (explode shortly before reaching target) or contact fuze (explode on hit or when max range is reached)</Description>
+			<DisplayName>Flak Cannon Turret</DisplayName>
+			<Description>Alternate cheap slower firing PD option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Flak Cannon Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\OPAFlakCannonPDC.dds</Icon>
 			<CubeSize>Large</CubeSize>
@@ -55,8 +55,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>OPAFlakCannonPDCSG_Block</SubtypeId>
 			</Id>
-			<DisplayName>Belter Flak Cannon</DisplayName>
-			<Description>This PDC has pretty bad accuracy, overheat issues and low fire rate compared to its inner counterparts. All of this is compensated by the bigger shells and a giant cloud of deadly shrapnel they create on explosion. Shells can be set to timed fuze (explode shortly before reaching target) or contact fuze (explode on hit or when max range is reached)</Description>
+			<DisplayName>Flak Cannon Turret</DisplayName>
+			<Description>Alternate cheap slower firing PD option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Flak Cannon Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\OPAFlakCannonPDC.dds</Icon>
 			<CubeSize>Small</CubeSize>

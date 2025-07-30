@@ -6,8 +6,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>MCRNMountedPDC_Block</SubtypeId>
 			</Id>
-			<DisplayName>40mm Nariman Mounted PDC</DisplayName>
-			<Description>The non-retractable version of retractable MCRN PDC that doesn&apos;t retract. This one also has a small grid variant</Description>
+			<DisplayName>40mm Nariman Mounted PD Turret</DisplayName>
+			<Description>Standard cheap rotary PDC option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Nariman Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNMountedPDC.dds</Icon>
 			<CubeSize>Large</CubeSize>
@@ -54,8 +54,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>MCRNMountedPDCSG_Block</SubtypeId>
 			</Id>
-			<DisplayName>40mm Nariman Mounted PDC</DisplayName>
-			<Description>The non-retractable version of retractable MCRN PDC that doesn&apos;t retract. This one also has a small grid variant</Description>
+			<DisplayName>40mm Nariman Mounted PD Turret</DisplayName>
+			<Description>Standard cheap rotary PDC option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Nariman Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNMountedPDC.dds</Icon>
 			<CubeSize>Small</CubeSize>
