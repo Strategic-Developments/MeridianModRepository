@@ -96,6 +96,7 @@ namespace Scripts
                         PreArmed = true,
                         TerminalControls = true,
                     },
+                    IdlePower = 20f,
                 },
                 Other = new OtherDef
                 {

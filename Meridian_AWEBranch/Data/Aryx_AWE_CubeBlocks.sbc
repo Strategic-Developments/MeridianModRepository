@@ -6,14 +6,9 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>ARYXOculusLaserBase</SubtypeId>
 			</Id>
-			<DisplayName>Oculus Orb-PD Laser</DisplayName>
-			<Description>The Oculus is a ball-axis point defence laser designed to shoot down incoming missiles and lightly armoured targets. [8KM RANGE - Energy Weapon]
-	  Effects: Fires red lasers at incoming ordinance, shooting lighter threats down at long range.
-	  Size: 1x1x1
-	  Role: Point Defence
-	  Hardpoint: Full-traverse Turret
-	  Type: Chemical Laser PD
-		</Description>
+			<DisplayName>Oculus Laser Turret</DisplayName>
+			<Description>The Oculus is a ball-axis point defence laser designed to shoot down incoming missiles and lightly armoured targets.
+				20km range, C velocity, extremely good vs SG missiles, 40MW, energy weapon.</Description>
 			<Icon>Textures\GUI\Icons\AWEOculusPD.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
@@ -468,7 +463,7 @@
 			</Id>
 			<DisplayName>Doppler Radar</DisplayName>
 			<Icon>Textures\GUI\Icons\Aryx_AWE_LargeRadar.dds</Icon>
-			<Description>Dopplers are non-offensive systems designed for recon and scouting of enemy grids via scrollwheel-scanning. [25KM RANGE]</Description>
+			<Description>50km WC lock range extender. Warranty void if used like a proper radar.</Description>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1"/>
@@ -514,7 +509,7 @@
 			</Id>
 			<DisplayName>Maxwell Radar</DisplayName>
 			<Icon>Textures\GUI\Icons\Aryx_AWE_SmallRadar.dds</Icon>
-			<Description>Dopplers are non-offensive systems designed for recon and scouting of enemy grids via scrollwheel-scanning. [30KM RANGE]</Description>
+			<Description>50km WC lock range extender. Warranty void if used like a proper radar.</Description>
 			<CubeSize>Small</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="2" y="4" z="2"/>

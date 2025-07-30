@@ -52,7 +52,7 @@ namespace Scripts {
                 LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 0, // Minimum radius of threat to engage.
                 MaximumDiameter = 0, // Maximum radius of threat to engage; 0 = unlimited.
-                MaxTargetDistance = 30000, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
+                MaxTargetDistance = 60000, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
                 MinTargetDistance = 0, // Minimum distance at which targets will be automatically shot at.
                 TopTargets = 0, // Maximum number of targets to randomize between; 0 = unlimited.
                 TopBlocks = 0, // Maximum number of blocks to randomize between; 0 = unlimited.
@@ -79,7 +79,7 @@ namespace Scripts {
                     ToggleGuidance = false, // Enables terminal option to disable smart projectile guidance.
                     EnableOverload = false, // Enables terminal option to turn on Overload; this allows energy weapons to double damage per shot, at the cost of quadrupled power draw and heat gain, and 2% self damage on overheat.
                     AlternateUi = false, // This simplifies and customizes the block controls for alternative weapon purposes,  
-		    DisableStatus = true, // Do not display weapon status NoTarget, Reloading, NoAmmo, etc..
+		            DisableStatus = true, // Do not display weapon status NoTarget, Reloading, NoAmmo, etc..
 					
                 },
                 Ai = new AiDef
@@ -105,7 +105,7 @@ namespace Scripts {
                     HomeAzimuth = 0, // Default resting rotation angle
                     HomeElevation = 0, // Default resting elevation
                     InventorySize = 0f, // Inventory capacity in kL.
-                    IdlePower = 100f, // Constant base power draw in MW.
+                    IdlePower = 25f, // Constant base power draw in MW.
                     FixedOffset = false, // Deprecated.
                     Offset = Vector(x: 0, y: 0, z: 0), // Offsets the aiming/firing line of the weapon, in metres.
                     Type = BlockWeapon, // What type of weapon this is; BlockWeapon, HandWeapon, Phantom 

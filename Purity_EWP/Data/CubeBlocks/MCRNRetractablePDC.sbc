@@ -6,8 +6,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>MCRNRetractablePDC_Block</SubtypeId>
 			</Id>
-			<DisplayName>40mm Nariman Retractable PDC</DisplayName>
-			<Description>A good reliable mass produced MCRN PDC. It is commonly used on most MCRN warships</Description>
+			<DisplayName>40mm Nariman Retractable PD Turret</DisplayName>
+			<Description>Standard cheap rotary PDC option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Nariman Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNRetractablePDC.dds</Icon>
 			<CubeSize>Large</CubeSize>
@@ -59,8 +59,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>MCRNRetractablePDCMIRRORED_Block</SubtypeId>
 			</Id>
-			<DisplayName>40mm Nariman Retractable PDC (Mirrored)[MCRN]</DisplayName>
-			<Description>A good reliable mass produced MCRN PDC. It is commonly used on most MCRN warships</Description>
+			<DisplayName>40mm Nariman Retractable PD Turret (Mirrored)</DisplayName>
+			<Description>Standard cheap rotary PDC option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Nariman Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNRetractablePDC.dds</Icon>
 			<Icon>Textures\GUI\Icons\Extra\MirrorIcon.dds</Icon>
@@ -113,8 +113,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>MCRNRetractablePDCSlope_Block</SubtypeId>
 			</Id>
-			<DisplayName>40mm Nariman Retractable PDC Slope</DisplayName>
-			<Description>A good reliable mass produced MCRN PDC. It is commonly used on most MCRN warships</Description>
+			<DisplayName>40mm Nariman Retractable PD Turret Slope</DisplayName>
+			<Description>Standard cheap rotary PDC option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Nariman Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNRetractablePDCSlope.dds</Icon>
 			<CubeSize>Large</CubeSize>
@@ -168,8 +168,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>MCRNRetractablePDCSlopeMIRRORED_Block</SubtypeId>
 			</Id>
-			<DisplayName>40mm Nariman Retractable PDC Slope (Mirrored)[MCRN]</DisplayName>
-			<Description>A good reliable mass produced MCRN PDC. It is commonly used on most MCRN warships</Description>
+			<DisplayName>40mm Nariman Retractable PD Turret Slope (Mirrored)</DisplayName>
+			<Description>Standard cheap rotary PDC option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Nariman Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNRetractablePDCSlope.dds</Icon>
 			<Icon>Textures\GUI\Icons\Extra\MirrorIcon.dds</Icon>
@@ -224,8 +224,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>MCRNRetractablePDCSlopeAlt_Block</SubtypeId>
 			</Id>
-			<DisplayName>40mm Nariman Retractable PDC Slope Alt</DisplayName>
-			<Description>A good reliable mass produced MCRN PDC. It is commonly used on most MCRN warships</Description>
+			<DisplayName>40mm Nariman Retractable PD Turret Slope Alt</DisplayName>
+			<Description>Standard cheap rotary PDC option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Nariman Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNRetractablePDCSlopeAlt.dds</Icon>
 			<CubeSize>Large</CubeSize>
@@ -277,8 +277,8 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>MCRNRetractablePDCSlopeAltMIRRORED_Block</SubtypeId>
 			</Id>
-			<DisplayName>40mm Nariman Retractable PDC Slope Alt</DisplayName>
-			<Description>A good reliable mass produced MCRN PDC. It is commonly used on most MCRN warships</Description>
+			<DisplayName>40mm Nariman Retractable PD Turret Slope Alt</DisplayName>
+			<Description>Standard cheap rotary PDC option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Nariman Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNRetractablePDCSlopeAlt.dds</Icon>
 			<Icon>Textures\GUI\Icons\Extra\MirrorIcon.dds</Icon>

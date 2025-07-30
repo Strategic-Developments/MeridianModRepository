@@ -127,7 +127,7 @@ namespace Math0424.Networking
                 
                 if (packet.Range != -1)
                 {
-                    if (packet.Range >= Vector3D.Distance(p.GetPosition(), packet.TransmitLocation))
+                    if (packet.Range * packet.Range >= Vector3D.DistanceSquared(p.GetPosition(), packet.TransmitLocation))
                     {
                         MyAPIGateway.Multiplayer.SendMessageTo(CommsId, MyAPIGateway.Utilities.SerializeToBinary(packet), p.SteamUserId);
                     }

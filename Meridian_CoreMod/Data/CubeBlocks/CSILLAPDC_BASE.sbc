@@ -6,8 +6,9 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>CSILLAPDC_BASE</SubtypeId>
 			</Id>
-			<DisplayName>Viceroy Heavy Autocannon</DisplayName>
-			<Description>Designed in concealed Csillar weapons labs, the Viceroy is a blisteringly powerful autocannon meant for point-defense and close-in combat. Loads and fires an entire magazine per burst. 12KM range, uses 76mm Cartridges.</Description>
+			<DisplayName>Viceroy Heavy Autocannon Turret</DisplayName>
+			<Description>Designed in concealed Csillar weapons labs, the Viceroy is a blisteringly powerful autocannon meant for point-defense and close-in combat.
+			25km range, 20kps, extremely good vs everything in range, uses Viceroy Autocannon Cartridges.</Description>
 			<Icon>Textures\GUI\Icons\Cubes\CSILLAPDC_BASE.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
@@ -24,7 +25,7 @@
         		<Component Subtype="Motor" Count="80" />
         		<Component Subtype="Computer" Count="100" />
         		<Component Subtype="MetalGrid" Count="100" />
-		 	<Component Subtype="SteelPlate" Count="2000" />		
+		 	<Component Subtype="SteelPlate" Count="2500" />		
         
       		</Components>
 			<CriticalComponent Subtype="Computer" Index="0"/>

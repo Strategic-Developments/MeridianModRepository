@@ -6,8 +6,9 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>PTGNMountedPDC_Block</SubtypeId>
 			</Id>
-			<DisplayName>Bush Shipyards Hypercooled PDC</DisplayName>
-			<Description>Doesn&apos;t overheat and fires in bursts.</Description>
+			<DisplayName>Bush Shipyards Hypercooled PD Turret</DisplayName>
+			<Description>More powerful and expensive rotary PD option than the Nariman, which does not overheat.
+			25km range, 18kps, very good vs SGs, 5MW, uses Bush PDC Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\PTGNMountedPDC.dds</Icon>
 			<CubeSize>Large</CubeSize>
@@ -58,8 +59,9 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>PTGNMountedPDCSlope_Block</SubtypeId>
 			</Id>
-			<DisplayName>Bush Shipyards Hypercooled PDC Slope</DisplayName>
-			<Description>Doesn&apos;t overheat and fires in bursts.</Description>
+			<DisplayName>Bush Shipyards Hypercooled PD Turret</DisplayName>
+			<Description>More powerful and expensive rotary PD option than the Nariman, which does not overheat.
+			25km range, 18kps, very good vs SGs, 5MW, uses Bush PDC Ammo Boxes</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\PTGNMountedPDCSlope.dds</Icon>
 			<CubeSize>Large</CubeSize>

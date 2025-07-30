@@ -6,7 +6,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>AES_NARIMAN_40MM_AMMOMAGAZINE</SubtypeId>
             </Id>
-            <DisplayName>MCRN 600x 77x40mm AP Ammo Box</DisplayName>
+            <DisplayName>Nariman Ammo Box</DisplayName>
 			<Icon>Textures\GUI\Icons\Aryx\AES6M40AMMO.dds</Icon>
 			<Model>Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_AMMO.mwm</Model>			
             <Size>

@@ -7,7 +7,7 @@
 				<SubtypeId>MCRNRadarSystem_Block</SubtypeId>
 			</Id>
 			<DisplayName>Advanced Battery Radar System</DisplayName>
-			<Description>This Radar System can spot targets at ranges up to 30KM. Currently, its only purpose is the extension of Weaponcore target lock range</Description>
+			<Description>60km WC lock range extender. Warranty void if used like a proper radar.</Description>
 			<GuiVisible>true</GuiVisible>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNRadarSystem.dds</Icon>
 			<CubeSize>Large</CubeSize>

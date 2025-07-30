@@ -6,19 +6,9 @@
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>Aryx_AES_6M40_PDC</SubtypeId>
 			</Id>
-			<DisplayName>Nariman Dynamics 6M40 Rotary PDC</DisplayName>
+			<DisplayName>40mm Nariman Retractable PD Turret</DisplayName>
 			<Icon>Textures\GUI\Icons\Aryx\AES6M40PDC.dds</Icon>	  
-			<Description>A fully-retractable rotary PDC designed for MCRN warships by Nariman Dynamics.
-			[Stats - -
-			Range: 4000m
-			Rate of Fire: 1200RPM
-			Damage Per Shot: 120
-			SG Mult: 2x
-			Tracking Speed: Excellent
-			Round Velocity: 1500m/s
-			]
-			Warning - Will have strange behaviours if retracted in Manual or Painter control mode.
-			</Description>
+			<Description>Standard cheap rotary PDC option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Nariman Ammo Boxes</Description>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="2"/>

@@ -756,14 +756,14 @@ namespace DetectionEquipment
             Movement = new SensorDefinition.SensorMovementDefinition
             {
                 AzimuthPart = "",
-                AzimuthRate =  4 * Math.PI,
-                MaxAzimuth = 0.5 * Math.PI,
-                MinAzimuth = -0.5 * Math.PI,
+                AzimuthRate =  45 * Math.PI,
+                MaxAzimuth = Math.PI,
+                MinAzimuth = -Math.PI,
             
                 ElevationPart = "",
-                ElevationRate = 4 * Math.PI,
-                MaxElevation = 0.5 * Math.PI,
-                MinElevation = -0.5 * Math.PI,
+                ElevationRate = 45 * Math.PI,
+                MaxElevation = Math.PI,
+                MinElevation = 0,
             },
 
             TerminalName = "SAARP Track Sensor 1",
@@ -811,14 +811,14 @@ namespace DetectionEquipment
             Movement = new SensorDefinition.SensorMovementDefinition
             {
                 AzimuthPart = "",
-                AzimuthRate =  4 * Math.PI,
-                MaxAzimuth = 0.5 * Math.PI,
-                MinAzimuth = -0.5 * Math.PI,
-            
+                AzimuthRate = 45 * Math.PI,
+                MaxAzimuth = Math.PI,
+                MinAzimuth = -Math.PI,
+
                 ElevationPart = "",
-                ElevationRate = 4 * Math.PI,
-                MaxElevation = 0.5 * Math.PI,
-                MinElevation = -0.5 * Math.PI,
+                ElevationRate = 45 * Math.PI,
+                MaxElevation = Math.PI,
+                MinElevation = 0,
             },
 
             TerminalName = "SAARP Track Sensor 2",

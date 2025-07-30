@@ -7,7 +7,7 @@
                 <TypeId>BlueprintDefinition</TypeId>
                 <SubtypeId>OPAAutocannonPDC_Blueprint</SubtypeId>
             </Id>
-            <DisplayName>OPA Autocannon Ammo</DisplayName>
+            <DisplayName>Kess-Hashari Ammo Box</DisplayName>
             <Icon>Textures\GUI\Icons\Ammo\OPAAutocannonMagazine.dds</Icon>
             <Prerequisites>
                 <Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
@@ -23,7 +23,7 @@
                 <TypeId>BlueprintDefinition</TypeId>
                 <SubtypeId>UNN40mm_Blueprint</SubtypeId>
             </Id>
-            <DisplayName>UNN 40mm Ammo Box</DisplayName>
+            <DisplayName>Bush PDC Ammo Box</DisplayName>
             <Icon>Textures\GUI\Icons\Ammo\UNNAmmoPDC.dds</Icon>
             <Prerequisites>
                 <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
@@ -40,7 +40,7 @@
                 <TypeId>BlueprintDefinition</TypeId>
                 <SubtypeId>OPAFlak_Blueprint</SubtypeId>
             </Id>
-            <DisplayName>OPA 75mm Flak Ammo Box</DisplayName>
+            <DisplayName>Flak Cannon Ammo Box</DisplayName>
             <Icon>Textures\GUI\Icons\Ammo\OPAFlakAmmoBox.dds</Icon>
             <Prerequisites>
                 <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />

@@ -1,0 +1,427 @@
+﻿<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!--•MDS THRUSTERS-->
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYXLNX_YACHT_EPSTEIN_DRIVE</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYXLNX_YACHT_EPSTEIN_DRIVE"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 1;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLNX_RZB_Epstein_Drive</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLNX_RZB_Epstein_Drive"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 1;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLNX_QUADRA_Epstein_Drive</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLNX_QUADRA_Epstein_Drive"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 2;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLNX_Epstein_Drive</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLNX_Epstein_Drive"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 3;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLNX_MUNR_Epstein_Drive</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLNX_MUNR_Epstein_Drive"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 3;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLNX_PNDR_Epstein_Drive</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLNX_PNDR_Epstein_Drive"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 3;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLNX_RAIDER_Epstein_Drive</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLNX_RAIDER_Epstein_Drive"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 3;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_01;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLNX_ROCI_Epstein_Drive</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLNX_ROCI_Epstein_Drive"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 5;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLYNX_SILVERSMITH_DRIVE</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLYNX_SILVERSMITH_DRIVE"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 5;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLNX_DRUMMER_Epstein_Drive</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLNX_DRUMMER_Epstein_Drive"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 5;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLNX_SCIRCOCCO_Epstein_Drive</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLNX_SCIRCOCCO_Epstein_Drive"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 7;
+                    Offset : -2;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+		<Id>
+			<TypeId>Thrust</TypeId>
+			<SubtypeId>ARYLNX_Mega_Epstein_Drive</SubtypeId>
+		</Id>
+		<ModExtensions>
+			<ModComponents>
+				<GameLogicComponent Name="MwiComponent"/>
+			</ModComponents>
+			<Group Name="ThrusterCompData">
+				<Text Name="ID" Value="ARYLNX_Mega_Epstein_Drive"/>
+				<Boolean Name="hideVanillaFlame" Value="false"/>
+				<Decimal Name="ThrustRateGain" Value="0.15"/>
+				<Decimal Name="ThrustRateLoss" Value="0.2"/>
+				<Boolean Name="UseEmissive" Value="false"/>
+				<Text Name="EmissiveMaterial" Value="heatup"/>
+				<Decimal Name="EmissiveRateGain" Value="0.005"/>
+				<Decimal Name="EmissiveRateLoss" Value="0.01"/>
+				<Text Name="EmitterSetup" Value="
+                    Particle : meridian_epsteindrive_fx_atmo;
+                    Type : PARTICLE;
+                    AtmoOnly : TRUE;
+                    ThrustMin : 0;
+                    ThrustMax : 1;
+                    Size : 9;
+                    Offset : 0;
+                    OffsetScaling : 0;
+                    VelocityScalingFrom : -1;
+                    VelocityScalingTo : 2;
+                    CullingTime:600;
+                    Dummies : thruster_flame_1;
+                    "/>
+			</Group>
+		</ModExtensions>
+	</Definition>
+</Definitions>

@@ -4,6 +4,7 @@ using Sandbox.ModAPI;
 using VRage.Game.Components;
 using VRage.Game.ModAPI;
 using VRage.ModAPI;
+using VRage.Utils;
 
 
 namespace AutoCleanup
@@ -19,10 +20,6 @@ namespace AutoCleanup
 
         private static int Ticks => MyAPIGateway.Session.GameplayFrameCounter;
         
-        public override void BeforeStart()
-        {
-            //Cleanup();
-        }
 
         private void Cleanup()
         {
@@ -34,9 +31,15 @@ namespace AutoCleanup
                 ent.Close();
             }
         }
-
+        bool doFirstCleanup = true;
         public override void UpdateBeforeSimulation()
         {
+            if (doFirstCleanup)
+            {
+                Cleanup();
+                doFirstCleanup = false;
+            }
+
             if (MyAPIGateway.Utilities.IsDedicated || Ticks % 100 != 0) return;
             var m = MyAPIGateway.Session?.Player?.Character?.WorldMatrix;
 
@@ -60,31 +63,46 @@ namespace AutoCleanup
             {
                 return false;
             }
-            var gridDumpList = new List<IMyCubeGrid>();
-            g.GetGridGroup(GridLinkTypeEnum.Logical).GetGrids(gridDumpList);
-
-            if (gridDumpList.Count == 1 && ((MyCubeGrid)g).BlocksCount == 1)
+            var grids = new List<IMyCubeGrid>();
+            g.GetGridGroup(GridLinkTypeEnum.Logical).GetGrids(grids);
+            //MyLog.Default.WriteLineAndConsole($"Grid {g.CustomName} with {grids.Count} grid tested to cleanup.");
+            if (grids.Count == 1 && ((MyCubeGrid)g).BlocksCount == 1)
             {
-                var wheels = g.GetFatBlocks<IMyWheel>();
-
-                foreach (var wheel in wheels)
+                foreach (var wheel in g.GetFatBlocks<IMyWheel>())
                 {
                     if (wheel.IsAttached)
+                    {
+                        //MyLog.Default.WriteLineAndConsole($"Grid {g.CustomName} is an attached wheel, returning false!");
                         return false;
+                    }
                 }
             }
-            
-            foreach (var grid in gridDumpList)
+            bool hasIff = false, hasName = false;
+            foreach (var grid in grids)
             {
                 var blocks = new List<IMySlimBlock>();
                 grid.GetBlocks(blocks, CheckGrid);
 
-                if (blocks.Count > 0 &&
-                    !grid.CustomName.StartsWith("Static Grid") && 
-                    !grid.CustomName.StartsWith("Small Grid") && 
-                    !grid.CustomName.StartsWith("Large Grid")) 
-                    return false; 
+                // the two don't have to be on the same grid
+                if (blocks.Count > 0)
+                {
+                    //MyLog.Default.WriteLineAndConsole($"Grid {grid.CustomName}, part of {g.CustomName}'s grid group has IFF.");
+                    hasIff = true;
+                }
+                if (!grid.CustomName.StartsWith("Static Grid") &&
+                    !grid.CustomName.StartsWith("Small Grid") &&
+                    !grid.CustomName.StartsWith("Large Grid"))
+                {
+                    //MyLog.Default.WriteLineAndConsole($"Grid {grid.CustomName}, part of {g.CustomName}'s grid group is named.");
+                    hasName = true;
+                }
+
+                if (hasIff && hasName)
+                {
+                    return false;
+                }
             }
+            //MyLog.Default.WriteLineAndConsole($"Grid {g.CustomName} is {(hasName ? "named" : "unnamed")} and {(hasIff ? "has an IFF" : "has no IFF")}, returning true!");
             return true;
         }
 
