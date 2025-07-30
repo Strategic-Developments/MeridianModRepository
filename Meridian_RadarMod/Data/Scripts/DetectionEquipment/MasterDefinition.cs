@@ -212,7 +212,7 @@ namespace DetectionEquipment
                 CountermeasureType = CountermeasureDefinition.CountermeasureTypeEnum.Infrared,
                 MaxRange = 300000,
                 FalloffScalar = 0.00001f,
-                MinNoise = 0.01f,
+                MinNoise = 0.00001f,
                 FalloffType = CountermeasureDefinition.FalloffTypeEnum.Linear,
                 MinEffectAperture = (float) Math.PI,
                 MaxEffectAperture = (float) Math.PI,
@@ -305,7 +305,7 @@ namespace DetectionEquipment
                 ActivePowerDraw = 0,
                 MagazineSize = 25,
                 MagazineItem = "DetEq_FlareMagazine",
-                ReloadTime = 12,
+                ReloadTime = 4,
                 InventorySize = 0.240f,
             },
             new CountermeasureEmitterDefinition
@@ -355,7 +355,7 @@ namespace DetectionEquipment
                 ActivePowerDraw = 0,
                 MagazineSize = 25,
                 MagazineItem = "DetEq_ChaffMagazine",
-                ReloadTime = 12,
+                ReloadTime = 4,
                 InventorySize = 0.240f,
             },
             new CountermeasureEmitterDefinition
