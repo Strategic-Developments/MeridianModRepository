@@ -13,8 +13,8 @@
                 <Y>0.1</Y>
                 <Z>0.05</Z>
             </Size>
-            <Mass>1000</Mass>
-            <Volume>500</Volume>
+            <Mass>8000</Mass>
+            <Volume>3000</Volume>
             <Model>Models\Components\Certificate.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
@@ -40,8 +40,8 @@
                 <Y>0.1</Y>
                 <Z>0.05</Z>
             </Size>
-            <Mass>1000</Mass>
-            <Volume>500</Volume>
+            <Mass>15000</Mass>
+            <Volume>4000</Volume>
             <Model>Models\Components\Ledger.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
@@ -67,8 +67,8 @@
                 <Y>0.1</Y>
                 <Z>0.05</Z>
             </Size>
-            <Mass>1000</Mass>
-            <Volume>500</Volume>
+            <Mass>8000</Mass>
+            <Volume>3000</Volume>
             <Model>Models\Components\CESM_Crate.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
@@ -94,8 +94,8 @@
                 <Y>0.1</Y>
                 <Z>0.05</Z>
             </Size>
-            <Mass>1000</Mass>
-            <Volume>500</Volume>
+            <Mass>8000</Mass>
+            <Volume>3000</Volume>
             <Model>Models\Components\LiqueurShipment.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
@@ -121,8 +121,8 @@
                 <Y>0.1</Y>
                 <Z>0.05</Z>
             </Size>
-            <Mass>1000</Mass>
-            <Volume>500</Volume>
+            <Mass>15000</Mass>
+            <Volume>4000</Volume>
             <Model>Models\Components\ContractorHelmets.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
@@ -148,8 +148,8 @@
                 <Y>0.1</Y>
                 <Z>0.05</Z>
             </Size>
-            <Mass>1000</Mass>
-            <Volume>500</Volume>
+            <Mass>8000</Mass>
+            <Volume>3500</Volume>
             <Model>Models\Components\RationPacks.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
