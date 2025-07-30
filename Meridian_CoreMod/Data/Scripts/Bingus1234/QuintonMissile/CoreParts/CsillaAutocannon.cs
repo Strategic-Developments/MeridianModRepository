@@ -40,7 +40,7 @@ namespace Scripts {
             Targeting = new TargetingDef
             {
                 Threats = new[] {
-                    Grids, // Types of threat to engage: Grids, Projectiles, Characters, Meteors, Neutrals
+                    Grids, Projectiles, Characters // Types of threat to engage: Grids, Projectiles, Characters, Meteors, Neutrals
                 },
                 SubSystems = new[] {
                     Thrust, Utility, Offense, Power, Production, Any, // Subsystem targeting priority: Offense, Utility, Power, Production, Thrust, Jumping, Steering, Any
@@ -127,10 +127,10 @@ namespace Scripts {
                     ReloadTime = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     MagsToLoad = 1, // Number of physical magazines to consume on reload.
                     DelayUntilFire = 0, // How long the weapon waits before shooting after being told to fire. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    HeatPerShot = 16, // Heat generated per shot.
+                    HeatPerShot = 24, // Heat generated per shot.
                     MaxHeat = 3950, // Max heat before weapon enters cooldown (70% of max heat). 3950 is 2000°C in Deteq default settings
                     Cooldown = .95f, // Percentage of max heat to be under to start firing again after overheat; accepts 0 - 0.95
-                    HeatSinkRate = 1200, // Amount of heat lost per second.
+                    HeatSinkRate = 700, // Amount of heat lost per second.
                     DegradeRof = true, // Progressively lower rate of fire when over 80% heat threshold (80% of max heat).
                     ShotsInBurst = 40, // Use this if you don't want the weapon to fire an entire physical magazine in one go. Should not be more than your magazine capacity.
                     DelayAfterBurst = 20, // How long to spend "reloading" after each burst. Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -176,7 +176,7 @@ namespace Scripts {
                 },
             },
             Ammos = new[] {
-                Flak76, fragment_76
+                Flak76,
                  // Must list all primary, shrapnel, and pattern ammos.
             },
             //Animations = CoilgunAnim,
