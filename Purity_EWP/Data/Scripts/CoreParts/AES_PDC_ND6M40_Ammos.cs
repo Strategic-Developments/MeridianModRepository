@@ -211,7 +211,7 @@ namespace Scripts
                     //.Exponential drops off exponentially.  Does not scale to max radius
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
                     MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
-                    NoVisuals = false,
+                    NoVisuals = true,
                     NoSound = true,
                     ParticleScale = 1,
                     CustomParticle = "particleName", // Particle SubtypeID, from your Particle SBC
@@ -516,20 +516,8 @@ namespace Scripts
                 ShieldHitDraw = false,
                 Decals = new DecalDef
                 {
-                    MaxAge = 600,
-                    Map = new[]
-                    {
-                        new TextureMapDef
-                        {
-                            HitMaterial = "Metal",
-                            DecalMaterial = "GunBullet",
-                        },
-                        new TextureMapDef
-                        {
-                            HitMaterial = "Glass",
-                            DecalMaterial = "GunBullet",
-                        },
-                    },
+                    MaxAge = 0,
+                    Map = new TextureMapDef[0],
                 },
                 Particles = new AmmoParticleDef
                 {
