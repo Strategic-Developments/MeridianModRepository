@@ -8,6 +8,7 @@
             </Id>
             <DisplayName>100MW Wind Turbine</DisplayName>
             <MaxPowerOutput>100</MaxPowerOutput>
+            <PCU>55</PCU>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
             <Id>
@@ -16,6 +17,7 @@
             </Id>
             <DisplayName>20MW Vertical Wind Turbine Top</DisplayName>
             <MaxPowerOutput>20</MaxPowerOutput>
+            <PCU>55</PCU>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
             <Id>
@@ -24,6 +26,7 @@
             </Id>
             <DisplayName>20MW Vertical Wind Turbine</DisplayName>
             <MaxPowerOutput>20</MaxPowerOutput>
+            <PCU>55</PCU>
         </Definition>
         <Definition xsi:type="MyObjectBuilder_WindTurbineDefinition">
             <Id>
@@ -32,6 +35,7 @@
             </Id>
             <DisplayName>40MW Vertical Wind Turbine</DisplayName>
             <MaxPowerOutput>20</MaxPowerOutput>
+            <PCU>55</PCU>
         </Definition>
     </CubeBlocks>
 </Definitions>
