@@ -295,7 +295,7 @@ namespace ResourceNodes
                     invFull = InvFull,
                     oreName = myOre?.MinedOre ?? "nothing",
                     isProducing = IsProducing,
-                    oreList = optionsChanged ? optionsClient : null,
+                    oreList = optionsChanged || tick % 1000 == 0 ? optionsClient : null,
                 };
 
                 optionsChanged = false;
