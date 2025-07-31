@@ -314,20 +314,8 @@ namespace Scripts
                 ShieldHitDraw = false,
                 Decals = new DecalDef
                 {
-                    MaxAge = 3600,
-                    Map = new []
-                    {
-                        new TextureMapDef
-                        {
-                            HitMaterial = "Metal",
-                            DecalMaterial = "GunBullet",
-                        },
-                        new TextureMapDef
-                        {
-                            HitMaterial = "Glass",
-                            DecalMaterial = "GunBullet",
-                        },
-                    },
+                    MaxAge = 0,
+                    Map = new TextureMapDef[0],
                 },
                 Particles = new AmmoParticleDef
                 {
