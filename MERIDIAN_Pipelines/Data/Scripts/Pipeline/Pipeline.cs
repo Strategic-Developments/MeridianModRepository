@@ -56,14 +56,14 @@ namespace Klime.Pipeline
         
         int frame = 0;
         int frameOffset = 0;
-        int updateInventoryPeriodFrames = 600; // 10 seconds
+        const int updateInventoryPeriodFrames = 600; // 10 seconds
         int failedSearches = 0;
         int searchCooldownFrames = 0;
-        int searchCooldownFailMultiple = 200;
-        int searchCooldownMax = 1200; // 20 seconds
+        const int searchCooldownFailMultiple = 200;
+        const int searchCooldownMax = 1200; // 20 seconds
 
-        double search_radius = 2000;
-        double search_angle_tolerence = 0.2; //in radians, not degrees
+        const double search_radius = 3000;
+        const double search_angle_tolerence = 0.2; //in radians, not degrees
         List<MyEntity> search_ents = new List<MyEntity>();
         List<IMyCargoContainer> search_onlycargo = new List<IMyCargoContainer>();
         Dictionary<IMyCargoContainer, Vector3D> search_Positions = new Dictionary<IMyCargoContainer, Vector3D>();
@@ -584,7 +584,7 @@ namespace Klime.Pipeline
                 if (ent is IMyCargoContainer)
                 {
                     IMyCargoContainer test_cargo = ent as IMyCargoContainer;
-                    if (test_cargo != null && test_cargo.BlockDefinition.SubtypeName == "Pipeline_Cargo" && !test_cargo.IsSameConstructAs(cargo_block) && test_cargo.CubeGrid.IsStatic)
+                    if (test_cargo != null && test_cargo.BlockDefinition.SubtypeName == "Pipeline_Cargo" && test_cargo.CubeGrid.IsStatic)
                     {
                         if (AngleCheck(ref cargo_block, ref test_cargo))
                         {
@@ -593,54 +593,9 @@ namespace Klime.Pipeline
                     }
                 }
             }
-
-            //Vector3D startLine = cargo_block.WorldMatrix.Translation;
-            //Vector3D endLine = startLine + (cargo_block.WorldMatrix.Forward * search_radius);
-            //double currentClosest = 0;
-
-            //for (int i = 0; i < search_onlycargo.Count; i++)
-            //{
-            //    if (i == 0)
-            //    {
-            //        Vector3D checkPos = search_onlycargo[i].WorldMatrix.Translation;
-            //        Vector3D closePoint = MyUtils.GetClosestPointOnLine(ref startLine, ref endLine, ref checkPos);
-            //        currentClosest = (closePoint - startLine).LengthSquared();
-
-            //        if (cargo_block.CustomName.Contains("@"))
-            //        {
-            //            MyVisualScriptLogicProvider.AddGPSForAll(currentClosest.ToString() + " INDEX: " + i, "", closePoint, Color.Red);
-            //        }
-
-            //        if (ValidateOtherCargo(search_onlycargo[i]))
-            //        {
-            //            other_cargo_block = search_onlycargo[i];
-            //            connected_ok = true;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        Vector3D checkPos = search_onlycargo[i].WorldMatrix.Translation;
-            //        Vector3D closePoint = MyUtils.GetClosestPointOnLine(ref startLine, ref endLine, ref checkPos);
-            //        double testClosestDistance = (closePoint - startLine).LengthSquared();
-
-            //        if (cargo_block.CustomName.Contains("@"))
-            //        {
-            //            MyVisualScriptLogicProvider.AddGPSForAll(testClosestDistance.ToString() + " INDEX: " + i, "", closePoint, Color.Red);
-            //        }
-
-            //        if (testClosestDistance < currentClosest)
-            //        {
-            //            if (ValidateOtherCargo(search_onlycargo[i]))
-            //            {
-            //                other_cargo_block = search_onlycargo[i];
-            //                currentClosest = testClosestDistance;
-            //                connected_ok = true;
-            //            }
-            //        }
-            //    }
-            //}
-
-            search_onlycargo = search_onlycargo.OrderBy(o => Vector3D.Distance(cargo_block.WorldMatrix.Translation, o.WorldMatrix.Translation)).ToList();
+            
+            search_onlycargo = search_onlycargo.OrderBy(o => Math.Floor(Vector3.Distance(cargo_block.WorldMatrix.Translation, o.WorldMatrix.Translation)/100)*100
+            + MyUtils.GetAngleBetweenVectors(cargo_block.WorldMatrix.Forward, o.WorldMatrix.Forward)).ToList();
 
             foreach (var cargo in search_onlycargo)
             {
@@ -665,7 +620,6 @@ namespace Klime.Pipeline
             {
                 withinAngle = true;
             }
-
             return withinAngle;
         }
 
