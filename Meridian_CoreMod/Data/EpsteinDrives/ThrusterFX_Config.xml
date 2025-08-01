@@ -383,7 +383,7 @@
                     VelocityScalingFrom : -1;
                     VelocityScalingTo : 2;
                     CullingTime:600;
-                    Dummies : thruster_flame_1;
+                    Dummies : thruster_flame_01;
                     "/>
 			</Group>
 		</ModExtensions>
