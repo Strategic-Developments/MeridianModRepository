@@ -125,6 +125,61 @@
 		</Definition>
 
 
+
+         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+			<Id>
+				<TypeId>OxygenTank</TypeId>
+				<SubtypeId>SOFL_Oxygen_Huge_Tank</SubtypeId>
+			</Id>
+			<DisplayName>Mass Storage Oxygen Tank</DisplayName>
+			<Description>Industrial-grade heavy fuel storage, designed for refineries and fuel depots.</Description>
+			<Icon>Textures\Icons\SOFL_Gas_Huge_Tank.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="9" y="9" z="9"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Gas Tanks\9x9x9\SOFL_Gas_Huge_Tank.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="1000" />
+                <Component Subtype="LargeTube" Count="120" />
+                <Component Subtype="SmallTube" Count="90" />
+                <Component Subtype="Computer" Count="15" />
+                <Component Subtype="Construction" Count="200" />
+                <Component Subtype="SteelPlate" Count="200" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="4.05" StartY="4.05" EndX="4.95" EndY="4.95"/>
+				<MountPoint Side="Back" StartX="4.00" StartY="4.00" EndX="5.00" EndY="5.00"/>
+				<MountPoint Side="Left" StartX="4.05" StartY="4.05" EndX="4.95" EndY="4.95"/>
+				<MountPoint Side="Right" StartX="4.05" StartY="4.05" EndX="4.95" EndY="4.95"/>
+				<MountPoint Side="Top" StartX="3.00" StartY="3.00" EndX="6.00" EndY="6.00" PressurizedWhenOpen="true"/>
+				<MountPoint Side="Bottom" StartX="3.00" StartY="3.00" EndX="6.00" EndY="6.00" PressurizedWhenOpen="true"/>
+			</MountPoints>
+			<BlockPairName>SOFL_Oxygen_Huge_Tank</BlockPairName>
+            <ResourceSourceGroup>Reactors</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.001</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.000001</StandbyPowerConsumption>
+            <Capacity>3645000</Capacity>
+            <StoredGasId>
+                <TypeId>GasProperties</TypeId>
+                <SubtypeId>Oxygen</SubtypeId>
+            </StoredGasId>
+            <BuildTimeSeconds>32</BuildTimeSeconds>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <PCU>25</PCU>
+            <LeakPercent>0.005</LeakPercent>
+            <GasExplosionMaxRadius>50</GasExplosionMaxRadius>
+            <GasExplosionNeededVolumeToReachMaxRadius>10</GasExplosionNeededVolumeToReachMaxRadius>
+            <GasExplosionDamageMultiplier>100</GasExplosionDamageMultiplier>
+            <GasExplosionSound>HydrogenExplosion</GasExplosionSound>
+            <GasExplosionEffect>Explosion_Warhead_15</GasExplosionEffect>
+		</Definition>
+
+
         <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
 			<Id>
 				<TypeId>OxygenTank</TypeId>
