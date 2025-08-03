@@ -41,7 +41,7 @@
                 <Z>0.05</Z>
             </Size>
             <Mass>24000</Mass>
-            <Volume>4000</Volume>
+            <Volume>8000</Volume>
             <Model>Models\Components\Ledger.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
@@ -95,7 +95,7 @@
                 <Z>0.05</Z>
             </Size>
             <Mass>24000</Mass>
-            <Volume>4000</Volume>
+            <Volume>8000</Volume>
             <Model>Models\Components\LiqueurShipment.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
@@ -122,7 +122,7 @@
                 <Z>0.05</Z>
             </Size>
             <Mass>24000</Mass>
-            <Volume>4000</Volume>
+            <Volume>8000</Volume>
             <Model>Models\Components\ContractorHelmets.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
