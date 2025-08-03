@@ -40,7 +40,7 @@
                 <Y>0.1</Y>
                 <Z>0.05</Z>
             </Size>
-            <Mass>15000</Mass>
+            <Mass>24000</Mass>
             <Volume>4000</Volume>
             <Model>Models\Components\Ledger.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
@@ -94,8 +94,8 @@
                 <Y>0.1</Y>
                 <Z>0.05</Z>
             </Size>
-            <Mass>8000</Mass>
-            <Volume>3000</Volume>
+            <Mass>24000</Mass>
+            <Volume>4000</Volume>
             <Model>Models\Components\LiqueurShipment.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
@@ -121,7 +121,7 @@
                 <Y>0.1</Y>
                 <Z>0.05</Z>
             </Size>
-            <Mass>15000</Mass>
+            <Mass>24000</Mass>
             <Volume>4000</Volume>
             <Model>Models\Components\ContractorHelmets.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
@@ -149,7 +149,7 @@
                 <Z>0.05</Z>
             </Size>
             <Mass>8000</Mass>
-            <Volume>3500</Volume>
+            <Volume>3000</Volume>
             <Model>Models\Components\RationPacks.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
             <MaxIntegrity>25</MaxIntegrity>
