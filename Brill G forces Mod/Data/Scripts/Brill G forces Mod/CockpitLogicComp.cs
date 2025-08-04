@@ -20,7 +20,7 @@ namespace YourName.ModName.Data.Scripts.Gforces
         
         private List<Vector3> _accelList = new List<Vector3>();
 
-        private float GLocTimer = 0;
+        private float GLocTimer;
 
         private const float BlackoutAcell = 8f;
         private const float TunnelVisionAcell = 4f;
@@ -50,28 +50,40 @@ namespace YourName.ModName.Data.Scripts.Gforces
         
         public override void UpdateBeforeSimulation()
         {
-            var test = _cockpit.CubeGrid.Physics.LinearAcceleration;
-            _accelList.Add(test);
+            _accelList.Add(_cockpit.CubeGrid.Physics.LinearAcceleration);
             if (_accelList.Count >= 60) _accelList.RemoveAt(0);
-            if (!_cockpit.IsOccupied || !_cockpit.ControllerInfo.IsLocallyHumanControlled()) return;
+            if (_cockpit.IsOccupied && _cockpit.ControllerInfo.IsLocallyHumanControlled())
+            {
+                CockpitSessionComp.Instance.Vignette.Visible = true;
+            }
+            else
+            {
+                CockpitSessionComp.Instance.Vignette.Visible = false;
+            }
             //calculate average
-            var sum = _accelList.Sum(x => x.Length());
-            var avg = sum / _accelList.Count;
+            var avg = _accelList.Sum(x => x.Length()) / _accelList.Count;
             if (avg > TunnelVisionAcell)
             {
                 //then start adding to the Timer
                 var mult = (avg - TunnelVisionAcell) + 1;//so it stays above 1
                 GLocTimer += mult;
+                //and make the vingette start fading in
+                CockpitSessionComp.Instance.Vignette.BillBoardColor = 
+                    new Color(0f, 0f, 0f,  255*(GLocTimer/3600f));
             }
             else if (avg < BlackoutAcell && GLocTimer > 0)
             {
-                //then they are below the threshold, 
+                //then they are below the threshold, reduce the counter
+                GLocTimer -= BlackoutAcell - avg;
+                if (GLocTimer < 0) GLocTimer = 0;
+                CockpitSessionComp.Instance.Vignette.BillBoardColor = 
+                    new Color(0f, 0f, 0f,  255*(GLocTimer/3600f));
             }
 
             if (GLocTimer > 3600)
             {
                 //then you are blacked out
-                
+                //not going to be implementing that yet
             }
             
         }

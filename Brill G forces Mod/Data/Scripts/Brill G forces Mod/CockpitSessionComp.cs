@@ -10,6 +10,7 @@ namespace YourName.ModName.Data.Scripts.Gforces
     [MySessionComponentDescriptor(MyUpdateOrder.BeforeSimulation)]
     public class CockpitSessionComp : MySessionComponentBase
     {
+        public static CockpitSessionComp Instance;
         
         //vingette texture = GLocVignette
         
@@ -24,22 +25,23 @@ namespace YourName.ModName.Data.Scripts.Gforces
 
         public override void Init(MyObjectBuilder_SessionComponent sessionComponent)
         {
-            HudAPI = new HudAPIv2();
-            if (HudAPI == null)
+            Instance = this;
+            Instance.HudAPI = new HudAPIv2();
+            if (Instance.HudAPI == null)
                 MyAPIGateway.Utilities.ShowMessage("G forces Mod", "TextHudApi failed to register");
         }
 
         public override void UpdateBeforeSimulation()
         {
-            if (HudAPI.Heartbeat && FirstRun)
+            if (Instance.HudAPI.Heartbeat && Instance.FirstRun)
             {
                 var vignetteTexture = MyStringId.GetOrCompute("GLocVignette");
-                Vignette = new HudAPIv2.BillBoardHUDMessage(vignetteTexture, Vector2D.Zero, Color.Transparent,
+                Instance.Vignette = new HudAPIv2.BillBoardHUDMessage(vignetteTexture, Vector2D.Zero, Color.Transparent,
                     Shadowing: false)
                 {
                     Visible = false
                 };
-                FirstRun = false;
+                Instance.FirstRun = false;
             }
         }
     }
