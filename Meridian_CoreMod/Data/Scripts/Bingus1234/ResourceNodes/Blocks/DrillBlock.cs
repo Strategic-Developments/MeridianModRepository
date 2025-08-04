@@ -155,7 +155,7 @@ namespace ResourceNodes
                         {
                             double amount = block.baseSpeed * block.Blocc.UpgradeValues["Productivity"] * block.Blocc.UpgradeValues["Effectiveness"] * Math.Max(1, ore.MinedOreRatio * ore.MinedOreRatio);
 
-                            if (ore.MinedOre == "Stone")
+                            if (ore.MinedOre == "Stone" || ore.MinedOre == "Ice")
                             {
                                 amount *= 10;
                             }
@@ -281,7 +281,8 @@ namespace ResourceNodes
                         optionsClient.Add(new MyTuple<string, int>
                         {
                             Item1 = option.MinedOre,
-                            Item2 = (int)(baseSpeed * Blocc.UpgradeValues["Productivity"] * Blocc.UpgradeValues["Effectiveness"] * option.MinedOreRatio * option.MinedOreRatio * (option.MinedOre == "Stone" ? 10 : 1))
+                            Item2 = (int)(baseSpeed * Blocc.UpgradeValues["Productivity"] * Blocc.UpgradeValues["Effectiveness"] * option.MinedOreRatio * option.MinedOreRatio
+                            * (option.MinedOre == "Stone" || option.MinedOre == "Ice" ? 10 : 1))
                         });
                     }
                 }
@@ -349,7 +350,7 @@ namespace ResourceNodes
 
                 double amount = yield * Math.Max(1, myOre.MinedOreRatio * myOre.MinedOreRatio);
 
-                if (myOre.MinedOre == "Stone")
+                if (myOre.MinedOre == "Stone" || myOre.MinedOre == "Ice")
                 {
                     amount *= 10;
                 }
