@@ -16,6 +16,8 @@
 			<Model>Models\Cubes\large\ChemicalRefinery.mwm</Model>
 			  <Components>
                 <Component Subtype="PrototechFrame" Count="1"/>
+                <Component Subtype="LogicPrism" Count="4"/>
+                <Component Subtype="CoreIndex" Count="12"/>
                 <Component Subtype="PrototechPanel" Count="20" />
                 <Component Subtype="PrototechCoolingUnit" Count="5" />
                 <Component Subtype="CsillanHeirloom" Count="1" />
@@ -103,6 +105,8 @@
 			<Model>Models\Cubes\large\ChemicalRefinery.mwm</Model>
 			  <Components>
                 <Component Subtype="PrototechFrame" Count="1"/>
+                <Component Subtype="LogicPrism" Count="4"/>
+                <Component Subtype="CoreIndex" Count="16"/>
                 <Component Subtype="PrototechPanel" Count="20" />
                 <Component Subtype="PrototechCoolingUnit" Count="2" />
                 <Component Subtype="CsillanHeirloom" Count="1" />

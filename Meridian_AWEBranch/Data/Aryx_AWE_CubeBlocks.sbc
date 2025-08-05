@@ -16,7 +16,7 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model>
 			<Components>
-				<Component Subtype="CsillanHeirloom" Count="1"/>
+				<Component Subtype="EnTecConduit" Count="40"/>
 				<Component Subtype="PrototechCoolingUnit" Count="4"/>
 				<Component Subtype="SteelPlate" Count="100"/>
 				<Component Subtype="Construction" Count="50"/>
@@ -423,6 +423,7 @@
 			<Model>Models\AWE_PDRailgun\LG_AryxPicketRailgun.mwm</Model>
 			<Components>
 				<Component Subtype="SteelPlate" Count="250"/>
+				<Component Subtype="EnTecConduit" Count="40"/>
 				<Component Subtype="PrototechCoolingUnit" Count="12"/>
 				<Component Subtype="Construction" Count="175"/>
 				<Component Subtype="MetalGrid" Count="60"/>

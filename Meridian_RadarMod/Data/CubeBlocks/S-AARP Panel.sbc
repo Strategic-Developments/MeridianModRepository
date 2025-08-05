@@ -17,6 +17,7 @@
 			<Model>Models\Cubes\Sensors\S-AARP Panels\Flat\SOFL_SAARP_Flat.mwm</Model>
 			<Components>
   				<Component Subtype="SteelPlate" Count="15"/>
+				<Component Subtype="LogicPrism" Count="4"/>
   				<Component Subtype="Construction" Count="20"/>
   				<Component Subtype="SmallTube" Count="15"/>
  			    <Component Subtype="LargeTube" Count="15"/>
@@ -104,6 +105,7 @@
 			<Model>Models\Cubes\Sensors\S-AARP Panels\1x1\SOFL_SAARP_1x1.mwm</Model>
 			<Components>
   				<Component Subtype="SteelPlate" Count="15"/>
+				<Component Subtype="LogicPrism" Count="4"/>
   				<Component Subtype="Construction" Count="20"/>
   				<Component Subtype="SmallTube" Count="15"/>
  			    <Component Subtype="LargeTube" Count="15"/>
@@ -153,6 +155,7 @@
 			<Model>Models\Cubes\Sensors\S-AARP Panels\1x1 corner\SOFL_SAARP_1x1_Corner.mwm</Model>
 			<Components>
   				<Component Subtype="SteelPlate" Count="15"/>
+				<Component Subtype="LogicPrism" Count="4"/>
   				<Component Subtype="Construction" Count="20"/>
   				<Component Subtype="SmallTube" Count="15"/>
  			    <Component Subtype="LargeTube" Count="15"/>
@@ -202,6 +205,7 @@
 			<Model>Models\Cubes\Sensors\S-AARP Panels\1x2\SOFL_SAARP_1x2.mwm</Model>
 			<Components>
   				<Component Subtype="SteelPlate" Count="15"/>
+				<Component Subtype="LogicPrism" Count="4"/>
   				<Component Subtype="Construction" Count="20"/>
   				<Component Subtype="SmallTube" Count="15"/>
  			    <Component Subtype="LargeTube" Count="15"/>
@@ -251,6 +255,7 @@
 			<Model>Models\Cubes\Sensors\S-AARP Panels\1x2 corner base\SOFL_SAARP_1x2_Corner.mwm</Model>
 			<Components>
   				<Component Subtype="SteelPlate" Count="15"/>
+				<Component Subtype="LogicPrism" Count="4"/>
   				<Component Subtype="Construction" Count="20"/>
   				<Component Subtype="SmallTube" Count="15"/>
  			    <Component Subtype="LargeTube" Count="15"/>
@@ -301,6 +306,7 @@
 			<Model>Models\Cubes\Sensors\S-AARP Panels\1x1 offset\SOFL_SAARP_1x1_Offset.mwm</Model>
 			<Components>
   				<Component Subtype="SteelPlate" Count="15"/>
+				<Component Subtype="LogicPrism" Count="4"/>
   				<Component Subtype="Construction" Count="20"/>
   				<Component Subtype="SmallTube" Count="15"/>
  			    <Component Subtype="LargeTube" Count="15"/>
@@ -351,6 +357,7 @@
 			<Model>Models\Cubes\Sensors\S-AARP Panels\1x2 corner offset\SOFL_SAARP_1x2_Corner_Offset.mwm</Model>
 			<Components>
   				<Component Subtype="SteelPlate" Count="15"/>
+				<Component Subtype="LogicPrism" Count="4"/>
   				<Component Subtype="Construction" Count="20"/>
   				<Component Subtype="SmallTube" Count="15"/>
  			    <Component Subtype="LargeTube" Count="15"/>
@@ -404,6 +411,7 @@
 			<Model>Models\Cubes\Sensors\S-AARP Panels\1x2 offset\SOFL_SAARP_1x2_Offset.mwm</Model>
 			<Components>
   				<Component Subtype="SteelPlate" Count="15"/>
+				<Component Subtype="LogicPrism" Count="4"/>
   				<Component Subtype="Construction" Count="20"/>
   				<Component Subtype="SmallTube" Count="15"/>
  			    <Component Subtype="LargeTube" Count="15"/>
@@ -455,6 +463,7 @@
 			<Model>Models\Cubes\Sensors\S-AARP Panels\Flat Half\SOFL_SAARP_Half_Flat.mwm</Model>
 			<Components>
   				<Component Subtype="SteelPlate" Count="15"/>
+				<Component Subtype="LogicPrism" Count="4"/>
   				<Component Subtype="Construction" Count="20"/>
   				<Component Subtype="SmallTube" Count="15"/>
  			    <Component Subtype="LargeTube" Count="15"/>
