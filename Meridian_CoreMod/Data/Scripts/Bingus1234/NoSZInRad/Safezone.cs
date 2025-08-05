@@ -7,6 +7,7 @@ using VRageMath;
 using Sandbox.Common.ObjectBuilders;
 using VRage.ObjectBuilders;
 using SpaceEngineers.Game.ModAPI;
+using Sandbox.Game.Entities;
 
 namespace NoSZInRad
 {
@@ -20,7 +21,7 @@ namespace NoSZInRad
         {
             if (MyAPIGateway.Multiplayer.IsServer)
             {
-                //NeedsUpdate = MyEntityUpdateEnum.BEFORE_NEXT_FRAME;
+                NeedsUpdate = MyEntityUpdateEnum.BEFORE_NEXT_FRAME;
             }
         }
 
@@ -59,20 +60,20 @@ namespace NoSZInRad
             const int REGULAR_REPLOSS_ZONE = 30;
             const int PIRATE_REPLOSS_ZONE = 15;
             NoSafezoneWorkLocales = new List<BoundingSphereD>();
-            //AddNew("GPS:CCAS Nairobi SLC:297432:50771:2065996:#FFF19F75:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            //AddNew("GPS:CCAS Tripoli SLC:165635:7284:2195716:#FFF19F75:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            //AddNew("GPS:CSILLA Regional Landing:2415608:-19793:-17159:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            //AddNew("GPS:CSILLA Vekan Gatehold:2247864:33592:6981:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            //AddNew("GPS:ENCORP DuPont Transit:-2422618:-20256:598156:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            //AddNew("GPS:ENCORP Vanderbilt Station:-2335929:70355:444812:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:CCAS Nairobi SLC:297432:50771:2065996:#FFF19F75:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:CCAS Tripoli SLC:165635:7284:2195716:#FFF19F75:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:CSILLA Regional Landing:2415608:-19793:-17159:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:CSILLA Vekan Gatehold:2247864:33592:6981:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:ENCORP DuPont Transit:-2422618:-20256:598156:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:ENCORP Vanderbilt Station:-2335929:70355:444812:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
 
-            //AddNew("GPS:CSILLA Regional Landing:2415608:-19793:-17159:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            //AddNew("GPS:CSILLA Vekan Gatehold:2247864:33592:6981:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            //AddNew("GPS:CSILLA Redwatch Outpost:-2588616:57608:-409448:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE);
-            //AddNew("GPS:CSILLA Vault 9 Outpost:992580:69034:2386727:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE);
+            AddNew("GPS:CSILLA Regional Landing:2415608:-19793:-17159:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:CSILLA Vekan Gatehold:2247864:33592:6981:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:CSILLA Redwatch Outpost:-2588616:57608:-409448:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE);
+            AddNew("GPS:CSILLA Vault 9 Outpost:992580:69034:2386727:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE);
 
-            //AddNew("GPS:ENCORP DuPont Transit:-2422618:-20256:598156:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            //AddNew("GPS:ENCORP Vanderbilt Station:-2335929:70355:444812:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:ENCORP DuPont Transit:-2422618:-20256:598156:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:ENCORP Vanderbilt Station:-2335929:70355:444812:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
         }   
 
         private static void AddNew(string stationGPS, float distKm)
