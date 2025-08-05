@@ -6,8 +6,8 @@
         <TypeId>GuiBlockCategoryDefinition</TypeId>
         <SubtypeId/>
       </Id>
-      <DisplayName>Horizon Logistics</DisplayName>
-      <Name>HTG_Tech</Name>
+      <DisplayName>Meridian Logistics</DisplayName>
+      <Name>AAHTG_Tech</Name>
       <ItemIds>
         <string>OxygenTank/SOFL_Gas_Stacked_Tank_AT</string>
         <string>OxygenTank/SOFL_Gas_Stacked_Tank</string>

@@ -1,6 +1,53 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Blueprints>
+
+
+   <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>LogicPrismBP</SubtypeId>
+      </Id>
+      <DisplayName>Logic Prism BP</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\LogicPrism.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Component" SubtypeId="LogicPrism"/>
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="LogicPrism"/>
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>CoreIndexBP</SubtypeId>
+      </Id>
+      <DisplayName>Core Index BP</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\CoreIndex.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Component" SubtypeId="CoreIndex"/>
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="CoreIndex"/>
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>EnTecConduitBP</SubtypeId>
+      </Id>
+      <DisplayName>EnTec Conduit BP</DisplayName>
+      <Icon>Textures\GUI\Icons\Components\EnTecConduit.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Component" SubtypeId="EnTecConduit"/>
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="EnTecConduit"/>
+      <BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+
+
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
