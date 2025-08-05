@@ -181,7 +181,7 @@
             <Model>Models\Cubes\Large\GasHarvesterT1.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="300"/>
-                <Component Subtype="OpLicense" Count="1"/>
+                <Component Subtype="LogicPrism" Count="10"/>
                 <Component Subtype="Construction" Count="80"/>
                 <Component Subtype="SmallTube" Count="36"/>
                 <Component Subtype="Motor" Count="70"/>
@@ -189,7 +189,7 @@
                 <Component Subtype="Computer" Count="45"/>
                 <Component Subtype="SteelPlate" Count="150"/>
             </Components>
-            <CriticalComponent Subtype="OpLicense" Index="0"/>
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <BuildProgressModels>
                 <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\CollectorConstruction_1.mwm"/>
                 <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\CollectorConstruction_2.mwm"/>
@@ -234,7 +234,7 @@
             <Model>Models\Cubes\Small\Collector.mwm</Model>
             <Components>
                 <Component Subtype="SteelPlate" Count="25"/>
-                <Component Subtype="TacLicense" Count="1"/>
+                <Component Subtype="LogicPrism" Count="3"/>
                 <Component Subtype="Construction" Count="35"/>
                 <Component Subtype="SmallTube" Count="12"/>
                 <Component Subtype="Motor" Count="8"/>
@@ -242,7 +242,7 @@
                 <Component Subtype="Computer" Count="8"/>
                 <Component Subtype="SteelPlate" Count="10"/>
             </Components>
-            <CriticalComponent Subtype="TacLicense" Index="0"/>
+            <CriticalComponent Subtype="Computer" Index="0"/>
             <BuildProgressModels>
                 <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\CollectorConstruction_1.mwm"/>
                 <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\CollectorConstruction_2.mwm"/>
