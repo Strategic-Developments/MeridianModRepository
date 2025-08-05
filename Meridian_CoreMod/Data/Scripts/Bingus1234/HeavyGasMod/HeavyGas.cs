@@ -25,7 +25,7 @@ namespace Nevcairiel.HeavyGas
         // .. and 16 are oxygen
         // in SE, turning 1kg of Ice into gas results in 10L of Hydrogen, and 5L of Oxygen, scale the values accordingly
         public static double GAS_L_KG_CONVERSION_H2 = 10 * (2.0 / 18.0) / 10.0;
-        public static double GAS_L_KG_CONVERSION_O2 = 10 * (16.0 / 18.0) / 5.0;
+        public static double GAS_L_KG_CONVERSION_O2 = 2 * (16.0 / 18.0) / 5.0;
 
         private IMyGasTank tank;
 
