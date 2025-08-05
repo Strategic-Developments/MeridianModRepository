@@ -69,17 +69,17 @@ namespace NoSZInRad
 
             AddNew("GPS:CSILLA Regional Landing:2415608:-19793:-17159:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
             AddNew("GPS:CSILLA Vekan Gatehold:2247864:33592:6981:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            //AddNew("GPS:CSILLA Redwatch Outpost:-2588616:57608:-409448:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE);
-            //AddNew("GPS:CSILLA Vault 9 Outpost:992580:69034:2386727:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE);
+            AddNew("GPS:CSILLA Redwatch Outpost:-2588616:57608:-409448:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE);
+            AddNew("GPS:CSILLA Vault 9 Outpost:992580:69034:2386727:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE);
 
-            AddNew("GPS:Kimi:2702071:-297911:-948008:#FFF9F9F9:Planets:", 5);
-            AddNew("GPS:Caerus:-2634367:65652:-434416:#FFFF0000:Planets:", 100);
-            AddNew("GPS:Deimos:965725:65306:2415429:#FFFF0000:Planets:", 100);
-            AddNew("GPS:Thanatos:331166:130897:-6369487:#FFF9F9F9:Planets:", 150);
+            //AddNew("GPS:Kimi:2702071:-297911:-948008:#FFF9F9F9:Planets:", 5);
+            //AddNew("GPS:Caerus:-2634367:65652:-434416:#FFFF0000:Planets:", 100);
+            //AddNew("GPS:Deimos:965725:65306:2415429:#FFFF0000:Planets:", 100);
+            //AddNew("GPS:Thanatos:331166:130897:-6369487:#FFF9F9F9:Planets:", 150);
 
             AddNew("GPS:ENCORP DuPont Transit:-2422618:-20256:598156:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
             AddNew("GPS:ENCORP Vanderbilt Station:-2335929:70355:444812:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
-        }   
+        }
 
         private static void AddNew(string stationGPS, float distKm)
         {
