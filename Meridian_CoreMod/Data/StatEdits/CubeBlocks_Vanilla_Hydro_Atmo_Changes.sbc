@@ -870,7 +870,7 @@
             <BuildTimeSeconds>50</BuildTimeSeconds>
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>3000000</ForceMagnitude>
-            <MaxPowerConsumption>50.000000</MaxPowerConsumption>
+            <MaxPowerConsumption>75.000000</MaxPowerConsumption>
             <MinPowerConsumption>0.000002</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
             <MinPlanetaryInfluence>0.6</MinPlanetaryInfluence>
@@ -981,7 +981,7 @@
             <BuildTimeSeconds>50</BuildTimeSeconds>
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>3000000</ForceMagnitude>
-            <MaxPowerConsumption>50</MaxPowerConsumption>
+            <MaxPowerConsumption>75</MaxPowerConsumption>
             <MinPowerConsumption>0.000002</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
             <MinPlanetaryInfluence>0.6</MinPlanetaryInfluence>
@@ -1092,7 +1092,7 @@
             <BuildTimeSeconds>25</BuildTimeSeconds>
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>500000</ForceMagnitude>
-            <MaxPowerConsumption>10</MaxPowerConsumption>
+            <MaxPowerConsumption>15</MaxPowerConsumption>
             <MinPowerConsumption>0.000002</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
             <MinPlanetaryInfluence>0.6</MinPlanetaryInfluence>
@@ -1203,7 +1203,7 @@
             <BuildTimeSeconds>25</BuildTimeSeconds>
             <ResourceSinkGroup>Thrust</ResourceSinkGroup>
             <ForceMagnitude>500000</ForceMagnitude>
-            <MaxPowerConsumption>10</MaxPowerConsumption>
+            <MaxPowerConsumption>15</MaxPowerConsumption>
             <MinPowerConsumption>0.000002</MinPowerConsumption>
             <SlowdownFactor>1</SlowdownFactor>
             <MinPlanetaryInfluence>0.6</MinPlanetaryInfluence>
