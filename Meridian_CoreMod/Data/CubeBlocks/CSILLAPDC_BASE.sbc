@@ -16,7 +16,7 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\CSILLAPDC_BASE.mwm</Model>
 			<Components>
-				<Component Subtype="EnTecConduit" Count="24" />
+				<Component Subtype="EnTecConduit" Count="30" />
         		<Component Subtype="SteelPlate" Count="1000" />
         		<Component Subtype="Construction" Count="200" />
        	 		<Component Subtype="MetalGrid" Count="110" />

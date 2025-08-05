@@ -17,7 +17,7 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Cubes\large\PTGNMountedPDC.mwm</Model>
 			<Components>]
-				<Component Subtype="EnTecConduit" Count="30"/>
+				<Component Subtype="EnTecConduit" Count="20"/>
 				<Component Subtype="SteelPlate" Count="10"/>
 				<Component Subtype="PrototechCoolingUnit" Count="6"/>
 				<Component Subtype="Construction" Count="30"/>

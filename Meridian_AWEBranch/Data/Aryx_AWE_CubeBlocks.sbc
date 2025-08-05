@@ -16,7 +16,7 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model>
 			<Components>
-				<Component Subtype="EnTecConduit" Count="40"/>
+				<Component Subtype="EnTecConduit" Count="30"/>
 				<Component Subtype="PrototechCoolingUnit" Count="4"/>
 				<Component Subtype="SteelPlate" Count="100"/>
 				<Component Subtype="Construction" Count="50"/>
