@@ -67,9 +67,9 @@ namespace WarheadRaycastImpact
         BoundingBoxD ObjAABB = new BoundingBoxD();
         Type TYPEOF_IMyCubeGrid = typeof(IMyCubeGrid);
 
-        static float MaxSpeed = 2000;
+        const float MaxSpeed = 3000;
 
-        float Discrete_Error = MaxSpeed / 60 + 0.5f;
+        const float Discrete_Error = MaxSpeed / 60 + 0.5f;
         bool Fetch_AllGrid_Once_Complete = false;
 
         private void InitializeArmedWarhead(bool init = false)
@@ -88,7 +88,7 @@ namespace WarheadRaycastImpact
                     {
                         if (entity == null || entity.Closed)
                             continue;
-                        if (entity.GetFatBlocks<IMyWarhead>().GetEnumerator().MoveNext())
+                        if (entity.CustomName == "SPIKER" || entity.GetFatBlocks<IMyWarhead>().GetEnumerator().MoveNext())
                         {
                             Possible_WarheadGrids.Add(entity);
                         }
