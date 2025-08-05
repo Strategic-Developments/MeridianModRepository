@@ -15,98 +15,6 @@ using VRage.Utils;
 
 namespace Nevcairiel.HeavyGas
 {
-
-    [MySessionComponentDescriptor(MyUpdateOrder.NoUpdate)]
-    public class HeavyGasSession : MySessionComponentBase
-    {
-        HeavyGasSettings Settings = new HeavyGasSettings();
-
-        public static bool EnableNPCs = false;
-
-        public override void LoadData()
-        {
-            Settings.Load();
-            EnableNPCs = Settings.EnableNPCs;
-        }
-
-        class HeavyGasSettings
-        {
-            const string VariableId = nameof(HeavyGasSettings); // IMPORTANT: must be unique as it gets written in a shared space (sandbox.sbc)
-            const string FileName = "HeavyGas.ini"; // the file that gets saved to world storage under your mod's folder
-            const string IniSection = "Config";
-
-            public bool EnableNPCs = false;
-
-            public HeavyGasSettings()
-            {
-
-            }
-
-            void LoadConfig(MyIni iniParser)
-            {
-                EnableNPCs = iniParser.Get(IniSection, nameof(EnableNPCs)).ToBoolean(EnableNPCs);
-            }
-
-            void SaveConfig(MyIni iniParser)
-            {
-                iniParser.Set(IniSection, nameof(EnableNPCs), EnableNPCs);
-            }
-
-            public void Load()
-            {
-                if (MyAPIGateway.Session.IsServer)
-                    LoadOnHost();
-                else
-                    LoadOnClient();
-            }
-
-            void LoadOnHost()
-            {
-                MyIni iniParser = new MyIni();
-
-                // load file if exists then save it regardless so that it can be sanitized and updated
-                if (MyAPIGateway.Utilities.FileExistsInWorldStorage(FileName, typeof(HeavyGasSettings)))
-                {
-                    using (TextReader file = MyAPIGateway.Utilities.ReadFileInWorldStorage(FileName, typeof(HeavyGasSettings)))
-                    {
-                        string text = file.ReadToEnd();
-
-                        MyIniParseResult result;
-                        if (!iniParser.TryParse(text, out result))
-                            throw new Exception($"Config error: {result.ToString()}");
-
-                        LoadConfig(iniParser);
-                    }
-                }
-
-                iniParser.Clear(); // remove any existing settings that might no longer exist
-                SaveConfig(iniParser);
-
-                string saveText = iniParser.ToString();
-                MyAPIGateway.Utilities.SetVariable<string>(VariableId, saveText);
-
-                using (TextWriter file = MyAPIGateway.Utilities.WriteFileInWorldStorage(FileName, typeof(HeavyGasSettings)))
-                {
-                    file.Write(saveText);
-                }
-            }
-
-            void LoadOnClient()
-            {
-                string text;
-                if (!MyAPIGateway.Utilities.GetVariable<string>(VariableId, out text))
-                    throw new Exception("No config found in sandbox.sbc!");
-
-                MyIni iniParser = new MyIni();
-                MyIniParseResult result;
-                if (!iniParser.TryParse(text, out result))
-                    throw new Exception($"Config error: {result.ToString()}");
-
-                LoadConfig(iniParser);
-            }
-        }
-    }
-
     // This object gets attached to entities depending on their type and optionally subtype aswell.
     // The 2nd arg, "false", is for entity-attached update if set to true which is not recommended, see for more info: https://forum.keenswh.com/threads/modapi-changes-jan-26.7392280/
     [MyEntityComponentDescriptor(typeof(MyObjectBuilder_OxygenTank), false)]
@@ -196,7 +104,7 @@ namespace Nevcairiel.HeavyGas
             MyFixedPoint newExternalMass = (MyFixedPoint)((tank.FilledRatio * tank.Capacity) * massMultiplier);
 
             // disable extra mass for NPC grids, if needed
-            if (HeavyGasSession.EnableNPCs == false && NPCOwned == true)
+            if (NPCOwned == true)
             {
                 newExternalMass = 0;
             }
