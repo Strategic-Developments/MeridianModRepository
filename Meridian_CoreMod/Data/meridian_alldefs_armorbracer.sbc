@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Components>
+		<Component>
+			<Id>
+				<TypeId>Component</TypeId>
+				<SubtypeId>ArmorBracer</SubtypeId>
+			</Id>
+			<DisplayName>Armor Bracer</DisplayName>
+			<Icon>Textures\GUI\Icons\component\metal_grid_component.dds</Icon>
+			<Size>
+				<X>0.5</X>
+				<Y>0.5</Y>
+				<Z>0.05</Z>
+			</Size>
+			<Mass>200</Mass>
+			<Volume>15</Volume>
+			<Model>Models\Components\metal_grid_component.mwm</Model>
+			<PhysicalMaterial>Metal</PhysicalMaterial>
+			<MaxIntegrity>25</MaxIntegrity>
+			<DropProbability>0.95</DropProbability>
+			<Health>69</Health>
+			<MinimumOfferAmount>250</MinimumOfferAmount>
+			<MaximumOfferAmount>1000</MaximumOfferAmount>
+			<MinimumOrderAmount>125</MinimumOrderAmount>
+			<MaximumOrderAmount>1000</MaximumOrderAmount>
+			<CanPlayerOrder>true</CanPlayerOrder>
+
+			<MinimumAcquisitionAmount>125</MinimumAcquisitionAmount>
+			<MaximumAcquisitionAmount>1000</MaximumAcquisitionAmount>
+		</Component>
+	</Components>
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ArmorBracer</SubtypeId>
+			</Id>
+			<DisplayName>Armor Bracer</DisplayName>
+			<Icon>Textures\GUI\Icons\component\metal_grid_component.dds</Icon>
+			<Prerequisites>
+				<Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
+				<Item Amount="25" TypeId="Ingot" SubtypeId="Nickel" />
+				<Item Amount="15" TypeId="Ingot" SubtypeId="Cobalt" />
+				<Item Amount="1" TypeId="Ingot" SubtypeId="Gold" />
+			</Prerequisites>
+			<Result Amount="1" TypeId="Component" SubtypeId="ArmorBracer" />
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+	</Blueprints>
+	<BlueprintClasses>
+		<Entry Class="Components" BlueprintSubtypeId="ArmorBracer" />
+	</BlueprintClasses>
+</Definitions>

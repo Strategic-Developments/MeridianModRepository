@@ -25,7 +25,7 @@ namespace Scripts {
                         MuzzlePartId = "zenith", // The subpart where your muzzle empties are located. This is often the elevation subpart. Subpart_Boomsticks must be written as Boomsticks.
                         AzimuthPartId = "azimuth", // Your Rotating Subpart, the bit that moves sideways.
                         ElevationPartId = "zenith",// Your Elevating Subpart, that bit that moves up.
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                     },
                     new MountPointDef {
                         SubtypeId = "Aryx_AES_6M40_PDC_SG", // Block Subtypeid. Your Cubeblocks contain this information
@@ -33,7 +33,7 @@ namespace Scripts {
                         MuzzlePartId = "zenith", // The subpart where your muzzle empties are located. This is often the elevation subpart. Subpart_Boomsticks must be written as Boomsticks.
                         AzimuthPartId = "azimuth", // Your Rotating Subpart, the bit that moves sideways.
                         ElevationPartId = "zenith",// Your Elevating Subpart, that bit that moves up.
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                     },
                     new MountPointDef {
                         SubtypeId = "MCRNRetractablePDC_Block", // Block Subtypeid. Your Cubeblocks contain this information
@@ -41,7 +41,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                     new MountPointDef {
@@ -50,7 +50,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                     new MountPointDef {
@@ -59,7 +59,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                     new MountPointDef {
@@ -68,7 +68,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                     new MountPointDef {
@@ -77,7 +77,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                     new MountPointDef {
@@ -86,7 +86,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                     new MountPointDef {
@@ -95,7 +95,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                     new MountPointDef {
@@ -104,7 +104,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                 },	 

@@ -17,13 +17,18 @@
 			<Model>Models\Cubes\large\OPAAutocannonPDC.mwm</Model>
 			<Components>
 				<Component Subtype="SteelPlate" Count="10"/>
-				<Component Subtype="Construction" Count="10"/>
-				<Component Subtype="SmallTube" Count="2"/>
-				<Component Subtype="Motor" Count="4"/>
-				<Component Subtype="Computer" Count="10"/>
-				<Component Subtype="SteelPlate" Count="25"/>
+				<Component Subtype="Construction" Count="150"/>
+				<Component Subtype="MetalGrid" Count="36"/>
+				<Component Subtype="SmallTube" Count="18"/>
+				<Component Subtype="Motor" Count="24"/>
+				<Component Subtype="Detector" Count="50"/>
+				<Component Subtype="Computer" Count="170"/>
+				<!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+				<Component Subtype="MetalGrid" Count="144"/>
+				<Component Subtype="Construction" Count="250"/>
+				<Component Subtype="SteelPlate" Count="50"/>
 			</Components>
-			<CriticalComponent Index="0" Subtype="Computer"/>
+			<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="0.11" StartY="0.11" EndX="0.89" EndY="0.89" Default="true"/>
 			</MountPoints>
@@ -63,13 +68,18 @@
 			<Model>Models\Cubes\large\OPAAutocannonPDC.mwm</Model>
 			<Components>
 				<Component Subtype="SteelPlate" Count="10"/>
-				<Component Subtype="Construction" Count="10"/>
-				<Component Subtype="SmallTube" Count="2"/>
-				<Component Subtype="Motor" Count="4"/>
-				<Component Subtype="Computer" Count="10"/>
-				<Component Subtype="SteelPlate" Count="25"/>
+				<Component Subtype="Construction" Count="150"/>
+				<Component Subtype="MetalGrid" Count="36"/>
+				<Component Subtype="SmallTube" Count="18"/>
+				<Component Subtype="Motor" Count="24"/>
+				<Component Subtype="Detector" Count="50"/>
+				<Component Subtype="Computer" Count="170"/>
+				<!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+				<Component Subtype="MetalGrid" Count="144"/>
+				<Component Subtype="Construction" Count="250"/>
+				<Component Subtype="SteelPlate" Count="50"/>
 			</Components>
-			<CriticalComponent Index="0" Subtype="Computer"/>
+			<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="0.53" StartY="0.53" EndX="4.47" EndY="4.47" Default="true"/>
 			</MountPoints>

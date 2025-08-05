@@ -26,7 +26,7 @@ namespace Scripts {
                         MuzzlePartId = "MissileTurretBarrels", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "MissileTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "MissileTurretBarrels",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                     new MountPointDef {
@@ -35,7 +35,7 @@ namespace Scripts {
                         MuzzlePartId = "MissileTurretBarrels", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "MissileTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "MissileTurretBarrels",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 2f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                     

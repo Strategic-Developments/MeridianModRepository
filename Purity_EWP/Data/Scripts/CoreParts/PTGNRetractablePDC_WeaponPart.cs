@@ -26,7 +26,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 1f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
 
@@ -36,7 +36,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 1f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
 
@@ -46,7 +46,7 @@ namespace Scripts {
                         MuzzlePartId = "GatlingTurretBase2", // The subpart where your muzzle empties are located. This is often the elevation subpart.
                         AzimuthPartId = "GatlingTurretBase1", // Your Rotating Subpart, the bit that moves sideways
                         ElevationPartId = "GatlingTurretBase2",// Your Elevating Subpart, that bit that moves up
-                        DurabilityMod = 0.5f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
+                        DurabilityMod = 1f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
                         IconName = "" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                     

@@ -15,13 +15,17 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_Base.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="50" />	
-				<Component Subtype="Construction" Count="25" />				
-				<Component Subtype="Girder" Count="25" />
-				<Component Subtype="Motor" Count="25" />					
-				<Component Subtype="Detector" Count="5" />				
-				<Component Subtype="Computer" Count="100" />
-				<Component Subtype="SteelPlate" Count="50"/>		
+				<Component Subtype="SteelPlate" Count="50"/>
+				<Component Subtype="Construction" Count="150"/>
+				<Component Subtype="ArmorBracer" Count="36"/>
+				<Component Subtype="SmallTube" Count="18"/>
+				<Component Subtype="Motor" Count="24"/>
+				<Component Subtype="Detector" Count="50"/>
+				<Component Subtype="Computer" Count="170"/>
+				<!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+				<Component Subtype="ArmorBracer" Count="60"/>
+				<Component Subtype="Construction" Count="50"/>
+				<Component Subtype="SteelPlate" Count="150"/>
 			</Components>
 			<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -59,31 +63,25 @@
 				<SubtypeId>Aryx_AES_6M40_PDC_SG</SubtypeId>
 			</Id>
 			<DisplayName>Nariman Dynamics 6M40 Rotary PDC</DisplayName>
-			<Icon>Textures\GUI\Icons\Aryx\AES6M40PDC.dds</Icon>	  
-			<Description>A fully-retractable rotary PDC designed for MCRN warships by Nariman Dynamics.
-			[Stats - -
-			Range: 4000m
-			Rate of Fire: 1200RPM
-			Damage Per Shot: 120
-			SG Mult: 2x
-			Tracking Speed: Excellent
-			Round Velocity: 1500m/s
-			]
-			Warning - Will have strange behaviours if retracted in Manual or Painter control mode.
-			</Description>
+			<Icon>Textures\GUI\Icons\Aryx\AES6M40PDC.dds</Icon>
+			<Description>Standard cheap rotary PDC option. 20km range, 15kps, good vs SGs, suffers vs LGs and especially vs heavy armor, uses Nariman Ammo Boxes</Description>
 			<CubeSize>Small</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="5" y="5" z="10"/>
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Aryx\Expanse\PDCs\6M40\ARYX_6M40_Base.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="50" />	
-				<Component Subtype="Construction" Count="25" />				
-				<Component Subtype="Girder" Count="25" />
-				<Component Subtype="Motor" Count="25" />					
-				<Component Subtype="Detector" Count="5" />				
-				<Component Subtype="Computer" Count="100" />
-				<Component Subtype="SteelPlate" Count="50"/>		
+				<Component Subtype="SteelPlate" Count="50"/>
+				<Component Subtype="Construction" Count="150"/>
+				<Component Subtype="ArmorBracer" Count="36"/>
+				<Component Subtype="SmallTube" Count="18"/>
+				<Component Subtype="Motor" Count="24"/>
+				<Component Subtype="Detector" Count="50"/>
+				<Component Subtype="Computer" Count="170"/>
+				<!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+				<Component Subtype="ArmorBracer" Count="60"/>
+				<Component Subtype="Construction" Count="50"/>
+				<Component Subtype="SteelPlate" Count="150"/>
 			</Components>
 			<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
