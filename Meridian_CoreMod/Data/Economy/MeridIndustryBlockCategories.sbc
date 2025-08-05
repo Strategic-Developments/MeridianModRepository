@@ -6,9 +6,13 @@
         <TypeId>GuiBlockCategoryDefinition</TypeId>
         <SubtypeId/>
       </Id>
-      <DisplayName>Meridian Logistics</DisplayName>
+      <DisplayName>Meridian Industry</DisplayName>
       <Name>AAHTG_Tech</Name>
       <ItemIds>
+        <string>Assembler/ChemicalAssembler</string>
+        <string>Assembler/NuclearAssembler</string>
+        <string>Refinery/ChemicalRefinery</string>
+
         <string>OxygenTank/SOFL_Gas_Stacked_Tank_AT</string>
         <string>OxygenTank/SOFL_Gas_Stacked_Tank</string>
         <string>OxygenTank/SOFL_Gas_Huge_Tank</string>
