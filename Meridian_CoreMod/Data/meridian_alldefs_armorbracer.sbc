@@ -49,7 +49,7 @@
 			<IsPrimary>true</IsPrimary>
 		</Blueprint>
 	</Blueprints>
-	<BlueprintClasses>
+	<BlueprintClassEntries>
 		<Entry Class="Components" BlueprintSubtypeId="ArmorBracer" />
-	</BlueprintClasses>
+	</BlueprintClassEntries>
 </Definitions>
