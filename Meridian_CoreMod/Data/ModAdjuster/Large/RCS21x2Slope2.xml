@@ -16,6 +16,16 @@
 			<ForceMagnitude>1250000</ForceMagnitude>
 			<SlowdownFactor>1</SlowdownFactor>
 			<MaxPowerConsumption>0.353636</MaxPowerConsumption>
+			<Components>
+                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="Construction" Count="15"/>
+                <Component Subtype="SmallTube" Count="20"/>
+                <Component Subtype="LargeTube" Count="30"/>
+                <Component Subtype="MetalGrid" Count="26"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="SteelPlate" Count="20"/>
+            </Components>
+            <CriticalComponent Subtype="MetalGrid" Index="0" />
 		</Definition>
 	</CubeBlocks>
 </Definitions>
