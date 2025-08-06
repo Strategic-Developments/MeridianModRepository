@@ -6,7 +6,7 @@
 				<TypeId>Component</TypeId>
 				<SubtypeId>ArmorBracer</SubtypeId>
 			</Id>
-			<DisplayName>Armor Bracer</DisplayName>
+			<DisplayName>Structural Bracer</DisplayName>
 			<Icon>Textures\GUI\Icons\component\metal_grid_component.dds</Icon>
 			<Size>
 				<X>0.5</X>
@@ -36,7 +36,7 @@
 				<TypeId>BlueprintDefinition</TypeId>
 				<SubtypeId>ArmorBracer</SubtypeId>
 			</Id>
-			<DisplayName>Armor Bracer</DisplayName>
+			<DisplayName>Structural Bracer</DisplayName>
 			<Icon>Textures\GUI\Icons\component\metal_grid_component.dds</Icon>
 			<Prerequisites>
 				<Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
