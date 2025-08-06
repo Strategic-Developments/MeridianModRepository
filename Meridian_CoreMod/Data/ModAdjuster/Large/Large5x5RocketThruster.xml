@@ -16,6 +16,18 @@
 			<MaxPowerConsumption>4.668000</MaxPowerConsumption>
 			<ForceMagnitude>30000000</ForceMagnitude>
 			<SlowdownFactor>1</SlowdownFactor>
+            <Components>
+                <Component Subtype="SteelPlate" Count="50"/>
+                <Component Subtype="Construction" Count="300"/>
+                <Component Subtype="ArmorBracer" Count="380"/>
+                <Component Subtype="MetalGrid" Count="150"/>
+                <Component Subtype="SmallTube" Count="200"/>
+                <Component Subtype="LargeTube" Count="400"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Girder" Count="50"/>
+                <Component Subtype="Construction" Count="75"/>
+                <Component Subtype="SteelPlate" Count="400"/>
+            </Components>
+            <CriticalComponent Subtype="LargeTube" Index="0" />
 		</Definition>
 	</CubeBlocks>
 </Definitions>

@@ -16,6 +16,18 @@
 				<Efficiency>1</Efficiency>
 			</FuelConverter>
 			<MaxPowerConsumption>0.778000</MaxPowerConsumption>
+            <Components>
+                <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="SmallTube" Count="38"/>
+                <Component Subtype="LargeTube" Count="44"/>
+                <Component Subtype="ArmorBracer" Count="4"/>
+                <Component Subtype="MetalGrid" Count="31"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Motor" Count="12"/>
+                <Component Subtype="Construction" Count="25"/>
+                <Component Subtype="SteelPlate" Count="50"/>
+            </Components>
+            <CriticalComponent Subtype="MetalGrid" Index="0" />
 		</Definition>
 	</CubeBlocks>
 </Definitions>
