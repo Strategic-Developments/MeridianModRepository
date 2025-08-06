@@ -26,6 +26,7 @@
 			<MaxIntegrity>300</MaxIntegrity>
 			<DropProbability>0.45</DropProbability>
 			<Health>25</Health>
+			<MinimalPricePerUnit>100000</MinimalPricePerUnit>
 			<MinimumOfferAmount>10</MinimumOfferAmount>
 			<MaximumOfferAmount>500</MaximumOfferAmount>
 			<MinimumOrderAmount>10</MinimumOrderAmount>
@@ -64,6 +65,7 @@
 			<MinimumOfferAmount>10</MinimumOfferAmount>
 			<MaximumOfferAmount>500</MaximumOfferAmount>
 			<MinimumOrderAmount>10</MinimumOrderAmount>
+			<MinimalPricePerUnit>100000</MinimalPricePerUnit>
 			<MaximumOrderAmount>100</MaximumOrderAmount>
 			<CanPlayerOrder>true</CanPlayerOrder>
 			<MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
@@ -93,6 +95,7 @@
 			<Health>25</Health>
 			<MinimumOfferAmount>10</MinimumOfferAmount>
 			<MaximumOfferAmount>500</MaximumOfferAmount>
+			<MinimalPricePerUnit>100000</MinimalPricePerUnit>
 			<MinimumOrderAmount>10</MinimumOrderAmount>
 			<MaximumOrderAmount>100</MaximumOrderAmount>
 			<CanPlayerOrder>true</CanPlayerOrder>
@@ -124,6 +127,7 @@
 			<Health>25</Health>
 			<MinimumOfferAmount>10</MinimumOfferAmount>
 			<MaximumOfferAmount>500</MaximumOfferAmount>
+			<MinimalPricePerUnit>100000</MinimalPricePerUnit>
 			<MinimumOrderAmount>10</MinimumOrderAmount>
 			<MaximumOrderAmount>100</MaximumOrderAmount>
 			<CanPlayerOrder>true</CanPlayerOrder>
@@ -149,6 +153,7 @@
 			<MaxIntegrity>25</MaxIntegrity>
 			<DropProbability>0.45</DropProbability>
 			<Health>25</Health>
+			<MinimalPricePerUnit>100000</MinimalPricePerUnit>
 			<MinimumOfferAmount>10</MinimumOfferAmount>
 			<MaximumOfferAmount>500</MaximumOfferAmount>
 			<MinimumOrderAmount>10</MinimumOrderAmount>
@@ -177,6 +182,7 @@
 			<DropProbability>0.45</DropProbability>
 			<Health>25</Health>
 			<MinimumOfferAmount>10</MinimumOfferAmount>
+			<MinimalPricePerUnit>100000</MinimalPricePerUnit>
 			<MaximumOfferAmount>500</MaximumOfferAmount>
 			<MinimumOrderAmount>10</MinimumOrderAmount>
 			<MaximumOrderAmount>100</MaximumOrderAmount>
@@ -204,6 +210,7 @@
 			<DropProbability>0.45</DropProbability>
 			<Health>25</Health>
 			<MinimumOfferAmount>10</MinimumOfferAmount>
+			<MinimalPricePerUnit>100000</MinimalPricePerUnit>
 			<MaximumOfferAmount>500</MaximumOfferAmount>
 			<MinimumOrderAmount>10</MinimumOrderAmount>
 			<MaximumOrderAmount>100</MaximumOrderAmount>
@@ -232,6 +239,7 @@
 			<Health>25</Health>
 			<MinimumOfferAmount>10</MinimumOfferAmount>
 			<MaximumOfferAmount>500</MaximumOfferAmount>
+			<MinimalPricePerUnit>100000</MinimalPricePerUnit>
 			<MinimumOrderAmount>10</MinimumOrderAmount>
 			<MaximumOrderAmount>100</MaximumOrderAmount>
 			<CanPlayerOrder>true</CanPlayerOrder>
@@ -259,6 +267,7 @@
 			<Health>25</Health>
 			<MinimumOfferAmount>10</MinimumOfferAmount>
 			<MaximumOfferAmount>500</MaximumOfferAmount>
+			<MinimalPricePerUnit>100000</MinimalPricePerUnit>
 			<MinimumOrderAmount>10</MinimumOrderAmount>
 			<MaximumOrderAmount>100</MaximumOrderAmount>
 			<CanPlayerOrder>true</CanPlayerOrder>
