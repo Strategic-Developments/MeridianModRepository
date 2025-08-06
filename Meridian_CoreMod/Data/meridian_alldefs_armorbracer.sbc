@@ -39,10 +39,9 @@
 			<DisplayName>Structural Bracer</DisplayName>
 			<Icon>Textures\GUI\Icons\component\metal_grid_component.dds</Icon>
 			<Prerequisites>
-				<Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
-				<Item Amount="25" TypeId="Ingot" SubtypeId="Nickel" />
-				<Item Amount="15" TypeId="Ingot" SubtypeId="Cobalt" />
-				<Item Amount="1" TypeId="Ingot" SubtypeId="Gold" />
+				<Item Amount="75" TypeId="Ingot" SubtypeId="Iron" />
+				<Item Amount="35" TypeId="Ingot" SubtypeId="Nickel" />
+				<Item Amount="20" TypeId="Ingot" SubtypeId="Cobalt" />
 			</Prerequisites>
 			<Result Amount="1" TypeId="Component" SubtypeId="ArmorBracer" />
 			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>

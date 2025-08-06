@@ -16,6 +16,18 @@
 			</FuelConverter>
 			<MaxPowerConsumption>0.093360</MaxPowerConsumption>
 			<SlowdownFactor>1</SlowdownFactor>
+			<Components>
+				<Component Subtype="SteelPlate" Count="10"/>
+				<Component Subtype="Construction" Count="35"/>
+				<Component Subtype="ArmorBracer" Count="4"/>
+				<Component Subtype="MetalGrid" Count="12"/>
+				<Component Subtype="SmallTube" Count="17"/>
+				<Component Subtype="LargeTube" Count="14"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+				<Component Subtype="Girder" Count="5"/>
+				<Component Subtype="Construction" Count="25"/>
+				<Component Subtype="SteelPlate" Count="50"/>
+			</Components>
+			<CriticalComponent Subtype="LargeTube" Index="0"/>
 		</Definition>
 	</CubeBlocks>
 </Definitions>
