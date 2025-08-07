@@ -87,10 +87,11 @@
 			<Components>
                 <Component Subtype="SteelPlate" Count="1000" />
                 <Component Subtype="LargeTube" Count="120" />
-                <Component Subtype="SmallTube" Count="90" />
-                <Component Subtype="Computer" Count="15" />
+                <Component Subtype="SmallTube" Count="120" />
+                <Component Subtype="ArmorBracer" Count="1500" />
+                <Component Subtype="Computer" Count="100" />
                 <Component Subtype="Construction" Count="200" />
-                <Component Subtype="SteelPlate" Count="200" />
+                <Component Subtype="SteelPlate" Count="500" />
             </Components>
             <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
