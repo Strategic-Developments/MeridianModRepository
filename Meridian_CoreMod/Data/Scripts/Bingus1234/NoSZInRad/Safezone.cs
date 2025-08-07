@@ -73,6 +73,10 @@ namespace NoSZInRad
                     {
                         MyAPIGateway.Utilities.ShowNotification("Warning: You are in an economic zone. Remember to disable your weapons!", 1, "Red");
                     }
+                    else if (Vector3D.DistanceSquared(MyAPIGateway.Session.Player.Character.GetPosition(), sphere.Item1.Center) <= sphere.Item1.Radius * sphere.Item1.Radius * 2.25 /* 1.5^2*/)
+                    {
+                        MyAPIGateway.Utilities.ShowNotification("Warning: You are near an economic zone. Ensure any weapons fire does not go into it!", 1, "Red");
+                    }
                 }
                 
             }
