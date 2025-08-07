@@ -8,58 +8,22 @@ using Sandbox.Common.ObjectBuilders;
 using VRage.ObjectBuilders;
 using SpaceEngineers.Game.ModAPI;
 using Sandbox.Game.Entities;
+using VRage.Game;
 
 namespace NoSZInRad
 {
-    [MyEntityComponentDescriptor(typeof(MyObjectBuilder_SafeZone), false, "meridian_safezone_base")]
-    public class Safezone : MyGameLogicComponent
+    [MySessionComponentDescriptor(MyUpdateOrder.BeforeSimulation)]
+    public class SafezoneMain : MySessionComponentBase
     {
-        private static List<BoundingSphereD> NoSafezoneWorkLocales;
-        private IMySafeZoneBlock self;
-
-        public override void Init(MyObjectBuilder_EntityBase objectBuilder)
-        {
-            if (MyAPIGateway.Multiplayer.IsServer)
-            {
-                NeedsUpdate = MyEntityUpdateEnum.BEFORE_NEXT_FRAME;
-            }
-        }
-
-        public override void UpdateOnceBeforeFrame()
-        {
-            self = Entity as IMySafeZoneBlock;
-            if (self?.CubeGrid?.Physics == null)
-            {
-                return;
-            }
-
-            if (NoSafezoneWorkLocales == null)
-                InitLocales();
-
-            NeedsUpdate = MyEntityUpdateEnum.EACH_100TH_FRAME;
-        }
-
-        public override void UpdateBeforeSimulation100()
-        {
-            if (NoSafezoneWorkLocales == null)
-                InitLocales();
-
-            foreach (var sphere in NoSafezoneWorkLocales)
-            {
-                if (Vector3.DistanceSquared(self.GetPosition(), sphere.Center) <= sphere.Radius * sphere.Radius)
-                {
-                    if (self.Enabled)
-                        self.Enabled = false;
-                    break;
-                }
-            }
-        }
-
-        private static void InitLocales()
+        private List<IMySafeZoneBlock> Safezones;
+        public static List<BoundingSphereD> NoSafezoneWorkLocales;
+        public override void Init(MyObjectBuilder_SessionComponent sessionComponent)
         {
             const int REGULAR_REPLOSS_ZONE = 30;
             const int PIRATE_REPLOSS_ZONE = 15;
             NoSafezoneWorkLocales = new List<BoundingSphereD>();
+            Safezones = new List<IMySafeZoneBlock>();
+            MyAPIGateway.Entities.OnEntityAdd += OnEntityAdd;
             AddNew("GPS:CCAS Nairobi SLC:297432:50771:2065996:#FFF19F75:NPC Stations:", REGULAR_REPLOSS_ZONE);
             AddNew("GPS:CCAS Tripoli SLC:165635:7284:2195716:#FFF19F75:NPC Stations:", REGULAR_REPLOSS_ZONE);
             AddNew("GPS:CSILLA Regional Landing:2415608:-19793:-17159:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
@@ -79,6 +43,83 @@ namespace NoSZInRad
 
             AddNew("GPS:ENCORP DuPont Transit:-2422618:-20256:598156:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
             AddNew("GPS:ENCORP Vanderbilt Station:-2335929:70355:444812:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            
+        }
+
+        public override void UpdateBeforeSimulation()
+        {
+            if (MyAPIGateway.Session.GameplayFrameCounter % 100 == 69)
+            {
+                foreach (var self in Safezones)
+                {
+                    foreach (var sphere in NoSafezoneWorkLocales)
+                    {
+                        if (Vector3.DistanceSquared(self.GetPosition(), sphere.Center) <= sphere.Radius * sphere.Radius)
+                        {
+                            if (self.Enabled)
+                                self.Enabled = false;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        private void OnEntityAdd(IMyEntity obj)
+        {
+            if (obj is IMyCubeGrid)
+            {
+                if (obj.Physics == null)
+                {
+                    return;
+                }
+                IMyCubeGrid grid = obj as IMyCubeGrid;
+                grid.OnBlockAdded += CubeGrid_OnBlockAdded;
+                grid.OnBlockRemoved += Grid_OnBlockRemoved;
+                grid.OnClose += CubeGrid_OnClose;
+
+                foreach (var block in ((MyCubeGrid)grid).GetFatBlocks())
+                {
+                    OnBlockAddedInit(block);
+                }
+            }
+        }
+
+        private void Grid_OnBlockRemoved(IMySlimBlock obj)
+        {
+            if (obj.FatBlock != null && obj.FatBlock is IMySafeZoneBlock
+                && obj.BlockDefinition.Id.SubtypeName == "meridian_safezone_base")
+            {
+                Safezones.Remove(obj.FatBlock as IMySafeZoneBlock);
+            }
+        }
+
+        private void CubeGrid_OnClose(IMyEntity obj)
+        {
+            ((IMyCubeGrid)obj).OnBlockAdded -= CubeGrid_OnBlockAdded;
+            ((IMyCubeGrid)obj).OnBlockRemoved -= Grid_OnBlockRemoved;
+            ((IMyCubeGrid)obj).OnClose -= CubeGrid_OnClose;
+        }
+        private void OnBlockAddedInit(IMyCubeBlock obj)
+        {
+            if (obj != null && obj is IMySafeZoneBlock 
+                && obj.SlimBlock.BlockDefinition.Id.SubtypeName == "meridian_safezone_base")
+            {
+                Safezones.Add(obj as IMySafeZoneBlock);
+            }
+        }
+        private void CubeGrid_OnBlockAdded(IMySlimBlock obj)
+        {
+            if (obj.FatBlock != null && obj.FatBlock is IMySafeZoneBlock
+                && obj.BlockDefinition.Id.SubtypeName == "meridian_safezone_base")
+            {
+                Safezones.Add(obj.FatBlock as IMySafeZoneBlock);
+            }
+        }
+        protected override void UnloadData()
+        {
+            NoSafezoneWorkLocales = null;
+            MyAPIGateway.Entities.OnEntityAdd -= OnEntityAdd;
+            Safezones = null;
         }
 
         private static void AddNew(string stationGPS, float distKm)
