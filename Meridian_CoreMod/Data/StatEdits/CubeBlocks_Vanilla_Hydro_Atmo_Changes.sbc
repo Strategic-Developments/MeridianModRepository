@@ -19,10 +19,11 @@
             <Components>
                 <Component Subtype="SteelPlate" Count="100"/>
                 <Component Subtype="Construction" Count="150"/>
-                <Component Subtype="MetalGrid" Count="250"/>
-                <Component Subtype="LargeTube" Count="40"/>
-                <Component Subtype="Construction" Count="30"/>
-                <Component Subtype="SteelPlate" Count="50"/>
+                <Component Subtype="MetalGrid" Count="50"/>
+                <Component Subtype="ArmorBracer" Count="200"/>
+                <Component Subtype="LargeTube" Count="84"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="100"/>
+                <Component Subtype="SteelPlate" Count="180"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <Center x="1" y="1" z="2"/>
@@ -123,10 +124,10 @@
             <Components>
                 <Component Subtype="SteelPlate" Count="15"/>
                 <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="MetalGrid" Count="40"/>
-                <Component Subtype="LargeTube" Count="8"/>
-                <Component Subtype="Construction" Count="20"/>
-                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="MetalGrid" Count="50"/>
+                <Component Subtype="LargeTube" Count="10"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="35"/>
+                <Component Subtype="SteelPlate" Count="15"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <MountPoints>
@@ -223,11 +224,12 @@
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
                 <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="Construction" Count="55"/>
+                <Component Subtype="MetalGrid" Count="50"/>
+                <Component Subtype="ArmorBracer" Count="8"/>
+                <Component Subtype="LargeTube" Count="20"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
                 <Component Subtype="Construction" Count="20"/>
-                <Component Subtype="MetalGrid" Count="22"/>
-                <Component Subtype="LargeTube" Count="10"/>
-                <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="SteelPlate" Count="30"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <Center x="1" y="1" z="2"/>
@@ -325,12 +327,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="2"/>
-                <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="MetalGrid" Count="4"/>
-                <Component Subtype="LargeTube" Count="2"/>
-                <Component Subtype="Construction" Count="5"/>
-                <Component Subtype="SteelPlate" Count="5"/>
+                <Component Subtype="SteelPlate" Count="3"/>
+                <Component Subtype="Construction" Count="12"/>
+                <Component Subtype="MetalGrid" Count="6"/>
+                <Component Subtype="LargeTube" Count="4"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="6"/>
+                <Component Subtype="SteelPlate" Count="8"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <MountPoints>
@@ -428,10 +430,11 @@
             <Components>
                 <Component Subtype="SteelPlate" Count="100"/>
                 <Component Subtype="Construction" Count="150"/>
-                <Component Subtype="MetalGrid" Count="250"/>
-                <Component Subtype="LargeTube" Count="40"/>
-                <Component Subtype="Construction" Count="30"/>
-                <Component Subtype="SteelPlate" Count="50"/>
+                <Component Subtype="MetalGrid" Count="50"/>
+                <Component Subtype="ArmorBracer" Count="200"/>
+                <Component Subtype="LargeTube" Count="84"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="100"/>
+                <Component Subtype="SteelPlate" Count="180"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <Center x="1" y="1" z="3"/>
@@ -531,10 +534,10 @@
             <Components>
                 <Component Subtype="SteelPlate" Count="15"/>
                 <Component Subtype="Construction" Count="40"/>
-                <Component Subtype="MetalGrid" Count="40"/>
-                <Component Subtype="LargeTube" Count="8"/>
-                <Component Subtype="Construction" Count="20"/>
-                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="MetalGrid" Count="50"/>
+                <Component Subtype="LargeTube" Count="10"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="35"/>
+                <Component Subtype="SteelPlate" Count="15"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <MountPoints>
@@ -628,11 +631,12 @@
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
                 <Component Subtype="SteelPlate" Count="20"/>
+                <Component Subtype="Construction" Count="55"/>
+                <Component Subtype="MetalGrid" Count="50"/>
+                <Component Subtype="ArmorBracer" Count="8"/>
+                <Component Subtype="LargeTube" Count="20"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
                 <Component Subtype="Construction" Count="20"/>
-                <Component Subtype="MetalGrid" Count="22"/>
-                <Component Subtype="LargeTube" Count="10"/>
-                <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="SteelPlate" Count="30"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <Center x="1" y="1" z="3"/>
@@ -728,12 +732,12 @@
             <ThrusterType>Hydrogen</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="2"/>
-                <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="MetalGrid" Count="4"/>
-                <Component Subtype="LargeTube" Count="2"/>
-                <Component Subtype="Construction" Count="5"/>
-                <Component Subtype="SteelPlate" Count="5"/>
+                <Component Subtype="SteelPlate" Count="3"/>
+                <Component Subtype="Construction" Count="12"/>
+                <Component Subtype="MetalGrid" Count="6"/>
+                <Component Subtype="LargeTube" Count="4"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="6"/>
+                <Component Subtype="SteelPlate" Count="8"/>
             </Components>
             <CriticalComponent Subtype="LargeTube" Index="0"/>
             <MountPoints>
@@ -825,11 +829,11 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="SteelPlate" Count="20"/>
                 <Component Subtype="Construction" Count="15"/>
                 <Component Subtype="LargeTube" Count="20"/>
-                <Component Subtype="MetalGrid" Count="15"/>
-                <Component Subtype="Motor" Count="400"/>
+                <Component Subtype="MetalGrid" Count="10"/>
+                <Component Subtype="Motor" Count="160"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
                 <Component Subtype="Construction" Count="10"/>
                 <Component Subtype="SteelPlate" Count="50"/>
             </Components>
@@ -936,11 +940,11 @@
             <ThrusterType>Atmospheric</ThrusterType>
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
-                <Component Subtype="SteelPlate" Count="40"/>
+                <Component Subtype="SteelPlate" Count="20"/>
                 <Component Subtype="Construction" Count="15"/>
                 <Component Subtype="LargeTube" Count="20"/>
-                <Component Subtype="MetalGrid" Count="15"/>
-                <Component Subtype="Motor" Count="400"/>
+                <Component Subtype="MetalGrid" Count="10"/>
+                <Component Subtype="Motor" Count="160"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
                 <Component Subtype="Construction" Count="10"/>
                 <Component Subtype="SteelPlate" Count="50"/>
             </Components>
@@ -1049,12 +1053,12 @@
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
                 <Component Subtype="SteelPlate" Count="5"/>
+                <Component Subtype="Construction" Count="12"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="MetalGrid" Count="4"/>
+                <Component Subtype="Motor" Count="8"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
                 <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="LargeTube" Count="3"/>
-                <Component Subtype="MetalGrid" Count="3"/>
-                <Component Subtype="Motor" Count="30"/>
-                <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="SteelPlate" Count="12"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -1160,12 +1164,12 @@
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
                 <Component Subtype="SteelPlate" Count="5"/>
+                <Component Subtype="Construction" Count="12"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="MetalGrid" Count="4"/>
+                <Component Subtype="Motor" Count="8"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
                 <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="LargeTube" Count="3"/>
-                <Component Subtype="MetalGrid" Count="3"/>
-                <Component Subtype="Motor" Count="30"/>
-                <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="SteelPlate" Count="12"/>
             </Components>
             <CriticalComponent Subtype="Motor" Index="0"/>
             <MountPoints>
@@ -1270,14 +1274,14 @@
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
                 <Component Subtype="SteelPlate" Count="4"/>
-                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="Construction" Count="8"/>
                 <Component Subtype="LargeTube" Count="2"/>
-                <Component Subtype="MetalGrid" Count="3"/>
-                <Component Subtype="Motor" Count="30"/>
+                <Component Subtype="MetalGrid" Count="1"/>
+                <Component Subtype="Motor" Count="12"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
                 <Component Subtype="Construction" Count="4"/>
                 <Component Subtype="SteelPlate" Count="4"/>
             </Components>
-            <CriticalComponent Subtype="Motor" Index="0"/>
+            <CriticalComponent Subtype="Motor" Index="0" />
             <MountPoints>
                 <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="1"/>
                 <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="3" EndY="2"/>
@@ -1381,14 +1385,14 @@
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
                 <Component Subtype="SteelPlate" Count="4"/>
-                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="Construction" Count="8"/>
                 <Component Subtype="LargeTube" Count="2"/>
-                <Component Subtype="MetalGrid" Count="3"/>
-                <Component Subtype="Motor" Count="30"/>
+                <Component Subtype="MetalGrid" Count="1"/>
+                <Component Subtype="Motor" Count="12"/> <!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
                 <Component Subtype="Construction" Count="4"/>
                 <Component Subtype="SteelPlate" Count="4"/>
             </Components>
-            <CriticalComponent Subtype="Motor" Index="0"/>
+            <CriticalComponent Subtype="Motor" Index="0" />
             <MountPoints>
                 <MountPoint Side="Top" StartX="1.1" StartY="0.2" EndX="1.9" EndY="0.8"/>
                 <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="3" EndY="2"/>
@@ -1493,10 +1497,9 @@
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
                 <Component Subtype="SteelPlate" Count="1"/>
-                <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="LargeTube" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
                 <Component Subtype="MetalGrid" Count="1"/>
-                <Component Subtype="Motor" Count="6"/>
+                <Component Subtype="Motor" Count="1"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
                 <Component Subtype="Construction" Count="1"/>
                 <Component Subtype="SteelPlate" Count="1"/>
             </Components>
@@ -1605,10 +1608,9 @@
             <SilenceableByShipSoundSystem>true</SilenceableByShipSoundSystem>
             <Components>
                 <Component Subtype="SteelPlate" Count="1"/>
-                <Component Subtype="Construction" Count="10"/>
-                <Component Subtype="LargeTube" Count="1"/>
+                <Component Subtype="Construction" Count="1"/>
                 <Component Subtype="MetalGrid" Count="1"/>
-                <Component Subtype="Motor" Count="6"/>
+                <Component Subtype="Motor" Count="1"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
                 <Component Subtype="Construction" Count="1"/>
                 <Component Subtype="SteelPlate" Count="1"/>
             </Components>

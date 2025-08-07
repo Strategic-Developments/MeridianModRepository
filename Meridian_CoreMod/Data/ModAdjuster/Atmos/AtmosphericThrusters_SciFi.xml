@@ -1,78 +1,112 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<CubeBlocks>
-
-		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+    <CubeBlocks>
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockLargeAtmosphericThrustSciFi</SubtypeId>
             </Id>
-			<FuelConverter>
-				<FuelId>
-				<TypeId>GasProperties</TypeId>
-				<SubtypeId>Hydrogen</SubtypeId>
-				</FuelId>
-				<Efficiency>1.0</Efficiency>
-			</FuelConverter>
+            <FuelConverter>
+                <FuelId>
+                    <TypeId>GasProperties</TypeId>
+                    <SubtypeId>Hydrogen</SubtypeId>
+                </FuelId>
+                <Efficiency>1.0</Efficiency>
+            </FuelConverter>
             <ForceMagnitude>6480000</ForceMagnitude>
             <MaxPowerConsumption>0.387803</MaxPowerConsumption>
             <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
             <SlowdownFactor>1</SlowdownFactor>
+            <Components>
+                <Component Subtype="SteelPlate" Count="100"/>
+                <Component Subtype="Construction" Count="46"/>
+                <Component Subtype="LargeTube" Count="52"/>
+                <Component Subtype="SmallTube" Count="3"/>
+                <Component Subtype="Motor" Count="290"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="40"/>
+                <Component Subtype="SteelPlate" Count="100"/>
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0"/>
         </Definition>
-
-		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>LargeBlockSmallAtmosphericThrustSciFi</SubtypeId>
             </Id>
             <FuelConverter>
-				<FuelId>
-				<TypeId>GasProperties</TypeId>
-				<SubtypeId>Hydrogen</SubtypeId>
-				</FuelId>
-				<Efficiency>1.0</Efficiency>
-			</FuelConverter>
+                <FuelId>
+                    <TypeId>GasProperties</TypeId>
+                    <SubtypeId>Hydrogen</SubtypeId>
+                </FuelId>
+                <Efficiency>1.0</Efficiency>
+            </FuelConverter>
             <ForceMagnitude>648000</ForceMagnitude>
             <MaxPowerConsumption>0.045831</MaxPowerConsumption>
             <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
             <SlowdownFactor>1</SlowdownFactor>
+            <Components>
+                <Component Subtype="SteelPlate" Count="3"/>
+                <Component Subtype="Construction" Count="6"/>
+                <Component Subtype="LargeTube" Count="4"/>
+                <Component Subtype="Motor" Count="10"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="5"/>
+                <Component Subtype="SteelPlate" Count="8"/>
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0"/>
         </Definition>
-
-		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockLargeAtmosphericThrustSciFi</SubtypeId>
             </Id>
-			<FuelConverter>
-				<FuelId>
-				<TypeId>GasProperties</TypeId>
-				<SubtypeId>Hydrogen</SubtypeId>
-				</FuelId>
-				<Efficiency>1.0</Efficiency>
-			</FuelConverter>
+            <FuelConverter>
+                <FuelId>
+                    <TypeId>GasProperties</TypeId>
+                    <SubtypeId>Hydrogen</SubtypeId>
+                </FuelId>
+                <Efficiency>1.0</Efficiency>
+            </FuelConverter>
             <ForceMagnitude>1150000</ForceMagnitude>
             <MaxPowerConsumption>0.081336</MaxPowerConsumption>
             <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
             <SlowdownFactor>1</SlowdownFactor>
+            <Components>
+                <Component Subtype="SteelPlate" Count="10"/>
+                <Component Subtype="Construction" Count="20"/>
+                <Component Subtype="LargeTube" Count="8"/>
+                <Component Subtype="SmallTube" Count="8"/>
+                <Component Subtype="Motor" Count="90"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="10"/>
+                <Component Subtype="SteelPlate" Count="10"/>
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0"/>
         </Definition>
-
-		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+        <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
             <Id>
                 <TypeId>Thrust</TypeId>
                 <SubtypeId>SmallBlockSmallAtmosphericThrustSciFi</SubtypeId>
             </Id>
             <FuelConverter>
-				<FuelId>
-				<TypeId>GasProperties</TypeId>
-				<SubtypeId>Hydrogen</SubtypeId>
-				</FuelId>
-				<Efficiency>1.0</Efficiency>
-			</FuelConverter>
+                <FuelId>
+                    <TypeId>GasProperties</TypeId>
+                    <SubtypeId>Hydrogen</SubtypeId>
+                </FuelId>
+                <Efficiency>1.0</Efficiency>
+            </FuelConverter>
             <ForceMagnitude>96000</ForceMagnitude>
             <MaxPowerConsumption>0.008299</MaxPowerConsumption>
             <MinPlanetaryInfluence>0.4</MinPlanetaryInfluence>
             <SlowdownFactor>1</SlowdownFactor>
+            <Components>
+                <Component Subtype="SteelPlate" Count="1"/>
+                <Component Subtype="Construction" Count="4"/>
+                <Component Subtype="LargeTube" Count="1"/>
+                <Component Subtype="SmallTube" Count="2"/>
+                <Component Subtype="Motor" Count="3"/><!-- FUNCTIONAL LINE /\ UP NONFUNCTIONAL -->
+                <Component Subtype="Construction" Count="3"/>
+                <Component Subtype="SteelPlate" Count="3"/>
+            </Components>
+            <CriticalComponent Subtype="Motor" Index="0"/>
         </Definition>
-
-	</CubeBlocks>
+    </CubeBlocks>
 </Definitions>
