@@ -9,6 +9,7 @@ using VRage.ObjectBuilders;
 using SpaceEngineers.Game.ModAPI;
 using Sandbox.Game.Entities;
 using VRage.Game;
+using VRage;
 
 namespace NoSZInRad
 {
@@ -16,45 +17,45 @@ namespace NoSZInRad
     public class SafezoneMain : MySessionComponentBase
     {
         private List<IMySafeZoneBlock> Safezones;
-        public static List<BoundingSphereD> NoSafezoneWorkLocales;
+        public static List<MyTuple<BoundingSphereD, bool>> NoSafezoneWorkLocales;
         public override void Init(MyObjectBuilder_SessionComponent sessionComponent)
         {
             const int REGULAR_REPLOSS_ZONE = 30;
             const int PIRATE_REPLOSS_ZONE = 15;
-            NoSafezoneWorkLocales = new List<BoundingSphereD>();
+            NoSafezoneWorkLocales = new List<MyTuple<BoundingSphereD, bool>>();
             Safezones = new List<IMySafeZoneBlock>();
-            MyAPIGateway.Entities.OnEntityAdd += OnEntityAdd;
-            AddNew("GPS:CCAS Nairobi SLC:297432:50771:2065996:#FFF19F75:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            AddNew("GPS:CCAS Tripoli SLC:165635:7284:2195716:#FFF19F75:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            AddNew("GPS:CSILLA Regional Landing:2415608:-19793:-17159:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            AddNew("GPS:CSILLA Vekan Gatehold:2247864:33592:6981:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            AddNew("GPS:ENCORP DuPont Transit:-2422618:-20256:598156:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            AddNew("GPS:ENCORP Vanderbilt Station:-2335929:70355:444812:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
 
-            AddNew("GPS:CSILLA Regional Landing:2415608:-19793:-17159:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            AddNew("GPS:CSILLA Vekan Gatehold:2247864:33592:6981:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            AddNew("GPS:CSILLA Redwatch Outpost:-2588616:57608:-409448:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE);
-            AddNew("GPS:CSILLA Vault 9 Outpost:992580:69034:2386727:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE);
+            if (MyAPIGateway.Multiplayer.IsServer)
+            {
+                MyAPIGateway.Entities.OnEntityAdd += OnEntityAdd;
+            }
 
-            //AddNew("GPS:Kimi:2702071:-297911:-948008:#FFF9F9F9:Planets:", 5);
-            //AddNew("GPS:Caerus:-2634367:65652:-434416:#FFFF0000:Planets:", 100);
-            //AddNew("GPS:Deimos:965725:65306:2415429:#FFFF0000:Planets:", 100);
-            //AddNew("GPS:Thanatos:331166:130897:-6369487:#FFF9F9F9:Planets:", 150);
+            AddNew("GPS:CCAS Nairobi SLC:297432:50771:2065996:#FFF19F75:NPC Stations:", REGULAR_REPLOSS_ZONE, true);
+            AddNew("GPS:CCAS Tripoli SLC:165635:7284:2195716:#FFF19F75:NPC Stations:", REGULAR_REPLOSS_ZONE, true);
+            AddNew("GPS:CSILLA Regional Landing:2415608:-19793:-17159:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE, true);
+            AddNew("GPS:CSILLA Vekan Gatehold:2247864:33592:6981:#FFFF6A6A:NPC Stations:", REGULAR_REPLOSS_ZONE, true);
+            AddNew("GPS:ENCORP DuPont Transit:-2422618:-20256:598156:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE, true);
+            AddNew("GPS:ENCORP Vanderbilt Station:-2335929:70355:444812:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE, true);
 
-            AddNew("GPS:ENCORP DuPont Transit:-2422618:-20256:598156:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
-            AddNew("GPS:ENCORP Vanderbilt Station:-2335929:70355:444812:#FF757FF1:NPC Stations:", REGULAR_REPLOSS_ZONE);
+            AddNew("GPS:CSILLA Redwatch Outpost:-2588616:57608:-409448:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE, true);
+            AddNew("GPS:CSILLA Vault 9 Outpost:992580:69034:2386727:#FFFF0000:NPC Stations:", PIRATE_REPLOSS_ZONE, true);
+
+            //AddNew("GPS:Kimi:2702071:-297911:-948008:#FFF9F9F9:Planets:", 5, false);
+            //AddNew("GPS:Caerus:-2634367:65652:-434416:#FFFF0000:Planets:", 100, false);
+            //AddNew("GPS:Deimos:965725:65306:2415429:#FFFF0000:Planets:", 100, false);
+            //AddNew("GPS:Thanatos:331166:130897:-6369487:#FFF9F9F9:Planets:", 150, false);
             
         }
 
         public override void UpdateBeforeSimulation()
         {
-            if (MyAPIGateway.Session.GameplayFrameCounter % 100 == 69)
+            if (MyAPIGateway.Session.GameplayFrameCounter % 100 == 69 && MyAPIGateway.Multiplayer.IsServer)
             {
                 foreach (var self in Safezones)
                 {
                     foreach (var sphere in NoSafezoneWorkLocales)
                     {
-                        if (Vector3.DistanceSquared(self.GetPosition(), sphere.Center) <= sphere.Radius * sphere.Radius)
+                        if (Vector3.DistanceSquared(self.GetPosition(), sphere.Item1.Center) <= sphere.Item1.Radius * sphere.Item1.Radius)
                         {
                             if (self.Enabled)
                                 self.Enabled = false;
@@ -62,6 +63,18 @@ namespace NoSZInRad
                         }
                     }
                 }
+            }
+
+            if (!MyAPIGateway.Utilities.IsDedicated && MyAPIGateway.Session?.Player?.Character != null)
+            {
+                foreach (var sphere in NoSafezoneWorkLocales)
+                {
+                    if (Vector3D.DistanceSquared(MyAPIGateway.Session.Player.Character.GetPosition(), sphere.Item1.Center) <= sphere.Item1.Radius * sphere.Item1.Radius)
+                    {
+                        MyAPIGateway.Utilities.ShowNotification("Warning: You are in an economic zone. Remember to disable your weapons!", 1, "Red");
+                    }
+                }
+                
             }
         }
         private void OnEntityAdd(IMyEntity obj)
@@ -118,13 +131,15 @@ namespace NoSZInRad
         protected override void UnloadData()
         {
             NoSafezoneWorkLocales = null;
-            MyAPIGateway.Entities.OnEntityAdd -= OnEntityAdd;
             Safezones = null;
+            if (MyAPIGateway.Multiplayer.IsServer)
+                MyAPIGateway.Entities.OnEntityAdd -= OnEntityAdd;
+            
         }
 
-        private static void AddNew(string stationGPS, float distKm)
+        private static void AddNew(string stationGPS, float distKm, bool isStation)
         {
-            NoSafezoneWorkLocales.Add(new BoundingSphereD(ParseGPS(stationGPS), distKm * 1000));
+            NoSafezoneWorkLocales.Add(new MyTuple<BoundingSphereD, bool>(new BoundingSphereD(ParseGPS(stationGPS), distKm * 1000), isStation));
         }
 
         private static Vector3D ParseGPS(string gpsString)
