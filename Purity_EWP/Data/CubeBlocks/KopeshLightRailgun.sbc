@@ -7,7 +7,7 @@
 				<SubtypeId>KopeshLightRailgun_Block</SubtypeId>
 			</Id>
 			<DisplayName>Kopesh Medium Railgun</DisplayName>
-			<Description>Medium railgun, 50km range, 25kps, 100k damage w/ max 10 block pen, 400MW, uses Dawson/Kopesh Railgun Sabots.</Description>
+			<Description>Medium railgun, 100km range, 25kps, 300k damage w/ max 10 block pen, 400MW, uses Dawson/Kopesh Railgun Sabots.</Description>
 			<Icon>Textures\GUI\Icons\Cubes\KopeshLightRailgun.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>

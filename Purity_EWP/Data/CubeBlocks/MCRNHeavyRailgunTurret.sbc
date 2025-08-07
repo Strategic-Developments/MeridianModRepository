@@ -7,7 +7,7 @@
 				<SubtypeId>MCRNHeavyRailgunTurret_Block</SubtypeId>
 			</Id>
 			<DisplayName>Foehammer Heavy Railgun Turret</DisplayName>
-			<Description>Lighter Ariadne, 60km range, 28kps, infinite damage, 800MW, uses Foehammer Railgun Sabots.</Description>
+			<Description>Lighter Ariadne, 60km AI range, 28kps, infinite damage, 800MW, uses Foehammer Railgun Sabots.</Description>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNHeavyRailgunTurret.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>

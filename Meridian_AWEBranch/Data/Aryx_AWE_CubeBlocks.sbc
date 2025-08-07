@@ -63,7 +63,7 @@
 			</Id>
 			<DisplayName>ZS-1200-S Ares Heavy Railgun</DisplayName>
 			<Icon>Textures\GUI\Icons\AryxGaussCannon.dds</Icon>
-			<Description>60km range, 30kps, infinite damage in a large radius, 1200MW, uses Ariadne/Ares Railgun Sabots.</Description>
+			<Description>150km range, 30kps, infinite damage in a large radius, 1200MW, uses Ariadne/Ares Railgun Sabots.</Description>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="3" y="2" z="9"/>
@@ -119,7 +119,7 @@
 			</Id>
 			<DisplayName>ZS-1200 Ariadne Heavy Railgun Turret</DisplayName>
 			<Icon>Textures\GUI\Icons\Aryx_AWE_GaussTurret.dds</Icon>
-			<Description>60km range, 30kps, infinite damage in a large radius, 1200MW, uses Ariadne/Ares Railgun Sabots.</Description>
+			<Description>60km AI range, 30kps, infinite damage in a large radius, 1200MW, uses Ariadne/Ares Railgun Sabots.</Description>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="9" y="6" z="29"/>
@@ -174,7 +174,7 @@
 				<SubtypeId>ARYXRailgun</SubtypeId>
 			</Id>
 			<DisplayName>KR250 Artemis Railgun</DisplayName>
-			<Description>Anti light railgun, 50km range, 30kps, 30k damage w/ 0.1x HA mult, 150MW, uses Apollo/Artemis Railgun Sabots.</Description>
+			<Description>Anti light railgun, 80km range, 30kps, 100k damage w/ 0.1x HA mult, 150MW, uses Apollo/Artemis Railgun Sabots.</Description>
 			<Icon>Textures\GUI\Icons\AWERailgun.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
@@ -230,11 +230,7 @@
 				<SubtypeId>ARYXLightCoilgun</SubtypeId>
 			</Id>
 			<DisplayName>LC7 Hunter-405 Coilgun</DisplayName>
-			<Description>Coilguns are sniper weapons that deliver a hefty punch at relativistic velocity, though the rounds lose velocity over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 405mm Ferrous. (Kinetic)]
-		Effects: Fires a hitscan kinetic slug that explodes on impact and penetrates 5 blocks of heavy armour.
-		Size: 1x2x15
-		Role: Sniper
-		</Description>
+			<Description>todo balance</Description>
 			<Icon>Textures\GUI\Icons\Aryx_AWE_LightCoilgun.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
@@ -294,11 +290,7 @@
 				<SubtypeId>ARYXHeavyCoilgun</SubtypeId>
 			</Id>
 			<DisplayName>E0-F Predator-850 Coilgun</DisplayName>
-			<Description>The Predator Coilgun is a massive sniper weapon that delivers a massive punch at relativistic velocity, though the rounds lose damage over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 850mm Ferrous. (Kinetic)]
-		Effects: Fires a hitscan kinetic slug that explodes on impact and penetrates 8 blocks of heavy armour.
-		Size: 3x2x21
-		Role: Heavy Sniper
-		</Description>
+			<Description>todo balance</Description>
 			<Icon>Textures\GUI\Icons\Aryx_AWE_HeavyCoilgun.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
@@ -363,7 +355,7 @@
 			</Id>
 			<DisplayName>KR250 Apollo Railgun Turret</DisplayName>
 			<Icon>Textures\GUI\Icons\AWERailgunTurret.dds</Icon>
-			<Description>Anti light railgun, 50km range, 30kps, 30k damage w/ 0.1x HA mult, 150MW, uses Apollo/Artemis Railgun Sabots.</Description>
+			<Description>Anti light railgun, 50km AI range, 30kps, 100k damage w/ 0.1x HA mult, 150MW, uses Apollo/Artemis Railgun Sabots.</Description>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="3" y="2" z="5"/>

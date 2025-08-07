@@ -7,7 +7,7 @@
 				<SubtypeId>UNNLightRailgunTurret_Block</SubtypeId>
 			</Id>
 			<DisplayName>Dawson Medium Railgun Turret</DisplayName>
-			<Description>Medium railgun, 50km range, 25kps, 100k damage w/ max 10 block pen, 400MW, uses Dawson/Kopesh Railgun Sabots.</Description>
+			<Description>Medium railgun, 50km AI range, 25kps, 300k damage w/ max 10 block pen, 400MW, uses Dawson/Kopesh Railgun Sabots.</Description>
 			<Icon>Textures\GUI\Icons\Cubes\UNNLightRailgunTurret.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>

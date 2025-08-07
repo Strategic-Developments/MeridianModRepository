@@ -7,7 +7,7 @@
 				<SubtypeId>MCRNLightRailgunFixed_Block</SubtypeId>
 			</Id>
 			<DisplayName>Dagger Light Railgun</DisplayName>
-			<Description>Light cheap railgun, 40km range, 25kps, 10k damage, 100MW, uses Stiletto/Dagger Railgun Sabots.</Description>
+			<Description>Light cheap railgun, 50km range, 25kps, 30k damage, 100MW, uses Stiletto/Dagger Railgun Sabots.</Description>
 			<Icon>Textures\GUI\Icons\Cubes\MCRNLightRailgunFixed.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
