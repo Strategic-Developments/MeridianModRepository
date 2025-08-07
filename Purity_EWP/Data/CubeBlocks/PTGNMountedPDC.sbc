@@ -18,8 +18,7 @@
 			<Model>Models\Cubes\large\PTGNMountedPDC.mwm</Model>
 			<Components>
 				<Component Subtype="SteelPlate" Count="25"/>
-				<Component Subtype="EnTecConduit" Count="20"/>
-				<Component Subtype="PrototechCoolingUnit" Count="5"/>
+				<Component Subtype="EnTecConduit" Count="10"/>
 				<Component Subtype="Construction" Count="52"/>
 				<Component Subtype="MetalGrid" Count="26"/>
 				<Component Subtype="SmallTube" Count="12"/>
@@ -73,8 +72,7 @@
 			<Model>Models\Cubes\large\PTGNMountedPDCSlope.mwm</Model>
 			<Components>
 				<Component Subtype="SteelPlate" Count="25"/>
-				<Component Subtype="EnTecConduit" Count="20"/>
-				<Component Subtype="PrototechCoolingUnit" Count="5"/>
+				<Component Subtype="EnTecConduit" Count="10"/>
 				<Component Subtype="Construction" Count="52"/>
 				<Component Subtype="MetalGrid" Count="26"/>
 				<Component Subtype="SmallTube" Count="12"/>
