@@ -5,20 +5,23 @@ using VRage.Game;
 using VRage.Utils;
 using VRageMath;
 
-namespace YourName.ModName.Data.Scripts.Gforces
+// ReSharper disable once CheckNamespace
+namespace Brill.Gforces
 {
     [MySessionComponentDescriptor(MyUpdateOrder.BeforeSimulation)]
     public class CockpitSessionComp : MySessionComponentBase
     {
         public static CockpitSessionComp Instance;
         
-        //vingette texture = GLocVignette
-        
         public HudAPIv2 HudAPI;
 
         public bool FirstRun = true;
 
+        public bool WasInCockpit;
+
         public HudAPIv2.BillBoardHUDMessage Vignette;
+        
+        private const string VignetteTexture = "GLocVignette";
         
         public static bool IsDedicatedServer =>
             MyAPIGateway.Multiplayer.MultiplayerActive && MyAPIGateway.Utilities.IsDedicated;
@@ -35,13 +38,23 @@ namespace YourName.ModName.Data.Scripts.Gforces
         {
             if (Instance.HudAPI.Heartbeat && Instance.FirstRun)
             {
-                var vignetteTexture = MyStringId.GetOrCompute("GLocVignette");
-                Instance.Vignette = new HudAPIv2.BillBoardHUDMessage(vignetteTexture, Vector2D.Zero, Color.Transparent,
+                var vignetteTexture = MyStringId.GetOrCompute("VignetteTexture");
+                Instance.Vignette = new HudAPIv2.BillBoardHUDMessage(vignetteTexture, Vector2D.Zero, new Color(255, 255, 255, 0),
                     Shadowing: false)
-                {
+                { 
                     Visible = false
                 };
                 Instance.FirstRun = false;
+            }
+            if (!WasInCockpit && MyAPIGateway.Session.Player.Controller.ControlledEntity is IMyCockpit)
+            {
+                Instance.Vignette.Visible = true;
+                WasInCockpit = true;
+            }
+            else if (WasInCockpit && MyAPIGateway.Session.Player.Controller.ControlledEntity is IMyCockpit == false)
+            {
+                Instance.Vignette.Visible = false;
+                WasInCockpit = false;
             }
         }
     }
