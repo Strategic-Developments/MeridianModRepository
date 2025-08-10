@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<CubeBlocks>
-		<!--<Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">
+		<Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">
 			<Id>
 				<TypeId>Drill</TypeId>
 				<SubtypeId>StaticDrill</SubtypeId>
@@ -46,6 +46,7 @@
       		<IsPublic>false</IsPublic>
 
 			<VoxelPlacement>
+				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
 				<StaticMode>
 					<PlacementMode>Volumetric</PlacementMode>
 					<MaxAllowed>0.6</MaxAllowed>
@@ -77,6 +78,6 @@
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
 			
-		</Definition>-->
+		</Definition>
 	</CubeBlocks>
 </Definitions>
