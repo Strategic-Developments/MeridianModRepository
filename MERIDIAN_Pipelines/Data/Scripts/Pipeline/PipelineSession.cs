@@ -64,8 +64,9 @@ namespace Klime.Pipeline
             {
                 var incoming_packet = packet as PipelineSyncPacket;
 
-                Pipeline p;
-                if (Pipelines.TryGetValue(incoming_packet.incoming_cargo_block_id, out p))
+                Pipeline p, _;
+                if (Pipelines.TryGetValue(incoming_packet.incoming_cargo_block_id, out p)
+                    && (incoming_packet.incoming_block_state != BlockState.Connected || Pipelines.TryGetValue(incoming_packet.incoming_othercargo_id, out _)))
                 {
                     p.ProcessPacket(incoming_packet);
                 }
@@ -90,7 +91,7 @@ namespace Klime.Pipeline
                 var syncReq = packet as SyncRequestPacket;
 
                 int sync = MyAPIGateway.Session.SessionSettings.SyncDistance * MyAPIGateway.Session.SessionSettings.SyncDistance;
-
+                MyLog.Default.WriteLineAndConsole("pipeline sync request recieved");
                 Pipeline pipe;
                 if (Pipelines.TryGetValue(syncReq.BlockId, out pipe))
                 {
@@ -104,7 +105,7 @@ namespace Klime.Pipeline
                     {
                         packetToSend.incoming_othercargo_id = pipe.other_cargo_block.EntityId;
                     }
-
+                    MyLog.Default.WriteLineAndConsole("pipeline sync request responded to");
                     Network.SendMessageTo(packetToSend, Network.MessageHandlerId, SenderId);
                 }
             }
@@ -122,7 +123,7 @@ namespace Klime.Pipeline
             {
                 packet.incoming_othercargo_id = pipe.other_cargo_block.EntityId;
             }
-
+            MyLog.Default.WriteLineAndConsole("pipeline sync change broadcasted");
             Network.SendMessageToClientsInRange(packet, Network.MessageHandlerId, pipe.cargo_block.GetPosition(), 
                 MyAPIGateway.Session.SessionSettings.SyncDistance * MyAPIGateway.Session.SessionSettings.SyncDistance);
         }

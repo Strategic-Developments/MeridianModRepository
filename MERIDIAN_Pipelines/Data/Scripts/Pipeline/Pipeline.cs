@@ -101,14 +101,15 @@ namespace Klime.Pipeline
 
                     NeedsUpdate |= MyEntityUpdateEnum.EACH_FRAME;
                     PipelineSession.Instance.Pipelines.Add(cargo_block.EntityId, this);
-
                     if (!MyAPIGateway.Multiplayer.IsServer)
                     {
+                        MyLog.Default.WriteLineAndConsole("pipeline sync request sent");
                         Network.SendMessageToServer(new SyncRequestPacket(cargo_block.EntityId), Network.MessageHandlerId);
                     }
-
                     //MyVisualScriptLogicProvider.AddGPSForAll("", "", cargo_block.WorldMatrix.Translation, Color.Orange);
                 }
+
+                
             }
         }
 
