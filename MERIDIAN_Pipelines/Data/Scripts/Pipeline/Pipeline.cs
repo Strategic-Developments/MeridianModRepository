@@ -137,12 +137,12 @@ namespace Klime.Pipeline
             {
                 //MyVisualScriptLogicProvider.SendChatMessage("Trig");
                 //MyVisualScriptLogicProvider.SendChatMessage(previous_block_state.ToString());
-                //NewChain();
+                NewChain();
             }
 
             if (client_block_state != BlockState.Connected && previous_block_state == BlockState.Connected)
             {
-                //CleanupChain();
+                CleanupChain();
             }
         }
 
@@ -344,39 +344,26 @@ namespace Klime.Pipeline
 
                 if (!MyAPIGateway.Utilities.IsDedicated)
                 {
-                    //if (frame % 120 == 0)
-                    //{
-                    //    cone_mat = cargo_block.WorldMatrix;
-
-                    //    if (client_block_state == BlockState.Connected)
-                    //    {
-                    //        if (cargo_block != null && !cargo_block.MarkedForClose && cargo_block.CubeGrid.Physics != null)
-                    //        {
-                    //            foreach (var ent in allChunks)
-                    //            {
-                    //                ent.chunk.Render.EnableColorMaskHsv = true;
-                    //                ent.chunk.Render.TextureChanges = cargo_block.Render.TextureChanges;
-                    //                ent.chunk.Render.MetalnessColorable = cargo_block.Render.MetalnessColorable;
-                    //                ent.chunk.Render.ColorMaskHsv = cargo_block.Render.ColorMaskHsv;
-                    //            }
-                    //        }
-                    //    }
-                    //    else
-                    //    {
-                    //        CleanupChain();
-                    //    }
-                    //}
-
-                    if (client_block_state == BlockState.Connected)
+                    if (frame % 120 == 0)
                     {
-                        Vector4 c = MyColorPickerConstants.HSVOffsetToHSV(cargo_block.SlimBlock.ColorMaskHSV).HSVtoColor();
-                        c.W = 1;
-                        if (cargo_block != null && !cargo_block.MarkedForClose && cargo_block.CubeGrid.Physics != null
-                            && other_cargo_block != null && !other_cargo_block.MarkedForClose)
+                        cone_mat = cargo_block.WorldMatrix;
+
+                        if (client_block_state == BlockState.Connected)
                         {
-                            MySimpleObjectDraw.DrawLine(cargo_block.WorldMatrix.Translation,
-                                other_cargo_block.WorldMatrix.Translation,
-                                pipeline_mat, ref c, 3);
+                            if (cargo_block != null && !cargo_block.MarkedForClose && cargo_block.CubeGrid.Physics != null)
+                            {
+                                foreach (var ent in allChunks)
+                                {
+                                    ent.chunk.Render.EnableColorMaskHsv = true;
+                                    ent.chunk.Render.TextureChanges = cargo_block.Render.TextureChanges;
+                                    ent.chunk.Render.MetalnessColorable = cargo_block.Render.MetalnessColorable;
+                                    ent.chunk.Render.ColorMaskHsv = cargo_block.Render.ColorMaskHsv;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            CleanupChain();
                         }
                     }
 

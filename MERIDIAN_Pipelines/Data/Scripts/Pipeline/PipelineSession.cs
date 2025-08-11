@@ -68,10 +68,12 @@ namespace Klime.Pipeline
                 if (Pipelines.TryGetValue(incoming_packet.incoming_cargo_block_id, out p)
                     && (incoming_packet.incoming_block_state != BlockState.Connected || Pipelines.TryGetValue(incoming_packet.incoming_othercargo_id, out _)))
                 {
+                    MyLog.Default.WriteLineAndConsole("pipeline sync recieved and succeeded");
                     p.ProcessPacket(incoming_packet);
                 }
                 else
                 {
+                    MyLog.Default.WriteLineAndConsole("pipeline sync recieved and failed");
                     bool add = true;
                     for (int i = 0; i < PacketsToLoad.Count; i++)
                     {
@@ -153,8 +155,10 @@ namespace Klime.Pipeline
                 {
                     var packet = PacketsToLoad[i];
                     Pipeline p;
-                    if (Pipelines.TryGetValue(packet.incoming_cargo_block_id, out p))
+                    if (Pipelines.TryGetValue(packet.incoming_cargo_block_id, out p) 
+                        && (packet.incoming_block_state != BlockState.Connected || Pipelines.TryGetValue(packet.incoming_othercargo_id, out _)))
                     {
+                        MyLog.Default.WriteLineAndConsole("pipeline sync late success");
                         p.ProcessPacket(packet);
                         PacketsToLoad.RemoveAtFast(i);
                     }
