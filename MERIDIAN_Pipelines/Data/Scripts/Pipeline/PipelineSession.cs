@@ -38,7 +38,6 @@ namespace Klime.Pipeline
         public bool draw_cone = false;
         public int masterTimer = 0;
         public bool readyToConnect = false;
-        bool sentSyncRequest = false;
 
         public List<string> allModels = new List<string>();
         public override void Init(MyObjectBuilder_SessionComponent sessionComponent)
@@ -91,23 +90,22 @@ namespace Klime.Pipeline
                 var syncReq = packet as SyncRequestPacket;
 
                 int sync = MyAPIGateway.Session.SessionSettings.SyncDistance * MyAPIGateway.Session.SessionSettings.SyncDistance;
-                foreach (var pipe in Pipelines.Values)
-                {
-                    if (Vector3D.DistanceSquared(pipe.cargo_block.GetPosition(), syncReq.PlayerPos) <= sync)
-                    {
-                        PipelineSyncPacket packetToSend = new PipelineSyncPacket
-                        {
-                            incoming_block_state = pipe.server_block_state,
-                            incoming_cargo_block_id = pipe.cargo_block.EntityId
-                        };
 
-                        if (pipe.server_block_state == BlockState.Connected && pipe.other_cargo_block != null)
-                        {
-                            packetToSend.incoming_othercargo_id = pipe.other_cargo_block.EntityId;
-                        }
-                        
-                        Network.SendMessageTo(packetToSend, Network.MessageHandlerId, SenderId);
+                Pipeline pipe;
+                if (Pipelines.TryGetValue(syncReq.BlockId, out pipe))
+                {
+                    PipelineSyncPacket packetToSend = new PipelineSyncPacket
+                    {
+                        incoming_block_state = pipe.server_block_state,
+                        incoming_cargo_block_id = pipe.cargo_block.EntityId
+                    };
+
+                    if (pipe.server_block_state == BlockState.Connected && pipe.other_cargo_block != null)
+                    {
+                        packetToSend.incoming_othercargo_id = pipe.other_cargo_block.EntityId;
                     }
+
+                    Network.SendMessageTo(packetToSend, Network.MessageHandlerId, SenderId);
                 }
             }
         }
@@ -149,14 +147,6 @@ namespace Klime.Pipeline
 
             if (!MyAPIGateway.Multiplayer.IsServer && masterTimer % 100 == 0 && PacketsToLoad.Count != 0)
             {
-                if (!sentSyncRequest && MyAPIGateway.Session?.Player?.Character != null)
-                {
-                    sentSyncRequest = true;
-
-                    Network.SendMessageToServer(new SyncRequestPacket(MyAPIGateway.Session.Player.Character.GetPosition()), Network.MessageHandlerId);
-
-                    MyAPIGateway.Session.Player.Character.CharacterDied += CharacterDied;
-                }
 
                 for (int i = PacketsToLoad.Count - 1; i >= 0; i--)
                 {
@@ -169,14 +159,6 @@ namespace Klime.Pipeline
                     }
                 }
             }
-        }
-
-        private void CharacterDied(IMyCharacter obj)
-        {
-            // account for when ppl backspace to fast travel
-            obj.CharacterDied -= CharacterDied;
-
-            sentSyncRequest = false;
         }
 
         private void Utilities_MessageEntered(string messageText, ref bool sendToOthers)

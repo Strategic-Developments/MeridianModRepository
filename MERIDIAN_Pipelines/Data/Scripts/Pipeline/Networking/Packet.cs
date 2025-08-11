@@ -43,13 +43,12 @@ namespace Klime.Pipeline
     [ProtoContract]
     public class SyncRequestPacket : Packet
     {
-        // DJ if you're reading this ik theres a mild amount of position exploitation here, I do not care
-        [ProtoMember(1)] public Vector3D PlayerPos;
+        [ProtoMember(1)] public long BlockId;
         public SyncRequestPacket() { }
 
-        public SyncRequestPacket(Vector3D pos)
+        public SyncRequestPacket(long blockId)
         {
-            PlayerPos = pos;
+            BlockId = blockId;
         }
     }
 }
