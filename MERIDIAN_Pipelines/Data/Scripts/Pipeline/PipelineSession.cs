@@ -154,7 +154,7 @@ namespace Klime.Pipeline
                 for (int i = PacketsToLoad.Count - 1; i >= 0; i--)
                 {
                     var packet = PacketsToLoad[i];
-                    Pipeline p;
+                    Pipeline p, _;
                     if (Pipelines.TryGetValue(packet.incoming_cargo_block_id, out p) 
                         && (packet.incoming_block_state != BlockState.Connected || Pipelines.TryGetValue(packet.incoming_othercargo_id, out _)))
                     {
