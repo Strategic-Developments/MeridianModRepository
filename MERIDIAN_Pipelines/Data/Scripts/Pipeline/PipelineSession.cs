@@ -93,7 +93,7 @@ namespace Klime.Pipeline
                 var syncReq = packet as SyncRequestPacket;
 
                 int sync = MyAPIGateway.Session.SessionSettings.SyncDistance * MyAPIGateway.Session.SessionSettings.SyncDistance;
-                MyLog.Default.WriteLineAndConsole("pipeline sync request recieved");
+                //MyLog.Default.WriteLineAndConsole("pipeline sync request recieved");
                 Pipeline pipe;
                 if (Pipelines.TryGetValue(syncReq.BlockId, out pipe))
                 {
@@ -107,7 +107,7 @@ namespace Klime.Pipeline
                     {
                         packetToSend.incoming_othercargo_id = pipe.other_cargo_block.EntityId;
                     }
-                    MyLog.Default.WriteLineAndConsole("pipeline sync request responded to");
+                    //MyLog.Default.WriteLineAndConsole("pipeline sync request responded to");
                     Network.SendMessageTo(packetToSend, Network.MessageHandlerId, SenderId);
                 }
             }
@@ -125,7 +125,7 @@ namespace Klime.Pipeline
             {
                 packet.incoming_othercargo_id = pipe.other_cargo_block.EntityId;
             }
-            MyLog.Default.WriteLineAndConsole("pipeline sync change broadcasted");
+            //MyLog.Default.WriteLineAndConsole("pipeline sync change broadcasted");
             Network.SendMessageToClientsInRange(packet, Network.MessageHandlerId, pipe.cargo_block.GetPosition(), 
                 MyAPIGateway.Session.SessionSettings.SyncDistance * MyAPIGateway.Session.SessionSettings.SyncDistance);
         }
@@ -158,7 +158,7 @@ namespace Klime.Pipeline
                     if (Pipelines.TryGetValue(packet.incoming_cargo_block_id, out p) 
                         && (packet.incoming_block_state != BlockState.Connected || Pipelines.TryGetValue(packet.incoming_othercargo_id, out _)))
                     {
-                        MyLog.Default.WriteLineAndConsole("pipeline sync late success");
+                        //MyLog.Default.WriteLineAndConsole("pipeline sync late success");
                         p.ProcessPacket(packet);
                         PacketsToLoad.RemoveAtFast(i);
                     }
