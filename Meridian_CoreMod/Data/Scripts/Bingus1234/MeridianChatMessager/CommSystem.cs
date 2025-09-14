@@ -12,7 +12,7 @@ namespace YourModNamespace
     {
        
         private const string ACTIVE_FACTION_DEFAULT = "CCAS"; // "CCAS" | "CSILLA" | "ENCORP"
-        private const int INTERVAL_SECONDS = 5;
+        private const int INTERVAL_SECONDS = 14400;
         private const int STARTUP_DELAY_SECONDS = 1;
 
         
@@ -53,7 +53,7 @@ namespace YourModNamespace
         {
             base.Init(sessionComponent);
 
-            _intervalTicks = INTERVAL_SECONDS * 240;
+            _intervalTicks = INTERVAL_SECONDS * 1;
             _startupDelayTicks = STARTUP_DELAY_SECONDS * 1;
 
          
@@ -68,38 +68,41 @@ namespace YourModNamespace
                 },
                 Messages = new[]
                 {
-                    "Maintain corridor C-12, speed 75 or less.",
-                    "Hold short at marker BRAVO; traffic crossing.",
-                    "Cleared approach, Dock 4. Follow lead lights.",
-                    "Negative vector change; remain on assigned track.",
-                    "Traffic alert: unknown contact bearing 090, 1km, co-altitude.",
-                    "Squawk ident on ping; signal weak.",
-                    "Expedite vacate of lane A-3; maintenance convoy inbound.",
-                    "Line up and wait, pad Echo-2; departing traffic on the roll.",
-                    "Go-around approved; congestion on final.",
-                    "Pushback approved; call ready for taxi.",
-                    "Taxi via Alpha, then Bravo; hold short Charlie.",
-                    "Docking corridor green for the next window.",
-                    "Wake caution: heavy tug departing outer ring.",
-                    "EVA ops near Gate 7; keep clear 500 meters.",
-                    "Confirm tether state before crossing the spine.",
-                    "Vector 270 for sequence; expect delay two minutes.",
-                    "Stack level two saturated; remain in hold.",
-                    "Monitoring link degraded; report visual when able.",
-                    "Beacon sync in progress; brief outages expected.",
-                    "Priority medevac inbound; yield right of way.",
-                    "Tow underway in lane D-1; reduce closure rate.",
-                    "Range cold for test firings; maintain present course.",
-                    "Surface ascent traffic in corridor B; no conflicts.",
-                    "Controller handoff complete; contact Tower Prime on channel 3."
+                   "Sector patrol complete—no contacts of concern.",
+                    "Flight plan updates required before orbital adjustment.",
+                    "Hold short at marker BRAVO; traffic inbound.",
+                    "Advisory: Launch corridor GREEN for the next window.",
+                    "Advisory: minor debris field reported in lane C-12. Inform Kessler crews.",
+                    "Ping response delayed network-wide; expect latency.",
+                    "Docking priority granted to medical transport.",
+                    "Watchtower's reporting clear skies for the day.",
+
+                    "Scopes are picking up unusual congestion around Polemos.",
+                    "Commencing monitoring on outbound transit certifications.",
+                    "Rotating Customs Enforcement shifts. EED has been advised.",
+                    "Hold short at marker DELTA; pads are full.",
+                    "Advisory: Launch corridor is RED for the next two cycles.",
+                    "Realigning Watchtower scan array.",
+                    "Adjusting Warden search patterns.",
+                    "Contraband detected, inform Overlord.",
+                    "Standing down Watchtower-1.",
+                    "Watchtower-2 is cycling power.",
+                    "Be advised, Watchtower array is recalibrating.",
+                    "Tripoli Flight Control, be advised - high congestion.",
+                    "Nairobi Flight Control, do you read?",
+                    "Cujo 5-1, flight of two Kano-pattern gunships, ready for tasking.",
+                    "Overlord, be advised - Cujo 5-1 and Vantage 3-1 are standing by for tasking.",
+                    "Retasking all available flights to temporary EED duties.",
+                    "Warden is reporting two new orbital assets ready for tasking.",
+                    "Kessler crews relaying the all-clear.",
+                    "Watchtower, Vendetta 4-1, flight of two Lusaka ships assigned to Kessler crews out of Nairobi. Our work out here is done, standing by for tasking.",
                 },
                 Surnames = new[]
                 {
                     "VSV-12","EED-23","EED-77","K-99","K-72","V-49",
-                    "V-87","22-Petrov","VK-24","Officer","Commander","Superintendent","Zhukov-45",
-                    "44-Kaira","Volkova-91","KB-25","Chen-29","LCR-1"
+                    "V-87","22-Petrov","VK-24","Officer","Commander","Superintendent","KB-25","Chen-29","LCR-1"
                 },
-                InitMessage = "Centauri Coalition Aerospace Service online — you are under Coalition flight governance."
+                InitMessage = "Entering Coalition-controlled space - you are under Coalition flight governance."
             };
 
             _csilla = new FactionProfile
@@ -113,30 +116,35 @@ namespace YourModNamespace
                 },
                 Messages = new[]
                 {
-                    "Keep the line moving; pallets off first, talk later.",
-                    "If it isn't stamped, it isn't sailing. Do the paper.",
-                    "Straps are frayed; swap them before the foreman sees.",
-                    "Tug's on the way; hold that hull steady.",
-                    "Gantry 3 is squealing again; grease it or it goes offline.",
-                    "Coffee break's over; back on the winch.",
-                    "Watch your fingers on the knuckle boom.",
-                    "Weighbridge says you're heavy; drop a crate or pay the fee.",
-                    "Berth fee's ticking; tie down and clear the lane.",
-                    "Dock rat tried to skirt customs; don't be that guy.",
-                    "Sling that crate low; wind's up.",
-                    "Union steward's counting heads; don't ghost the shift.",
-                    "Foreman wants ore up front, scrap to the rear.",
-                    "Hauler's late; looks like overtime.",
-                    "Crane 2 is down; hand-bomb what you can.",
-                    "Mark your pallets; no chalk, no claim.",
-                    "Keep the berth clean; nails and straps off the deck.",
-                    "Lights on in Bay C; night shift's ours.",
-                    "Customs dog is sniffing; stash your lunches proper.",
-                    "If the seal's broke, it stays here.",
-                    "Don't cheap the straps; use the good ones.",
-                    "Tugs have right of way; make a hole.",
-                    "Get your boots on; deck's slick.",
-                    "Stevedores to Gatehold; big ship turning."
+                    "Shipment receipts must be posted within two cycles.",
+                    "Notice: surcharge applied to unregistered cargo crates.",
+                    "Manifest mismatch flagged, report to the Registry.",
+                    "Exchange rate looks good for the day; minor spread on bulk ore.",
+                    "Audit sweep in effect. Keep your paperwork tight.",
+                    "Bonded freight lane open, present bill of lading.",
+                    "Tax relief for certified salvage closes at sundown.",
+                    "Could this day get any longer?",
+                    "If it isn't stamped, it's not going anywhere. Do the paperwork.",
+                    "Grease the docking clamps this time, please. Paint's scuffed enough as is.",
+                    "We got a counterfeiter over here. What? Yes, of course I know it's fake.",
+                    "Heard there's an auction out there tonight. Think they're selling what I think they're selling.",
+                    "Disputing this invoice. It just doesn't add up.",
+                    "There's a holiday on Geras? Why am I always the last to know?",
+                    "Receipts above our threshold require at least two cosigners.",
+                    "Brokerage open for business, come through.",
+                    "Liqueur restocked at Veka, I've got post-shift plans.",
+                    "Market escrow's hitting extra hard today.",
+                    "Number your pallets lest you'd like them impounded.",
+                    "Weighbridge variance above tolerance, going to need a re-measure.",
+                    "Apply for a tariff remission on life-support goods at Desk C.",
+                    "Ledger statements now available for select clients at local kiosks.",
+                    "Scrip redemptions capped today, adjust accordingly.",
+                    "Routine maintenance scheduled on that loading bay, thanks.",
+                    "You're going to be paying extra, transporting that much organic mass.",
+                    "We don't do salvage titles here.",
+                    "Major spill at Bay 4-C. Get a hazmat hardsuit team here ASAP.",
+                    "Finalize those manifest changes before I have to come down there.",
+                    "Exchange auditors boarding at random, cooperate fully."
                 },
                 Surnames = new[]
                 {
@@ -144,7 +152,7 @@ namespace YourModNamespace
                     "Lakatos","Korval","Vancura","Vorn","Tamas","Veyda","Brannic",
                     "Orman","Czarda","Mirek","Halvek","Vorric"
                 },
-                InitMessage = "Csillar Exchange channels active — all traffic subject to audit and tariff."
+                InitMessage = "Welcome to Csillan territory - behave yourself."
             };
 
             _encorp = new FactionProfile
@@ -158,30 +166,42 @@ namespace YourModNamespace
                 },
                 Messages = new[]
                 {
-                    "Heads up team: throughput is off target; unblock Line B.",
-                    "Reminder: log your time in the portal before end of shift.",
-                    "New SLA on satellite turnaround; align deliverables.",
-                    "We have a blocker on Pad E; escalating to Facilities.",
-                    "Action item: update the risk register after today's incident.",
-                    "Network change window at 1800; expect brief impact.",
-                    "Stand-up in five at the ops board; keep it tight.",
-                    "Please park scope creep; focus on MVP for this release.",
-                    "KPI check: safety, quality, schedule. Call it green or yellow.",
-                    "Procurement approved fasteners; pick tickets are live.",
-                    "Audit on the floor; badges visible and aisles clear.",
-                    "If it isn't in the system, it didn't happen. Close your work orders.",
-                    "RCA for yesterday's outage posted; read and sign.",
-                    "We're capacity constrained; prioritize revenue-critical tasks.",
-                    "Stakeholders on-site this afternoon; clean bays and signage.",
-                    "Reminder: PPE is not optional; HSE is tracking.",
-                    "Firmware push to drones at 1300; keep airspace open.",
-                    "Inventory variance outside tolerance; recount bin 2A.",
-                    "Contract window opens at 0900; vendors queue at Gate 2.",
-                    "Coordinate cranes through Dispatch; no ad-hoc lifts.",
-                    "Shift handoff needs a written note; no verbal only.",
-                    "Lunch-and-learn moves to Tuesday; invites updated.",
-                    "Parking-lot side projects; sprint closes tonight.",
-                    "If you see something unsafe, stop the line and call it."
+                    "Production targets on track, we might be looking at a pizza party at this rate.",
+                    "Contract window opened for satellite servicing.",
+                    "Reading a few new contacts in orbit.",
+                    "Does she ever SHUT UP?!",
+                    "Safety reminder: EVA in designated zones only.",
+                    "Quality Assurance is going to have a field day with this one.",
+                    "Unscheduled ping from utility node - Regional Directive has been informed.",
+                    "Wait for your clearance codes, this is a restricted berth.",
+                    "Comply with Security Contractor searches - these are authorized under your contract.",
+                    "Heading back home, whole lot of nothing on that one.",
+                    "Noncompliant tooling flagged, we've just touched base with QA.",
+                    "Get your foreman on the line, contractor check-ins are due.",
+                    "Metrics review upcoming, inform our guys down there to look sharp.",
+                    "Maintenance period begins in five, secure whatever's not strapped down.",
+                    "Network latency above DuPont, check your channels.",
+                    "Safety stand-down at pad E—incident under review.",
+                    "Man, shareholder value just gets me feeling a certain way.",
+                    "Access badge anomalies detected - someone get SpaceControl down here.",
+                    "Client demonstration scheduled, polish your bays, gear, and signage.",
+                    "Asset transfer to local transfer node approved - we'll handle that shipment now.",
+                    "We've got missiles to spend, quarterly reports are due.",
+                    "Remember, every round is billable.",
+                    "Lunch break's over. You're lucky to get one.",
+                    "Remember what we're here for - shareholder value.",
+                    "Breach-of-contract warnings issued to delinquent vendors.",
+                    "Drone traffic dense near tower, do as the ATC tells you.",
+                    "Hazard pay activated for night-side EVA.",
+                    "New IFF codes are going out soon, stand by.",
+                    "Good news. Quality hold lifted on fasteners lot A-17.",
+                    "Backlog on the filters are clear, tell Navigation we can all breathe a little more easily now.",
+                    "Personnel shuttle's running behind again, someone get me a foreman.",
+                    "Wear your safety equipment, we're not paying you to get hurt.",
+                    "We've got a high-G burn coming up, check your seals and prepare for HCP-221 cycling.",
+                    "Auditing starts today, get those reports looking sharp.",
+                    "Unauthorized use of company cranes will void coverage.",
+                    "If I have to work one more shift with this guy, EVERYONE will feel it."
                 },
                 Surnames = new[]
                 {
@@ -189,7 +209,7 @@ namespace YourModNamespace
                     "Feldman","Rourke","Ashford","Chang-Hartlett","Cuirass-Allison","Bennett","Harlow","Preston","Collins",
                     "Han","O'Rourke","Barker","Graves","Donovan","Hollister","Quinn","Nakamura","Higashikata","Matsumoto","Kato",
                 },
-                InitMessage = "EnCorp systems detected — patching you into corporate ops and security bandwidth."
+                InitMessage = "Hello and welcome to the right side of space! Patching you into corporate channels."
             };
 
             
@@ -299,11 +319,11 @@ namespace YourModNamespace
                     _activeFactionStr = string.IsNullOrEmpty(chosen) ? ACTIVE_FACTION_DEFAULT : chosen;
                 }
 
-                MyAPIGateway.Utilities.ShowMessage("CommSystem", "Loaded jurisdiction: " + _activeFactionStr);
+                MyAPIGateway.Utilities.ShowMessage("Regional Authority", "Registered jurisdiction: " + _activeFactionStr);
             }
             catch (Exception e)
             {
-                MyAPIGateway.Utilities.ShowMessage("CommSystem", "World config error: " + e.Message);
+               
                 _activeFactionStr = ACTIVE_FACTION_DEFAULT;
             }
         }
