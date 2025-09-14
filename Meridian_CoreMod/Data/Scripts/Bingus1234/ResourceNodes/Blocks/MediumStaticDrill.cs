@@ -16,6 +16,7 @@ namespace ResourceNodes
 
         public override void SetEmissive(Color color)
         {
+            return;
             if (MyAPIGateway.Session.IsServer)
             {
                 EmissiveStateChange packet = new EmissiveStateChange()

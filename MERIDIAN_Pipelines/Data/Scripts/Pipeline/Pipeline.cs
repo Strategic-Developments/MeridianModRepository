@@ -31,28 +31,13 @@ namespace Klime.Pipeline
     {
         //public static bool initControl = false;
 
-        IMyCargoContainer cargo_block;
-        IMyCargoContainer other_cargo_block;
-        MyInventory cargo_inventory;
-        MyInventory other_cargo_inventory;
-        public enum BlockState
-        {
-            Idle,
-            Searching,
-            Connected
-        }
-
-        public enum OverallAnimationState
-        {
-            Idle,
-            AnimStart,
-            AnimContinue,
-            AnimEnd
-        }
+        public IMyCargoContainer cargo_block;
+        public IMyCargoContainer other_cargo_block;
+        public MyInventory cargo_inventory;
+        public MyInventory other_cargo_inventory;
         
-        BlockState server_block_state = BlockState.Idle;
-        BlockState client_block_state = BlockState.Idle;
-        List<IHitInfo> all_hits = new List<IHitInfo>();
+        public BlockState server_block_state = BlockState.Idle;
+        public BlockState client_block_state = BlockState.Idle;
         
         int frame = 0;
         int frameOffset = 0;
@@ -64,17 +49,14 @@ namespace Klime.Pipeline
 
         const double search_radius = 3000;
         const double search_angle_tolerence = 0.2; //in radians, not degrees
-        List<MyEntity> search_ents = new List<MyEntity>();
+        readonly List<MyEntity> search_ents = new List<MyEntity>();
         List<IMyCargoContainer> search_onlycargo = new List<IMyCargoContainer>();
-        Dictionary<IMyCargoContainer, Vector3D> search_Positions = new Dictionary<IMyCargoContainer, Vector3D>();
         MyStringId pipeline_mat;
         Color search_col = Color.LightGreen;
         Vector4 for_col = Color.LightGreen;
-        List<IMyPlayer> all_players = new List<IMyPlayer>();
-        public ushort netId = 19593;
-        List<VisualChunk> allChunks = new List<VisualChunk>();
+        readonly List<VisualChunk> allChunks = new List<VisualChunk>();
 
-        List<string> allModels = new List<string>();
+        
         MatrixD cone_mat = MatrixD.Identity;
 
         public class VisualChunk
@@ -94,33 +76,6 @@ namespace Klime.Pipeline
         }
 
 
-        [ProtoContract]
-        public class Packet
-        {
-            [ProtoMember(50)]
-            public BlockState incoming_block_state;
-
-            [ProtoMember(51)]
-            public long incoming_cargo_block_id;
-
-            [ProtoMember(52)]
-            public long incoming_othercargo_id;
-
-            public Packet()
-            {
-
-            }
-
-            public Packet(BlockState incoming_block_state, long incoming_cargo_block_id, long incoming_othercargo_id)
-            {
-                this.incoming_block_state = incoming_block_state;
-                this.incoming_cargo_block_id = incoming_cargo_block_id;
-                this.incoming_othercargo_id = incoming_othercargo_id;
-            }
-
-
-        }
-
         public override void Init(MyObjectBuilder_EntityBase objectBuilder)
         {
             cargo_block = Entity as IMyCargoContainer;
@@ -131,91 +86,63 @@ namespace Klime.Pipeline
         {
             if (cargo_block != null)
             {
+
+
                 if (cargo_block.CubeGrid.Physics != null)
                 {
                     //Add rest of pipeline mats
                     pipeline_mat = MyStringId.GetOrCompute("Square");
                     search_col.A = (byte)50;
-                    var cb = cargo_block as MyCubeBlock;
-                    if (cb != null)
-                    {
-                        string modpath = cb.BlockDefinition.Context.ModPath;
-                        allModels.Add(modpath + @"\Models\Cubes\large\Pipeline_125.mwm");
-                        allModels.Add(modpath + @"\Models\Cubes\large\Pipeline_25.mwm");
-                        allModels.Add(modpath + @"\Models\Cubes\large\Pipeline_5.mwm");
-                        allModels.Add(modpath + @"\Models\Cubes\large\Pipeline_1.mwm");
-
-                        //ModelPath = cb.BlockDefinition.Context.ModPath + @"\Models\pipeline.mwm";
-                        //ModelPath = @"C:\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Content\Models\Cubes\large\ConveyorTube.mwm";
-                        //MyVisualScriptLogicProvider.SendChatMessage(ModelPath);
-                    }
-
 
                     if (MyAPIGateway.Session.IsServer)
                     {
                         frameOffset = MyUtils.GetRandomInt(0, 59);
                     }
 
-                    //if (!initControl)
-                    //{
-                    //    List<IMyTerminalControl> controls = new List<IMyTerminalControl>();
-                    //    MyAPIGateway.TerminalControls.GetControls<IMyCargoContainer>(out controls);
-                    //    foreach (var control in controls)
-                    //    {
-                    //        if (control.Id == "ShowInTerminal")
-                    //        {
-                    //            var onOff = control as IMyTerminalControlOnOffSwitch;
-                    //            if (onOff != null)
-                    //            {
-                    //                onOff.Title = CheckTitle();
-                    //                onOff.vi
-                    //            }
-                    //        }
-                    //    }
-
-                    //    initControl = true;
-                    //}
-
                     NeedsUpdate |= MyEntityUpdateEnum.EACH_FRAME;
-                    MyAPIGateway.Multiplayer.RegisterSecureMessageHandler(netId, pipeline_net_handler);
+                    PipelineSession.Instance.Pipelines.Add(cargo_block.EntityId, this);
+                    if (!MyAPIGateway.Multiplayer.IsServer)
+                    {
+                        //MyLog.Default.WriteLineAndConsole("pipeline sync request sent");
+                        Network.SendMessageToServer(new SyncRequestPacket(cargo_block.EntityId), Network.MessageHandlerId);
+                    }
                     //MyVisualScriptLogicProvider.AddGPSForAll("", "", cargo_block.WorldMatrix.Translation, Color.Orange);
                 }
+
+                
             }
         }
 
-        private void pipeline_net_handler(ushort arg1, byte[] arg2, ulong arg3, bool arg4)
+
+        public void ProcessPacket(PipelineSyncPacket incoming_packet)
         {
-            Packet incoming_packet = MyAPIGateway.Utilities.SerializeFromBinary<Packet>(arg2);
-            if (incoming_packet != null && incoming_packet.incoming_cargo_block_id == cargo_block.EntityId)
+            BlockState previous_block_state = client_block_state;
+            client_block_state = incoming_packet.incoming_block_state;
+
+            if (client_block_state == BlockState.Connected)
             {
-                BlockState previous_block_state = client_block_state;
-                client_block_state = incoming_packet.incoming_block_state;
+                other_cargo_block = MyAPIGateway.Entities.GetEntityById(incoming_packet.incoming_othercargo_id) as IMyCargoContainer;
+            }
+            else
+            {
+                other_cargo_block = null;
+            }
 
-                if (client_block_state == BlockState.Connected)
-                {
-                    other_cargo_block = MyAPIGateway.Entities.GetEntityById(incoming_packet.incoming_othercargo_id) as IMyCargoContainer;
-                }
-                else
-                {
-                    other_cargo_block = null;
-                }
+            if (other_cargo_block == null || other_cargo_block.MarkedForClose)
+            {
+                client_block_state = BlockState.Idle;
+            }
 
-                if (other_cargo_block == null || other_cargo_block.MarkedForClose)
-                {
-                    client_block_state = BlockState.Idle;
-                }
+            if (client_block_state == BlockState.Connected && previous_block_state != BlockState.Connected)
+            {
+                //MyVisualScriptLogicProvider.SendChatMessage("Trig");
+                //MyVisualScriptLogicProvider.SendChatMessage(previous_block_state.ToString());
+                NewChain();
+            }
 
-                if (client_block_state == BlockState.Connected && previous_block_state != BlockState.Connected)
-                {
-                    //MyVisualScriptLogicProvider.SendChatMessage("Trig");
-                    //MyVisualScriptLogicProvider.SendChatMessage(previous_block_state.ToString());
-                    NewChain();
-                }
-
-                if (client_block_state != BlockState.Connected && previous_block_state == BlockState.Connected)
-                {
-                    CleanupChain();
-                }
+            if (client_block_state != BlockState.Connected && previous_block_state == BlockState.Connected)
+            {
+                CleanupChain();
             }
         }
 
@@ -228,8 +155,6 @@ namespace Klime.Pipeline
                     var cargoPos = cargo_block.WorldMatrix.Translation + cargo_block.WorldMatrix.Forward * 0f;
                     var otherPos = other_cargo_block.WorldMatrix.Translation + other_cargo_block.WorldMatrix.Backward * 0f;
                     var vector_between = otherPos - cargoPos;
-                    //var vector_between = (other_cargo_block.WorldMatrix.Translation + other_cargo_block.WorldMatrix.Backward*1.6f) 
-                    //    - (cargo_block.WorldMatrix.Translation + cargo_block.WorldMatrix.Forward*1.6f);
                     var distance = vector_between.Length();
 
                     double remaining_distance = distance;
@@ -259,7 +184,7 @@ namespace Klime.Pipeline
                     var up_of_first = Vector3D.Normalize(vector_between);
                     var forward_of_first = MyUtils.GetRandomPerpendicularVector(ref up_of_first);
                     var position_of_first = cargoPos + (up_of_first * 1.25) + (up_of_first * remaining_distance);
-                    var ent_of_first = PrimeEntityActivator(allModels[3]);
+                    var ent_of_first = PrimeEntityActivator(PipelineSession.Instance.allModels[3]);
                     ent_of_first.WorldMatrix = MatrixD.CreateWorld(position_of_first, forward_of_first, up_of_first);
 
                     var newChunk = new VisualChunk(ent_of_first, 2.5);
@@ -268,7 +193,7 @@ namespace Klime.Pipeline
                     var current_offset = 2.5;
                     for (int i = 1; i < number_of_1; i++)
                     {
-                        MyEntity ent = PrimeEntityActivator(allModels[3]);
+                        MyEntity ent = PrimeEntityActivator(PipelineSession.Instance.allModels[3]);
                         var position_of_chunk = allChunks[i - 1].chunk.WorldMatrix.Translation + up_of_first * 2.5;
                         var forward_of_chunk = MyUtils.GetRandomPerpendicularVector(ref up_of_first);
                         ent.WorldMatrix = MatrixD.CreateWorld(position_of_chunk, forward_of_chunk, up_of_first);
@@ -281,7 +206,7 @@ namespace Klime.Pipeline
                     {
                         if (i == 0)
                         {
-                            MyEntity ent = PrimeEntityActivator(allModels[2]);
+                            MyEntity ent = PrimeEntityActivator(PipelineSession.Instance.allModels[2]);
                             var position_of_chunk = allChunks[0].chunk.WorldMatrix.Translation - (allChunks[0].chunkLength * 0.5 * up_of_first) + (up_of_first * current_offset) + (up_of_first * (5 * 1.25));
                             var forward_of_chunk = MyUtils.GetRandomPerpendicularVector(ref up_of_first);
                             ent.WorldMatrix = MatrixD.CreateWorld(position_of_chunk, forward_of_chunk, up_of_first);
@@ -290,7 +215,7 @@ namespace Klime.Pipeline
                         }
                         else
                         {
-                            MyEntity ent = PrimeEntityActivator(allModels[2]);
+                            MyEntity ent = PrimeEntityActivator(PipelineSession.Instance.allModels[2]);
                             var position_of_chunk = allChunks[allChunks.Count - 1].chunk.WorldMatrix.Translation + up_of_first * (5 * 2.5);
                             var forward_of_chunk = MyUtils.GetRandomPerpendicularVector(ref up_of_first);
                             ent.WorldMatrix = MatrixD.CreateWorld(position_of_chunk, forward_of_chunk, up_of_first);
@@ -305,7 +230,7 @@ namespace Klime.Pipeline
                     {
                         if (i == 0)
                         {
-                            MyEntity ent = PrimeEntityActivator(allModels[1]);
+                            MyEntity ent = PrimeEntityActivator(PipelineSession.Instance.allModels[1]);
                             var position_of_chunk = allChunks[0].chunk.WorldMatrix.Translation - (allChunks[0].chunkLength * 0.5 * up_of_first) + (up_of_first * current_offset) + (up_of_first * (25 * 1.25));
                             var forward_of_chunk = MyUtils.GetRandomPerpendicularVector(ref up_of_first);
                             ent.WorldMatrix = MatrixD.CreateWorld(position_of_chunk, forward_of_chunk, up_of_first);
@@ -314,7 +239,7 @@ namespace Klime.Pipeline
                         }
                         else
                         {
-                            MyEntity ent = PrimeEntityActivator(allModels[1]);
+                            MyEntity ent = PrimeEntityActivator(PipelineSession.Instance.allModels[1]);
                             var position_of_chunk = allChunks[allChunks.Count - 1].chunk.WorldMatrix.Translation + up_of_first * (25 * 2.5);
                             var forward_of_chunk = MyUtils.GetRandomPerpendicularVector(ref up_of_first);
                             ent.WorldMatrix = MatrixD.CreateWorld(position_of_chunk, forward_of_chunk, up_of_first);
@@ -328,7 +253,7 @@ namespace Klime.Pipeline
                     {
                         if (i == 0)
                         {
-                            MyEntity ent = PrimeEntityActivator(allModels[0]);
+                            MyEntity ent = PrimeEntityActivator(PipelineSession.Instance.allModels[0]);
                             var position_of_chunk = allChunks[0].chunk.WorldMatrix.Translation - (allChunks[0].chunkLength * 0.5 * up_of_first) + (up_of_first * current_offset) + (up_of_first * (125 * 1.25));
                             var forward_of_chunk = MyUtils.GetRandomPerpendicularVector(ref up_of_first);
                             ent.WorldMatrix = MatrixD.CreateWorld(position_of_chunk, forward_of_chunk, up_of_first);
@@ -337,7 +262,7 @@ namespace Klime.Pipeline
                         }
                         else
                         {
-                            MyEntity ent = PrimeEntityActivator(allModels[0]);
+                            MyEntity ent = PrimeEntityActivator(PipelineSession.Instance.allModels[0]);
                             var position_of_chunk = allChunks[allChunks.Count - 1].chunk.WorldMatrix.Translation + up_of_first * (125 * 2.5);
                             var forward_of_chunk = MyUtils.GetRandomPerpendicularVector(ref up_of_first);
                             ent.WorldMatrix = MatrixD.CreateWorld(position_of_chunk, forward_of_chunk, up_of_first);
@@ -346,46 +271,6 @@ namespace Klime.Pipeline
                         }
                         current_offset += (125 * 2.5);
                     }
-
-                    //int number_of_chunks = (int)(vector_between.Length() / 2.5);
-                    //var remainder = vector_between.Length() - (2.5 * number_of_chunks);
-                    //var forward_of_first = Vector3D.Normalize(vector_between);
-                    //var position_of_first = cargo_block.WorldMatrix.Translation + (forward_of_first * remainder);
-                    //var up_of_first = MyUtils.GetRandomPerpendicularVector(ref forward_of_first);
-                    //var ent_of_first = PrimeEntityActivator();
-                    //ent_of_first.WorldMatrix = MatrixD.CreateWorld(position_of_first, forward_of_first, up_of_first);
-
-                    //var newChunk = new VisualChunk(ent_of_first);
-                    //allChunks.Add(newChunk);
-
-                    //RigidBodyFlag rbf = RigidBodyFlag.RBF_STATIC;
-                    //var test_chunk = allChunks[0];
-                    //var end_chunk = allChunks[allChunks.Count - 1];
-                    //MyPhysicsHelper.InitBoxPhysics(test_chunk.chunk, MyStringHash.GetOrCompute("Ammo"), new Vector3(0, 5, 0), new Vector3(5, 5, 0), 0f, 0f, 0f, 15, rbf);
-                    //test_chunk.chunk.Physics.Enabled = true;
-                    //test_chunk.chunk.Physics.Activate();
-                    // foreach (var ent in allChunks)
-                    // {
-                    //     MyPhysicsHelper.InitModelPhysics(ent.chunk, RigidBodyFlag.RBF_STATIC, 15);
-                    //     ent.chunk.Physics.Enabled = true;
-                    //     ent.chunk.Physics.Activate();
-                    // }
-                    //////newChunk.chunk.Physics.Enabled = true;
-                    //////newChunk.chunk.GetPhysicsBody().Activate();
-                    ////MyPhysicsHelper.InitBoxPhysics(newChunk.chunk, MyStringHash.GetOrCompute("Ammo"), new Vector3(5, 0, 0), new Vector3(1, 1, 1), 100, 0f, 0f, 9, RigidBodyFlag.RBF_DEFAULT);
-                    ////newChunk.chunk.Physics.Enabled = true;
-                    ////newChunk.chunk.Physics.Activate();
-
-                    //for (int i = 1; i < number_of_chunks; i++)
-                    //{
-                    //    MyEntity ent = PrimeEntityActivator();
-                    //    var position_of_chunk = allChunks[i - 1].chunk.WorldMatrix.Translation + forward_of_first * 2.5;
-                    //    var up_of_chunk = MyUtils.GetRandomPerpendicularVector(ref forward_of_first);
-                    //    ent.WorldMatrix = MatrixD.CreateWorld(position_of_chunk, forward_of_first, up_of_chunk);
-                    //    var innerChunk = new VisualChunk(ent);
-
-                    //    allChunks.Add(innerChunk);
-                    //}
                 }
             }
             catch (Exception e)
@@ -453,29 +338,6 @@ namespace Klime.Pipeline
                                 }
                             }
                         }
-
-                        //Networking
-                        all_players.Clear();
-                        MyAPIGateway.Multiplayer.Players.GetPlayers(all_players);
-                        Packet packet = new Packet();
-                        packet.incoming_block_state = server_block_state;
-                        packet.incoming_cargo_block_id = cargo_block.EntityId;
-
-                        if (server_block_state == BlockState.Connected && other_cargo_block != null)
-                        {
-                            packet.incoming_othercargo_id = other_cargo_block.EntityId;
-                        }
-                        var binary_packet = MyAPIGateway.Utilities.SerializeToBinary<Packet>(packet);
-                        foreach (var p in all_players)
-                        {
-                            MyAPIGateway.Multiplayer.SendMessageTo(netId, binary_packet, p.SteamUserId);
-                        }
-
-                        if (MyAPIGateway.Utilities.IsDedicated)
-                        {
-                            MyAPIGateway.Multiplayer.SendMessageTo(netId, binary_packet, MyAPIGateway.Multiplayer.MyId);
-                        }
-
                     }
 
                 }
@@ -511,7 +373,7 @@ namespace Klime.Pipeline
                         {
                             MySimpleObjectDraw.DrawLine(cargo_block.WorldMatrix.Translation, cargo_block.WorldMatrix.Translation + cargo_block.WorldMatrix.Forward * 10, pipeline_mat,
                                 ref for_col, 0.1f, BlendTypeEnum.PostPP);
-                            MySimpleObjectDraw.DrawTransparentCone(ref cone_mat, 405.4f, 2000, ref search_col, 8, pipeline_mat); //for 0.2 radians at 2km
+                            MySimpleObjectDraw.DrawTransparentCone(ref cone_mat, 608.130106526f, 3000, ref search_col, 8, pipeline_mat); //for 0.2 radians at 2km
                         }
                     }
                 }
@@ -546,6 +408,7 @@ namespace Klime.Pipeline
                             {
                                 server_block_state = BlockState.Connected;
                                 failedSearches = 0;
+                                PipelineSession.Instance.PropagateStateChange(this);
                             }
                             else
                             {
@@ -565,6 +428,7 @@ namespace Klime.Pipeline
                     if (!ValidateOtherCargo(other_cargo_block))
                     {
                         server_block_state = BlockState.Idle;
+                        PipelineSession.Instance.PropagateStateChange(this);
                     }
                 }
             }
@@ -631,15 +495,6 @@ namespace Klime.Pipeline
                 if (AngleCheck(ref cargo_block, ref test_cargo))
                 {
                     is_valid = true;
-                    all_hits.Clear();
-                    MyAPIGateway.Physics.CastRay(cargo_block.WorldMatrix.Translation, test_cargo.WorldMatrix.Translation, all_hits);
-                    foreach (var hit in all_hits)
-                    {
-                        if (hit.HitEntity != null && hit.HitEntity is MyVoxelBase)
-                        {
-                            is_valid = false;
-                        }
-                    }
                 }
             }
             return is_valid;
@@ -674,6 +529,11 @@ namespace Klime.Pipeline
             return (float)angle;
         }
 
+        public override void MarkForClose()
+        {
+            PipelineSession.Instance.Pipelines.Remove(cargo_block.EntityId);
+        }
+
         public override void Close()
         {
             try
@@ -686,7 +546,7 @@ namespace Klime.Pipeline
                     }
                     allChunks.Clear();
                 }
-                MyAPIGateway.Multiplayer.UnregisterSecureMessageHandler(netId, pipeline_net_handler);
+                
             }
             catch (Exception e)
             {
@@ -695,55 +555,5 @@ namespace Klime.Pipeline
         }
     }
 
-    [MySessionComponentDescriptor(MyUpdateOrder.AfterSimulation)]
-    public class PipelineSession : MySessionComponentBase
-    {
-        public static PipelineSession Instance;
-        public bool draw_cone = false;
-        public int masterTimer = 0;
-        public bool readyToConnect = false;
-        public override void Init(MyObjectBuilder_SessionComponent sessionComponent)
-        {
-            if (!MyAPIGateway.Utilities.IsDedicated)
-            {
-                MyAPIGateway.Utilities.MessageEntered += Utilities_MessageEntered;
-            }
-        }
-
-        public override void LoadData()
-        {
-            Instance = this;
-        }
-
-        public override void UpdateAfterSimulation()
-        {
-            if (MyAPIGateway.Session.IsServer)
-            {
-                if (masterTimer == 300)
-                {
-                    readyToConnect = true;
-                }
-            }
-            masterTimer += 1;
-        }
-
-        private void Utilities_MessageEntered(string messageText, ref bool sendToOthers)
-        {
-            if (messageText == "/pipeline toggle")
-            {
-                draw_cone = !draw_cone;
-
-                sendToOthers = false;
-            }
-        }
-
-        protected override void UnloadData()
-        {
-            if (!MyAPIGateway.Utilities.IsDedicated)
-            {
-                MyAPIGateway.Utilities.MessageEntered -= Utilities_MessageEntered;
-            }
-            Instance = null;
-        }
-    }
+    
 }

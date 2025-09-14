@@ -263,7 +263,7 @@ namespace ResourceNodes
                 IsProducing = Block.ResourceSink.IsPoweredByType(EId) && Block.ResourceSink.IsPowerAvailable(EId, Block.ResourceSink.MaxRequiredInput);
             }
 
-            if (tick % 25 == 0)
+            if (tick % 100 == 0)
             {
                 if (optionsChanged)
                 {
