@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ENCORP-Trigger-ChatSpawn</SubtypeId>
+      </Id>
+      <Description>
+	  
+	  [RivalAI Trigger]
+	  
+	  [Type:Session]
+	  [MaxActions:1]
+	  [StartsReady:true]
+	  [Actions:ENCORP-Action-ChatSpawn]
+
+      </Description>
+      
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ENCORP-Action-ChatSpawn</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Action]
+      
+      [UseChatBroadcast:true]
+      [ChatData:ENCORP-Chat-ChatSpawn]
+	
+      [CreateKnownPlayerArea:true]
+      [KnownPlayerAreaRadius:15000]
+      [KnownPlayerAreaTimer:30]
+
+      </Description>
+      
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ENCORP-Chat-ChatSpawn</SubtypeId>
+      </Id>
+      <Description>
+
+      [RivalAI Chat]
+      
+      [UseChat:true]
+      [StartsReady:true]
+      [Chance:50]
+      [MaxChats:1]
+      [BroadcastRandomly:false]
+      
+      [Author:Drone Fighter]
+      [Color:Red]
+      
+      [ChatMessages:test message one]
+      [ChatAudio:GreetingSoundId-A]
+      [BroadcastChatType:Chat]
+      
+      [ChatMessages:test message two]
+      [ChatAudio:GreetingSoundId-B]
+      [BroadcastChatType:Chat]
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

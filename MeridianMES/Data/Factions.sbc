@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Factions>
+  
+    <Faction Tag="ENCORP" Founder="EnCorp Regional Directive">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>ENCORP</SubtypeId>
+      </Id>
+      <Description>A test description.</Description>
+      <DisplayName>EnCorp</DisplayName>
+      <IsDefault>true</IsDefault>
+      <DiscoveredByDefault>true</DiscoveredByDefault>
+	  <DefaultRelation>Neutral</DefaultRelation>
+	  <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+    </Faction>
+
+     <Faction Tag="CSILLA" Founder="Csillar High Mandate">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>CSILLA</SubtypeId>
+      </Id>
+      <DisplayName>Csillar Banking Clan</DisplayName>
+      <IsDefault>true</IsDefault>
+      <DiscoveredByDefault>true</DiscoveredByDefault>
+	  <DefaultRelation>Neutral</DefaultRelation>
+	  <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+    </Faction>
+
+     <Faction Tag="CCAS" Founder="Customs Agency, Outer Worlds">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>CCAS</SubtypeId>
+      </Id>
+      <DisplayName>Centauri Coalition Aerospace Service</DisplayName>
+      <IsDefault>true</IsDefault>
+      <DiscoveredByDefault>true</DiscoveredByDefault>
+	  <DefaultRelation>Neutral</DefaultRelation>
+	  <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+    </Faction>
+	
+  </Factions>
+</Definitions>
